@@ -1,0 +1,40 @@
+.wrap-overlay{
+  display:none;
+  //display:block;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background: url("../images/bg-overlay.png") 0 0 repeat;
+  height:100%;
+  z-index:9999;
+  .overlay{
+    position:fixed;
+    background:#fff;
+    padding:25px;
+    top:10%;
+    left:50%;
+    //display:none;
+    display:block!important;
+    &.small{
+      width:375px;
+      margin-left:-187px;
+    }
+    &.medium{
+      width:500px;
+      margin-left:-250px;
+    }
+    .title{
+      color:$dark-color;
+      font:{
+        size:$f-28;
+      }
+    }
+    .close{
+      @extend %close;
+    }
+  }
+  .mobile &{
+    position:absolute;
+  }
+}

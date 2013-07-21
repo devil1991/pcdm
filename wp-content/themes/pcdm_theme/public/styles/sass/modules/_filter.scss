@@ -1,0 +1,81 @@
+/////////////////
+// product filter
+/////////////////
+
+.filter-content{
+  padding:20px 0 45px;
+  position:relative;
+  z-index:99;
+  clear:both;
+  .filter{
+    width: 100%;
+    position:relative;
+    .label{
+      width: 100%;
+      >span{
+        display:block;
+        padding:5px 10px;
+        border:1px solid #d6d6d6;
+        background:url('../images/press/arrow-filter.png') 95% 50% no-repeat;
+        cursor:pointer;
+        color:#898988;
+      }
+      &.opened {
+        > span{
+          border:1px solid #2c2c2c;
+          background:#2c2c2c url('../images/press/arrow-filter-opened.png') 95% 50% no-repeat;
+          color:#fff;
+        }
+      }
+      &.disabled {
+        > span{
+          background:none;
+          cursor: default;
+        }
+      }
+    }
+    &.last{
+      margin:0;
+    }
+    > dd{
+      padding:0;
+      position: absolute;
+      background: #2c2c2c;
+      width: 100%;
+      visibility: hidden;
+      overflow: hidden;
+      z-index:999;
+      > ul{
+        > li{
+          border-bottom:1px solid #fff;
+          line-height:20px;
+          padding-top:2px;
+          height:20px;
+          overflow:hidden;
+          padding:5px 10px;
+          // display:none;
+          > a{
+            color:#fff;
+            display:block;
+            text-transform:none;
+            font:{
+              size:$f-12;
+            }
+            &:hover{
+
+            }
+          }
+          &.selected{
+            background:$red-color;
+          }
+          &.disabled{
+            @include opacity(0.7);
+            > a{
+              cursor:default;
+            }
+          }
+        }
+      }
+    }
+  }
+}

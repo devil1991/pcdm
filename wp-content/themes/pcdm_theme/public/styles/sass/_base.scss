@@ -1,0 +1,64 @@
+// ---------------------------------------------------------------------------
+////////////////////
+// Generic Variables
+////////////////////
+
+
+//font-size convert from px to em
+
+$f-09 : 0.563em;
+$f-10 : 0.625em;
+$f-11 : 0.688em;
+$f-12 : 0.75em;
+$f-13 : 0.813em;
+$f-14 : 0.875em;
+$f-15 : 0.938em;
+$f-16 : 1em;
+$f-17 : 1.062em;
+$f-18 : 1.125em;
+$f-19 : 1.187em;
+$f-20 : 1.25em;
+$f-23 : 1.43em;
+$f-28 : 1.75em;
+$f-40 : 2.5em;
+
+
+//font-family
+
+$font-regular : "BodoniMTRegular", times;
+$font-italic : "BodoniMTItalic", times;
+$font-bold : "BodoniMTBold", times;
+
+
+//colors
+
+$dark-color : #2c2c2c;
+$light-grey-color:#8c8c8c;
+$light-color : #fff;
+$red-color: #e85743;
+
+/////////////
+//grid-layout
+/////////////
+
+$grid-max-limit : 1280px;
+$grid-min-limit : 1024px;
+
+//generic sprite-set
+
+$sprite-set: sprite-map("sprite-set/*.png");
+
+//////////////////////////
+//mediaquery crossbrowser
+//////////////////////////
+
+//@mixin cross-mediaquery-grid-max-limit{
+//  @media screen and (min-width: $grid-max-limit) {@content;}
+//  .ie-mediaquery-max-limit & {@content;}
+//}
+//@mixin cross-mediaquery-grid-min-limit{
+//  @media screen and (max-width: $grid-min-limit) {@content;}
+//  .ie-mediaquery-min-limit & {@content;}
+//}
+
+

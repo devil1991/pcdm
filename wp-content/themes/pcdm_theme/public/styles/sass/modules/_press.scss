@@ -1,0 +1,74 @@
+.press{
+  .header-press{
+    @include pie-clearfix();
+    @include span-columns(9 omega, 12);
+    @include at-breakpoint($phone) {
+      @include span-columns(12 omega, 12);
+    }
+    .title{
+      float:left;
+      text-transform:uppercase;
+      font:{
+        size:$f-23;
+      }
+    }
+    .clear{
+      background:url('../images/press/clear.png') left center no-repeat;
+      padding-left:20px;
+      float:right;
+      text-transform:none;
+      color:$red-color;
+      font:{
+        size:$f-14;
+      }
+    }
+    .wrap-filter{
+      @include span-columns(1, 4);
+      @include at-breakpoint($phone) {
+        margin-bottom:2em;
+        @include span-columns(12 omega, 12);
+      }
+      &:last-child{
+        @include span-columns(1 omega, 4);
+        @include at-breakpoint($phone) {
+          @include span-columns(12 omega, 12);
+        }
+      }
+      &.last-child{
+        @include span-columns(1 omega, 4);
+        @include at-breakpoint($phone) {
+          @include span-columns(12 omega, 12);
+        }
+      }
+    }
+  }
+  .press-list{
+    padding:4em 0;
+    clear:both;
+    @include pie-clearfix();
+    @include at-breakpoint($phone) {
+      padding:2em 0 0;
+    }
+    .item{
+      @include span-columns(1, 4);
+      @include at-breakpoint($phone) {
+        @include span-columns(12 omega, 12);
+      }
+      box-shadow: 0px 0px 10px rgba(208, 208, 208, 1);
+      &.last{
+        margin-right:0;
+        margin-left:0;
+      }
+      //@include nth-omega(4n);
+      margin-bottom:4em;
+      @include at-breakpoint($phone) {
+        margin-bottom:2em;
+      }
+      > img{
+        float:left;
+        width:96%;
+        margin:2%;
+      }
+    }
+  }
+}

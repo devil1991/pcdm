@@ -1,0 +1,31 @@
+{"filters":
+	[
+		{"filter":"filter_1",
+		 "label":"Value 1",
+		 "list":[
+			{"value":"", "label":"All"},
+			{"value":"value_2", "label":"Value 2"},
+			{"value":"value_3", "label":"Value 3"},
+			{"value":"value_4", "label":"Value 4"}
+		 ]
+		},
+		{"filter":"filter_2",
+		 "label":"All",
+		 "list":[
+			{"value":"value_1", "label":"Value 1"},
+			{"value":"value_2", "label":"Value 2"}
+		 ]
+		},
+		{"filter":"filter_3",
+		 "label":"All",
+		 "list":[]
+		},
+		{"filter":"filter_4",
+		 "label":"All",
+		 "list":[
+			{"value":"value_2", "label":"Value 2"}
+		 ]
+		}
+	],
+ "items":["002", "004", "005"]
+}

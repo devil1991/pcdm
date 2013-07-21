@@ -1,0 +1,92 @@
+.footer{
+  .aux-footer{
+    max-width: 103em;
+    @include container;
+    .footer-navigation{
+      padding:50px 0;
+      @include pie-clearfix;
+      > ul{
+        @include container;
+        padding:0 30px;
+        @include at-breakpoint($phone) {
+          padding:0;
+        }
+        >li{
+          @include span-columns(1, 4);
+          .title{
+            text-transform:uppercase;
+            color:$dark-color;
+            margin-bottom:20px;
+            font:{
+              size:$f-14;
+            }
+          }
+          .description{
+            @extend %text;
+            color:$light-grey-color;
+            line-height:1.5em;
+            font:{
+              size:$f-12;
+            }
+          }
+          .subscribe{
+            margin-top:15px;
+            @extend %button;
+            &:hover{
+              text-decoration:none;
+            }
+          }
+          &:last-child{
+            @include span-columns(1 omega, 4);
+          }
+          &.last-child{
+            @include span-columns(1 omega, 4);
+          }
+          @include at-breakpoint($phone) {
+            @include span-columns(2, 4);
+            margin-bottom:20px;
+            border-bottom: 1px solid $dark-color;
+            padding-bottom:20px;
+            &:nth-child(2n) { @include omega; }
+            &:last-child{
+              @include span-columns(2 omega, 4);
+            }
+            &.last-child{
+              @include span-columns(2 omega, 4);
+            }
+          }
+          .accept-terms{
+            padding-top:20px;
+            clear:both;
+            display:block;
+            @extend %text;
+            color:$light-grey-color;
+            line-height:1.5em;
+            font:{
+              size:$f-11;
+            }
+            > a{
+              color:$light-grey-color;
+              line-height:1.5em;
+              text-decoration:underline;
+              text-transform:none;
+              padding-left:22px;
+              display:block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wrap-credits{
+    background:$dark-color;
+    p{
+      color:$light-color;
+      text-align:center;
+      text-transform:uppercase;
+      font:{
+        size:$f-10;
+      }
+    }
+  }
+}

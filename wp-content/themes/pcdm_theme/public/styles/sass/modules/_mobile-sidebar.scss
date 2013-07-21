@@ -1,0 +1,115 @@
+#mobile-sidebar{
+  background:#2c2c2c;
+  float:left;
+  width:45%;
+  display:none;
+  padding:1em 0;
+  text-align:center;
+  border-bottom:3px solid #fff;
+  @include box-shadow(#000 0 0 15px);
+  .aux-mobile-sidebar{
+    width:80%;
+    margin:0 auto;
+  }
+  @include at-breakpoint($phone){
+    display:block;
+  }
+  .logo{
+    text-indent:-5000px;
+    text-align:left;
+    background: $sprite-set;
+    background-position: sprite-position($sprite-set, logo-white );
+    width:73px;
+    height:94px;
+    margin:0 auto;
+    display:block;
+  }
+  nav{
+    width:100%;
+    text-align:center;
+    height:100%;
+    >ul{
+      >li{
+        background:url('../images/sep-mobile-sidebar.gif') center top no-repeat;
+        padding:1em 0;
+        >a{
+          color:#fff;
+          font:{
+            size:$f-14;
+          }
+        }
+        &:first-child{
+          background:none;
+        }
+        &.dropdown{
+          > a{
+            display:block;
+            padding-bottom:1em;
+          }
+        }
+      }
+      .wrap-dropdown-menu{
+        > ul{
+          >li{
+            padding:0.2em 0;
+            > a{
+              color:#fff;
+              text-transform:none;
+              font:{
+                size:$f-13;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.navbar{
+      border-top:1px solid #474747;
+      margin-top:20px;
+      padding-top:10px;
+    }
+    &.choose-language{
+      border-bottom:1px solid #474747;
+      padding:10px 0;
+      > ul{
+        background:url('../images/sep-mobile-sidebar-mid.gif') center top no-repeat;
+        >li{
+          background:none;
+          display:inline-block;
+          &:first-child{
+            margin-right:0.5em ;
+          }
+          >a{
+            padding:3px 8px;
+            border:1px solid #fff;
+            font:{
+              size:$f-12;
+            }
+            &.active{
+              color:$dark-color;
+              background:#fff;
+            }
+          }
+        }
+      }
+    }
+    &.nav-social{
+      width:100%;
+      margin:0 auto;
+      >ul{
+        @include pie-clearfix;
+        padding-top:10px;
+        text-align:center;
+        padding:0 1em;
+        >li{
+          margin:0 1em 0 0;
+          background:none;
+          > a{
+            margin:0;
+            @include reset-columns;
+          }
+        }
+      }
+    }
+  }
+}

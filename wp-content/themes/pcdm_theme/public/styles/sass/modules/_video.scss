@@ -1,0 +1,94 @@
+.wrap-video{
+  @include span-columns(12 omega, 12);
+  .video-list{
+    .item-video{
+      margin-bottom:1em;
+      > article{
+        display:block;
+        @include pie-clearfix;
+        position:relative;
+        .text{
+          bottom:0;
+          position:absolute;
+          text-align:right;
+          @include span-columns(3, 12);
+          @include at-breakpoint($tablet) {
+            @include span-columns(12, 12);
+            position:relative;
+            padding:0 0 1em;
+            text-align:left;
+          }
+          @include at-breakpoint($phone) {
+            @include span-columns(12, 12);
+            position:relative;
+            padding:0 0 1em;
+            text-align:left;
+          }
+          .title{
+            text-transform:uppercase;
+            line-height:1.2em;
+            font:{
+              size:2.5em;//44px
+            }
+          }
+          .description{
+            @extend %text;
+          }
+          .wrap-more{
+            background:url(../images/box/sep-title.jpg) right top no-repeat;
+            padding-top:15px;
+            margin-top:15px;
+            @include at-breakpoint($tablet) {
+              background-position:left top;
+            }
+            @include at-breakpoint($phone) {
+              background-position:left top;
+            }
+            .more{
+              visibility:hidden;
+            }
+          }
+        }
+        .close{
+          @extend %close;
+          right:inherit;
+          left:15px;
+        }
+        .wrap-video{
+          position:relative;
+          @include span-columns(9 omega, 12);
+          @include at-breakpoint($tablet) {
+            @include span-columns(12, 12);
+          }
+          @include at-breakpoint($phone) {
+            @include span-columns(12, 12);
+          }
+          > a.link-video{
+            display:block;
+            position:absolute;
+            top:0;
+            left:0;
+            z-index:9;
+            width:100%;
+            .ico-video{
+              visibility:hidden;
+            }
+          }
+          &:before{
+            content: "";
+            display: block;
+            padding-top: 72.9%;  /* initial ratio of 1:1*/
+          }
+          .placeholder{
+            width:100%;
+          }
+          .video{
+            position:absolute;
+            top:0;
+            left:0;
+          }
+        }
+      }
+    }
+  }
+}

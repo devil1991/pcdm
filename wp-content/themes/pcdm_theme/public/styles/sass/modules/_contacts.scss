@@ -1,0 +1,106 @@
+.header-contacts{
+  position:relative;
+  @include span-columns(1,4);
+  @include at-breakpoint($phone){
+    @include span-columns(1,1);
+    margin-bottom:2em;
+  }
+  margin-top:-8%;
+  .number{
+    display:block;
+    width:100%;
+    line-height:1em;
+    font:{
+      size:12.5em;//200px
+    }
+  }
+  .title{
+    text-transform:uppercase;
+    line-height:1.2em;
+    background:url(../images/box/sep-title.jpg) right bottom no-repeat;
+    @include at-breakpoint($phone){
+      background:url(../images/box/sep-title.jpg) left bottom no-repeat;
+    }
+    padding-bottom:15px;
+    margin-bottom:15px;
+    font:{
+      size:2.75em;//44px
+    }
+  }
+  .description{
+    text-align:right;
+    @include at-breakpoint($phone){
+      text-align:left;
+    }
+  }
+}
+
+.contact-info{
+  .item{
+    @include span-columns(1 ,4);
+    @include at-breakpoint($phone){
+      @include span-columns(1,1);
+      margin-bottom:2em;
+    }
+    text-align:center;
+    &:last-child{
+      @include span-columns(1 omega,4);
+      @include at-breakpoint($phone){
+        @include span-columns(1,1);
+      }
+    }
+    &.last-child{
+      @include span-columns(1 omega,4);
+      @include at-breakpoint($phone){
+        @include span-columns(1,1);
+      }
+    }
+    .title{
+      margin:20px 0;
+      font:{
+        size:$f-15;
+      }
+      &:before{
+        content:"";
+        display:block;
+        background: $sprite-set;
+        width:110px;
+        height:109px;
+        margin:0 auto 20px;
+      }
+    }
+    .description{
+      margin:10px 0;
+      font:{
+        size:$f-13;
+      }
+      > a{
+        color:$red-color;
+        font:{
+          size:$f-13;
+        }
+      }
+    }
+    &.find-us{
+      .title{
+        &:before{
+          background-position: sprite-position($sprite-set, concatc-found);
+        }
+      }
+    }
+    &.general-info{
+      .title{
+        &:before{
+          background-position: sprite-position($sprite-set, contact-general-info);
+        }
+      }
+    }
+    &.specific-info{
+      .title{
+        &:before{
+          background-position: sprite-position($sprite-set, contact-specific-info);
+        }
+      }
+    }
+  }
+}

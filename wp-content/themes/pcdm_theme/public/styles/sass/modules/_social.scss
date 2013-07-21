@@ -1,0 +1,139 @@
+.nav-social{
+  position:relative;
+  @include pie-clearfix();
+  .label{
+    display:none;
+    text-transform:uppercase;
+    float:right;
+    border:1px solid $dark-color;
+    padding:1px 10px;
+    font:{
+      size:$f-11;
+    }
+    @include at-breakpoint($phablet){
+      display:block;
+    }
+  }
+  .title-share{
+    text-transform:uppercase;
+    line-height:1.2em;
+    margin-bottom:15px;
+    font:{
+      size:$f-10;
+    }
+  }
+  > ul{
+    @include at-breakpoint($phablet){
+      position:absolute;
+      left:0;
+      top:25px;
+      background:#2c2c2c;
+      padding:10px;
+    }
+    > li{
+      float:left;
+      @include span-columns(1, 5);
+      @include at-breakpoint($phablet){
+        @include span-columns(1, 1);
+        float:none;
+        display:block;
+        margin-bottom:7px;
+      }
+      height:20px;
+      //margin-left:15px;
+      &:last-child{
+        margin:0;
+        @include span-columns(1 omega, 5);
+        @include at-breakpoint($phablet){
+          @include span-columns(1, 1);
+        }
+      }
+      &.last-child{
+        margin:0;
+        @include span-columns(1 omega, 5);
+        @include at-breakpoint($phablet){
+          @include span-columns(1, 1);
+        }
+      }
+      #mobile-sidebar &{
+        @include reset-columns;
+        display:inline-block;
+        width:23px;
+        height:23px;
+        &:last-child{
+          @include reset-columns;
+          width:23px;
+          height:23px;
+          display:inline-block;
+          margin-right:0;
+        }
+      }
+      > a{
+        width:20px;
+        height:20px;
+        display:block;
+        text-indent:-5000px;
+        background: $sprite-set;
+        #mobile-sidebar &{
+          width:23px;
+          height:23px;
+        }
+      }
+      &.facebook{
+        > a{
+          background-position: sprite-position($sprite-set, ico-facebook);
+          &:hover{
+            background-position: sprite-position($sprite-set, ico-facebook-hover);
+          }
+          #mobile-sidebar &{
+            background-position: sprite-position($sprite-set, fb-smartphone);
+          }
+        }
+      }
+      &.histagram{
+        > a{
+          background-position: sprite-position($sprite-set, ico-histagram);
+          &:hover{
+            background-position: sprite-position($sprite-set, ico-histagram-hover);
+          }
+          #mobile-sidebar &{
+            background-position: sprite-position($sprite-set, histagram-smartphone);
+          }
+        }
+      }
+      &.twitter{
+        > a{
+          background-position: sprite-position($sprite-set, ico-twitter);
+          &:hover{
+            background-position: sprite-position($sprite-set, ico-twitter-hover);
+          }
+          #mobile-sidebar &{
+            background-position: sprite-position($sprite-set, twitter-smartphone);
+          }
+        }
+      }
+      &.pinterest{
+        > a{
+          background-position: sprite-position($sprite-set, ico-pinterest);
+          &:hover{
+            background-position: sprite-position($sprite-set, ico-pinterest-hover);
+          }
+          #mobile-sidebar &{
+            background-position: sprite-position($sprite-set, pinterest-smartphone);
+          }
+        }
+      }
+      &.tumblr{
+        > a{
+          background-position: sprite-position($sprite-set, ico-tumblr);
+          &:hover{
+            background-position: sprite-position($sprite-set, ico-tumblr-hover);
+          }
+          #mobile-sidebar &{
+            background-position: sprite-position($sprite-set, tumblr-smartphone);
+          }
+        }
+      }
+    }
+  }
+}

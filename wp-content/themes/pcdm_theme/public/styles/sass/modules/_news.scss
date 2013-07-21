@@ -1,0 +1,123 @@
+.hp-news{
+  @include span-columns(12 omega, 12);
+  .block{
+    @include span-columns(6, 12);
+    @include pie-clearfix();
+    margin-bottom:1em;
+    @include at-breakpoint($phone) {
+      @include span-columns(12 omega, 12);
+    }
+    > a{
+      display:block;
+      &.big{
+        @include span-columns(12 omega, 12);
+      }
+      &.small{
+        @include span-columns(3, 6);
+        @include at-breakpoint($phone) {
+          @include span-columns(12 omega, 12);
+          &:first-child{
+            margin-bottom:1em;
+          }
+        }
+      }
+      &:last-child { @include omega; }
+      &.last-child { @include omega; }
+      .wrap-image{
+        margin-bottom:0.5em;
+        position:relative;
+        > img{
+          width:100%;
+        }
+        .hover{
+          @include opacity(0);
+          @include transition(all 0.3s ease-out);
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          .more{
+            @include transition(all 0.3s ease-out);
+            position:absolute;
+            top:45%;
+            left:50%;
+            margin-top:-11px;
+            margin-left:-10px;
+            width:21px;
+            height:22px;
+            display:inline-block;
+            text-indent:-5000px;
+            background:url(../images/arrow-dark-big.png) center center no-repeat;
+          }
+        }
+      }
+      &:hover{
+        text-decoration:none;
+        .wrap-image{
+          .hover{
+            @include opacity(1);
+            .more{
+              top:50%;
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(2n) { @include omega; }
+    &.even-child { @include omega; }
+  }
+}
+
+
+.news{
+  .text{
+    background:url(../images/box/sep-title.jpg) right bottom no-repeat;
+    padding-bottom:1em;
+    .date{
+      .yy{
+        font:{
+          size:$f-14;
+        }
+      }
+      .mm-dd{
+        font:{
+          size:$f-40;
+        }
+      }
+    }
+    .title{
+      margin:0.5em 0;
+      font:{
+        size:$f-18;
+      }
+    }
+    .description{
+      line-height:1.5em;
+      text-transform:none;
+      font:{
+        size:$f-12;
+      }
+    }
+  }
+}
+
+//news-detail
+.news-detail{
+  @include prefix(3);
+  @include span-columns(9 omega,12);
+  @include at-breakpoint($phone) {
+    @include prefix(0);
+    @include span-columns(12 omega, 12);
+
+  }
+  .wrap-image{
+    margin-bottom:1em;
+    > img{
+      width:100%;
+    }
+  }
+  .text{
+    background:none;
+  }
+}

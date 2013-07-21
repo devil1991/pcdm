@@ -1,0 +1,137 @@
+$breakpoint-media-output  : true;
+$breakpoint-ie-output     : true;
+
+//viewport-grid
+$V-ipad:48em; //ipad mini 768px
+$V-nexus7:37.7em; //603px
+$V-galaxy7:37.5em; //400px
+$V-kindle-fire:36.1em; //600px;
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : 1em;
+
+$show-grid-backgrounds  : true;
+
+$max-screen: 103em 12 ie-max; //1680px
+$mid-screen: 78em 12 ie-mid; //1280px
+$screen: 65em 12 103 ie-screen; // from 1024 to 1680
+//$ipad: $V-ipad 8; //vieport ipad mini 768
+$tablet: 35em 8 70em ie-tablet;
+$phablet: 45em 8 60em ie-phablet;
+$phone: 4 45em ie-phone;
+
+//$media-layout: 12 lt-ie9;
+
+
+#wrapper{
+  position:relative;
+}
+
+body{
+    @include at-breakpoint($max-screen) {
+    #wrapper{
+      $container-width: 103em;
+      @include container;
+    }
+  }
+}
+
+
+
+body{
+  @include at-breakpoint($screen) {
+    #wrapper{
+      //$container-style: fluid;
+      //@include susy-grid-background;
+    }
+  }
+}
+
+.container{
+  //overflow:hidden;
+  @include span-columns(12 omega, 12);
+  padding-bottom:30px;
+  border-bottom: 4px solid $dark-color;
+  margin-top:150px;
+  @include at-breakpoint($phone) {
+    margin-top:0px;
+  }
+}
+
+.fixed-mobile{
+  @include at-breakpoint($phone){
+    position:fixed;
+    background:#fff;
+    padding-bottom:10px;
+    right:1em;
+    left:1em;
+    z-index:9999;
+    .sidebar-open &{
+      position:absolute;
+      right:0em;
+      left:0em;
+    }
+    .top-header{
+      height:7px;
+      background:$dark-color;
+      position: relative;
+      z-index: 999;
+      width:100%;
+    }
+  }
+  .open-nav{
+    display:none;
+    float:left;
+    background:url(../images/open-menu-mobile.png) 0 0 no-repeat;
+    width:17px;
+    height:10px;
+    margin-top:10px;
+    @include at-breakpoint($phone) {
+     display:block;
+    }
+  }
+}
+
+.loader{
+  background:red;
+  width:200px;
+  height:200px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-100px;
+  margin-left:-100px;
+  display:none;
+}
+
+
+#body-simulator{
+  width:100%;
+  @include at-breakpoint($phone){
+    background:url('../images/bg-mobile-sidebar.jpg') 0 0 repeat;
+    //background:#2c2c2c;
+  }
+  overflow:hidden;
+  .aux-body-simulator{
+    width:100%;
+    position:relative;
+    @include at-breakpoint($phone){
+      width:200%;
+      left:-90%;
+    }
+  }
+}
+
+#wrap-body{
+  @include at-breakpoint($phone){
+    float:left;
+    background:#fff;
+    width:50%;
+    left:0%;
+  }
+}

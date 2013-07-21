@@ -1,0 +1,98 @@
+a{
+  text-transform:uppercase;
+  color:$dark-color;
+  text-decoration:none;
+  letter-spacing:0.1em;
+  &:hover{
+    text-decoration:underline;
+  }
+}
+
+%text{
+  text-transform:none;
+  font:{
+    size:$f-13;
+  }
+}
+
+
+.description{
+  font:{
+    family:georgia;
+    style:italic;
+  }
+}
+.more{
+  text-transform:uppercase;
+  color:$dark-color;
+  text-decoration:none;
+  background:url(../images/arrow-more.png) right center no-repeat;
+  padding-right:20px;
+  font:{
+    size:$f-11;
+  }
+}
+
+.scroll{
+  text-transform:uppercase;
+  color:$dark-color;
+  text-decoration:none;
+  background:url(../images/arrow-scroll.png) right center no-repeat;
+  padding-right:20px;
+  font:{
+    size:$f-11;
+  }
+}
+
+%button{
+  background:$red-color;
+  display:inline-block;
+  padding:5px 6px 4px 26px;
+  >span{
+    padding-right:30px;
+    background:url(../images/arrow-white.png) 85% center no-repeat;
+    display:block;
+    color:$light-color;
+    font:{
+      size:$f-10;
+    }
+  }
+  &:hover{
+    > span{
+      background-position:95% center;
+    }
+  }
+}
+
+.ico-video{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin:-22px 0 0 -22px;
+  width:66px;
+  height:67px;
+  background: $sprite-set;
+  background-position: sprite-position($sprite-set, play-video);
+  z-index:99;
+}
+
+
+%close{
+  position:absolute;
+  top:20px;
+  right:20px;
+  text-indent: -5000px;
+  display:block;
+  width:30px;
+  height:30px;
+  background: $sprite-set;
+  background-position: sprite-position($sprite-set, close);
+  background-color:#fff;
+  .mobile &{
+    top:30px;
+    right:30px;
+    width:45px;
+    height:45px;
+    background-position: sprite-position($sprite-set, close_mobile);
+  }
+}

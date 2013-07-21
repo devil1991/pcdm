@@ -1,0 +1,277 @@
+.header{
+  position:absolute;
+  left:1em;
+  right:1em;
+  z-index:9999;
+  @include at-breakpoint($max-screen) {
+    $container-width: 103em;
+    @include container;
+  }
+  @include at-breakpoint($phone) {
+    position:relative;
+    width:100%;
+    left:0em;
+    right:0em;
+  }
+  .top-header{
+    height:7px;
+    background:$dark-color;
+    position: relative;
+    z-index: 999;
+    width:100%;
+  }
+  @include at-breakpoint($phone) {
+    height:auto;
+    background:none;
+  }
+  .logo{
+    @include span-columns(3, 12);
+    top:25px;
+    left:0;
+    height:254px;
+    text-align:center;
+    position:absolute;
+    z-index:99;
+    @include at-breakpoint($tablet) {
+      @include span-columns(2, 12);
+    }
+    @include at-breakpoint($phone) {
+      @include span-columns(12, 12);
+      position:relative;
+      top:0;
+      height:auto;
+      padding:3em 0 1em;
+    }
+    > img{
+      width:198px;
+      margin:0 auto;
+      @include at-breakpoint($tablet) {
+        width:80%;
+        margin:0 auto;
+      }
+      @include at-breakpoint($phone) {
+        width:30%;
+        margin:0 auto;
+      }
+    }
+  }
+  .logo-small{
+    display:none;
+  }
+  .right-navigation{
+    @include transition(background 1s ease-in-out);
+    z-index:9;
+    @include span-columns(9 omega, 12);
+    @include pie-clearfix();
+    @include at-breakpoint($tablet) {
+      @include span-columns(10 omega, 12);
+    }
+    @include at-breakpoint($phone) {
+      display:none;
+    }
+    .aux-right-navigation{
+      //margin-top:-38px;
+    }
+    .choose-language{
+      padding-top:14px;
+      float:right;
+      @include at-breakpoint($phone) {
+        float:left;
+        padding:0;
+      }
+      @include pie-clearfix();
+      > ul{
+        >li{
+          float:left;
+          &:first-child{
+            > a{
+              border-right:1px solid $dark-color;
+            }
+          }
+          > a{
+            padding:0 5px;
+            font:{
+              size:$f-10;
+            }
+          }
+        }
+      }
+    }
+    .wrap-navbar{
+      clear:both;
+      padding:15px 0 ;
+      @include pie-clearfix();
+      .navbar{
+        @include span-columns(10 alpha, 12);
+        @include at-breakpoint($tablet) {
+          @include span-columns(10 alpha, 12);
+        }
+        > ul{
+          @include pie-clearfix();
+          >li{
+            float:left;
+            text-align:center;
+            @include squish(0.5,0.5);
+            @include at-breakpoint($phablet) {
+              //padding:0 0.7em;
+            }
+            position:relative;
+            > a{
+              position:relative;
+              z-index:99;
+              font:{
+                size:$f-11;
+              }
+              @include at-breakpoint($phablet) {
+                font:{
+                  size:0.612em;
+                }
+              }
+              &.active{
+                color:$light-color;
+              }
+            }
+            &.dropdown{
+              z-index:9;
+              .wrap-dropdown-menu{
+                display:none;
+                position:absolute;
+                padding:130px 0 25px;
+                top:-55px;
+                left:50%;
+                margin-left:-83px;
+                width:166px;
+                background:$red-color url(../images/header/sep-dropdown.png) center 95% repeat-x;
+                overflow:hidden;
+                .dropdown-menu{
+                  background:url(../images/header/sep-dropdown.png) center top no-repeat;
+                  padding-bottom:30px;
+                  > li{
+                    padding-top:30px;
+                    > a{
+                      position:relative;
+                      display:block;
+                      color:$light-color;
+                      font:{
+                        size:$f-11;
+                      }
+                      > span{
+                        display:block;
+                        background: $sprite-set;
+                        width:4px;
+                        height:7px;
+                        position:absolute;
+                        top:7px;
+                      }
+                      .arrow-left{
+                        background-position: sprite-position($sprite-set, arrow-menu-left);
+                        left:-4px;
+                      }
+                      .arrow-right{
+                        background-position: sprite-position($sprite-set, arrow-menu-right);
+                        right:-4px;
+                      }
+                      &.active{
+                        text-decoration:none;
+                       .arrow-left{
+                          left:0px;
+                        }
+                        .arrow-right{
+                          right:0px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &:last-child{
+              @include squish(0.5,0);
+            };
+          }
+        }
+        @include at-breakpoint($phone) {
+          display:none;
+          @include span-columns(12 omega, 12);
+          > ul{
+            >li{
+              float:none;
+              text-align:left;
+              border-bottom:1px solid $dark-color;
+              width:100%;
+            }
+          }
+        }
+      }
+      .nav-social{
+        @include pre(0);
+        @include span-columns(2 omega, 12);
+        @include pie-clearfix();
+        @include at-breakpoint($tablet) {
+          @include pre(0);
+        }
+      }
+    }
+  }
+  &.header-small{
+    height:85px;
+    background:#fff;
+    position:fixed;
+    top:-120px;
+    @include container;
+    margin:0 -1em;
+    &:before{
+      content:"";
+      display:block;
+      position:absolute;
+      bottom:-4px;
+      left:-1em;
+      right:-1em;
+      height:4px;
+      background:url(../images/header/shadow-small-header.png) left bottom repeat-x;
+    }
+    @include at-breakpoint($phone){
+      background:transparent;
+      padding:0;
+      &:before{
+        background:none;
+      }
+    }
+    @include at-breakpoint($max-screen) {
+      width:100%;
+      margin:0 auto;
+    }
+    //left:50%;
+    .logo, .choose-language{
+      display:none;
+    }
+    .logo-small{
+      display:block;
+      @include span-columns(3, 12);
+      @include at-breakpoint($tablet) {
+        @include span-columns(2, 12);
+      }
+      margin:5px auto;
+      height:65px;
+      text-align:center;
+      position:relative;
+      > img{
+        height:100%;
+      }
+      @include at-breakpoint($phone){
+        display:none;
+      }
+    }
+    .right-navigation{
+      @include span-columns(9 omega, 12);
+      @include at-breakpoint($tablet) {
+        @include span-columns(10 omega, 12);
+        margin:12px 0 0 0;
+      }
+      @include at-breakpoint($phone) {
+        display:none;
+      }
+      margin:12px 0 0 0;
+    }
+  }
+}

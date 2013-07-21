@@ -1,0 +1,6 @@
+.DS_Store
+wp-config.php
+wp-config-sample.php
+wp-content/uploads/
+wp-content/themes/twentyeleven/
+wp-content/themes/twentytwelve/

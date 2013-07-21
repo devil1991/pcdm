@@ -1,0 +1,248 @@
+.wrap-about{
+  //@include susy-grid-background;
+  overflow:hidden;
+  @include span-columns(12 omega, 12);
+  position:relative;
+  .rail-1{
+    position:fixed;
+    //position:relative;
+    left: 1em;
+    right: 1em;
+    text-align: center; // this may not be needed.
+    @include at-breakpoint($phone) {
+      position:relative;
+      left:0;
+    }
+    &.more-affracchievole{
+      position:relative;
+      left: 0;
+      @include span-columns(6, 12);
+      .aux-rail-1{
+        @include span-columns(12 omega, 12);
+      }
+    }
+    .aux-rail-1{
+      @include span-columns(6, 12);
+      text-align: left;
+      @include at-breakpoint($phone) {
+        @include span-columns(12, 12);
+      }
+    }
+  }
+  .rail-2{
+    @include span-columns(6 omega, 12);
+    position:relative;
+    @include at-breakpoint($phone) {
+      @include span-columns(12, 12);
+    }
+    .mobile{
+      display:none;
+      @include at-breakpoint($phone) {
+        display:block;
+      }
+    }
+    .creative-vision.mobile{
+      .title{
+        margin-top:1em;
+        margin-bottom:0;
+      }
+    }
+  }
+  .wrap-images{
+    > img{
+      width:100%;
+    }
+  }
+  .deco{
+    > img{
+      width:100%;
+    }
+  }
+  .wrap-deco{
+    @include pie-clearfix();
+    @include at-breakpoint($phone) {
+        display:none;
+    }
+    .deco-1{
+      @include span-columns(3 ,6);
+    }
+    .deco-2{
+      @include span-columns(3 omega, 6);
+    }
+  }
+  .wrap-the-designer{
+    @include pie-clearfix();
+    .the-designer{
+      @include span-columns(3, 6);
+      @include at-breakpoint($phone) {
+        @include span-columns(6, 6);
+      }
+    }
+    .deco-4{
+      @include span-columns(3 omega , 6);
+      @include at-breakpoint($phone) {
+        display:none;
+      }
+    }
+  }
+  .wrap-creative-vision{
+    @include pie-clearfix();
+    .deco-3{
+      @include span-columns(3 , 6);
+      @include at-breakpoint($phone) {
+        display:none;
+      }
+    }
+    .creative-vision{
+      @include span-columns(3 omega, 6);
+      @include at-breakpoint($phone) {
+        @include span-columns(12, 12);
+      }
+      &.no-mobile{
+        display:block;
+        @include at-breakpoint($phone) {
+          display:none;
+        }
+      }
+    }
+  }
+  .wrap-interview{
+    .interview{
+      @include pie-clearfix();
+      .block{
+        @include span-columns(3, 6);
+        position:relative;
+        &.interview-video{
+          display:block;
+          > img{
+            width:100%;
+          }
+        }
+        &:last-child{
+          @include span-columns(3 omega, 6);
+        }
+        &.last-child{
+          @include span-columns(3 omega, 6);
+        }
+      }
+    }
+  }
+}
+
+.the-designer{
+  padding-bottom:3em;
+  .number{
+    display:block;
+    width:100%;
+    line-height:1em;
+    position:relative;
+    font:{
+      size:12.5em;//200px
+    }
+    left:-20%;
+    @include at-breakpoint($phone) {
+      left:0%;
+    }
+  }
+  .title{
+    text-transform:uppercase;
+    line-height:1.2em;
+    font:{
+      size:2.75em;//44px
+    }
+  }
+  .nav-social{
+    padding-top:1.5em;
+    margin:1.5em 0;
+    background:url(../images/box/sep-title.jpg) left top no-repeat;
+    @include span-columns(2, 3);
+    @include pie-clearfix();
+  }
+  .subtitle{
+    margin-bottom:1.5em;
+    clear:both;
+    line-height:1.2em;
+    font:{
+      size:1.375em;//22px
+      family:times;
+      style:italic;
+    }
+  }
+  .text{
+    margin-bottom:1.5em;
+    line-height:1.8em;
+    font:{
+      size:$f-13;
+      family:georgia;
+      style:italic;
+    }
+    .firstcharacter {
+      float: left;
+      line-height: 0.8em;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px;
+      font:{
+        size:4.68em;//44px
+      }
+    }
+  }
+}
+
+.creative-vision{
+  .title{
+    text-transform:uppercase;
+    line-height:1.2em;
+    margin-bottom:1em;
+    font:{
+      size:2.75em;//44px
+    }
+  }
+  .text{
+    line-height:1.8em;
+    font:{
+      size:$f-13;
+      family:georgia;
+    }
+  }
+}
+
+.interview-text{
+  width:100%;
+  height:100%;
+  position:relative;
+  margin-bottom:1em;
+  > img{
+    width:100%;
+  }
+  .wrap-text{
+    width:80%;
+    position:absolute;
+    bottom:1em;
+    .title{
+      color:$red-color;
+      text-transform:uppercase;
+      font:{
+        size:$f-11;
+      }
+    }
+    .text{
+      line-height:1.5em;
+      font:{
+        size:$f-11;
+      }
+    }
+  }
+  &.right{
+    .wrap-text{
+      text-align:left;
+      left:0;
+    }
+  }
+  &.left{
+    .wrap-text{
+      text-align:right;
+      right:0;
+    }
+  }
+}

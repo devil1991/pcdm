@@ -1,0 +1,101 @@
+.newsletter{
+  form{
+    padding:1em 0 0;
+    @include pie-clearfix();
+    visibility:visible;
+    //visibility:hidden;
+  }
+  .feedback{
+    visibility:hidden;
+    //visibility:visible;
+    position:absolute;
+    top:100px;
+    left:0;
+    width:100%;
+    >p{
+      padding:30px;
+      text-align:center;
+    }
+  }
+  .campi{
+    margin-bottom:0.5em;
+    @include pie-clearfix();
+    > input[type=text], > textarea{
+      width:354px;
+      background:#fff;
+      padding:10px 0;
+      border:none;
+      display:block;
+      border-bottom:1px solid #c7c7c7;
+      font:{
+        family:$font-italic;
+        size:$f-14;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    .form-btn{
+      clear:both;
+      float:right;
+      color:#fff;
+      text-transform:uppercase;
+      font:{
+        family:$font-regular;
+        size:$f-14;
+      }
+      border:none;
+      cursor:pointer;
+      background:#db6c6c;
+      padding:10px 20px;
+      font:{
+        size:$f-13;
+      }
+      &.disabled{
+        @include opacity (0.4);
+        cursor:default;
+      }
+    }
+    > span, > label{
+      height:23px;
+      line-height:23px;
+      display:block;
+      text-transform:none;
+      color:$dark-color;
+      font:{
+        size:$f-13;
+        family:$font-italic;
+      }
+      > a{
+        color:$dark-color;
+        text-transform:none;
+        text-decoration:underline;
+      }
+    }
+    .error-label{
+      clear:both;
+    }
+    .label-error{
+      color:#db6c6c;
+      height:20px;
+      padding-top:5px;
+      line-height:20px;
+      letter-spacing:0.2em;
+      text-transform:none;
+      visibility:hidden;
+    }
+    &.error {
+      .label-error{
+        visibility:visible;
+      }
+    }
+    &.privacy{
+      float:left;
+      margin-top:10px;
+    }
+    &.btn{
+      float:right;
+    }
+  }
+}
+

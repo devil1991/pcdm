@@ -36,6 +36,7 @@ class PcdmProduct {
         add_image_size( 'pcdm_pr_wall_image_big', 610, 672, FALSE );
         add_image_size( 'pcdm_pr_wall_image_small', 290, 320, FALSE );
         add_image_size( 'pcdm_pr_detail_image', 1280, 822, FALSE );
+        add_image_size( 'pcdm_pr_detail_mobile_image', 295, 354, FALSE );
         
     }
     
@@ -153,7 +154,7 @@ class PcdmProduct {
             $lang = $polylang->get_post_language($product->ID)->slug;
             
             $products[] = array(
-                'name' => sprintf("%s [%s]",$product->post_title,$lang),
+                'name' => sprintf("%s [%s][%s]",$product->post_title,$product->ID,$lang),
                 'value' => $product->ID
             );
         }
@@ -224,15 +225,23 @@ class PcdmProduct {
             'fields' => array(
                 array(
                     'name' => 'Detail image',
-                    'desc' => 'Upload an image or enter an URL.',
+                    'desc' => 'Upload an image.',
                     'id' => self::TYPE_PREFIX . 'detail_image',
                     'type' => 'file',
                     'save_id' => true, // save ID using true
                     'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
                 ),
                 array(
+                    'name' => 'Detail image for mobile',
+                    'desc' => 'Upload an image.',
+                    'id' => self::TYPE_PREFIX . 'detail_image_mobile',
+                    'type' => 'file',
+                    'save_id' => true, // save ID using true
+                    'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                ),
+                array(
                     'name' => 'Wall Image',
-                    'desc' => 'Upload an image or enter an URL.',
+                    'desc' => 'Upload an image.',
                     'id' => self::TYPE_PREFIX . 'wall_image',
                     'type' => 'file',
                     'save_id' => true, // save ID using true
@@ -315,6 +324,9 @@ class PcdmProduct {
                     $_det_img = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_id'][0],  PcdmProduct::TYPE_PREFIX .'detail_image' );
                     $details['details']['img'] = $_det_img[0];
                     
+                    $_det_img_mobile = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_mobile_id'][0],  PcdmProduct::TYPE_PREFIX .'detail_mobile_image' );
+                    $details['details']['img_mobile'] = $_det_img_mobile[0];
+                    
                     $details['details']['number'] = $meta[self::TYPE_PREFIX . 'number'][0];
 
                     $seasons = wp_get_post_terms($_pid, PcdmSeason::CATEGORY_IDENTIFIER);
@@ -325,7 +337,11 @@ class PcdmProduct {
 
                     $details['details']['title'] = $product->post_title;
                     $details['details']['description'] = $meta[self::TYPE_PREFIX . 'description'][0];
-                    $details['details']['social'] = array();
+                    $details['details']['sharing'] = array();
+                    $details['details']['sharing']['title'] = $product->post_title;
+                    $details['details']['sharing']['image'] = $_det_img_mobile[0];
+                    $details['details']['sharing']['description'] = $meta[PcdmProduct::TYPE_PREFIX . 'description'][0];
+                    $details['details']['sharing']['url'] = get_permalink( $product->ID );;
                 }
             }
         }

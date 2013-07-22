@@ -125,7 +125,7 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
     <p class="description"></p>
     <nav class="nav-social">
       <h4 class="title-share">share</h4>
-      <ul class="js-sharing">
+      <ul id="collection-details-sharing" class="js-sharing js-last-child">
         <li class="facebook">
           <a  title="facebook" href="#" target="blank">Facebook</a>
         </li>

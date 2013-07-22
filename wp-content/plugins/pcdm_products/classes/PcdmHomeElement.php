@@ -163,18 +163,18 @@ class PcdmHomeElement {
             'fields' => array(
                 array(
                     'name' => 'Link',
-                    'desc' => 'User defined link',
+                    'desc' => 'Provide a custom link(http://www.google.com) or an internal link(/seasons/spring-summer)',
                     'id' => self::TYPE_PREFIX . 'hp_link',
                     'type' => 'text_medium'
                 ),
-                array(
-                    'name' => 'Link type',
-                    'desc' => 'Select the link type',
-                    'id' => self::TYPE_PREFIX . 'link_type',
-                    'type' => 'radio_inline',
-                    'options' => $this->link_types,
-                    'std'=>self::LINK_TYPE_CUSTOM
-                ),
+//                array(
+//                    'name' => 'Link type',
+//                    'desc' => 'Select the link type',
+//                    'id' => self::TYPE_PREFIX . 'link_type',
+//                    'type' => 'radio_inline',
+//                    'options' => $this->link_types,
+//                    'std'=>self::LINK_TYPE_CUSTOM
+//                ),
             ),
         );
 

@@ -109,29 +109,12 @@ function pcdm_get_home_element_class($element) {
 }
 
 function pcdm_get_home_link($element) {
-  if (!is_null($element[PcdmHomeElement::TYPE_PREFIX . 'hp_link']) && !is_null($element[PcdmHomeElement::TYPE_PREFIX . 'link_type'])) {
-    $link_type = $element[PcdmHomeElement::TYPE_PREFIX . 'link_type'];
+  if(!is_null($element[PcdmHomeElement::TYPE_PREFIX . 'hp_link']) ){
     $hp_link = $element[PcdmHomeElement::TYPE_PREFIX . 'hp_link'];
-    switch ($link_type) {
-      case PcdmHomeElement::LINK_TYPE_CUSTOM:
-        return $hp_link;
-      case PcdmHomeElement::LINK_TYPE_PRODUCT:
-        $product = get_post($hp_link);
-        if (is_wp_error($product)) {
-          return "#";
-        }
-        if ($product->ID) {
-          $_product_id = $product->ID;
-          $season_tax_obj = array_pop(get_the_terms($_product_id, PcdmSeason::CATEGORY_IDENTIFIER));
-          $term_link = get_term_link($season_tax_obj->slug, PcdmSeason::CATEGORY_IDENTIFIER) . '?pid=' . $_product_id;
-          $link = is_wp_error($term_link) ? "#" : $term_link;
-          return $link;
-        }
-        return "";
-      case PcdmHomeElement::LINK_TYPE_SEASON:
-        $b = get_term_link($hp_link, PcdmSeason::CATEGORY_IDENTIFIER);
-        $link = is_wp_error($b) ? "#" : $b;
-        return $link;
+    if(preg_match('|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i', $hp_link)){
+      return $hp_link;
+    }else{
+      return get_bloginfo('url')."/".ltrim($hp_link,"/");
     }
   }
   return "";

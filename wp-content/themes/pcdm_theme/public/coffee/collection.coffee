@@ -28,7 +28,6 @@ class window.Collection
 		@prev_state_id = 'home'
 		unless @is_dev then @setHistory()
 
-		# TODO: JS: gestione UPDATE_SHARING_DATA #
 		# TODO: JS: animazione scrolltop proporzionale #
 
 	#########
@@ -58,7 +57,7 @@ class window.Collection
 		#History.log "history log --> ", State.data, State.title, State.url
 
 		state_id = State.data.state
-		console.log 'state --> ', state_id
+		#console.log 'state --> ', state_id
 
 		if state_id isnt @prev_state_id
 			@prev_state_id = state_id

@@ -27,6 +27,7 @@
       this.next_btn = this.ref.find('a.next');
       this.back_btn = this.ref.find('a.back');
       this.callback_url = this.ref.attr('data-callback');
+      this.sharing_id = this.ref.find('.js-sharing').attr('id');
       this.current_id;
       this.data = {};
       this.img_ratio;
@@ -137,17 +138,16 @@
     };
 
     CollectionDetails.prototype.onDataLoaded = function(json) {
+      var src;
       this.data = json.details;
-      return this.loadImage(this.data.img);
+      src = is_smartphone ? this.data.img_mobile : this.data.img;
+      return this.loadImage(src);
     };
 
     CollectionDetails.prototype.onDataError = function() {};
 
     CollectionDetails.prototype.loadImage = function(src) {
       var preloader;
-      if (is_smartphone) {
-        src = src.replace(".jpg", "-mobile.jpg");
-      }
       this.img.attr('src', src);
       preloader = new Image();
       preloader.onload = this.onImageLoaded;
@@ -167,6 +167,7 @@
       this.collection_txt.html(this.data.collection);
       this.title_txt.html(this.data.title);
       this.description_txt.html(this.data.description);
+      event_emitter.emitEvent('UPDATE_SHARING_DATA', [this.sharing_id, this.data.sharing]);
       this.onResize();
       this.ref.css({
         opacity: '0',

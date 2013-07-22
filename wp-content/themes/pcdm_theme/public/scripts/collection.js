@@ -57,7 +57,6 @@
       var State, state_id;
       State = History.getState();
       state_id = State.data.state;
-      console.log('state --> ', state_id);
       if (state_id !== this.prev_state_id) {
         this.prev_state_id = state_id;
         if (state_id === 'home') {

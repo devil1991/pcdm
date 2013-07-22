@@ -8,9 +8,31 @@ class window.RailsShifter
     @rail_1_el = @rail_1.find '.creative-vision'
     @rail_2_el = @rail_2.find '.the-designer'
 
+    @images = @ref.find 'img'
+    @images_tot = @images.length
+    @images_loaded = 0 
+
     @top = @rail_1.offset().top
 
-    @resetBreakpoints()
+    @preloadImages()
+
+  preloadImages: ->
+
+    event_emitter.addListener 'IMAGE_LOADED', @onImageLoaded
+
+    for i in [0...@images_tot]
+
+      image = $ @images[i]
+      src = image.attr 'src'
+
+      preloader = new Image()
+      preloader.onload = @onImageLoaded
+      preloader.src = src
+
+  onImageLoaded: =>
+
+    @images_loaded++
+    if @images_loaded is @images_tot then @resetBreakpoints()
 
   resetBreakpoints: ->
 

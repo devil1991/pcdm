@@ -15,9 +15,14 @@
       event_emitter.addListener('UPDATE_SHARING_DATA', this.onSharingDataUpdated);
     }
 
-    SocialSharing.prototype.onSharingDataUpdated = function(sharing_url) {
-      this.loc = sharing_url;
-      return this.checkButtons();
+    SocialSharing.prototype.onSharingDataUpdated = function(id, obj) {
+      if (id === this.ref.attr('id')) {
+        this.meta_title = obj.title;
+        this.meta_image = obj.image;
+        this.meta_description = obj.description;
+        this.loc = obj.url;
+        return this.checkButtons();
+      }
     };
 
     SocialSharing.prototype.checkButtons = function() {

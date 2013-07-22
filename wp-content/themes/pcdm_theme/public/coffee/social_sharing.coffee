@@ -10,10 +10,16 @@ class window.SocialSharing
     @checkButtons()
     event_emitter.addListener 'UPDATE_SHARING_DATA', @onSharingDataUpdated
 
-  onSharingDataUpdated: (sharing_url) =>
+  onSharingDataUpdated: (id, obj) =>
 
-    @loc = sharing_url
-    @checkButtons()
+    if id is @ref.attr 'id'
+    
+      @meta_title = obj.title
+      @meta_image = obj.image
+      @meta_description = obj.description
+      @loc = obj.url
+      
+      @checkButtons()
 
   checkButtons: ->
 

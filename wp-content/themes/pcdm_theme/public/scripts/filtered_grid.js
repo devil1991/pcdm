@@ -195,7 +195,6 @@
         filter = this.filters_array[i];
         obj[filter.param] = is_reset ? '' : filter.instance.value;
       }
-      console.log(obj);
       if (this.is_dev) {
         data_path = '../public/json/press.json';
         return $.getJSON(data_path, this.onDataLoaded);

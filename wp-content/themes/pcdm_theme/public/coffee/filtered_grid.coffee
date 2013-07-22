@@ -115,7 +115,7 @@ class window.FilteredGrid
 		for i in [0...@filters_tot]
 			filter = @filters_array[i]
 			obj[filter.param] = if is_reset then '' else filter.instance.value
-		console.log obj
+		#console.log obj
 
 		if @is_dev
 			data_path = '../public/json/press.json'

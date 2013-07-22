@@ -16,6 +16,7 @@ class window.CollectionDetails
 
 		@callback_url = @ref.attr 'data-callback'
 
+		@sharing_id = @ref.find('.js-sharing').attr 'id'
 		@current_id
 		@data = {}
 		@img_ratio
@@ -116,14 +117,13 @@ class window.CollectionDetails
 	onDataLoaded: (json) =>
 
 		@data = json.details
-		@loadImage @data.img
+		src = if is_smartphone then @data.img_mobile else @data.img
+		@loadImage src
 
 	onDataError: =>
 
 	loadImage: (src) ->
 
-    if is_smartphone
-    	src = src.replace(".jpg", "-mobile.jpg")
     @img.attr 'src', src
 
     preloader = new Image()
@@ -143,6 +143,8 @@ class window.CollectionDetails
 		@collection_txt.html @data.collection
 		@title_txt.html @data.title
 		@description_txt.html @data.description
+
+		event_emitter.emitEvent 'UPDATE_SHARING_DATA', [@sharing_id, @data.sharing]
 
 		@onResize()
 		@ref.css {opacity:'0', visibility:'visible'}

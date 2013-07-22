@@ -133,6 +133,8 @@ $ ->
   # SOCIAL SHARING
   ################
 
+  # TODO: HTML - attribuire classe 'link' a oggetti social solo link #
+  
   sharing_modules = $ '.js-sharing'
   if sharing_modules.length > 0
     for i in [0...sharing_modules.length]

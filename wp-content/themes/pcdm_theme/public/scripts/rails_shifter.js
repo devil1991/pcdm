@@ -7,13 +7,38 @@
       this.ref = ref;
       this.onResize = __bind(this.onResize, this);
       this.onScroll = __bind(this.onScroll, this);
+      this.onImageLoaded = __bind(this.onImageLoaded, this);
       this.rail_1 = this.ref.find('.rail-1');
       this.rail_2 = this.ref.find('.rail-2');
       this.rail_1_el = this.rail_1.find('.creative-vision');
       this.rail_2_el = this.rail_2.find('.the-designer');
+      this.images = this.ref.find('img');
+      this.images_tot = this.images.length;
+      this.images_loaded = 0;
       this.top = this.rail_1.offset().top;
-      this.resetBreakpoints();
+      this.preloadImages();
     }
+
+    RailsShifter.prototype.preloadImages = function() {
+      var i, image, preloader, src, _i, _ref, _results;
+      event_emitter.addListener('IMAGE_LOADED', this.onImageLoaded);
+      _results = [];
+      for (i = _i = 0, _ref = this.images_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
+        image = $(this.images[i]);
+        src = image.attr('src');
+        preloader = new Image();
+        preloader.onload = this.onImageLoaded;
+        _results.push(preloader.src = src);
+      }
+      return _results;
+    };
+
+    RailsShifter.prototype.onImageLoaded = function() {
+      this.images_loaded++;
+      if (this.images_loaded === this.images_tot) {
+        return this.resetBreakpoints();
+      }
+    };
 
     RailsShifter.prototype.resetBreakpoints = function() {
       this.breakpoint_1 = this.rail_2_el.offset().top + .5 * this.rail_2_el.height();

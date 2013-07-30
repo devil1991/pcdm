@@ -152,10 +152,11 @@ class PcdmProduct {
 
             global $polylang;
         foreach (get_posts($args) as $product) {
+            $meta = get_post_meta($product->ID);
             $lang = $polylang->get_post_language($product->ID)->slug;
             
             $products[] = array(
-                'name' => sprintf("%s [%s][%s]",$product->post_title,$product->ID,$lang),
+                'name' => sprintf("%s %s [%s][%s]","/".$meta[self::TYPE_PREFIX . 'number'][0],$product->post_title,$product->ID,$lang),
                 'value' => $product->ID
             );
         }

@@ -143,6 +143,7 @@ class PcdmProduct {
          $products = array();
 
         $args = array(
+            'posts_per_page' => -1,
             'post_type' => self::TYPE_IDENTIFIER,
             'post_status' => 'publish',
             'orderby' => $orderBy,

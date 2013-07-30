@@ -328,7 +328,7 @@ class PcdmProduct {
                     $_det_img_mobile = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_mobile_id'][0],  PcdmProduct::TYPE_PREFIX .'detail_mobile_image' );
                     $details['details']['img_mobile'] = $_det_img_mobile[0];
                     
-                    $details['details']['number'] = $meta[self::TYPE_PREFIX . 'number'][0];
+                    $details['details']['number'] = "/".$meta[self::TYPE_PREFIX . 'number'][0];
 
                     $seasons = wp_get_post_terms($_pid, PcdmSeason::CATEGORY_IDENTIFIER);
                     if (count($seasons)) {

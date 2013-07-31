@@ -6,8 +6,17 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-get_header();
 ?>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>404</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="<?php echo pcdm_get_theme_resource('styles/screen.min.css'); ?>" rel="stylesheet" type="text/css" media="all"/>
+  <script src="<?php echo pcdm_get_theme_resource('scripts/lib/modernizr-2.6.1.js'); ?>" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
 
  <div class="wrap-404">
     <div class="aux">
@@ -30,4 +39,5 @@ get_header();
     </div>
   </div>
 
-<?php get_footer(); ?>
+</body>
+</html>

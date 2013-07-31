@@ -333,8 +333,24 @@ class Post_Types_Order_Walker extends Walker
                 $indent = '';
 
             extract($args, EXTR_SKIP);
+            
+            $add = "";
+            if(get_post_type( $page ) == PcdmStore::TYPE_IDENTIFIER){
+              $terms = get_the_terms($page->ID, PcdmStoreLocation::CATEGORY_IDENTIFIER);
+              if($terms){
+                $_terms_array = array();
+                foreach ($terms as $term) {
+                  if($term->parent == 0){
+                    $_terms_array[0] = $term->slug;
+                  }else{
+                    $_terms_array[1] = $term->slug;
+                  }
+                }
+                $add = " -> ".implode(" | ",$_terms_array);
+              }
+            }
 
-            $output .= $indent . '<li id="item_'.$page->ID.'"><span>'.apply_filters( 'the_title', $page->post_title, $page->ID ).'</span>';
+            $output .= $indent . '<li id="item_'.$page->ID.'"><span>'.apply_filters( 'the_title', $page->post_title, $page->ID )."$add</span>";
         }
 
 

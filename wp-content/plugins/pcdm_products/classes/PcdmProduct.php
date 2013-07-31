@@ -271,6 +271,7 @@ class PcdmProduct {
 
         $new_cols = array(
             self::TYPE_PREFIX . 'collection_color' => __('Hover Color', 'trans'),
+            self::TYPE_PREFIX . 'season' => __('Season', 'trans'),
         );
         return array_merge($cols, $new_cols);
     }
@@ -286,6 +287,15 @@ class PcdmProduct {
             case self::TYPE_PREFIX . 'collection_color':
                 $color = get_post_meta($post_id, self::TYPE_PREFIX . 'collection_color', true);
                 echo sprintf("<span style=\"color:%s;font-weight:bold;\">%s</span>", $color, $color);
+                break;
+            case self::TYPE_PREFIX . 'season':
+                $terms = get_the_terms($post_id,  PcdmSeason::CATEGORY_IDENTIFIER);
+                $tax_slug = '';
+                if($terms){
+                  $season_tax_obj = array_pop(get_the_terms($post_id,  PcdmSeason::CATEGORY_IDENTIFIER));
+                  $tax_slug = $season_tax_obj->slug;
+                }
+                echo sprintf("%s", $tax_slug);
                 break;
         }
     }

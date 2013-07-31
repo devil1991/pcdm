@@ -112,6 +112,7 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
 <div class="loader"></div>
 <article class="product-detail" data-callback="wp-admin/admin-ajax.php" style="display:none">
   <div class="wrap-text">
+    <a href="#" class="back back-mobile"><?php echo _e('back to the collection')?></a>
     <ul class="paginator">
       <li><a class="previous" href="#" title=""><?php echo _e('previous')?></a></li>
       <li><a class="next" href="#" title=""><?php echo _e('next')?></a></li>
@@ -143,7 +144,7 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
         </li>
       </ul>
     </nav>
-    <a href="#" class="back"><?php echo _e('back to the collection')?></a>
+    <a href="#" class="back back-collection"><?php echo _e('back to the collection')?></a>
   </div>
   <img class="img-detail" src="" alt="">
 </article>

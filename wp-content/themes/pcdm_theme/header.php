@@ -33,6 +33,7 @@ if (isset($polylang)){
     <body <?php body_class(); ?>>
       <div id="body-simulator">
       <div class="aux-body-simulator">
+        <div class="close-menu"></div>
       <div id="mobile-sidebar">
         <div class="aux-mobile-sidebar">
           <a href="<?php echo get_bloginfo('url')?>" class="logo">Paula Cademartori</a>
@@ -79,7 +80,7 @@ if (isset($polylang)){
             </ul>
           </nav>
           <nav class="nav-social">
-            <ul class="js-sharing js-last-child">
+            <ul class="js-last-child">
               <li class="facebook">
                 <a  title="facebook" href="#" target="blank">Facebook</a>
               </li>
@@ -127,7 +128,7 @@ if (isset($polylang)){
                                                 <?php foreach(get_terms(PcdmSeason::CATEGORY_IDENTIFIER) as $_term):?>
                                                     <?php if($_term->count):?>
                                                         <li>
-                                                            <a class="active" href="<?php echo get_term_link($_term->slug, PcdmSeason::CATEGORY_IDENTIFIER)?>" title=""><?php echo $_term->name?>
+                                                            <a href="<?php echo get_term_link($_term->slug, PcdmSeason::CATEGORY_IDENTIFIER)?>" title=""><?php echo $_term->name?>
                                                                 <span class="arrow-left"></span>
                                                                 <span class="arrow-right"></span>
                                                             </a
@@ -153,7 +154,7 @@ if (isset($polylang)){
                                 </ul>
                             </nav>
                             <nav class="nav-social">
-                                <ul class="js-last-child js-sharing">
+                                <ul class="js-last-child">
                                     <li class="facebook">
                                         <a  title="facebook" href="#" target="blank">Facebook</a>
                                     </li>

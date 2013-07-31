@@ -7,7 +7,7 @@ get_header(); ?>
 <?php if(is_front_page()): ?>
 <section class="box-hp">
 <?php foreach(pcdm_get_hp_elements() as $hp_element):?>
-    <div class="line js-last-child">
+    <div class="line js-even-children js-last-child">
          <?php foreach ($hp_element['products'] as $product):?>
          <?php $_class = pcdm_get_home_element_class($product);?>
          <?php $img = wp_get_attachment_image_src($product[PcdmHomeElement::TYPE_PREFIX . 'home_image_id'],PcdmHomeElement::TYPE_PREFIX .'home_image_'.$_class );?>

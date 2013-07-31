@@ -6,6 +6,7 @@ class window.Collection
 		@category = @grid_ref.attr 'data-category'
 		init_id = @grid_ref.attr 'data-init-id'
 
+		@w = $ window
 		@wrapper = $ '#wrapper'
 		@header = @grid_ref.find '.header-product-grid'
 		@boxes = @grid_ref.find '.item'
@@ -14,6 +15,7 @@ class window.Collection
 		@items_tot
 		@current_id = if init_id? and init_id isnt '' then init_id else ''
 		@details
+		@grid_scroll = 0
 		window.is_switching = false
 
 		event_emitter.addListener 'SWITCH_TO_DETAILS', @switchToDetails
@@ -135,32 +137,57 @@ class window.Collection
 
 	dismantleGrid: ->
 
+		current_index = @getCurrentIndex()
+
 		for i in [0...@items_tot]
 			item = @items_array[i].ref
-			delay = .25 * (@items_tot - 1 - i)
+			delay = Math.max(.25 * (current_index - i), 0)
+			#delay = .25 * (@items_tot - 1 - i)
 			TweenLite.to item, 1, {css:{'opacity':'0'}, delay:delay, ease:Power4.easeInOut}
 		
 		TweenLite.to @header, 2, {css:{'opacity':'0'}, ease:Power4.easeInOut}
-		TweenLite.to window, 2, {scrollTo:{y:0}, ease:Power4.easeInOut, onComplete:@showDetails}
+
+		@grid_scroll = Math.max(@w.scrollTop() - 1000, 0)
+		TweenLite.to window, 2, {scrollTo:{y:@grid_scroll}, ease:Power4.easeInOut, onComplete:@showDetails}
+		#TweenLite.to window, 2, {scrollTo:{y:0}, ease:Power4.easeInOut, onComplete:@showDetails}
 
 	rebuildGrid: ->
 
+		current_index = @getCurrentIndex()
+
 		for i in [0...@items_tot]
 			item = @items_array[i].ref
-			delay = .25 * i
+			delay = Math.min(Math.max(.25 * (i + 5 - current_index), 0), 2)
+			#delay = .25 * i
 			TweenLite.to item, 1, {css:{'opacity':'1'}, delay:delay, ease:Power4.easeInOut}
 
 		TweenLite.to @header, 2, {css:{'opacity':'1'}, ease:Power4.easeInOut}
+		
+		@w.scrollTop @grid_scroll
 		TweenLite.to window, 2, {scrollTo:{y:@getScrollById()}, ease:Power4.easeInOut, onComplete:(-> window.is_switching = false)}
 
 	getScrollById: ->
 
 		offset = 0
+
 		for i in [0...@items_tot]
 			item = @items_array[i]
 			if item.id is @current_id
 				offset = item.offset
+				break
+		
 		return offset
+
+	getCurrentIndex: ->
+
+		index = 0
+
+		for i in [0...@items_tot]
+			item = @items_array[i]
+			if item.id is @current_id
+				index = i
+
+		return index
 
 	#########
 	# DETAILS
@@ -178,6 +205,7 @@ class window.Collection
 	showDetails: =>
 
 		unless @wrapper.hasClass 'detail-on'
+			@w.scrollTop 0
 			@wrapper.addClass 'detail-on'
 			@grid_ref.hide()
 

@@ -42,15 +42,13 @@
       text-transform:uppercase;
       font:{
         family:$font-regular;
-        size:$f-14;
+        size:$f-11;
       }
       border:none;
       cursor:pointer;
-      background:#db6c6c;
-      padding:10px 20px;
-      font:{
-        size:$f-13;
-      }
+      background:$red-color;
+      padding:10px 40px 8px;
+      letter-spacing:0.3em;
       &.disabled{
         @include opacity (0.4);
         cursor:default;
@@ -92,6 +90,9 @@
     &.privacy{
       float:left;
       margin-top:10px;
+      a{
+        letter-spacing:0;
+      }
     }
     &.btn{
       float:right;
@@ -99,3 +100,8 @@
   }
 }
 
+
+input[type="text"], input[type="submit"]{
+  -webkit-appearance: none;
+  border-radius: 0;
+}

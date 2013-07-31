@@ -117,6 +117,25 @@
       width:100%;
     }
   }
+  .wrap-carousel{
+    width:100%;
+    overflow:hidden;
+    .carousel{
+      position:relative;
+      white-space:nowrap;
+      font:{
+        size:0;
+      }
+      .item{
+        display:inline-block;
+        > a{
+          > img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
   .text{
     background:none;
   }

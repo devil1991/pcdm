@@ -47,19 +47,20 @@ a{
 %button{
   background:$red-color;
   display:inline-block;
-  padding:5px 6px 4px 26px;
+  padding:10px 40px 8px;
   >span{
-    padding-right:30px;
-    background:url(../images/arrow-white.png) 85% center no-repeat;
     display:block;
     color:$light-color;
+    letter-spacing:0.3em;
     font:{
-      size:$f-10;
+      size:$f-11;
     }
   }
   &:hover{
+    background:#cf5241;
+    text-decoration:none;
     > span{
-      background-position:95% center;
+      //background-position:95% center;
     }
   }
 }

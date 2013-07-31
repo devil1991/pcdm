@@ -4,7 +4,13 @@ body #wrapper.detail-on{
   margin:0;
   @include at-breakpoint($phone){
     @include container;
-    $grid-padding   : 1em;
+    width: auto;
+    //$grid-padding   : 1em;
+  }
+  @include at-breakpoint($phablet){
+    @include container;
+    width: auto;
+    //$grid-padding   : 1em;
   }
   .container{
     margin:0;
@@ -24,9 +30,17 @@ body #wrapper.detail-on{
   @include at-breakpoint($phone){
     @include span-columns(12, 12);
   }
+  @include at-breakpoint($phablet){
+    @include span-columns(12, 12);
+    margin-top:150px;
+  }
   .img-detail{
     width:100%;
     @include at-breakpoint($phone){
+      clear:both;
+      @include span-columns(12, 12);
+    }
+    @include at-breakpoint($phablet){
       clear:both;
       @include span-columns(12, 12);
     }
@@ -36,6 +50,13 @@ body #wrapper.detail-on{
     top:160px;
     @include span-columns(3, 12);
     @include isolate(9);
+    @include at-breakpoint($phablet){
+      position:relative;
+      top:0;
+      float:none;
+      @include span-columns(12, 12);
+      @include isolate(1);
+    }
     @include at-breakpoint($phone){
       position:relative;
       top:0;
@@ -43,14 +64,52 @@ body #wrapper.detail-on{
       @include span-columns(12, 12);
       @include isolate(1);
     }
+    .back-mobile{
+      display:none;
+      @include at-breakpoint($phone){
+        display:block;
+        text-align:center;
+        padding:1em 0;
+        border-bottom:1px solid #d6d6d6;
+        margin:0 -1em 1.5em;
+      }
+      @include at-breakpoint($phablet){
+        display:block;
+        text-align:center;
+        padding:1em 0;
+        border-bottom:1px solid #d6d6d6;
+        margin:0 -1em 1.5em;
+      }
+    }
     .paginator{
       position:relative;
       z-index:9;
+      @include pie-clearfix();
+      margin-bottom:1.5em;
       @include at-breakpoint($phone){
+        margin-bottom:0;
+        float:right;
+      }
+      @include at-breakpoint($phablet){
+        margin-bottom:0;
         float:right;
       }
       >li{
         float:left;
+        @include at-breakpoint($phone){
+          border:1px solid #d6d6d6;
+          padding:1em;
+          &:last-child{
+            margin-left:-1px;
+          }
+        }
+        @include at-breakpoint($phablet){
+          border:1px solid #d6d6d6;
+          padding:1em;
+          &:last-child{
+            margin-left:-1px;
+          }
+        }
         > a{
           text-indent:-9999px;
           display:block;
@@ -60,6 +119,12 @@ body #wrapper.detail-on{
           &.previous{
             background-position: sprite-position($sprite-set, previous-dark);
             margin-right:30px;
+            @include at-breakpoint($phone){
+              margin-right:0;
+            }
+            @include at-breakpoint($phablet){
+              margin-right:0;
+            }
           }
           &.next{
             background-position: sprite-position($sprite-set, next-dark);
@@ -85,13 +150,13 @@ body #wrapper.detail-on{
       text-transform:uppercase;
       line-height:1.2em;
       font:{
-        size:$f-12;
+        size:$f-14;
       }
     }
     .title{
       text-transform:uppercase;
       line-height:1.2em;
-      margin-bottom:30px;
+      margin-bottom:10px;
       font:{
         size:2.187em;
       }
@@ -107,9 +172,21 @@ body #wrapper.detail-on{
       margin-top:25px;
       background:url(../images/box/sep-title.jpg) left top no-repeat;
       @include span-columns(6, 12);
+      @include at-breakpoint($tablet){
+        @include span-columns(8, 12);
+      }
+      @include at-breakpoint($phablet){
+        @include span-columns(3, 12);
+      }
+      @include at-breakpoint($phone){
+        margin-bottom:1.5em;
+      }
+      @include at-breakpoint($phablet){
+        margin-bottom:1.5em;
+      }
       @include pie-clearfix();
     }
-    .back{
+    .back-collection{
       clear:both;
       padding-top:50px;
       background:url(../images/box/sep-title.jpg) left 25px no-repeat;
@@ -119,12 +196,19 @@ body #wrapper.detail-on{
       font:{
         size:$f-10;
       }
+      @include at-breakpoint($phone){
+        display:none;
+      }
+      @include at-breakpoint($phablet){
+        display:none;
+      }
     }
   }
   &.white{
     .wrap-text{
       color:#fff;
       .paginator{
+
         >li{
           > a{
             &.previous{

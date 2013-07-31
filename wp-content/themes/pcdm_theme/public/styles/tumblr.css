@@ -1,0 +1,275 @@
+@import url(fonts/fonts.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  padding: 30px;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 100%;
+}
+@media screen and (min-width: 1680px) {
+  .wrapper {
+    width: 1620px;
+    margin: 0 auto;
+  }
+}
+.ie-mediaquery-1680 .wrapper {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+#header {
+  *zoom: 1;
+  width: 100%;
+}
+#header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#header #logo {
+  width: 141px;
+  height: 133px;
+  float: left;
+}
+#header #logo > a {
+  display: block;
+  text-indent: -50000px;
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/logo.png) 0 0 no-repeat;
+  width: 141px;
+  height: 133px;
+}
+#header .description {
+  float: left;
+  width: 420px;
+  margin-left: 30px;
+}
+#header .description .title {
+  display: block;
+  text-indent: -50000px;
+  width: 240px;
+  height: 39px;
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/title.png) 0 0 no-repeat;
+}
+#header .description p {
+  color: #2c2c2c;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #2c2c2c;
+  letter-spacing: 0.1em;
+  font-family: "BodoniMTRegular", times;
+  font-size: 0.812em;
+}
+#header .description .action-bar {
+  clear: both;
+  padding-top: 15px;
+  *zoom: 1;
+}
+#header .description .action-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#header .description .action-bar .site-link {
+  height: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  float: left;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: "BodoniMTRegular", times;
+  font-size: 0.625em;
+}
+
+#search {
+  float: right;
+}
+#search input[type="text"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+  width: 150px;
+  outline: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "BodoniMTRegular", times;
+  font-size: 0.625em;
+}
+#search input[type="submit"] {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/search.png) 0 0 no-repeat;
+  width: 18px;
+  border: none;
+  height: 16px;
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+}
+.content .post {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+.content .post .photo > a {
+  display: block;
+}
+.content .post .photo img {
+  width: 100%;
+  display: block;
+  float: left;
+}
+.content .post.small {
+  width: 16.666%;
+}
+.content .post.small .hover:before {
+  padding-top: 200%;
+}
+.content .post.medium {
+  width: 33.333%;
+}
+.content .post.medium .hover:before {
+  padding-top: 100%;
+}
+.content .post.large {
+  width: 50%;
+}
+.content .post.large .hover:before {
+  padding-top: 66%;
+}
+.content .post .hover {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/bg-hover.png) 0 0 repeat;
+  top: 0;
+  bottom: 0;
+}
+.content .post .hover:before {
+  overflow: hidden;
+  content: "";
+  display: block;
+}
+.content .post .hover .wrap-text {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.content .post .hover .wrap-text .aux-text {
+  padding: 30px;
+}
+.content .post .hover .wrap-text .notes > span {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  font-size: 0.687em;
+}
+.content .post .hover .wrap-text .notes > span.number {
+  font-size: 3.8em;
+}
+
+.nav-social {
+  position: relative;
+  *zoom: 1;
+  float: right;
+}
+.nav-social:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav-social > ul > li {
+  float: left;
+  height: 20px;
+  margin-left: 7px;
+}
+.nav-social > ul > li > a {
+  width: 20px;
+  height: 20px;
+  display: block;
+  text-indent: -5000px;
+}
+.nav-social > ul > li.facebook > a {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-facebook.png) 0 0 repeat;
+}
+.nav-social > ul > li.facebook > a:hover {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-facebook-hover.png) 0 0 repeat;
+}
+.nav-social > ul > li.twitter > a {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-twitter.png) 0 0 repeat;
+}
+.nav-social > ul > li.twitter > a:hover {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-twitter-hover.png) 0 0 repeat;
+}
+.nav-social > ul > li.instagram > a {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-instagram.png) 0 0 repeat;
+}
+.nav-social > ul > li.instagram > a:hover {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-instagram-hover.png) 0 0 repeat;
+}
+.nav-social > ul > li.pinterest > a {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-pinterest.png) 0 0 repeat;
+}
+.nav-social > ul > li.pinterest > a:hover {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-pinterest-hover.png) 0 0 repeat;
+}

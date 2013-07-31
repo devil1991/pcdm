@@ -7,6 +7,8 @@ class window.MobileMenu
 		@sidebar = @ref.find '#mobile-sidebar'
 		@header = @ref.find '.header >.fixed-mobile'
 		@switch = @header.find '.open-nav'
+		@close = @ref.find '.close-menu'
+		@social = @ref.find '.nav-social'
 
 		@dur = 1
 		@is_enabled = true
@@ -18,6 +20,8 @@ class window.MobileMenu
 		@switch.bind 'click', @onSwitch
 		@header.swipe {swipe:@onHeaderSwipe, threshold:150, allowPageScroll:'vertical'}
 		@sidebar.swipe {swipe:@onSidebarSwipe, threshold:150, allowPageScroll:'vertical'}
+		@close.bind 'click', @onSwitch
+		@social.find('.label').bind 'click', ((e) => @social.find('>ul').toggleClass 'opened')
 
 	onHeaderSwipe: (e, dir) => if dir is 'right' then @onSwitch()
 
@@ -42,11 +46,13 @@ class window.MobileMenu
 
 		@aux.addClass 'sidebar-open'
 		TweenLite.to @aux, @dur, {css:{'left':'0'}, ease:Power4.easeInOut, onComplete:(=>
+			@close.show()
 			@is_enabled = true
 		)}
 
 	closeAux: =>
 
+		@close.hide()
 		TweenLite.to @aux, @dur, {css:{'left':'-90%'}, ease:Power4.easeInOut, onComplete:(=>
 			@aux.removeClass 'sidebar-open'
 			@is_enabled = true

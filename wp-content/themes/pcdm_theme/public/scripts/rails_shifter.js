@@ -16,6 +16,7 @@
       this.images_tot = this.images.length;
       this.images_loaded = 0;
       this.top = this.rail_1.offset().top;
+      this.is_enabled = false;
       this.preloadImages();
     }
 
@@ -36,7 +37,8 @@
     RailsShifter.prototype.onImageLoaded = function() {
       this.images_loaded++;
       if (this.images_loaded === this.images_tot) {
-        return this.resetBreakpoints();
+        this.resetBreakpoints();
+        return this.is_enabled = true;
       }
     };
 
@@ -47,27 +49,31 @@
     };
 
     RailsShifter.prototype.onScroll = function(val) {
-      if (val > this.breakpoint_1) {
-        if (!this.rail_1.hasClass('more-affracchievole')) {
-          this.rail_1.addClass('more-affracchievole');
-        }
-        if (val < this.breakpoint_2) {
-          return this.rail_1.css({
-            top: "" + (val - this.acc * (val - this.breakpoint_1)) + "px"
-          });
-        }
-      } else {
-        if (this.rail_1.hasClass('more-affracchievole')) {
-          this.rail_1.removeClass('more-affracchievole');
-          return this.rail_1.css({
-            top: "" + this.top + "px"
-          });
+      if (this.is_enabled) {
+        if (val > this.breakpoint_1) {
+          if (!this.rail_1.hasClass('more-affracchievole')) {
+            this.rail_1.addClass('more-affracchievole');
+          }
+          if (val < this.breakpoint_2) {
+            return this.rail_1.css({
+              top: "" + (val - this.acc * (val - this.breakpoint_1)) + "px"
+            });
+          }
+        } else {
+          if (this.rail_1.hasClass('more-affracchievole')) {
+            this.rail_1.removeClass('more-affracchievole');
+            return this.rail_1.css({
+              top: "" + this.top + "px"
+            });
+          }
         }
       }
     };
 
     RailsShifter.prototype.onResize = function() {
-      return this.resetBreakpoints();
+      if (this.is_enabled) {
+        return this.resetBreakpoints();
+      }
     };
 
     return RailsShifter;

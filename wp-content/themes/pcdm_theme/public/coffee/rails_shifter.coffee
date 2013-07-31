@@ -10,9 +10,10 @@ class window.RailsShifter
 
     @images = @ref.find 'img'
     @images_tot = @images.length
-    @images_loaded = 0 
+    @images_loaded = 0
 
     @top = @rail_1.offset().top
+    @is_enabled = false 
 
     @preloadImages()
 
@@ -32,7 +33,9 @@ class window.RailsShifter
   onImageLoaded: =>
 
     @images_loaded++
-    if @images_loaded is @images_tot then @resetBreakpoints()
+    if @images_loaded is @images_tot
+      @resetBreakpoints()
+      @is_enabled = true
 
   resetBreakpoints: ->
 
@@ -44,17 +47,19 @@ class window.RailsShifter
   onScroll: (val) =>
 
     #console.log val
+
+    if @is_enabled
     
-    if val > @breakpoint_1
-      unless @rail_1.hasClass 'more-affracchievole' then @rail_1.addClass 'more-affracchievole'
-      if val < @breakpoint_2
-        @rail_1.css {top:"#{val - @acc * (val - @breakpoint_1)}px"}
-    else
-      if @rail_1.hasClass 'more-affracchievole'
-        @rail_1.removeClass 'more-affracchievole'
-        @rail_1.css {top:"#{@top}px"}
+      if val > @breakpoint_1
+        unless @rail_1.hasClass 'more-affracchievole' then @rail_1.addClass 'more-affracchievole'
+        if val < @breakpoint_2
+          @rail_1.css {top:"#{val - @acc * (val - @breakpoint_1)}px"}
+      else
+        if @rail_1.hasClass 'more-affracchievole'
+          @rail_1.removeClass 'more-affracchievole'
+          @rail_1.css {top:"#{@top}px"}
 
     # TODO: JS: gestire caso in cui non riesce a leggere passaggio da breakpoint2 (vedi scroll molto veloce) #
 
-  onResize: => @resetBreakpoints()
+  onResize: => if @is_enabled then @resetBreakpoints()
 

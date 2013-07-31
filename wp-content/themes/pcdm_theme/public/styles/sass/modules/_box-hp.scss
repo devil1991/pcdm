@@ -140,7 +140,7 @@
       }
     }
     @include at-breakpoint($tablet) {
-      &.big, &.medium, &.medium.dx, &.small{
+      &.big{
         position:relative;
         @include span-columns(12 omega, 12);
         &:last-child{
@@ -150,10 +150,112 @@
           @include span-columns(12 omega, 12);
         }
         .box-img{
+          @include span-columns(10 omega, 12);
+        }
+        .wrap-text{
+          @include span-columns(2, 12);
+        }
+      }
+      &.medium, &.medium.dx, &.small{
+        position:relative;
+        @include span-columns(12 omega, 12);
+        &:last-child{
+          @include span-columns(12 omega, 12);
+        }
+        &.last-child{
+          @include span-columns(12 omega, 12);
+        }
+        &.even-child{
+          .box-img{
+            @include span-columns(8, 12);
+          }
+          .wrap-text{
+            @include span-columns(4 omega, 12);
+            right:-1em;
+            text-align:left;
+            .wrap-more{
+              background-position:left top;
+            }
+          }
+        }
+        .box-img{
           @include span-columns(8 omega, 12);
         }
         .wrap-text{
           @include span-columns(4, 12);
+          position:absolute;
+          padding-right:2%;
+          text-align:right;
+          bottom:10px;
+          margin:0;
+          header{
+            float:none;
+            margin:0!important;
+          }
+          .number{
+            line-height:1em;
+            right:0;
+            margin:0!important;
+            font:{
+              size:5em;
+            }
+          }
+          .title{
+            line-height:1.2em;
+            font:{
+              size:1.25em;//20px
+            }
+          }
+          .wrap-more{
+            background-position:right top;
+          }
+        }
+      }
+      &.big{
+        .wrap-text{
+          .number{
+            font:{
+              size:8em;
+            }
+          }
+          .title{
+            font:{
+              size:2.5em;
+            }
+          }
+        }
+      }
+      &.empty{
+        display:none;
+      }
+    }
+    @include at-breakpoint($phablet) {
+      &.medium, &.small{
+        position:relative;
+        @include span-columns(12 omega, 12);
+        &:last-child{
+          @include span-columns(12 omega, 12);
+        }
+        &.last-child{
+          @include span-columns(12 omega, 12);
+        }
+        &.even-child{
+          .box-img{
+            @include span-columns(6, 12);
+          }
+          .wrap-text{
+            @include span-columns(6 omega, 12);
+            text-align:left;
+            .wrap-more{
+              background-position:left top;
+            }
+          }
+        }
+        .box-img{
+          @include span-columns(6 omega, 12);
+        }
+        .wrap-text{
+          @include span-columns(6, 12);
           position:absolute;
           padding-right:2%;
           text-align:right;

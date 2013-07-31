@@ -124,7 +124,7 @@
               }
               @include at-breakpoint($phablet) {
                 font:{
-                  size:0.612em;
+                  size:0.55em;
                 }
               }
               &.active{
@@ -132,6 +132,9 @@
               }
             }
             &.dropdown{
+              > a:hover{
+                color:$light-color;
+              }
               z-index:9;
               .wrap-dropdown-menu{
                 display:none;
@@ -208,7 +211,58 @@
         @include span-columns(2 omega, 12);
         @include pie-clearfix();
         @include at-breakpoint($tablet) {
+          //overflow:hidden;
           @include pre(0);
+        }
+        .label{
+          @include at-breakpoint($phablet){
+            cursor:pointer;
+            display:block;
+            width:70px;
+            text-align:center;
+          }
+        }
+        > ul{
+          @include at-breakpoint($phablet){
+            position:absolute;
+            width:70px;
+            text-align:center;
+            right:0;
+            top:28px;
+            background:#fff;
+            padding:10px;
+            border-bottom:1px solid #000;
+            border-left:1px solid #000;
+            border-right:1px solid #000;
+            @include opacity(0);
+            @include transition(all 0.3s ease-out);
+            &.opened{
+              @include opacity(1);
+            }
+          }
+          > li{
+            @include at-breakpoint($phablet){
+              @include reset-columns;
+              float:none;
+              display:block;
+              margin:0 auto 15px;
+              width:20px;
+            }
+            &:last-child{
+              @include at-breakpoint($phablet){
+                @include reset-columns;
+                width:20px;
+                margin-bottom:0;
+              }
+            }
+            &.last-child{
+              @include at-breakpoint($phablet){
+                @include reset-columns;
+                width:20px;
+                margin-bottom:0;
+              }
+            }
+          }
         }
       }
     }
@@ -238,8 +292,7 @@
       }
     }
     @include at-breakpoint($max-screen) {
-      width:100%;
-      margin:0 auto;
+
     }
     //left:50%;
     .logo, .choose-language{

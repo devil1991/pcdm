@@ -3,8 +3,12 @@
   //display:block;
   width:100%;
   position:absolute;
+  @include at-breakpoint($phone){
+    position:fixed;
+  }
   top:0;
   left:0;
+  bottom:0;
   background: url("../images/bg-overlay.png") 0 0 repeat;
   height:100%;
   z-index:9999;
@@ -19,6 +23,12 @@
     &.small{
       width:375px;
       margin-left:-187px;
+      @include at-breakpoint($phone){
+        width:96%;
+        margin-left:0;
+        left:0;
+        padding:2%;
+      }
     }
     &.medium{
       width:500px;

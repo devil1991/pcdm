@@ -140,10 +140,11 @@
     };
 
     Collection.prototype.dismantleGrid = function() {
-      var delay, i, item, _i, _ref;
+      var current_index, delay, i, item, _i, _ref;
+      current_index = this.getCurrentIndex();
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
-        delay = Math.max(.25 * (this.current_id - i), 0);
+        delay = Math.max(.25 * (current_index - i), 0);
         TweenLite.to(item, 1, {
           css: {
             'opacity': '0'
@@ -169,10 +170,11 @@
     };
 
     Collection.prototype.rebuildGrid = function() {
-      var delay, i, item, _i, _ref;
+      var current_index, delay, i, item, _i, _ref;
+      current_index = this.getCurrentIndex();
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
-        delay = Math.min(Math.max(.25 * (i + 5 - this.current_id), 0), 2);
+        delay = Math.min(Math.max(.25 * (i + 5 - current_index), 0), 2);
         TweenLite.to(item, 1, {
           css: {
             'opacity': '1'
@@ -206,9 +208,22 @@
         item = this.items_array[i];
         if (item.id === this.current_id) {
           offset = item.offset;
+          break;
         }
       }
       return offset;
+    };
+
+    Collection.prototype.getCurrentIndex = function() {
+      var i, index, item, _i, _ref;
+      index = 0;
+      for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
+        item = this.items_array[i];
+        if (item.id === this.current_id) {
+          index = i;
+        }
+      }
+      return index;
     };
 
     Collection.prototype.setDetails = function() {

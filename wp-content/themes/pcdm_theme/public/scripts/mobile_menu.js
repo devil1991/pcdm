@@ -15,23 +15,30 @@
       this.sidebar = this.ref.find('#mobile-sidebar');
       this.header = this.ref.find('.header >.fixed-mobile');
       this["switch"] = this.header.find('.open-nav');
+      this.close = this.ref.find('.close-menu');
+      this.social = this.ref.find('.nav-social');
       this.dur = 1;
       this.is_enabled = true;
       this.setInteractions();
     }
 
     MobileMenu.prototype.setInteractions = function() {
+      var _this = this;
       this["switch"].bind('click', this.onSwitch);
       this.header.swipe({
         swipe: this.onHeaderSwipe,
         threshold: 150,
         allowPageScroll: 'vertical'
       });
-      return this.sidebar.swipe({
+      this.sidebar.swipe({
         swipe: this.onSidebarSwipe,
         threshold: 150,
         allowPageScroll: 'vertical'
       });
+      this.close.bind('click', this.onSwitch);
+      return this.social.find('.label').bind('click', (function(e) {
+        return _this.social.find('>ul').toggleClass('opened');
+      }));
     };
 
     MobileMenu.prototype.onHeaderSwipe = function(e, dir) {
@@ -79,6 +86,7 @@
         },
         ease: Power4.easeInOut,
         onComplete: (function() {
+          _this.close.show();
           return _this.is_enabled = true;
         })
       });
@@ -86,6 +94,7 @@
 
     MobileMenu.prototype.closeAux = function() {
       var _this = this;
+      this.close.hide();
       return TweenLite.to(this.aux, this.dur, {
         css: {
           'left': '-90%'

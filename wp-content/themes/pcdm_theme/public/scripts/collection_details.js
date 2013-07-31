@@ -140,7 +140,7 @@
     CollectionDetails.prototype.onDataLoaded = function(json) {
       var src;
       this.data = json.details;
-      src = is_smartphone ? this.data.img_mobile : this.data.img;
+      src = is_phablet ? this.data.img_mobile : this.data.img;
       return this.loadImage(src);
     };
 
@@ -207,7 +207,7 @@
 
     CollectionDetails.prototype.onResize = function(window_w, window_h) {
       var img_h, img_w, ref_h, ref_w;
-      if (!is_smartphone) {
+      if (!is_phablet) {
         if (window_w !== void 0) {
           this.ref.width(window_w);
           this.ref.height(window_h);

@@ -1,3 +1,12 @@
+.close-menu{
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  width:10%;
+  z-index:99999;
+  display:none;
+}
 #mobile-sidebar{
   background:#2c2c2c;
   float:left;

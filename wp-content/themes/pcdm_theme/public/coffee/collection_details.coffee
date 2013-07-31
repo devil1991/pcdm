@@ -117,7 +117,7 @@ class window.CollectionDetails
 	onDataLoaded: (json) =>
 
 		@data = json.details
-		src = if is_smartphone then @data.img_mobile else @data.img
+		src = if is_phablet then @data.img_mobile else @data.img
 		@loadImage src
 
 	onDataError: =>
@@ -180,7 +180,7 @@ class window.CollectionDetails
 
 	onResize: (window_w, window_h) =>
 
-		unless is_smartphone
+		unless is_phablet
 			if window_w isnt undefined
 				@ref.width window_w
 				@ref.height window_h

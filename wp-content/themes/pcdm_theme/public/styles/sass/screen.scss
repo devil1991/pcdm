@@ -24,6 +24,10 @@
 @import "modules/video";
 @import "modules/mobile-sidebar";
 @import "modules/contacts";
+@import "modules/accordion";
+@import "modules/store-list";
+@import "modules/pag-404";
+
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
@@ -33,11 +37,4 @@ body{
     size:16px;
     family:$font-regular;
   }
-
-}
-
-
-#wrapper {
-  @include container;
-  $container-style: fluid;
 }

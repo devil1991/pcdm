@@ -1,5 +1,8 @@
 .wrap-video{
   @include span-columns(12 omega, 12);
+  @include at-breakpoint($tablet) {
+    padding-top:70px;
+  }
   .video-list{
     .item-video{
       margin-bottom:1em;

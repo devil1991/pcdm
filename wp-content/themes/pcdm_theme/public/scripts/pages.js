@@ -7,7 +7,7 @@
   }
 
   $(function() {
-    var body_simulator_ref, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, header_menu, header_menu_ref, i, last_child, last_child_container, mobile_menu, newsletter, onWindowResize, onWindowScroll, overlay_ref, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, sharing_modules, smartphone_breakpoint, video_list_ref, video_manager, window_ref, _i, _j, _k, _len, _ref, _ref1, _ref2,
+    var accordion, accordion_ref, body_simulator_ref, carousel, carousel_ref, cnt, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, fourth_child, fourth_children, fourth_children_container, header_menu, header_menu_ref, i, ie_mediaquery, j, last_child, last_child_container, mobile_menu, newsletter, onWindowResize, onWindowScroll, overlay_ref, phablet_breakpoint, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, sharing_modules, smartphone_breakpoint, video_list_ref, video_manager, window_ref, _i, _j, _k, _l, _len, _len1, _len2, _m, _n, _o, _p, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
       _this = this;
     window_ref = $(window);
     window.is_ie = $.browser.msie;
@@ -16,9 +16,14 @@
     window.is_iphone = navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) ? true : false;
     window.is_ipad = navigator.userAgent.match(/iPad/i) ? true : false;
     window.is_android = navigator.userAgent.match(/Android/i) ? true : false;
+    phablet_breakpoint = 960;
     smartphone_breakpoint = 560;
+    window.is_phablet = is_mobile && (window.screen.width < phablet_breakpoint);
     window.is_smartphone = is_mobile && (window.screen.width < smartphone_breakpoint);
     window.event_emitter = new EventEmitter();
+    if (is_ie && $.browser.version < 9) {
+      ie_mediaquery = new IEMediaquery();
+    }
     window.small_header_height = 120;
     header_menu_ref = $('.header');
     if (header_menu_ref.length === 1) {
@@ -39,24 +44,48 @@
         rails_shifter = new RailsShifter(rails_shifter_ref);
       }
     }
+    _ref = $('.wrap-carousel');
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      carousel = _ref[_i];
+      carousel_ref = $(carousel);
+      new CarouselFull(carousel_ref);
+    }
     filtered_grid_ref = $('.js-filtered-grid');
     if (filtered_grid_ref.length === 1) {
       filtered_grid = new FilteredGrid(filtered_grid_ref);
     }
     if (is_ie && $.browser.version < 9) {
-      _ref = $('.js-last-child');
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        last_child_container = _ref[_i];
+      _ref1 = $('.js-last-child');
+      for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
+        last_child_container = _ref1[_j];
         last_child = $(last_child_container).children().last();
         last_child.addClass('last-child');
       }
-      even_children_container = $('.js-even-children');
-      if (even_children_container.length === 1) {
-        even_children = even_children_container.children();
-        for (i = _j = 0, _ref1 = even_children.length; 0 <= _ref1 ? _j < _ref1 : _j > _ref1; i = 0 <= _ref1 ? ++_j : --_j) {
-          if (i % 2 === 1) {
-            even_child = $(even_children[i]);
-            even_child.addClass('even-child');
+      fourth_children_container = $('.js-fourth-children');
+      if (fourth_children_container.length > 0) {
+        for (i = _k = 0, _ref2 = fourth_children_container.length; 0 <= _ref2 ? _k < _ref2 : _k > _ref2; i = 0 <= _ref2 ? ++_k : --_k) {
+          fourth_children = $(fourth_children_container[i]).children();
+          for (j = _l = 0, _ref3 = fourth_children.length; 0 <= _ref3 ? _l < _ref3 : _l > _ref3; j = 0 <= _ref3 ? ++_l : --_l) {
+            if ((j + 1) % 4 === 0) {
+              fourth_child = $(fourth_children[j]);
+              fourth_child.addClass('fourth-child');
+            }
+          }
+        }
+      }
+    }
+    even_children_container = $('.js-even-children');
+    if (even_children_container.length > 0) {
+      for (i = _m = 0, _ref4 = even_children_container.length; 0 <= _ref4 ? _m < _ref4 : _m > _ref4; i = 0 <= _ref4 ? ++_m : --_m) {
+        even_children = $(even_children_container[i]).children();
+        cnt = 0;
+        for (j = _n = 0, _ref5 = even_children.length; 0 <= _ref5 ? _n < _ref5 : _n > _ref5; j = 0 <= _ref5 ? ++_n : --_n) {
+          even_child = $(even_children[j]);
+          if (!even_child.hasClass('empty')) {
+            if (cnt % 2 === 1) {
+              even_child.addClass('even-child');
+            }
+            cnt++;
           }
         }
       }
@@ -64,6 +93,12 @@
     columnist_ref = $('.js-columnist');
     if (columnist_ref.length === 1) {
       columnist = new Columnist(columnist_ref);
+    }
+    _ref6 = $('.accordion');
+    for (_o = 0, _len2 = _ref6.length; _o < _len2; _o++) {
+      accordion = _ref6[_o];
+      accordion_ref = $(accordion);
+      new Accordion(accordion_ref);
     }
     video_list_ref = $('.video-list');
     if (video_list_ref.length === 1) {
@@ -86,7 +121,7 @@
     }
     sharing_modules = $('.js-sharing');
     if (sharing_modules.length > 0) {
-      for (i = _k = 0, _ref2 = sharing_modules.length; 0 <= _ref2 ? _k < _ref2 : _k > _ref2; i = 0 <= _ref2 ? ++_k : --_k) {
+      for (i = _p = 0, _ref7 = sharing_modules.length; 0 <= _ref7 ? _p < _ref7 : _p > _ref7; i = 0 <= _ref7 ? ++_p : --_p) {
         if (!$(sharing_modules[i]).hasClass('link')) {
           new SocialSharing($(sharing_modules[i]));
         }
@@ -114,7 +149,13 @@
         collection.onResize(window_w, window_h);
       }
       if (columnist != null) {
-        return columnist.onResize(window_w, window_h);
+        columnist.onResize(window_w, window_h);
+      }
+      if (ie_mediaquery != null) {
+        ie_mediaquery.onResize(window_w);
+      }
+      if (overlay_ref != null) {
+        return overlay_ref.height($(document).height());
       }
     };
     window_ref.resize(onWindowResize);

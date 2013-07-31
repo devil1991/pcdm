@@ -20,14 +20,15 @@ $f-19 : 1.187em;
 $f-20 : 1.25em;
 $f-23 : 1.43em;
 $f-28 : 1.75em;
+$f-30 : 1.875em;
 $f-40 : 2.5em;
 
 
 //font-family
 
-$font-regular : "BodoniMTRegular", times;
-$font-italic : "BodoniMTItalic", times;
-$font-bold : "BodoniMTBold", times;
+$font-regular : "Conv_BauerBodoniStd-Roman", times;
+$font-italic : "Conv_BauerBodoniStd-Italic", times;
+$font-bold : "Conv_BauerBodoniStd-Bold", times;
 
 
 //colors
@@ -62,3 +63,6 @@ $sprite-set: sprite-map("sprite-set/*.png");
 //}
 
 
+.canvas-img{
+  @include span-columns (12, 12);
+}

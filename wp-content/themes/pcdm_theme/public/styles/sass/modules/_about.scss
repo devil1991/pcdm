@@ -9,10 +9,19 @@
     left: 1em;
     right: 1em;
     text-align: center; // this may not be needed.
+    @include at-breakpoint($phablet) {
+      position:relative;
+      left:0;
+    }
+    @include at-breakpoint($tablet) {
+      position:relative;
+      left:0;
+    }
     @include at-breakpoint($phone) {
       position:relative;
       left:0;
     }
+
     &.more-affracchievole{
       position:relative;
       left: 0;
@@ -77,10 +86,16 @@
       @include at-breakpoint($phone) {
         @include span-columns(6, 6);
       }
+      @include at-breakpoint($phablet) {
+        @include span-columns(6, 6);
+      }
     }
     .deco-4{
       @include span-columns(3 omega , 6);
       @include at-breakpoint($phone) {
+        display:none;
+      }
+      @include at-breakpoint($phablet) {
         display:none;
       }
     }
@@ -92,11 +107,17 @@
       @include at-breakpoint($phone) {
         display:none;
       }
+      @include at-breakpoint($phablet) {
+        display:none;
+      }
     }
     .creative-vision{
       @include span-columns(3 omega, 6);
       @include at-breakpoint($phone) {
         @include span-columns(12, 12);
+      }
+      @include at-breakpoint($phablet) {
+        @include span-columns(6, 6);
       }
       &.no-mobile{
         display:block;
@@ -156,6 +177,17 @@
     margin:1.5em 0;
     background:url(../images/box/sep-title.jpg) left top no-repeat;
     @include span-columns(2, 3);
+    @include at-breakpoint($phone){
+      @include span-columns(6, 12);
+      >ul{
+        >li{
+          @include span-columns(1, 5);
+        }
+      }
+    }
+    @include at-breakpoint($phablet){
+      @include span-columns(1, 3);
+    }
     @include pie-clearfix();
   }
   .subtitle{

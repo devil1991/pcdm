@@ -1,0 +1,92 @@
+.wrap-store{
+  .store-list{
+    clear:both;
+    padding:2em 0;
+    width:980px;
+    @include at-breakpoint($phablet){
+      width:680px;
+    }
+    @include at-breakpoint($phone){
+      width:100%;
+    }
+    margin: 0 auto;
+    .wrap-continent{
+     margin-bottom:3em;
+    }
+    .continent{
+      padding:10px 0;
+      text-transform:uppercase;
+      font:{
+        size:$f-30;
+      }
+    }
+    .country{
+      padding:10px 0;
+      text-transform:uppercase;
+      font:{
+        size:$f-18;
+      }
+    }
+    .wrap-item{
+      padding:1.5em 0;
+      @include pie-clearfix;
+      $container-width: 980px;
+      $gutter-width   : 1em;
+      $grid-padding   : 0em;
+      @include container;
+      @include at-breakpoint($phone){
+        $grid-padding   : 0em;
+        padding:0.5em 0;
+        @include container;
+      }
+      .item{
+        @include span-columns(1, 4);
+        background:url(../images/sep-store.jpg) right top repeat-y;
+        &:nth-child(4n) { @include omega; }
+        &.fourth-child { @include omega; }
+        padding-bottom:1.5em;
+        height:150px;
+        @include at-breakpoint($phone){
+          background:url(../images/sep-store-mobile.jpg) left bottom repeat-x;
+          height:auto;
+          @include reset-columns;
+          @include span-columns(1, 1);
+          margin-bottom:1.5em;
+          &:nth-child(1n) { @include omega; }
+        }
+        padding-bottom:1.5em;
+        > p{
+          > span{
+            display:block;
+            @include at-breakpoint($phone){
+              display:inline;
+              &.name{
+                display:block;
+              }
+            }
+            line-height:1.5em;
+            font:{
+              size:$f-12;
+              family:Georgia;
+              style:italic;
+            }
+            &.name{
+              font:{
+                size:$f-13;
+              }
+            }
+          }
+        }
+        .view-map{
+          display:inline-block;
+          margin-top:1em;
+          padding:0px 5px;
+          border:1px solid #e4e4e4;
+          font:{
+            size:$f-10;
+          }
+        }
+      }
+    }
+  }
+}

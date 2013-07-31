@@ -10,9 +10,6 @@
     font:{
       size:$f-11;
     }
-    @include at-breakpoint($phablet){
-      display:block;
-    }
   }
   .title-share{
     text-transform:uppercase;
@@ -23,37 +20,18 @@
     }
   }
   > ul{
-    @include at-breakpoint($phablet){
-      position:absolute;
-      left:0;
-      top:25px;
-      background:#2c2c2c;
-      padding:10px;
-    }
     > li{
       float:left;
       @include span-columns(1, 5);
-      @include at-breakpoint($phablet){
-        @include span-columns(1, 1);
-        float:none;
-        display:block;
-        margin-bottom:7px;
-      }
       height:20px;
       //margin-left:15px;
       &:last-child{
         margin:0;
         @include span-columns(1 omega, 5);
-        @include at-breakpoint($phablet){
-          @include span-columns(1, 1);
-        }
       }
       &.last-child{
         margin:0;
         @include span-columns(1 omega, 5);
-        @include at-breakpoint($phablet){
-          @include span-columns(1, 1);
-        }
       }
       #mobile-sidebar &{
         @include reset-columns;

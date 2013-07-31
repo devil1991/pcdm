@@ -15,7 +15,10 @@ $ ->
   window.is_ipad = if navigator.userAgent.match(/iPad/i) then true else false
   window.is_android = if navigator.userAgent.match(/Android/i) then true else false
 
+  phablet_breakpoint = 960
   smartphone_breakpoint = 560
+
+  window.is_phablet = is_mobile and (window.screen.width < phablet_breakpoint)
   window.is_smartphone = is_mobile and (window.screen.width < smartphone_breakpoint)
 
   ###############
@@ -30,6 +33,12 @@ $ ->
 
   # if is_mobile
   #   $('body').addClass 'mobile'
+
+  ###############
+  # IE MEDIAQUERY
+  ###############
+
+  if is_ie and $.browser.version < 9 then ie_mediaquery = new IEMediaquery()
 
   #############
   # HEADER MENU
@@ -67,6 +76,14 @@ $ ->
     if rails_shifter_ref.length is 1
       rails_shifter = new RailsShifter rails_shifter_ref
 
+  ##########
+  # CAROUSEL
+  ##########
+
+  for carousel in $ '.wrap-carousel'
+    carousel_ref = $ carousel
+    new CarouselFull carousel_ref
+
   ###############
   # FILTERED GRID
   ###############
@@ -85,13 +102,25 @@ $ ->
       last_child = $(last_child_container).children().last()
       last_child.addClass 'last-child'
 
-    even_children_container = $ '.js-even-children'
-    if even_children_container.length is 1
-      even_children = even_children_container.children()
-      for i in [0...even_children.length]
-        if i % 2 is 1
-          even_child = $ even_children[i]
-          even_child.addClass 'even-child'
+    fourth_children_container = $ '.js-fourth-children'
+    if fourth_children_container.length > 0
+      for i in [0...fourth_children_container.length]
+        fourth_children = $(fourth_children_container[i]).children()
+        for j in [0...fourth_children.length]
+          if (j + 1) % 4 is 0
+            fourth_child = $ fourth_children[j]
+            fourth_child.addClass 'fourth-child'
+
+  even_children_container = $ '.js-even-children'
+  if even_children_container.length > 0
+    for i in [0...even_children_container.length]
+      even_children = $(even_children_container[i]).children()
+      cnt = 0
+      for j in [0...even_children.length]
+        even_child = $ even_children[j]
+        unless even_child.hasClass 'empty'
+          if cnt % 2 is 1 then even_child.addClass 'even-child'
+          cnt++
 
   ###########
   # COLUMNIST
@@ -100,6 +129,14 @@ $ ->
   columnist_ref = $ '.js-columnist'
   if columnist_ref.length is 1
     columnist = new Columnist columnist_ref
+
+  ###########
+  # ACCORDION
+  ###########
+
+  for accordion in $ '.accordion'
+    accordion_ref = $ accordion
+    new Accordion accordion_ref
 
   ###############
   # VIDEO MANAGER
@@ -120,11 +157,11 @@ $ ->
     newsletter = overlay_ref.find '.newsletter'
     if newsletter.length is 1 then new Newsletter newsletter
 
-    $('.footer a.subscribe').bind 'click', ((e) => 
+    $('.footer a.subscribe').bind 'click', ((e) =>
       e.preventDefault()
       overlay_ref.show()
     )
-    overlay_ref.find('.close').bind 'click', ((e) => 
+    overlay_ref.find('.close').bind 'click', ((e) =>
       e.preventDefault()
       overlay_ref.hide()
     )
@@ -134,7 +171,7 @@ $ ->
   ################
 
   # TODO: HTML - attribuire classe 'link' a oggetti social solo link #
-  
+
   sharing_modules = $ '.js-sharing'
   if sharing_modules.length > 0
     for i in [0...sharing_modules.length]
@@ -166,6 +203,8 @@ $ ->
     if rails_shifter? then rails_shifter.onResize()
     if collection? then collection.onResize window_w, window_h
     if columnist? then columnist.onResize window_w, window_h
+    if ie_mediaquery? then ie_mediaquery.onResize window_w
+    if overlay_ref? then overlay_ref.height $(document).height()
 
   window_ref.resize onWindowResize
   onWindowResize()

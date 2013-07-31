@@ -18,7 +18,7 @@ if (isset($polylang)){
     <!--<![endif]-->
     <head>
         <meta charset="<?php bloginfo('charset'); ?>" />
-        <title><?php wp_title('|', true, 'right'); ?></title>   
+        <title><?php echo pcdm_filter_wp_title(); ?></title>   
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -57,12 +57,18 @@ if (isset($polylang)){
                     </div>
               </li>
               <li>
-                <a href="/about" title="">About</a>
+                <?php 
+                  $_about_page = get_page_by_title("About" );
+                  $_about_page_tr = get_page( pll_get_post($_about_page->ID, pll_current_language()) );
+                  ?>
+                  <a href="<?php echo get_page_link($_about_page_tr->ID);?>" title="<?php echo $_about_page_tr->post_title;?>">
+                      <?php echo $_about_page_tr->post_title;?>
+                  </a>
               </li>
-              <li><a href="/videos" title="">Videos</a></li>
-              <li><a href="" title="">Diary</a></li>
-              <li><a href="/news" title="">News</a></li>
-              <li><a href="" title="">shop online</a></li>
+              <li><a href="/videos" title=""><?php _e('Videos')?></a></li>
+              <li><a href="" title=""><?php _e('Diary')?></a></li>
+              <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
+              <li><a href="" title=""><?php _e('shop online')?></a></li>
             </ul>
           </nav>
           <nav class="choose-language">
@@ -169,7 +175,7 @@ if (isset($polylang)){
                     </div>
                 </div>
               <a href="<?php echo get_bloginfo('url')?>" class="logo"><img src="<?php echo pcdm_get_theme_resource('images/header/logo.png'); ?>" alt=""></a>
-                <a class="logo-small"><img src="<?php echo pcdm_get_theme_resource('images/header/logo-small.png'); ?>" alt=""></a>
+                <a href ="<?php echo get_bloginfo('url')?>" class="logo-small"><img src="<?php echo pcdm_get_theme_resource('images/header/logo-small.png'); ?>" alt=""></a>
             </header>	
 
             <div class="container">

@@ -4,25 +4,25 @@ define('DS', '/');
 define('SKIN_SUBDIR', 'public');
 define('PCDM_BASE_URL', get_bloginfo('url'));
 
-add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails');
 
 function pcdm_get_hp_elements() {
-  //massimo peso in HP
+//massimo peso in HP
   $max_fill_hp = 12;
-  //i pesi dei differenti template per gli elementi HP
+//i pesi dei differenti template per gli elementi HP
   $home_tpls_weights = array(
       PcdmHomeElement::TPL_LARGE => 12,
       PcdmHomeElement::TPL_MEDIUM => 9,
       PcdmHomeElement::TPL_SMALL => 3,
       'void' => 3,
   );
-  //mi creo una struttura dati per ritornare gli elementi da mostrare
+//mi creo una struttura dati per ritornare gli elementi da mostrare
   $res = array(
       0 => array(
           'filled' => 0
       )
   );
-  //costruisco la query per recuperare gli elementi in HP
+//costruisco la query per recuperare gli elementi in HP
   $hp_element_query = array(
       'posts_per_page' => -1,
       'offset' => 0,
@@ -37,26 +37,26 @@ function pcdm_get_hp_elements() {
       'post_status' => 'publish'
   );
 
-  //ciclo sugli elementi
+//ciclo sugli elementi
   foreach (get_posts($hp_element_query) as $p) {
-    //recupero i meta dati per questo post
+//recupero i meta dati per questo post
     $meta = get_post_meta($p->ID);
-    //recupero il template di questo elemento HP
+//recupero il template di questo elemento HP
     $template = isset($meta[PcdmHomeElement::TYPE_PREFIX . 'hp_template']) ? $meta[PcdmHomeElement::TYPE_PREFIX . 'hp_template'][0] : PcdmHomeElement::TPL_LARGE;
-    //ne controllo il peso
+//ne controllo il peso
     $template_weight = $home_tpls_weights[$template];
     if ($meta[PcdmHomeElement::TYPE_PREFIX . 'void_after'][0] == 'on') {
       $template_weight += $home_tpls_weights['void'];
     }
-    //fallback di controllo
+//fallback di controllo
     $template_weight = ($template_weight > $max_fill_hp) ? $max_fill_hp : $template_weight;
-    //controllo se c'e' ancora dello spazio per inserire dei contenuti
+//controllo se c'e' ancora dello spazio per inserire dei contenuti
     if ($res[count($res) - 1]['filled'] + $template_weight <= $max_fill_hp) {
-      //se c'e ancora spazio per inserire
+//se c'e ancora spazio per inserire
       $res[count($res) - 1]['products'][] = packHpElement($p, $meta);
       $res[count($res) - 1]['filled']+=$template_weight;
     } else {
-      //altrimenti creo un altro spazio
+//altrimenti creo un altro spazio
       $res [] = array(
           'products' => array(packHpElement($p, $meta)),
           'filled' => $template_weight
@@ -109,21 +109,21 @@ function pcdm_get_home_element_class($element) {
 }
 
 function pcdm_get_home_link($element) {
-  if(!is_null($element[PcdmHomeElement::TYPE_PREFIX . 'hp_link']) ){
+  if (!is_null($element[PcdmHomeElement::TYPE_PREFIX . 'hp_link'])) {
     $hp_link = $element[PcdmHomeElement::TYPE_PREFIX . 'hp_link'];
-    if(preg_match('|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i', $hp_link)){
+    if (preg_match('|^http(s)?://[a-z0-9-]+(.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i', $hp_link)) {
       return $hp_link;
-    }else{
-      return get_bloginfo('url')."/".ltrim($hp_link,"/");
+    } else {
+      return get_bloginfo('url') . "/" . ltrim($hp_link, "/");
     }
   }
   return "";
 }
 
 function pcdm_get_news_archive() {
-  //massimo peso in HP
+//massimo peso in HP
   $max_fill_news_block = 2;
-  //i pesi dei differenti template per gli elementi HP
+//i pesi dei differenti template per gli elementi HP
   $news_tpls_weights = array(
       PcdmNews::TPL_LARGE => 2,
       PcdmNews::TPL_SMALL => 1,
@@ -152,11 +152,11 @@ function pcdm_get_news_archive() {
     $template_weight = $news_tpls_weights[$template];
 
     if ($res[count($res) - 1]['filled'] + $template_weight <= $max_fill_news_block) {
-      //se c'e ancora spazio per inserire
+//se c'e ancora spazio per inserire
       $res[count($res) - 1]['news'][] = pack_news($p, $meta);
       $res[count($res) - 1]['filled']+=$template_weight;
     } else {
-      //altrimenti creo un altro spazio
+//altrimenti creo un altro spazio
       $res [] = array(
           'news' => array(pack_news($p, $meta)),
           'filled' => $template_weight
@@ -186,7 +186,7 @@ function pcdm_get_press_archive() {
     $meta = get_post_meta($p->ID);
     $res[] = pack_press($p, $meta);
   }
-  
+
   return $res;
 }
 
@@ -319,14 +319,14 @@ function pack_product($_element, $meta) {
   return $entity;
 }
 
-function pcdm_get_new_wall_image_dim($element){
+function pcdm_get_new_wall_image_dim($element) {
   switch ($element[PcdmNews::TYPE_PREFIX . 'hp_template']) {
     case PcdmNews::TPL_LARGE:
-      return explode(":",  PcdmNews::TPL_LARGE_DIMENSIONS);
+      return explode(":", PcdmNews::TPL_LARGE_DIMENSIONS);
     case PcdmNews::TPL_SMALL:
-      return explode(":",  PcdmNews::TPL_SMALL_DIMENSIONS);
+      return explode(":", PcdmNews::TPL_SMALL_DIMENSIONS);
   }
-  return explode(":",  PcdmNews::TPL_LARGE_DIMENSIONS);
+  return explode(":", PcdmNews::TPL_LARGE_DIMENSIONS);
 }
 
 function pcdm_get_news_class($element) {
@@ -348,3 +348,35 @@ function pcdm_get_link($link) {
 function pcdm_get_theme_resource($resource) {
   return get_template_directory_uri() . DS . SKIN_SUBDIR . DS . $resource;
 }
+
+
+function pcdm_filter_wp_title() {
+  global $wp_query;
+  $queried_object = get_queried_object();
+  $append = "Paula Cademartori";
+  if (is_single()) {
+    switch($queried_object->post_type){
+      case PcdmProduct::TYPE_IDENTIFIER:
+        $seas = array_pop(get_the_terms($queried_object->ID,  PcdmSeason::CATEGORY_IDENTIFIER));
+        $filtered_title = "{$queried_object->post_title} - {$seas->name} | $append";
+        break;
+      case PcdmNews::TYPE_IDENTIFIER:
+        $filtered_title = "{$queried_object->post_title}  | $append";
+        break;
+    }
+    
+  }else if(is_post_type_archive() ){
+    switch($queried_object->post_type){
+      case PcdmNews::TYPE_IDENTIFIER:
+        $filtered_title = "News | $append";
+        break;
+      case PcdmPress::TYPE_IDENTIFIER:
+        $filtered_title = "Press | $append";
+        break;
+    }
+  }else if(is_tax(PcdmSeason::CATEGORY_IDENTIFIER )){
+    $filtered_title = "Collection {$queried_object->name} | $append";
+  }
+  return $filtered_title;
+}
+

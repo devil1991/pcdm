@@ -96,6 +96,82 @@ function packHpElement($hp_element, $meta) {
   return $entity;
 }
 
+function pcdm_get_store_archive() {
+  $res = array();
+  $store_query = array(
+      'posts_per_page' => -1,
+      'offset' => 0,
+      'category' => '',
+      'include' => '',
+      'exclude' => '',
+      'meta_key' => '',
+      'meta_value' => '',
+      'post_type' => PcdmStore::TYPE_IDENTIFIER,
+      'post_mime_type' => '',
+      'post_parent' => '',
+      'post_status' => 'publish'
+  );
+
+//ciclo sugli elementi
+  foreach (get_posts($store_query) as $p) {
+    $meta = get_post_meta($p->ID);
+    $locations = wp_get_post_terms($p->ID, PcdmStoreLocation::CATEGORY_IDENTIFIER);
+    foreach($locations as $location){
+      if($location->parent == 0){//continente
+        if(!isset($res[$location->name])){
+          $res[$location->name]=array();
+        }
+      }else{
+        $parent = get_term( $location->parent, PcdmStoreLocation::CATEGORY_IDENTIFIER);
+        if(!isset($res[$parent->name])){
+          $res[$parent->name]=array();
+        }
+        if(!isset($res[$parent->name][$location->name])){
+          $res[$parent->name][$location->name]=array();
+        }
+        $res[$parent->name][$location->name][]=packStoreElement($p, $meta);
+      }
+    }
+  }
+  return $res;
+}
+
+function packStoreElement($store_element, $meta) {
+  $entity = array();
+  $post_attributes = array(
+      'ID',
+      'post_title'
+  );
+  $post_meta_attributes = array(
+      PcdmStore::TYPE_PREFIX . 'address',
+      PcdmStore::TYPE_PREFIX . 'cap',
+      PcdmStore::TYPE_PREFIX . 'phone',
+      PcdmStore::TYPE_PREFIX . 'coords',
+  );
+
+  foreach ($post_attributes as $attr) {
+    $entity[$attr] = $store_element->$attr;
+  }
+
+  foreach ($post_meta_attributes as $attr) {
+    $entity[$attr] = $meta[$attr][0];
+  }
+
+
+  return $entity;
+}
+
+function pcdm_get_map_link($coords){
+  $coord_array=explode(",",$coords);
+  if(count($coord_array)!=2){
+    return false;
+  }
+  else{
+    return "https://maps.google.it/maps?q={$coord_array[0]},{$coord_array[1]}&num=1&t=h&z=16";
+  } 
+    
+}
+
 function pcdm_get_home_element_class($element) {
   switch ($element[PcdmHomeElement::TYPE_PREFIX . 'hp_template']) {
     case PcdmHomeElement::TPL_LARGE:
@@ -349,24 +425,22 @@ function pcdm_get_theme_resource($resource) {
   return get_template_directory_uri() . DS . SKIN_SUBDIR . DS . $resource;
 }
 
-
 function pcdm_filter_wp_title() {
   global $wp_query;
   $queried_object = get_queried_object();
   $append = "Paula Cademartori";
   if (is_single()) {
-    switch($queried_object->post_type){
+    switch ($queried_object->post_type) {
       case PcdmProduct::TYPE_IDENTIFIER:
-        $seas = array_pop(get_the_terms($queried_object->ID,  PcdmSeason::CATEGORY_IDENTIFIER));
+        $seas = array_pop(get_the_terms($queried_object->ID, PcdmSeason::CATEGORY_IDENTIFIER));
         $filtered_title = "{$queried_object->post_title} - {$seas->name} | $append";
         break;
       case PcdmNews::TYPE_IDENTIFIER:
         $filtered_title = "{$queried_object->post_title}  | $append";
         break;
     }
-    
-  }else if(is_post_type_archive() ){
-    switch($queried_object->post_type){
+  } else if (is_post_type_archive()) {
+    switch ($queried_object->post_type) {
       case PcdmNews::TYPE_IDENTIFIER:
         $filtered_title = "News | $append";
         break;
@@ -374,7 +448,7 @@ function pcdm_filter_wp_title() {
         $filtered_title = "Press | $append";
         break;
     }
-  }else if(is_tax(PcdmSeason::CATEGORY_IDENTIFIER )){
+  } else if (is_tax(PcdmSeason::CATEGORY_IDENTIFIER)) {
     $filtered_title = "Collection {$queried_object->name} | $append";
   }
   return $filtered_title;

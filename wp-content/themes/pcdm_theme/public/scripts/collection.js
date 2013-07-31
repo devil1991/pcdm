@@ -18,6 +18,7 @@
       this.is_dev = this.grid_ref.hasClass('js-dev');
       this.category = this.grid_ref.attr('data-category');
       init_id = this.grid_ref.attr('data-init-id');
+      this.w = $(window);
       this.wrapper = $('#wrapper');
       this.header = this.grid_ref.find('.header-product-grid');
       this.boxes = this.grid_ref.find('.item');
@@ -25,6 +26,7 @@
       this.items_tot;
       this.current_id = (init_id != null) && init_id !== '' ? init_id : '';
       this.details;
+      this.grid_scroll = 0;
       window.is_switching = false;
       event_emitter.addListener('SWITCH_TO_DETAILS', this.switchToDetails);
       event_emitter.addListener('UPDATE_DETAILS', this.updateDetails);
@@ -141,7 +143,7 @@
       var delay, i, item, _i, _ref;
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
-        delay = .25 * (this.items_tot - 1 - i);
+        delay = Math.max(.25 * (this.current_id - i), 0);
         TweenLite.to(item, 1, {
           css: {
             'opacity': '0'
@@ -156,9 +158,10 @@
         },
         ease: Power4.easeInOut
       });
+      this.grid_scroll = Math.max(this.w.scrollTop() - 1000, 0);
       return TweenLite.to(window, 2, {
         scrollTo: {
-          y: 0
+          y: this.grid_scroll
         },
         ease: Power4.easeInOut,
         onComplete: this.showDetails
@@ -169,7 +172,7 @@
       var delay, i, item, _i, _ref;
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
-        delay = .25 * i;
+        delay = Math.min(Math.max(.25 * (i + 5 - this.current_id), 0), 2);
         TweenLite.to(item, 1, {
           css: {
             'opacity': '1'
@@ -184,6 +187,7 @@
         },
         ease: Power4.easeInOut
       });
+      this.w.scrollTop(this.grid_scroll);
       return TweenLite.to(window, 2, {
         scrollTo: {
           y: this.getScrollById()
@@ -219,6 +223,7 @@
 
     Collection.prototype.showDetails = function() {
       if (!this.wrapper.hasClass('detail-on')) {
+        this.w.scrollTop(0);
         this.wrapper.addClass('detail-on');
         this.grid_ref.hide();
       }

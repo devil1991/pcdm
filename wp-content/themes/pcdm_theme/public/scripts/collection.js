@@ -144,7 +144,7 @@
       current_index = this.getCurrentIndex();
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
-        delay = Math.max(.25 * (current_index - i), 0);
+        delay = Math.min(Math.max(.25 * (current_index - i), 0), 1.75);
         TweenLite.to(item, 1, {
           css: {
             'opacity': '0'
@@ -174,7 +174,7 @@
       current_index = this.getCurrentIndex();
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
-        delay = Math.min(Math.max(.25 * (i + 5 - current_index), 0), 2);
+        delay = Math.min(Math.max(.25 * (i + 5 - current_index), 0), 1.75);
         TweenLite.to(item, 1, {
           css: {
             'opacity': '1'

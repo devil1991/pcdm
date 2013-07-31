@@ -141,7 +141,7 @@ class window.Collection
 
 		for i in [0...@items_tot]
 			item = @items_array[i].ref
-			delay = Math.max(.25 * (current_index - i), 0)
+			delay = Math.min(Math.max(.25 * (current_index - i), 0), 1.75)
 			#delay = .25 * (@items_tot - 1 - i)
 			TweenLite.to item, 1, {css:{'opacity':'0'}, delay:delay, ease:Power4.easeInOut}
 		
@@ -157,7 +157,7 @@ class window.Collection
 
 		for i in [0...@items_tot]
 			item = @items_array[i].ref
-			delay = Math.min(Math.max(.25 * (i + 5 - current_index), 0), 2)
+			delay = Math.min(Math.max(.25 * (i + 5 - current_index), 0), 1.75)
 			#delay = .25 * i
 			TweenLite.to item, 1, {css:{'opacity':'1'}, delay:delay, ease:Power4.easeInOut}
 

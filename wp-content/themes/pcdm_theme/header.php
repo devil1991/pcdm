@@ -66,7 +66,15 @@ if (isset($polylang)){
                       <?php echo $_about_page_tr->post_title;?>
                   </a>
               </li>
-              <li><a href="/videos" title=""><?php _e('Videos')?></a></li>
+              <li>
+                <?php 
+                $_video_page = get_page_by_title("Videos" );
+                $_video_page_tr = get_page( pll_get_post($_video_page->ID, pll_current_language()) );
+                ?>
+                <a href="<?php echo get_page_link($_video_page_tr->ID);?>" title="<?php echo $_video_page_tr->post_title;?>">
+                    <?php echo $_video_page_tr->post_title;?>
+                </a>
+              </li>
               <li><a href="" title=""><?php _e('Diary')?></a></li>
               <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
               <li><a href="" title=""><?php _e('shop online')?></a></li>
@@ -147,7 +155,15 @@ if (isset($polylang)){
                                             <?php echo $_about_page_tr->post_title;?>
                                         </a>
                                     </li>
-                                    <li><a href="" title=""><?php echo _e('Videos')?></a></li>
+                                    <li>
+                                      <?php 
+                                        $_video_page = get_page_by_title("Videos" );
+                                        $_video_page_tr = get_page( pll_get_post($_video_page->ID, pll_current_language()) );
+                                        ?>
+                                        <a href="<?php echo get_page_link($_video_page_tr->ID);?>" title="<?php echo $_video_page_tr->post_title;?>">
+                                            <?php echo $_video_page_tr->post_title;?>
+                                        </a>
+                                    </li>
                                     <li><a href="" title=""><?php echo _e('Diary')?></a></li>
                                     <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php echo _e('News')?></a></li>
                                     <li><a href="" title=""><?php echo _e('shop online')?></a></li>

@@ -16,7 +16,7 @@
         <li>
           <h3 class="title"><?php echo _e('Store list')?></h3>
           <p class="description">Violence to his own person. He had lighted with such enerwn person. He had lighted with such ene</p>
-          <a class="more" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('go to store list')?>go to store list</a>
+          <a class="more" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('go to store list')?></a>
         </li>
         <li>
           <h3 class="title"><?php echo _e('Press Area')?></h3>
@@ -87,6 +87,7 @@
 </div><!-- body-simulator-->
 <?php wp_footer(); ?>
 
+<script src="http://a.vimeocdn.com/js/froogaloop2.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/lib/jquery.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/lib/easing.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/lib/jquery.background.js'); ?>" type="text/javascript" charset="utf-8"></script>
@@ -107,6 +108,7 @@
 <!-- app -->
 <script src="<?php echo pcdm_get_theme_resource('scripts/pages.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/accordion.js'); ?>" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo pcdm_get_theme_resource('scripts/carousel_full.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/collection.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/collection_details.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/columnist.js'); ?>" type="text/javascript" charset="utf-8"></script>

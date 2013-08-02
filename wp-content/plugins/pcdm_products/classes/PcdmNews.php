@@ -169,7 +169,40 @@ class PcdmNews {
                 ),
             ),
         );
-
+        
+        $meta_boxes[] = array(
+            'id' => self::TYPE_PREFIX . 'fieldset_5',
+            'title' => 'Slideshow',
+            'pages' => array(self::TYPE_IDENTIFIER),
+            'context' => 'normal',
+            'priority' => 'low',
+            'show_names' => true,
+            'fields' => array(
+                            array(
+                                'name' => 'Slideshow 1',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_1',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 2',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_2',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 3',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_3',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),
+            ),
+        );
+        
         return $meta_boxes;
     }
 

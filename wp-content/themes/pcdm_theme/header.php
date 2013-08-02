@@ -154,6 +154,7 @@ if (isset($polylang)){
                                 </ul>
                             </nav>
                             <nav class="nav-social">
+                                <span class="label">follow us</span>
                                 <ul class="js-last-child">
                                     <li class="facebook">
                                         <a  title="facebook" href="#" target="blank">Facebook</a>

@@ -36,7 +36,11 @@
             Via Pietro Mascagni, 30
             20122 Milano, Italy
           </p>
-          <a class="more" href="mailto://info@paula-cademartori.com" title="">email us</a>
+          <?php 
+            $_contact_page = get_page_by_title("Contacts" );
+            $_contact_page_tr = get_page( pll_get_post($_contact_page->ID, pll_current_language()) );
+          ?>
+          <a class="more" href="<?php echo get_page_link($_contact_page_tr->ID);?>" title="">email us</a>
         </li>
       </ul>
     </nav>

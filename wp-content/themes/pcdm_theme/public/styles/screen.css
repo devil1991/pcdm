@@ -2980,9 +2980,16 @@ body #wrapper.detail-on .header-small {
 .hp-news .block > a .wrap-image {
   margin-bottom: 0.5em;
   position: relative;
+  *zoom: 1;
+}
+.hp-news .block > a .wrap-image:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .hp-news .block > a .wrap-image > img {
   width: 100%;
+  float: left;
 }
 .hp-news .block > a .wrap-image .hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -3041,9 +3048,11 @@ body #wrapper.detail-on .header-small {
   padding-bottom: 1em;
 }
 .news .text .date .yy {
+  line-height: 1em;
   font-size: 0.875em;
 }
 .news .text .date .mm-dd {
+  line-height: 1em;
   font-size: 2.5em;
 }
 .news .text .title {

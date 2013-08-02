@@ -26,8 +26,10 @@
       .wrap-image{
         margin-bottom:0.5em;
         position:relative;
+        @include pie-clearfix();
         > img{
           width:100%;
+          float:left;
         }
         .hover{
           @include opacity(0);
@@ -76,11 +78,13 @@
     padding-bottom:1em;
     .date{
       .yy{
+        line-height:1em;
         font:{
           size:$f-14;
         }
       }
       .mm-dd{
+        line-height:1em;
         font:{
           size:$f-40;
         }

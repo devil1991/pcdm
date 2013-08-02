@@ -39,9 +39,11 @@
       collection = new Collection(product_grid_ref, product_details_ref);
     }
     if (!is_mobile) {
-      rails_shifter_ref = $('.js-rails-shifter');
-      if (rails_shifter_ref.length === 1) {
-        rails_shifter = new RailsShifter(rails_shifter_ref);
+      if (window_ref.width() > 1120) {
+        rails_shifter_ref = $('.js-rails-shifter');
+        if (rails_shifter_ref.length === 1) {
+          rails_shifter = new RailsShifter(rails_shifter_ref);
+        }
       }
     }
     _ref = $('.wrap-carousel');

@@ -1,4 +1,4 @@
-@import url(fonts/fonts.css);
+@import url(fonts/fonts_tumblr.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -111,9 +111,9 @@ body {
   color: #2c2c2c;
   line-height: 1.5em;
   padding-bottom: 15px;
-  border-bottom: 1px dotted #2c2c2c;
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/sep-header.png) left bottom repeat-x;
   letter-spacing: 0.1em;
-  font-family: "BodoniMTRegular", times;
+  font-family: "Conv_FuturaStd-Book";
   font-size: 0.812em;
 }
 #header .description .action-bar {
@@ -134,7 +134,7 @@ body {
   color: #2c2c2c;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-family: "BodoniMTRegular", times;
+  font-family: "Conv_FuturaStd-Book";
   font-size: 0.625em;
 }
 
@@ -149,7 +149,7 @@ body {
   outline: none;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-family: "BodoniMTRegular", times;
+  font-family: "Conv_FuturaStd-Book";
   font-size: 0.625em;
 }
 #search input[type="submit"] {
@@ -209,23 +209,101 @@ body {
   display: block;
 }
 .content .post .hover .wrap-text {
-  color: #fff;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-family: "Conv_FuturaStd-Book";
+}
+.content .post .hover .wrap-text a {
+  text-decoration: none;
+  color: #fff;
 }
 .content .post .hover .wrap-text .aux-text {
   padding: 30px;
+}
+.content .post .hover .wrap-text .notes {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/sep-notice.png) center bottom no-repeat;
+  padding-bottom: 20px;
 }
 .content .post .hover .wrap-text .notes > span {
   display: block;
   text-transform: uppercase;
   line-height: 1.2em;
-  font-size: 0.687em;
+  letter-spacing: 0.5em;
+  font-size: 0.75em;
 }
 .content .post .hover .wrap-text .notes > span.number {
+  letter-spacing: 0em;
   font-size: 3.8em;
+}
+.content .post .hover .wrap-text ul.tags {
+  padding: 10px;
+}
+.content .post .hover .wrap-text ul.tags > li {
+  display: inline-block;
+}
+.content .post .hover .wrap-text ul.tags > li > a {
+  line-height: 1.2em;
+  letter-spacing: 0.3em;
+  font-size: 10px;
+}
+.content .post .hover .wrap-text .like_and_reblog_buttons {
+  padding: 5px;
+}
+.content .post .hover .wrap-text .like_and_reblog_buttons > li {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/bg-ico.png) center center no-repeat;
+}
+.content .post .hover .wrap-text .like_and_reblog_buttons > li > div {
+  height: 56px;
+  line-height: 56px;
+}
+.content .post .hover .wrap-text .like_and_reblog_buttons > li > a {
+  line-height: 56px;
+  display: inline-block !important;
+  text-align: center;
+}
+.content .post .hover .wrap-text .like_and_reblog_buttons > li > a > svg {
+  float: left;
+}
+.content .post .hover .wrap-text .share-menu {
+  clear: both;
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/sep-text.png) center top no-repeat;
+  padding-top: 20px;
+}
+.content .post .hover .wrap-text .share-menu > ul > li {
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  margin-left: 5px;
+}
+.content .post .hover .wrap-text .share-menu > ul > li:first-child {
+  margin-left: 0px;
+}
+.content .post .hover .wrap-text .share-menu > ul > li > a {
+  display: block;
+  width: 17px;
+  height: 16px;
+  text-indent: -5000px;
+}
+.content .post .hover .wrap-text .share-menu > ul > li > a.facebook {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/fb.png) center center no-repeat;
+}
+.content .post .hover .wrap-text .share-menu > ul > li > a.twitter {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/tw.png) center center no-repeat;
+}
+.content .post .hover .wrap-text .share-menu > ul > li > a.pinterest {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/pin.png) center center no-repeat;
+}
+.content .post .hover .wrap-text .share-menu > ul > li > a.gplus {
+  background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/gp.png) center center no-repeat;
 }
 
 .nav-social {

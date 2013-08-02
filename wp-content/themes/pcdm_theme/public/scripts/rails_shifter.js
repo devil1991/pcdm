@@ -17,6 +17,7 @@
       this.images_loaded = 0;
       this.top = this.rail_1.offset().top;
       this.is_enabled = false;
+      this.rail_1.addClass('shifter');
       this.preloadImages();
     }
 

@@ -119,6 +119,7 @@
             > a{
               position:relative;
               z-index:99;
+              padding-bottom:5px;
               font:{
                 size:$f-11;
               }
@@ -127,13 +128,22 @@
                   size:0.55em;
                 }
               }
-              &.active{
-                color:$light-color;
+              &:hover{
+                text-decoration:none;
+              }
+              &.active, &:hover{
+                border-bottom: 2px solid $dark-color;
               }
             }
             &.dropdown{
               > a:hover{
                 color:$light-color;
+                border:none;
+              }
+              &.opened{
+               > a{
+                  color:$light-color;
+                }
               }
               z-index:9;
               .wrap-dropdown-menu{
@@ -235,7 +245,7 @@
             border-left:1px solid #000;
             border-right:1px solid #000;
             @include opacity(0);
-            @include transition(all 0.3s ease-out);
+            @include transition(opacity 0.3s ease-out);
             &.opened{
               @include opacity(1);
             }

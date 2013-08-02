@@ -140,7 +140,7 @@
     CollectionDetails.prototype.onDataLoaded = function(json) {
       var src;
       this.data = json.details;
-      src = is_phablet ? this.data.img_mobile : this.data.img;
+      src = is_smartphone ? this.data.img_mobile : this.data.img;
       return this.loadImage(src);
     };
 
@@ -205,32 +205,7 @@
       return event_emitter.emitEvent('DETAILS_HIDDEN', [this.current_id]);
     };
 
-    CollectionDetails.prototype.onResize = function(window_w, window_h) {
-      var img_h, img_w, ref_h, ref_w;
-      if (!is_phablet) {
-        if (window_w !== void 0) {
-          this.ref.width(window_w);
-          this.ref.height(window_h);
-        }
-        if (!isNaN(this.img_ratio)) {
-          ref_w = this.ref.width();
-          ref_h = this.ref.height();
-          img_h = ref_w / this.img_ratio;
-          if (img_h > ref_h) {
-            img_w = ref_w;
-          } else {
-            img_w = ref_h * this.img_ratio;
-            img_h = ref_h;
-          }
-          this.img.width(img_w);
-          this.img.height(img_h);
-          return this.img.css({
-            'margin-left': "" + (-.5 * (img_w - ref_w)) + "px",
-            'margin-top': "" + (-.5 * (img_h - ref_h)) + "px"
-          });
-        }
-      }
-    };
+    CollectionDetails.prototype.onResize = function(window_w, window_h) {};
 
     return CollectionDetails;
 

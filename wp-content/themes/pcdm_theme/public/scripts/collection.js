@@ -26,7 +26,7 @@
       this.items_tot;
       this.current_id = (init_id != null) && init_id !== '' ? init_id : '';
       this.details;
-      this.grid_scroll = 0;
+      this.scroll_offset = 1000;
       window.is_switching = false;
       event_emitter.addListener('SWITCH_TO_DETAILS', this.switchToDetails);
       event_emitter.addListener('UPDATE_DETAILS', this.updateDetails);
@@ -140,7 +140,7 @@
     };
 
     Collection.prototype.dismantleGrid = function() {
-      var current_index, delay, i, item, _i, _ref;
+      var current_index, delay, i, item, scroll_val, _i, _ref;
       current_index = this.getCurrentIndex();
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
@@ -159,10 +159,10 @@
         },
         ease: Power4.easeInOut
       });
-      this.grid_scroll = Math.max(this.w.scrollTop() - 1000, 0);
+      scroll_val = Math.max(this.w.scrollTop() - this.scroll_offset, 0);
       return TweenLite.to(window, 2, {
         scrollTo: {
-          y: this.grid_scroll
+          y: scroll_val
         },
         ease: Power4.easeInOut,
         onComplete: this.showDetails
@@ -170,7 +170,7 @@
     };
 
     Collection.prototype.rebuildGrid = function() {
-      var current_index, delay, i, item, _i, _ref;
+      var current_index, delay, i, item, scroll_val, _i, _ref;
       current_index = this.getCurrentIndex();
       for (i = _i = 0, _ref = this.items_tot; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
         item = this.items_array[i].ref;
@@ -189,10 +189,11 @@
         },
         ease: Power4.easeInOut
       });
-      this.w.scrollTop(this.grid_scroll);
+      scroll_val = this.getScrollById();
+      this.w.scrollTop(Math.max(scroll_val - this.scroll_offset, 0));
       return TweenLite.to(window, 2, {
         scrollTo: {
-          y: this.getScrollById()
+          y: scroll_val
         },
         ease: Power4.easeInOut,
         onComplete: (function() {

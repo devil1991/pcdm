@@ -62,6 +62,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: inline;
 }
 
+.loader {
+  background: url(../images/loader.gif) 0 0 no-repeat;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  display: none;
+}
+
 #wrapper {
   position: relative;
   *zoom: 1;
@@ -111,6 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-bottom: 30px;
   border-bottom: 4px solid #2c2c2c;
   margin-top: 150px;
+  min-height: 500px;
 }
 @media (max-width: 45em) {
   .container {
@@ -178,18 +191,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .ie-phone .fixed-mobile .open-nav {
   display: block;
-}
-
-.loader {
-  background: red;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -100px;
-  display: none;
 }
 
 #body-simulator {
@@ -735,6 +736,7 @@ a:hover {
 .header .right-navigation .wrap-navbar .navbar > ul > li > a {
   position: relative;
   z-index: 99;
+  padding-bottom: 5px;
   font-size: 0.688em;
 }
 @media (min-width: 45em) and (max-width: 60em) {
@@ -745,13 +747,20 @@ a:hover {
 .ie-phablet .header .right-navigation .wrap-navbar .navbar > ul > li > a {
   font-size: 0.55em;
 }
-.header .right-navigation .wrap-navbar .navbar > ul > li > a.active {
-  color: white;
+.header .right-navigation .wrap-navbar .navbar > ul > li > a:hover {
+  text-decoration: none;
+}
+.header .right-navigation .wrap-navbar .navbar > ul > li > a.active, .header .right-navigation .wrap-navbar .navbar > ul > li > a:hover {
+  border-bottom: 2px solid #2c2c2c;
 }
 .header .right-navigation .wrap-navbar .navbar > ul > li.dropdown {
   z-index: 9;
 }
 .header .right-navigation .wrap-navbar .navbar > ul > li.dropdown > a:hover {
+  color: white;
+  border: none;
+}
+.header .right-navigation .wrap-navbar .navbar > ul > li.dropdown.opened > a {
   color: white;
 }
 .header .right-navigation .wrap-navbar .navbar > ul > li.dropdown .wrap-dropdown-menu {
@@ -884,10 +893,10 @@ a:hover {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
     opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
   }
   .header .right-navigation .wrap-navbar .nav-social > ul.opened {
     opacity: 1;
@@ -906,7 +915,7 @@ a:hover {
   border-right: 1px solid #000;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  transition: all 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 .ie-phablet .header .right-navigation .wrap-navbar .nav-social > ul.opened {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -1256,8 +1265,8 @@ a:hover {
   display: none;
   text-transform: uppercase;
   float: right;
-  border: 1px solid #2c2c2c;
-  padding: 1px 10px;
+  border: 1px solid #8c8c8c;
+  padding: 2px 10px 0;
   font-size: 0.688em;
 }
 .nav-social .title-share {
@@ -2574,13 +2583,13 @@ body #wrapper.detail-on .header-small {
 }
 .product-detail .wrap-text {
   position: absolute;
-  top: 160px;
-  width: 23.72881%;
+  top: 22%;
+  width: 32.20339%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
   margin-right: -100%;
-  margin-left: 67.79661%;
+  margin-left: 59.32203%;
 }
 @media (min-width: 45em) and (max-width: 60em) {
   .product-detail .wrap-text {
@@ -2770,7 +2779,7 @@ body #wrapper.detail-on .header-small {
 .product-detail .wrap-text .number {
   display: block;
   line-height: 1em;
-  font-size: 9.37em;
+  font-size: 7em;
 }
 .product-detail .wrap-text .collection {
   text-transform: uppercase;
@@ -2784,7 +2793,7 @@ body #wrapper.detail-on .header-small {
   font-size: 2.187em;
 }
 .product-detail .wrap-text .description {
-  line-height: 2em;
+  line-height: 1.8em;
   font-size: 0.875em;
 }
 .product-detail .wrap-text .nav-social {
@@ -3106,39 +3115,36 @@ body #wrapper.detail-on .header-small {
   position: relative;
 }
 .wrap-about .rail-1 {
-  position: fixed;
+  position: relative;
   left: 1em;
   right: 1em;
   text-align: center;
 }
+.wrap-about .rail-1.shifter {
+  position: fixed;
+}
 @media (min-width: 45em) and (max-width: 60em) {
   .wrap-about .rail-1 {
-    position: relative;
     left: 0;
   }
 }
 .ie-phablet .wrap-about .rail-1 {
-  position: relative;
   left: 0;
 }
 @media (min-width: 35em) and (max-width: 70em) {
   .wrap-about .rail-1 {
-    position: relative;
     left: 0;
   }
 }
 .ie-tablet .wrap-about .rail-1 {
-  position: relative;
   left: 0;
 }
 @media (max-width: 45em) {
   .wrap-about .rail-1 {
-    position: relative;
     left: 0;
   }
 }
 .ie-phone .wrap-about .rail-1 {
-  position: relative;
   left: 0;
 }
 .wrap-about .rail-1.more-affracchievole {
@@ -4120,6 +4126,7 @@ body #wrapper.detail-on .header-small {
 }
 .header-contacts .title {
   text-transform: uppercase;
+  text-align: right;
   line-height: 1.2em;
   background: url(../images/box/sep-title.jpg) right bottom no-repeat;
   padding-bottom: 15px;
@@ -4128,10 +4135,12 @@ body #wrapper.detail-on .header-small {
 }
 @media (max-width: 45em) {
   .header-contacts .title {
+    text-align: left;
     background: url(../images/box/sep-title.jpg) left bottom no-repeat;
   }
 }
 .ie-phone .header-contacts .title {
+  text-align: left;
   background: url(../images/box/sep-title.jpg) left bottom no-repeat;
 }
 .header-contacts .description {
@@ -4210,7 +4219,10 @@ body #wrapper.detail-on .header-small {
 }
 .contact-info .item .title {
   margin: 20px 0;
-  font-size: 0.938em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 0.813em;
+  font-family: "Conv_BauerBodoniStd-Roman", times;
 }
 .contact-info .item .title:before {
   content: "";
@@ -4449,6 +4461,7 @@ body #wrapper.detail-on .header-small {
 }
 .wrap-store .store-list .wrap-item .item > p > span.name {
   font-size: 0.813em;
+  font-family: "Conv_BauerBodoniStd-Roman", times;
 }
 .wrap-store .store-list .wrap-item .item .view-map {
   display: inline-block;
@@ -4591,6 +4604,7 @@ body #wrapper.detail-on .header-small {
 /* -------------------------------------------------------------------------*/
 /* Layout */
 body {
+  -webkit-transform-style: preserve-3d;
   line-height: 1.5em;
   font-size: 16px;
   font-family: "Conv_BauerBodoniStd-Roman", times;

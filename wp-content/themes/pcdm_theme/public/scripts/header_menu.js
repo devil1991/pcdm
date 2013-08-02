@@ -71,6 +71,7 @@
     HeaderMenu.prototype.onDropdownElementOver = function(e) {
       var dropdown, element;
       element = $(e.currentTarget);
+      element.addClass('opened');
       dropdown = element.find('.wrap-dropdown-menu');
       dropdown.show();
       return TweenLite.to(dropdown, this.dur, {
@@ -85,6 +86,7 @@
     HeaderMenu.prototype.onDropdownElementOut = function(e) {
       var dropdown, element;
       element = $(e.currentTarget);
+      element.removeClass('opened');
       dropdown = element.find('.wrap-dropdown-menu');
       return TweenLite.to(dropdown, this.dur, {
         css: {

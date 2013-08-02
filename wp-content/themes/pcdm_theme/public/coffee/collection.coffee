@@ -15,7 +15,7 @@ class window.Collection
 		@items_tot
 		@current_id = if init_id? and init_id isnt '' then init_id else ''
 		@details
-		@grid_scroll = 0
+		@scroll_offset = 1000
 		window.is_switching = false
 
 		event_emitter.addListener 'SWITCH_TO_DETAILS', @switchToDetails
@@ -29,8 +29,6 @@ class window.Collection
 		@has_history = false
 		@prev_state_id = 'home'
 		unless @is_dev then @setHistory()
-
-		# TODO: JS: animazione scrolltop proporzionale #
 
 	#########
 	# HISTORY
@@ -147,8 +145,8 @@ class window.Collection
 		
 		TweenLite.to @header, 2, {css:{'opacity':'0'}, ease:Power4.easeInOut}
 
-		@grid_scroll = Math.max(@w.scrollTop() - 1000, 0)
-		TweenLite.to window, 2, {scrollTo:{y:@grid_scroll}, ease:Power4.easeInOut, onComplete:@showDetails}
+		scroll_val = Math.max(@w.scrollTop() - @scroll_offset, 0)
+		TweenLite.to window, 2, {scrollTo:{y:scroll_val}, ease:Power4.easeInOut, onComplete:@showDetails}
 		#TweenLite.to window, 2, {scrollTo:{y:0}, ease:Power4.easeInOut, onComplete:@showDetails}
 
 	rebuildGrid: ->
@@ -163,8 +161,10 @@ class window.Collection
 
 		TweenLite.to @header, 2, {css:{'opacity':'1'}, ease:Power4.easeInOut}
 		
-		@w.scrollTop @grid_scroll
-		TweenLite.to window, 2, {scrollTo:{y:@getScrollById()}, ease:Power4.easeInOut, onComplete:(-> window.is_switching = false)}
+		scroll_val = @getScrollById()
+		@w.scrollTop Math.max(scroll_val - @scroll_offset, 0)
+		TweenLite.to window, 2, {scrollTo:{y:scroll_val}, ease:Power4.easeInOut, onComplete:(-> window.is_switching = false)}
+		#TweenLite.to window, 2, {scrollTo:{y:@getScrollById()}, ease:Power4.easeInOut, onComplete:(-> window.is_switching = false)}
 
 	getScrollById: ->
 

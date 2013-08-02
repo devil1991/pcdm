@@ -4,21 +4,21 @@
   @include span-columns(12 omega, 12);
   position:relative;
   .rail-1{
-    position:fixed;
+    position:relative;
     //position:relative;
     left: 1em;
     right: 1em;
     text-align: center; // this may not be needed.
+    &.shifter{
+      position:fixed;
+    }
     @include at-breakpoint($phablet) {
-      position:relative;
       left:0;
     }
     @include at-breakpoint($tablet) {
-      position:relative;
       left:0;
     }
     @include at-breakpoint($phone) {
-      position:relative;
       left:0;
     }
 

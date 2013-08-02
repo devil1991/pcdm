@@ -13,8 +13,9 @@ class window.RailsShifter
     @images_loaded = 0
 
     @top = @rail_1.offset().top
-    @is_enabled = false 
+    @is_enabled = false
 
+    @rail_1.addClass 'shifter'
     @preloadImages()
 
   preloadImages: ->
@@ -49,7 +50,7 @@ class window.RailsShifter
     #console.log val
 
     if @is_enabled
-    
+
       if val > @breakpoint_1
         unless @rail_1.hasClass 'more-affracchievole' then @rail_1.addClass 'more-affracchievole'
         if val < @breakpoint_2

@@ -44,6 +44,7 @@ class window.HeaderMenu
   onDropdownElementOver: (e) =>
 
     element = $ e.currentTarget
+    element.addClass 'opened'
     dropdown = element.find '.wrap-dropdown-menu'
     dropdown.show()
     TweenLite.to dropdown, @dur, {css:{'opacity':'1', 'height':"#{element.attr 'data-height'}px"}, ease:Power4.easeInOut}
@@ -51,6 +52,7 @@ class window.HeaderMenu
   onDropdownElementOut: (e) =>
 
     element = $ e.currentTarget
+    element.removeClass 'opened'
     dropdown = element.find '.wrap-dropdown-menu'
     TweenLite.to dropdown, @dur, {css:{'opacity':'0', 'height':'0'}, ease:Power4.easeInOut, onComplete:(-> dropdown.hide())}
 

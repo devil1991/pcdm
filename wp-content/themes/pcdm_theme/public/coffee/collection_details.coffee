@@ -49,7 +49,7 @@ class window.CollectionDetails
 	updateDetails: (dir) ->
 
 		unless is_switching
-			
+
 			window.is_switching = true
 			id = @id_array[@getCurrentIndex() + dir]
 			event_emitter.emitEvent 'UPDATE_DETAILS', [id]
@@ -57,7 +57,7 @@ class window.CollectionDetails
 	getCurrentIndex: ->
 
 		index = 0
-		
+
 		for i in [0...@id_array.length]
 			if @id_array[i] is @current_id
 				index = i
@@ -80,12 +80,12 @@ class window.CollectionDetails
 		@loader.show()
 
 		@loadData()
-	
-	
+
+
 	checkButtons: ->
 
 		index = @getCurrentIndex()
-		
+
 		if index is 0
 			@prev_btn.addClass 'disabled'
 			if @next_btn.hasClass 'disabled' then @next_btn.removeClass 'disabled'
@@ -117,7 +117,7 @@ class window.CollectionDetails
 	onDataLoaded: (json) =>
 
 		@data = json.details
-		src = if is_phablet then @data.img_mobile else @data.img
+		src = if is_smartphone then @data.img_mobile else @data.img
 		@loadImage src
 
 	onDataError: =>
@@ -180,24 +180,24 @@ class window.CollectionDetails
 
 	onResize: (window_w, window_h) =>
 
-		unless is_phablet
-			if window_w isnt undefined
-				@ref.width window_w
-				@ref.height window_h
+		# unless is_smartphone
+		# 	if window_w isnt undefined
+		# 		@ref.width window_w
+		# 		@ref.height window_h
 
-			unless isNaN @img_ratio
+		# 	unless isNaN @img_ratio
 
-				ref_w = @ref.width()
-				ref_h = @ref.height()
+		# 		ref_w = @ref.width()
+		# 		ref_h = @ref.height()
 
-				img_h = ref_w / @img_ratio
-				if img_h > ref_h
-				  img_w = ref_w
-				else
-				  img_w = ref_h * @img_ratio
-				  img_h = ref_h
-		
-				@img.width img_w
-				@img.height img_h
-				@img.css {'margin-left':"#{-.5 * (img_w - ref_w)}px", 'margin-top':"#{-.5 * (img_h - ref_h)}px"}
+		# 		img_h = ref_w / @img_ratio
+		# 		if img_h > ref_h
+		# 		  img_w = ref_w
+		# 		else
+		# 		  img_w = ref_h * @img_ratio
+		# 		  img_h = ref_h
+
+		# 		@img.width img_w
+		# 		@img.height img_h
+		# 		@img.css {'margin-left':"#{-.5 * (img_w - ref_w)}px", 'margin-top':"#{-.6 * (img_h - ref_h)}px"}
 

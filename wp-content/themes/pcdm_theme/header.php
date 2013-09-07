@@ -77,7 +77,7 @@ if (isset($polylang)){
               </li>
               <li><a href="" title=""><?php _e('Diary')?></a></li>
               <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
-              <li><a href="" title=""><?php _e('shop online')?></a></li>
+              <li><a href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php _e('shop online')?></a></li>
             </ul>
           </nav>
           <nav class="choose-language">
@@ -166,7 +166,7 @@ if (isset($polylang)){
                                     </li>
                                     <li><a href="" title=""><?php echo _e('Diary')?></a></li>
                                     <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php echo _e('News')?></a></li>
-                                    <li><a href="" title=""><?php echo _e('shop online')?></a></li>
+                                    <li><a href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php echo _e('shop online')?></a></li>
                                 </ul>
                             </nav>
                             <nav class="nav-social">

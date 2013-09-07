@@ -268,6 +268,60 @@ function packShoponlineElement($shop_element, $meta) {
   return $entity;
 }
 
+function pcdm_get_video_archive() {
+  $res = array();
+  //costruisco la query
+  $video_query = array(
+      'posts_per_page' => -1,
+      'offset' => 0,
+      'category' => '',
+      'include' => '',
+      'exclude' => '',
+      'meta_key' => '',
+      'meta_value' => '',
+      'post_type' => PcdmVideo::TYPE_IDENTIFIER,
+      'post_mime_type' => '',
+      'post_parent' => '',
+      'post_status' => 'publish'
+  );
+
+  //ciclo sugli shop online
+  foreach (get_posts($video_query) as $p) {
+    //recupero i meta
+    $meta = get_post_meta($p->ID);
+    //impacchetto l'elemento
+    $element = packVideoElement($p, $meta);
+    
+    $res[]=$element;
+  }
+  
+  return $res;
+}
+
+function packVideoElement($shop_element, $meta) {
+  $entity = array();
+  $post_attributes = array(
+      'ID',
+      'post_title'
+  );
+  $post_meta_attributes = array(
+      PcdmVideo::TYPE_PREFIX . 'description',
+      PcdmVideo::TYPE_PREFIX . 'video_link',
+      PcdmVideo::TYPE_PREFIX . 'wall_image',
+      PcdmVideo::TYPE_PREFIX . 'wall_image_id',
+  );
+
+  foreach ($post_attributes as $attr) {
+    $entity[$attr] = $shop_element->$attr;
+  }
+
+  foreach ($post_meta_attributes as $attr) {
+    $entity[$attr] = $meta[$attr][0];
+  }
+
+  return $entity;
+}
+
 function pcdm_get_news_archive() {
 //massimo peso in HP
   $max_fill_news_block = 2;

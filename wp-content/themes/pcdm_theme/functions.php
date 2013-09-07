@@ -196,6 +196,78 @@ function pcdm_get_home_link($element) {
   return "";
 }
 
+function pcdm_get_shoponline_archive() {
+  $res = array();
+  //costruisco la query
+  $shop_query = array(
+      'posts_per_page' => -1,
+      'offset' => 0,
+      'category' => '',
+      'include' => '',
+      'exclude' => '',
+      'meta_key' => '',
+      'meta_value' => '',
+      'post_type' => PcdmShoponline::TYPE_IDENTIFIER,
+      'post_mime_type' => '',
+      'post_parent' => '',
+      'post_status' => 'publish'
+  );
+
+  //ciclo sugli shop online
+  foreach (get_posts($shop_query) as $p) {
+    //recupero i meta
+    $meta = get_post_meta($p->ID);
+    //impacchetto l'elemento
+    $element = packShoponlineElement($p, $meta);
+    //verifico a quale lettera appartenga questo post
+    $element[PcdmShoponline::TYPE_PREFIX . 'letter'] =
+            isset($element[PcdmShoponline::TYPE_PREFIX . 'letter']) ?
+            strtolower(substr(trim($element[PcdmShoponline::TYPE_PREFIX . 'letter']), 0, 1)) :
+            strtolower(substr(trim($element['post_title']), 0, 1));
+    //imposto correttamente i valori dei link
+    if (isset($element[PcdmShoponline::TYPE_PREFIX . 'link'])) {
+      if (!isset($element[PcdmShoponline::TYPE_PREFIX . 'textlink'])){
+        $element[PcdmShoponline::TYPE_PREFIX . 'textlink'] = $element[PcdmShoponline::TYPE_PREFIX . 'link'];
+      }
+    }
+    if(!isset($res[$element[PcdmShoponline::TYPE_PREFIX . 'letter']])){
+      $res[$element[PcdmShoponline::TYPE_PREFIX . 'letter']] = array();
+    }
+    //assegno l'elemento alla lettera corretta
+    $res[$element[PcdmShoponline::TYPE_PREFIX . 'letter']][] = $element;
+  }
+
+  ksort($res);
+  
+  return $res;
+}
+
+function packShoponlineElement($shop_element, $meta) {
+  $entity = array();
+  $post_attributes = array(
+      'ID',
+      'post_title'
+  );
+  $post_meta_attributes = array(
+      PcdmShoponline::TYPE_PREFIX . 'description',
+      PcdmShoponline::TYPE_PREFIX . 'letter',
+      PcdmShoponline::TYPE_PREFIX . 'link',
+      PcdmShoponline::TYPE_PREFIX . 'textlink',
+      PcdmShoponline::TYPE_PREFIX . 'wall_image',
+      PcdmShoponline::TYPE_PREFIX . 'wall_image_id',
+  );
+
+  foreach ($post_attributes as $attr) {
+    $entity[$attr] = $shop_element->$attr;
+  }
+
+  foreach ($post_meta_attributes as $attr) {
+    $entity[$attr] = $meta[$attr][0];
+  }
+
+  return $entity;
+}
+
 function pcdm_get_news_archive() {
 //massimo peso in HP
   $max_fill_news_block = 2;

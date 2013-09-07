@@ -167,6 +167,22 @@ $ ->
       overlay_ref.hide()
     )
 
+  #####################
+  # VERTICAL FIXED MENU
+  #####################
+
+  vfm_ref = $ '.js-vertical-fixed-menu'
+  if vfm_ref.length is 1
+    vertical_fixed_menu = new VerticalFixedMenu vfm_ref 
+
+  #############
+  # BACK TO TOP
+  #############
+
+  btt_ref = $ '.back-to-top'
+  if btt_ref.length is 1
+    back_to_top = new BackToTop btt_ref
+
   ################
   # SOCIAL SHARING
   ################
@@ -189,6 +205,8 @@ $ ->
     val = window_ref.scrollTop()
     if header_menu? then header_menu.onScroll val
     if rails_shifter? then rails_shifter.onScroll val
+    if vertical_fixed_menu? then vertical_fixed_menu.onScroll val
+    if back_to_top? then back_to_top.onScroll val
 
   window_ref.scroll onWindowScroll
 
@@ -206,6 +224,7 @@ $ ->
     if columnist? then columnist.onResize window_w, window_h
     if ie_mediaquery? then ie_mediaquery.onResize window_w
     if overlay_ref? then overlay_ref.height $(document).height()
+    if back_to_top? then back_to_top.onResize window_h
 
   window_ref.resize onWindowResize
   onWindowResize()

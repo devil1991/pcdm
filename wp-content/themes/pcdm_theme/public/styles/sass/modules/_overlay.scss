@@ -16,7 +16,10 @@
     position:fixed;
     background:#fff;
     padding:25px;
-    top:10%;
+    top:100px;
+    @include at-breakpoint($phone){
+      top:2%;
+    }
     left:50%;
     //display:none;
     display:block!important;

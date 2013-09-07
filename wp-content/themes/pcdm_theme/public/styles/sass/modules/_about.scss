@@ -183,6 +183,12 @@
         >li{
           @include span-columns(1, 5);
         }
+        &:last-child{
+          @include span-columns(1 omega, 5);
+        }
+        &.last-child{
+          @include span-columns(1 omega, 5);
+        }
       }
     }
     @include at-breakpoint($phablet){

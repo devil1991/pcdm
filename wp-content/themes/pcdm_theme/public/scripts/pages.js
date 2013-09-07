@@ -7,7 +7,7 @@
   }
 
   $(function() {
-    var accordion, accordion_ref, body_simulator_ref, carousel, carousel_ref, cnt, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, fourth_child, fourth_children, fourth_children_container, header_menu, header_menu_ref, i, ie_mediaquery, j, last_child, last_child_container, mobile_menu, newsletter, onWindowResize, onWindowScroll, overlay_ref, phablet_breakpoint, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, sharing_modules, smartphone_breakpoint, video_list_ref, video_manager, window_ref, _i, _j, _k, _l, _len, _len1, _len2, _m, _n, _o, _p, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
+    var accordion, accordion_ref, back_to_top, body_simulator_ref, btt_ref, carousel, carousel_ref, cnt, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, fourth_child, fourth_children, fourth_children_container, header_menu, header_menu_ref, i, ie_mediaquery, j, last_child, last_child_container, mobile_menu, newsletter, onWindowResize, onWindowScroll, overlay_ref, phablet_breakpoint, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, sharing_modules, smartphone_breakpoint, vertical_fixed_menu, vfm_ref, video_list_ref, video_manager, window_ref, _i, _j, _k, _l, _len, _len1, _len2, _m, _n, _o, _p, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
       _this = this;
     window_ref = $(window);
     window.is_ie = $.browser.msie;
@@ -121,6 +121,14 @@
         return overlay_ref.hide();
       }));
     }
+    vfm_ref = $('.js-vertical-fixed-menu');
+    if (vfm_ref.length === 1) {
+      vertical_fixed_menu = new VerticalFixedMenu(vfm_ref);
+    }
+    btt_ref = $('.back-to-top');
+    if (btt_ref.length === 1) {
+      back_to_top = new BackToTop(btt_ref);
+    }
     sharing_modules = $('.js-sharing');
     if (sharing_modules.length > 0) {
       for (i = _p = 0, _ref7 = sharing_modules.length; 0 <= _ref7 ? _p < _ref7 : _p > _ref7; i = 0 <= _ref7 ? ++_p : --_p) {
@@ -136,7 +144,13 @@
         header_menu.onScroll(val);
       }
       if (rails_shifter != null) {
-        return rails_shifter.onScroll(val);
+        rails_shifter.onScroll(val);
+      }
+      if (vertical_fixed_menu != null) {
+        vertical_fixed_menu.onScroll(val);
+      }
+      if (back_to_top != null) {
+        return back_to_top.onScroll(val);
       }
     };
     window_ref.scroll(onWindowScroll);
@@ -157,7 +171,10 @@
         ie_mediaquery.onResize(window_w);
       }
       if (overlay_ref != null) {
-        return overlay_ref.height($(document).height());
+        overlay_ref.height($(document).height());
+      }
+      if (back_to_top != null) {
+        return back_to_top.onResize(window_h);
       }
     };
     window_ref.resize(onWindowResize);

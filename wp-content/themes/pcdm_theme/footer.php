@@ -2,6 +2,7 @@
 /**
  */
 ?>
+  <a href="#" class="back-to-top"><?php echo _e('back to top')?></a>
 	</div><!-- .container -->
        </div><!-- #wrapper -->
         <footer class="footer">
@@ -112,6 +113,7 @@
 <!-- app -->
 <script src="<?php echo pcdm_get_theme_resource('scripts/pages.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/accordion.js'); ?>" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo pcdm_get_theme_resource('scripts/back_to_top.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/carousel_full.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/collection.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/collection_details.js'); ?>" type="text/javascript" charset="utf-8"></script>
@@ -123,6 +125,7 @@
 <script src="<?php echo pcdm_get_theme_resource('scripts/newsletter.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/rails_shifter.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/social_sharing.js'); ?>" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo pcdm_get_theme_resource('scripts/vertical_fixed_menu.js'); ?>" type="text/javascript" charset="utf-8"></script>
 
 <script src="<?php echo pcdm_get_theme_resource('scripts/video_manager.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/vimeo_player.js'); ?>" type="text/javascript" charset="utf-8"></script>

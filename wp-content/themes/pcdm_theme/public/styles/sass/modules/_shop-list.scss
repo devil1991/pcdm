@@ -1,0 +1,201 @@
+.wrap-shop{
+  @include span-columns(4 omega, 4);
+  min-height:600px;
+  .wrap-text{
+    @include pie-clearfix;
+    width:20%;
+    float:left;
+    display:inline;
+    left:25%;
+    padding-right:1%;
+    text-align:right;
+    position:fixed;
+    top:150px;
+    //left:-1em;
+    @include at-breakpoint($phone) {
+      top:0px;
+      padding-top:50px;
+    }
+    &.no-fixed{
+    position:relative;
+    //left:0em;
+    }
+    @include at-breakpoint($phone) {
+      position:relative;
+      text-align:left;
+      width:100%;
+      left:0;
+    }
+    .number{
+      display:block;
+      width:100%;
+      line-height:1em;
+      position:relative;
+      font:{
+        size:12.5em;//200px
+      }
+      @include at-breakpoint($phone) {
+        left:0%;
+      }
+    }
+    .title{
+      text-transform:uppercase;
+      line-height:1.2em;
+      font:{
+        size:2.75em;//44px
+      }
+    }
+    .nav-social{
+      text-align:left;
+      padding-top:1.5em;
+      margin:1.5em 0;
+      background:url(../images/box/sep-title.jpg) right top no-repeat;
+      @include span-columns(2 omega, 3);
+      @include at-breakpoint($phone){
+        @include span-columns(6, 12);
+        background:url(../images/box/sep-title.jpg) left top no-repeat;
+        >ul{
+          >li{
+            @include span-columns(1, 5);
+            &:last-child{
+              @include span-columns(1 omega, 5);
+            }
+            &.last-child{
+              @include span-columns(1 omega, 5);
+            }
+          }
+        }
+      }
+      @include pie-clearfix();
+    }
+  }
+  .description{
+    clear:both;
+  }
+  .shop-nav{
+    padding:1em 0;
+    ul{
+      >li{
+        display:inline;
+        padding-left:20px;
+        padding-right:0px;
+        background:url(../images/shop-list/sep-letter.png) left 6px no-repeat;
+        &:first-child{
+          background:none;
+          padding-left:0;
+        }
+        >a{
+          &.current, &:hover{
+            text-decoration:none;
+            color:$red-color;
+          }
+        }
+      }
+    }
+  }
+  .wrap-shop-list{
+    @include span-columns(2 omega, 4);
+    @include at-breakpoint($phone) {
+      @include span-columns(4 omega, 4);
+    }
+    .shop-list{
+      @include span-columns(2, 2);
+      @include container;
+      $gutter-width   : 1em;
+      $grid-padding   : 0em;
+      .letter{
+        display:block;
+        width:100%;
+        line-height:1em;
+        position:relative;
+        font:{
+          size:12.5em;//200px
+        }
+        @include at-breakpoint($phone) {
+          left:0%;
+        }
+      }
+      .shop{
+        position:relative;
+        margin-bottom:2em;
+        clear:both;
+        @include pie-clearfix;
+        >article{
+          @include at-breakpoint($phone){
+            @include span-columns(2, 2);
+          }
+          &:nth-child(2n) { @include omega; }
+          @include at-breakpoint($phablet){
+            position:relative;
+          }
+          @include at-breakpoint($phone){
+            position:relative;
+          }
+          .name{
+            text-transform:uppercase;
+            line-height:1.2em;
+            font:{
+              size:2.75em;//44px
+            }
+          }
+          .link-label{
+            display:block;
+            padding-bottom: 1em;
+            margin:0 0 1em;
+            background:url(../images/box/sep-title.jpg) left bottom no-repeat;
+            font:{
+              size:1.526em;
+            }
+          }
+          .description{
+            @extend %text;
+            margin:0 0 1em;
+          }
+          .link{
+            @extend %button;
+          }
+        }
+        &.left{
+          >article{
+            @include span-columns(1 omega, 2);
+            @include at-breakpoint($phablet){
+              @include span-columns(2, 2);
+            }
+            @include at-breakpoint($phone){
+              @include span-columns(2, 2);
+            }
+          }
+          .img-deco{
+            @include span-columns(1, 2);
+            @include at-breakpoint($phablet){
+              display:none;
+            }
+            @include at-breakpoint($phone){
+              display:none;
+            }
+          }
+        }
+        &.right{
+          >article{
+            @include span-columns(1, 2);
+            @include at-breakpoint($phablet){
+              @include span-columns(2, 2);
+            }
+            @include at-breakpoint($phone){
+              @include span-columns(2, 2);
+            }
+          }
+          .img-deco{
+            @include span-columns(1 omega, 2);
+            @include at-breakpoint($phablet){
+              display:none;
+            }
+            @include at-breakpoint($phone){
+              display:none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

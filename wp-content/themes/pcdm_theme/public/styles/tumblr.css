@@ -167,6 +167,7 @@ body {
 .content .post {
   display: inline-block;
   position: relative;
+  overflow: hidden;
   font-size: 16px;
 }
 .content .post .photo > a {
@@ -196,12 +197,18 @@ body {
   padding-top: 66%;
 }
 .content .post .hover {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   position: absolute;
   width: 100%;
   text-align: center;
   background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/bg-hover.png) 0 0 repeat;
-  top: 0;
+  top: 0px;
   bottom: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
 .content .post .hover:before {
   overflow: hidden;
@@ -223,7 +230,10 @@ body {
   color: #fff;
 }
 .content .post .hover .wrap-text .aux-text {
-  padding: 30px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
 }
 .content .post .hover .wrap-text .notes {
   background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/sep-notice.png) center bottom no-repeat;
@@ -304,6 +314,10 @@ body {
 }
 .content .post .hover .wrap-text .share-menu > ul > li > a.gplus {
   background: url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/gp.png) center center no-repeat;
+}
+.content .post:hover .hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 
 .nav-social {

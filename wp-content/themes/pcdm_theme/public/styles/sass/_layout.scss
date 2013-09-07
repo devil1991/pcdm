@@ -125,3 +125,15 @@ body{
     left:0%;
   }
 }
+
+.back-to-top{
+  background:black;
+  width: 46px;
+  height: 45px;
+  position: fixed;
+  right: 20px;
+  left: inherit;
+  display: block;
+  text-indent: -5000px;
+  z-index: 9999999;
+}

@@ -35,6 +35,10 @@
             &:hover{
               text-decoration:none;
             }
+            @include at-breakpoint($phone) {
+              padding:5px 10px;
+            }
+
           }
           &:last-child{
             @include span-columns(1 omega, 4);

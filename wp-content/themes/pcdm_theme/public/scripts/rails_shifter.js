@@ -8,6 +8,8 @@
       this.onResize = __bind(this.onResize, this);
       this.onScroll = __bind(this.onScroll, this);
       this.onImageLoaded = __bind(this.onImageLoaded, this);
+      this.doc = $(document);
+      this.w = $(window);
       this.rail_1 = this.ref.find('.rail-1');
       this.rail_2 = this.ref.find('.rail-2');
       this.rail_1_el = this.rail_1.find('.creative-vision');
@@ -44,28 +46,40 @@
     };
 
     RailsShifter.prototype.resetBreakpoints = function() {
-      this.breakpoint_1 = this.rail_2_el.offset().top + .5 * this.rail_2_el.height();
+      this.breakpoint_1 = this.rail_2_el.offset().top + .6 * (this.w.width() / 1024) * this.rail_2_el.height();
       this.breakpoint_2 = this.rail_1_el.offset().top - window.small_header_height;
-      return this.acc = this.breakpoint_2 / (this.breakpoint_2 - this.breakpoint_1);
+      this.acc = this.breakpoint_2 / (this.breakpoint_2 - this.breakpoint_1);
+      return this.scroll_amp = this.doc.height() - this.w.height();
     };
 
     RailsShifter.prototype.onScroll = function(val) {
+      var current_top;
       if (this.is_enabled) {
         if (val > this.breakpoint_1) {
           if (!this.rail_1.hasClass('more-affracchievole')) {
             this.rail_1.addClass('more-affracchievole');
           }
           if (val < this.breakpoint_2) {
-            return this.rail_1.css({
+            this.rail_1.css({
               top: "" + (val - this.acc * (val - this.breakpoint_1)) + "px"
             });
           }
         } else {
           if (this.rail_1.hasClass('more-affracchievole')) {
             this.rail_1.removeClass('more-affracchievole');
-            return this.rail_1.css({
+            this.rail_1.css({
               top: "" + this.top + "px"
             });
+          }
+        }
+        if (this.rail_1.hasClass('more-affracchievole') && val >= this.scroll_amp) {
+          current_top = parseInt(this.rail_1.css('top'));
+          if (!isNaN(current_top)) {
+            if (current_top > this.top) {
+              return this.rail_1.css({
+                top: "" + this.top + "px"
+              });
+            }
           }
         }
       }

@@ -98,8 +98,8 @@ class PcdmVideo {
                 'type' => 'textarea_small'
             ),
             array(
-                'name' => 'Link video Vimeo',
-                'desc' => 'Please specify the link to Vimeo',
+                'name' => 'Vimeo video id',
+                'desc' => 'E.g. http://vimeo.com/64778965 has id 64778965',
                 'id' => self::TYPE_PREFIX . 'video_link',
                 'type' => 'text_medium'
             ),

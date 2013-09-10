@@ -3159,6 +3159,7 @@ body #wrapper.detail-on .header-small {
 }
 .wrap-about .rail-1.shifter {
   position: fixed;
+  left: 1em;
 }
 @media (min-width: 45em) and (max-width: 60em) {
   .wrap-about .rail-1 {
@@ -3508,12 +3509,12 @@ body #wrapper.detail-on .header-small {
     float: left;
     margin-right: 4.16667%;
   }
-  .the-designer .nav-social > ul:last-child {
+  .the-designer .nav-social > ul > li:last-child {
     width: 16.66667%;
     float: right;
     margin-right: 0;
   }
-  .the-designer .nav-social > ul.last-child {
+  .the-designer .nav-social > ul > li.last-child {
     width: 16.66667%;
     float: right;
     margin-right: 0;
@@ -3531,14 +3532,14 @@ body #wrapper.detail-on .header-small {
   margin-right: 4.16667%;
   display: inline;
 }
-.ie-phone .the-designer .nav-social > ul:last-child {
+.ie-phone .the-designer .nav-social > ul > li:last-child {
   width: 16.66667%;
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
 }
-.ie-phone .the-designer .nav-social > ul.last-child {
+.ie-phone .the-designer .nav-social > ul > li.last-child {
   width: 16.66667%;
   float: right;
   margin-right: 0;

@@ -11,6 +11,7 @@
     text-align: center; // this may not be needed.
     &.shifter{
       position:fixed;
+      left:1em;
     }
     @include at-breakpoint($phablet) {
       left:0;
@@ -21,7 +22,6 @@
     @include at-breakpoint($phone) {
       left:0;
     }
-
     &.more-affracchievole{
       position:relative;
       left: 0;
@@ -182,12 +182,12 @@
       >ul{
         >li{
           @include span-columns(1, 5);
-        }
-        &:last-child{
-          @include span-columns(1 omega, 5);
-        }
-        &.last-child{
-          @include span-columns(1 omega, 5);
+          &:last-child{
+            @include span-columns(1 omega, 5);
+          }
+          &.last-child{
+            @include span-columns(1 omega, 5);
+          }
         }
       }
     }

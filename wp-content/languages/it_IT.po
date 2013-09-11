@@ -6368,3 +6368,19 @@ msgstr "Scrivici per qualsiasi informazione sulle collezioni o per richieste sta
 msgid "Shop online at WW luxury boutiques. Choose your favourite online retailer to find Paula Cademartori latest collections."
 msgstr "Scegli la boutique online e acquista le collezioni Paula Cademartori."
 
+msgctxt "taxonomy general name"
+msgid "Nation"
+msgstr "Nazione"
+
+msgctxt "taxonomy general name"
+msgid "Type"
+msgstr "Tipo"
+
+msgctxt "taxonomy general name"
+msgid "Year"
+msgstr "Anno"
+
+msgctxt "taxonomy general name"
+msgid "Publication"
+msgstr "Pubblicazione"
+

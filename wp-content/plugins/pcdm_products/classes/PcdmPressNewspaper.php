@@ -19,7 +19,7 @@ class PcdmPressNewspaper {
 
     public function registerTaxonomy() {
         $labels = array(
-            'name' => _x('Newspaper', 'taxonomy general name'),
+            'name' => _x('Publication', 'taxonomy general name'),
             'singular_name' => _x('Press Newspaper', 'taxonomy singular name'),
             'search_items' => __('Search a Press Newspaper'),
             'all_items' => __('All Press Newspapers'),

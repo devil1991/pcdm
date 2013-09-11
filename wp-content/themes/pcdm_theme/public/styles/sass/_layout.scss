@@ -127,7 +127,7 @@ body{
 }
 
 .back-to-top{
-  background:black;
+  background:url('../images/back-to-top_pre.png') 0 0 repeat;;
   width: 46px;
   height: 45px;
   position: fixed;
@@ -136,4 +136,7 @@ body{
   display: block;
   text-indent: -5000px;
   z-index: 9999999;
+  &:hover{
+    background:url('../images/back-to-top.jpg') 0 0 repeat;;
+  }
 }

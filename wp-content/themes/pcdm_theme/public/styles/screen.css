@@ -64,13 +64,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .loader {
   background: url(../images/loader.gif) 0 0 no-repeat;
-  width: 150px;
-  height: 150px;
+  width: 134px;
+  height: 135px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -100px;
-  margin-left: -100px;
+  margin-top: -67px;
+  margin-left: -67px;
   display: none;
 }
 
@@ -236,7 +236,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .back-to-top {
-  background: black;
+  background: url("../images/back-to-top_pre.png") 0 0 repeat;
   width: 46px;
   height: 45px;
   position: fixed;
@@ -245,6 +245,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
   text-indent: -5000px;
   z-index: 9999999;
+}
+.back-to-top:hover {
+  background: url("../images/back-to-top.jpg") 0 0 repeat;
 }
 
 .wrap-overlay {
@@ -3126,6 +3129,7 @@ body #wrapper.detail-on .header-small {
 .news-detail .wrap-carousel {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 .news-detail .wrap-carousel .carousel {
   position: relative;
@@ -3137,6 +3141,32 @@ body #wrapper.detail-on .header-small {
 }
 .news-detail .wrap-carousel .carousel .item > a > img {
   width: 100%;
+}
+.news-detail .wrap-carousel .counter {
+  position: absolute;
+  height: 9px;
+  right: 10px;
+  bottom: 35px;
+  z-index: 999;
+}
+.news-detail .wrap-carousel .counter li {
+  display: inline-block;
+  width: 6px;
+  margin-right: 5px;
+}
+.news-detail .wrap-carousel .counter li a {
+  background: url('/public/images/sprite-set-s6f1cd460ae.png');
+  background: #fff;
+  display: block;
+  width: 6px;
+  height: 6px;
+  text-indent: -5000px;
+}
+.news-detail .wrap-carousel .counter li a:hover {
+  background: #ef4230;
+}
+.news-detail .wrap-carousel .counter li a.active {
+  background: #ef4230;
 }
 .news-detail .text {
   background: none;

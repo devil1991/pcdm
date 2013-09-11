@@ -124,6 +124,7 @@
   .wrap-carousel{
     width:100%;
     overflow:hidden;
+    position:relative;
     .carousel{
       position:relative;
       white-space:nowrap;
@@ -135,6 +136,33 @@
         > a{
           > img{
             width:100%;
+          }
+        }
+      }
+    }
+    .counter{
+      position:absolute;
+      height:9px;
+      right:10px;
+      bottom:35px;
+      z-index:999;
+      li{
+        display:inline-block;
+        width:6px;
+        margin-right: 5px;
+        a{
+          background: $sprite-set;
+          //background-position: sprite-position($sprite-set, dot);
+          background:#fff;
+          display:block;
+          width:6px;
+          height:6px;
+          text-indent:-5000px;
+          &:hover{
+            background:#ef4230;
+          }
+          &.active{
+            background:#ef4230;
           }
         }
       }

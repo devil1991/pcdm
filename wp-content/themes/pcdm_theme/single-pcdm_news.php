@@ -40,6 +40,26 @@ $_slide_3 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . '
             <li class="item"><a href="" title=""><img src="<?php echo $_slide_3[0] ?>" alt=""></a></li>
           <?php endif; ?>
         </ul>
+        <ul class="counter js-counter">
+          <li>
+            <a href="#" class="active">1</a>
+          </li>
+          <?php if ($_slide_1): ?>
+            <li>
+              <a href="#">2</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_2): ?>
+            <li>
+              <a href="#">3</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_3): ?>
+            <li>
+              <a href="#">4</a>
+            </li>
+          <?php endif; ?>
+        </ul>
       </div>
     <?php else: ?>
       <div class="wrap-image">

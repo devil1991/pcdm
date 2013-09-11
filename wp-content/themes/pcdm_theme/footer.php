@@ -11,37 +11,31 @@
       <ul class="js-last-child">
         <li>
           <h3 class="title"><?php echo _e('Stay connected')?></h3>
-          <p class="description">Violence to his own person. He had lighted with such enerwn person. He had lighted with such ene</p>
+          <p class="description"><?php echo _e('Sign up for email updates on latest collections, events and exclusive contents')?></p>
           <a href="#" class="subscribe"><span><?php echo _e('subscribe')?></span></a>
         </li>
         <li>
           <h3 class="title"><?php echo _e('Store list')?></h3>
-          <p class="description">Violence to his own person. He had lighted with such enerwn person. He had lighted with such ene</p>
+          <p class="description"><?php echo _e("Find the nearest point of sale for Paula Cademartori's collections")?></p>
           <a class="more" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('go to store list')?></a>
         </li>
         <li>
           <h3 class="title"><?php echo _e('Press Area')?></h3>
           <p class="description">
-            P.V. CADEMARTORI SRL
-            Headquarter
-            Via Pietro Mascagni, 30
-            20122 Milano, Italy
+            <?php echo _e("Latest news and publications. Enter and discover WW editorial coverage")?>
           </p>
-          <a class="more" href="<?php echo get_post_type_archive_link(PcdmPress::TYPE_IDENTIFIER )?>" title="">discover more</a>
+          <a class="more" href="<?php echo get_post_type_archive_link(PcdmPress::TYPE_IDENTIFIER )?>" title=""><?php echo _e('discover')?></a>
         </li>
         <li>
           <h3 class="title"><?php echo _e('Contact Us')?></h3>
           <p class="description">
-            P.V. CADEMARTORI SRL
-            Headquarter
-            Via Pietro Mascagni, 30
-            20122 Milano, Italy
+            <?php echo _e('Email us for general info or press inquiries')?>
           </p>
           <?php 
             $_contact_page = get_page_by_title("Contacts" );
             $_contact_page_tr = get_page( pll_get_post($_contact_page->ID, pll_current_language()) );
           ?>
-          <a class="more" href="<?php echo get_page_link($_contact_page_tr->ID);?>" title="">email us</a>
+          <a class="more" href="<?php echo get_page_link($_contact_page_tr->ID);?>" title=""><?php echo _e('Enter')?></a>
         </li>
       </ul>
     </nav>
@@ -76,7 +70,7 @@
       <div class="campi privacy">
         <label>
         <input type="checkbox" name="privacy" value="" class="js-required">
-        I accept the <a href="#" title=""><?php echo _e('Privacy Policy')?></a>
+        <?php echo _e('I accept the')?> <a href="#" title=""><?php echo _e('Privacy Policy')?></a>
         </label>
         <span class="label-error"><?php echo _e('error')?></span>
       </div>

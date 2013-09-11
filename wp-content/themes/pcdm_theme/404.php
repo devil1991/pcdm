@@ -26,8 +26,8 @@
           <div class="wrap-text">
             <span class="number">/404</span>
             <h2>Page not found</h2>
-            <p class="description">We’re sorry but we can’t seem to find the page you are looking for.
-                In case you need any help, please don’t hesitate to contact us:</p>
+            <p class="description"><?php echo _e('We’re sorry but we can’t seem to find the page you are looking for.
+                In case you need any help, please don’t hesitate to contact us:') ?></p>
             <a class="mail" href="mailto:info@paulacademartori.com">info@paulacademartori.com</a>
             <a href="/" class="back"><span>Back to site</span></a>
           </div>

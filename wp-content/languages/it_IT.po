@@ -1,0 +1,6370 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2013-02-06 16:36+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.5\n"
+"Project-Id-Version: 3.5.x\n"
+"POT-Creation-Date: \n"
+"Last-Translator: SteveAgl <info@wordpress-it.it>\n"
+"Language-Team: \n"
+
+msgid ""
+"\n"
+"<h1>Error establishing a database connection</h1>\n"
+"<p>This either means that the username and password information in your "
+"<code>wp-config.php</code> file is incorrect or we can't contact the "
+"database server at <code>%s</code>. This could mean your host's database "
+"server is down.</p>\n"
+"<ul>\n"
+"\t<li>Are you sure you have the correct username and password?</li>\n"
+"\t<li>Are you sure that you have typed the correct hostname?</li>\n"
+"\t<li>Are you sure that the database server is running?</li>\n"
+"</ul>\n"
+"<p>If you're unsure what these terms mean you should probably contact your "
+"host. If you still need help you can always visit the <a href='http://"
+"wordpress.org/support/'>WordPress Support Forums</a>.</p>\n"
+msgstr ""
+"\n"
+"<h1>Errore nello stabilire una connessione al database</h1>\n"
+"<p>Ciò significa che le informazioni sul nome utente o sulla password "
+"presenti nel file <code>wp-config.php</code> non sono corrette o che non è "
+"possibile contattare il server del database a <code>%s</code>. Il che "
+"potrebbe voler dire che il database server del fornitore di hosting non è "
+"attivo.</p>\n"
+"<ul>\n"
+"\t<li>Si è sicuri di disporre del nome utente e della password corretti?</"
+"li>\n"
+"\t<li>Si è sicuri di aver digitato correttamente il nome dell'host?</li>\n"
+"\t<li>Si è sicuri che il server del database sia funzionante?</li>\n"
+"</ul>\n"
+"<p>Nel caso non si abbia certezza sul significato di questi termini è "
+"opportuno contattare il proprio host. Se si ha bisogno di ulteriore aiuto è "
+"sempre possibile visitare il <a href='http://www.wordpress-it.it/"
+"forumt/'>Forum di supporto italiano su WordPress</a>.</p>\n"
+
+msgid " and "
+msgstr " e "
+
+msgid ""
+"\"caller_get_posts\" is deprecated. Use \"ignore_sticky_posts\" instead."
+msgstr ""
+"\"caller_get_posts\" è deprecato. Utilizzare al suo posto "
+"\"ignore_sticky_posts\"."
+
+msgid "% Comments"
+msgstr "% commenti"
+
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+msgid "%1$s %2$s %3$s Category Feed"
+msgstr "%1$s %2$s %3$s Feed della categoria"
+
+msgid "%1$s %2$s %3$s Comments Feed"
+msgstr "%1$s %2$s %3$s Feed dei commenti"
+
+msgid "%1$s %2$s %3$s Feed"
+msgstr "%1$s %2$s %3$s Feed"
+
+msgid "%1$s %2$s %3$s Tag Feed"
+msgstr "%1$s %2$s %3$s Feed del tag"
+
+msgid "%1$s %2$s Comments Feed"
+msgstr "%1$s %2$s Feed dei commenti"
+
+msgid "%1$s %2$s Feed"
+msgstr "%1$s %2$s Feed"
+
+msgid "%1$s %2$s Posts by %3$s Feed"
+msgstr "%1$s %2$s Articoli per il feed %3$s"
+
+msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
+msgstr "%1$s %2$s Risultati della ricerca per i feed di &#8220;%3$s&#8221;"
+
+msgid "%1$s - Comments on %2$s"
+msgstr "%1$s - Commenti su %2$s"
+
+msgid "%1$s [Autosave]"
+msgstr "%1$s [Salvataggio automatico]"
+
+msgid "%1$s [Current Revision]"
+msgstr "%1$s [Revisione corrente]"
+
+msgid "%1$s and %2$s."
+msgstr "%1$s e %2$s."
+
+msgid "%1$s at %2$s"
+msgstr "%1$s alle %2$s"
+
+msgid "%1$s comments recovered."
+msgstr "%1$s commenti recuperati."
+
+msgid ""
+"%1$s is <strong>deprecated</strong> since version %2$s with no alternative "
+"available."
+msgstr ""
+"%1$s è <strong>deprecata</strong> dalla versione %2$s senza alcuna "
+"alternativa disponibile."
+
+msgid ""
+"%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
+msgstr ""
+"%1$s è <strong>deprecata</strong> dalla versione %2$s! Utilizzare al suo "
+"posto %3$s."
+
+msgid "%1$s is proudly powered by %2$s"
+msgstr "%1$s utilizza %2$s"
+
+msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
+msgstr ""
+"%1$s è stato richiamato <strong>in maniera scorretta</strong>. %2$s %3$s"
+
+msgid ""
+"%1$s was called with an argument that is <strong>deprecated</strong> since "
+"version %2$s with no alternative available."
+msgstr ""
+"%1$s è stao richiamato conun argomento che è <strong>deprecato</strong> "
+"dalla versione %2$s senza alcuna alternativa disponibile."
+
+msgid ""
+"%1$s was called with an argument that is <strong>deprecated</strong> since "
+"version %2$s! %3$s"
+msgstr ""
+"%1$s è stato chiamato con un argomento <strong>deprecato</strong> dalla "
+"versione %2$s! %3$s."
+
+msgid "%H:%M:%S"
+msgstr "%H:%M:%S"
+
+msgid "%Y-%m-%d"
+msgstr "%Y-%m-%d"
+
+msgid "%d Plugin Update"
+msgid_plural "%d Plugin Updates"
+msgstr[0] "%d aggiornamento plugin"
+msgstr[1] "%d aggiornamenti plugin"
+
+msgid "%d Theme Update"
+msgid_plural "%d Theme Updates"
+msgstr[0] "%d aggiornamento tema"
+msgstr[1] "%d aggiornamenti tema"
+
+msgid "%d WordPress Update"
+msgstr "%d aggiornamento WordPress"
+
+msgid "%d queries. %s seconds."
+msgstr "%d query. %s secondi."
+
+msgid "%d selected"
+msgstr "%d selezionati"
+
+msgid "%s ago"
+msgstr "%s fa"
+
+msgid "%s approved"
+msgid_plural "%s approved"
+msgstr[0] "%s approvato"
+msgstr[1] "%s approvati"
+
+msgid "%s changed the comment status to %s"
+msgstr "%s ha modificato lo stato del commento in %s"
+
+msgid "%s comment awaiting moderation"
+msgid_plural "%s comments awaiting moderation"
+msgstr[0] "%s commento in attesa di approvazione"
+msgstr[1] "%s commenti in attesa di approvazione"
+
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s giorno"
+msgstr[1] "%s giorni"
+
+msgid ""
+"%s exceeds the maximum upload size for the multi-file uploader when used in "
+"your browser."
+msgstr ""
+"%s supera la dimensione massima di caricamento per il multi-file uploader "
+"quando viene utilizzato nel tuo browser."
+
+msgid "%s exceeds the maximum upload size for this site."
+msgstr "%s supera la dimensione massima di caricamento per questo sito."
+
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s ora"
+msgstr[1] "%s ore"
+
+msgid "%s is a protected WP option and may not be modified"
+msgstr "%s è un opzione protetta di WP e non può essere modificata"
+
+msgid "%s is your new username"
+msgstr "%s è il nuovo nome utente"
+
+msgid "%s min"
+msgid_plural "%s mins"
+msgstr[0] "%s minuto"
+msgstr[1] "%s minuti"
+
+msgid "%s reported this comment as not spam"
+msgstr "%s ha segnalato questo commento come non spam"
+
+msgid "%s reported this comment as spam"
+msgstr "%s ha segnalato questo commento come spam"
+
+msgid "%s topic"
+msgid_plural "%s topics"
+msgstr[0] "%s argomento"
+msgstr[1] "%s argomenti"
+
+msgid "&#8220;%s&#8221; has failed to upload."
+msgstr "&#8220;%s&#8221; non è stato caricato."
+
+msgid "&#8592; Cancel Gallery"
+msgstr "&#8592; Cancella galleria"
+
+msgid "&#8592; Return to library"
+msgstr "&#8592; Torna alla libreria"
+
+msgid "&hellip;"
+msgstr "&hellip;"
+
+msgid "&laquo; Back"
+msgstr "&laquo; Indietro"
+
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Commenti precedenti"
+
+msgid "&laquo; Previous"
+msgstr "&laquo; Precedente"
+
+msgid "&laquo; Previous Page"
+msgstr "&laquo; Pagina precedente"
+
+msgid "&larr; Back to %s"
+msgstr "&larr; Torna a %s"
+
+msgid "&lt; Prev"
+msgstr "&laquo; Prec."
+
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Seleziona &mdash;"
+
+msgid "(Edit)"
+msgstr "(Modifica)"
+
+msgid "(Must be at least 4 characters, letters and numbers only.)"
+msgstr "(Deve essere di almeno 4 caratteri, solo lettere e numeri.)"
+
+msgid "(This message was added in version %s.)"
+msgstr "(Questo messaggio è stato aggiunto nella versione %s.)"
+
+msgid "(more...)"
+msgstr "(continua...)"
+
+msgid "(no title)"
+msgstr "(senza titolo)"
+
+msgid "(required)"
+msgstr "(obbligatorio)"
+
+msgid ", "
+msgstr ", "
+
+msgid ", and "
+msgstr " e "
+
+msgid "-- Not set --"
+msgstr "-- Non impostato --"
+
+msgid "1 Comment"
+msgstr "1 commento"
+
+msgid "100%"
+msgstr "100%"
+
+msgid "110%"
+msgstr "110%"
+
+msgid "120%"
+msgstr "120%"
+
+msgid "130%"
+msgstr "130%"
+
+msgid "60%"
+msgstr "60%"
+
+msgid "70%"
+msgstr "70%"
+
+msgid "80%"
+msgstr "80%"
+
+msgid "90%"
+msgstr "90%"
+
+msgid "<a href=\"%1$s\">Akismet</a> blocks spam from getting to your blog. "
+msgstr ""
+"<a href=\"%1$s\">Akismet</a> impedisce allo spam di arrivare sul blog. "
+
+msgid ""
+"<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comment "
+"already. "
+msgid_plural ""
+"<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comments "
+"already. "
+msgstr[0] ""
+"<a href=\"%1$s\">Akismet</a> ha già protetto questo sito da %2$s commento di "
+"spam,"
+msgstr[1] ""
+"<a href=\"%1$s\">Akismet</a> ha già protetto questo sito da %2$s commenti di "
+"spam,"
+
+msgid ""
+"<a href=\"%1$s\">Akismet</a> has protected your site from <a href=\"%2$s\">"
+"%3$s spam comments</a>."
+msgid_plural ""
+"<a href=\"%1$s\">Akismet</a> has protected your site from <a href=\"%2$s\">"
+"%3$s spam comments</a>."
+msgstr[0] ""
+"<a href=\"%1$s\">Akismet</a> ha protetto il tuo sito da <a href=\"%2$s\">"
+"%3$s commento di spam</a>."
+msgstr[1] ""
+"<a href=\"%1$s\">Akismet</a> ha protetto il tuo sito da <a href=\"%2$s\">"
+"%3$s commenti di spam</a>."
+
+msgid ""
+"<a href=\"%s\" target=\"_blank\">Click here</a> to confirm that <a href=\"%s"
+"\" target=\"_blank\">Akismet.com is up</a>."
+msgstr ""
+"<a href=\"%s\" target=\"_blank\">Fare clic qui</a> per confermare che <a "
+"href=\"%s\" target=\"_blank\">Akismet.com sia accessibile</a>."
+
+msgid ""
+"<a href=\"http://%1$s\">http://%2$s</a> is your new site. <a href=\"%3$s"
+"\">Log in</a> as &#8220;%4$s&#8221; using your existing password."
+msgstr ""
+"<a href=\"http://%1$s\">http://%2$s</a> è il nuovo sito. <a href=\"%3$s"
+"\">Effettuare la login</a> come &#8220;%4$s&#8221; utilizzando la password "
+"esistente."
+
+msgid "<a href=\"http://akismet.com/get/?return=true\">What is this?</a>"
+msgstr "<a href=\"http://akismet.com/get/?return=true\">Cos'è questo?</a>"
+
+msgid ""
+"<abbr title=\"Really Simple Syndication\">RSS</abbr> feed for comments on "
+"this post."
+msgstr ""
+"<abbr title=\"Really Simple Syndication\">RSS</abbr> feed dei commenti a "
+"questo articolo."
+
+msgid "<abbr title=\"Universal Resource Locator\">URL</abbr>"
+msgstr "<abbr title=\"Uniform Resource Locator\">URL</abbr>"
+
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">scrive:</span>"
+
+msgid ""
+"<em>Rich editing</em>, also called WYSIWYG for What You See Is What You Get, "
+"means your text is formatted as you type. The rich editor creates HTML code "
+"behind the scenes while you concentrate on writing. Font styles, links and "
+"images all appear approximately as they will on the internet."
+msgstr ""
+"<em>Editor Avanzato</em>, chiamato anche WYSIWYG (What You See Is What You "
+"Get - ciò che vedi è ciò che ottieni) significa che il testo viene "
+"formattato mentre lo si digita. Mentre ci si concentra sulla scrittura, "
+"l'editor avanzato crea il codice HTML. Gli stili dei caratteri, i link, le "
+"immagini appaiono esattamente come appariranno su internet."
+
+msgid ""
+"<h1>Can&#8217;t select database</h1>\n"
+"<p>We were able to connect to the database server (which means your username "
+"and password is okay) but not able to select the <code>%1$s</code> database."
+"</p>\n"
+"<ul>\n"
+"<li>Are you sure it exists?</li>\n"
+"<li>Does the user <code>%2$s</code> have permission to use the <code>%1$s</"
+"code> database?</li>\n"
+"<li>On some systems the name of your database is prefixed with your "
+"username, so it would be like <code>username_%1$s</code>. Could that be the "
+"problem?</li>\n"
+"</ul>\n"
+"<p>If you don't know how to set up a database you should <strong>contact "
+"your host</strong>. If all else fails you may find help at the <a href="
+"\"http://wordpress.org/support/\">WordPress Support Forums</a>.</p>"
+msgstr ""
+"<h1>Impossibile selezionare il database</h1>\n"
+"<p>&Egrave; stato possibile connettersi al server del database (il che "
+"significa che il nome utente e la password sono ok) ma non è stato possibile "
+"selezionare il database <code>%1$s</code>.</p>\n"
+"<ul>\n"
+"<li>Si è certi che esista?</li>\n"
+"<li>L'utente <code>%2$s</code> ha i permessi di usare il database <code>"
+"%1$s</code>?</li>\n"
+"<li>Su alcuni sistemi il nome del database va fatto precedere dal nome "
+"utente, così da avere un formato simile a username_%1$s. Potrebbe essere "
+"questo il problema?</li>\n"
+"</ul>\n"
+"<p>Se non si sa come impostare un database sarebbe opportuno "
+"<strong>contattare il proprio fornitore di hosting</strong>. Se tutto questo "
+"fallisce è possibile trovare aiuto sul <a href='http://www.wordpress-it.it/"
+"forumt/'>Forum di supporto italiano su WordPress</a>.</p>"
+
+msgid ""
+"<p><em>The site you were looking for, <strong>%s</strong> does not exist, "
+"but you can create it now!</em></p>"
+msgstr ""
+"<p><em>Il blog che si sta cercando, <strong>%s</strong> non esiste ma è "
+"possibile crearlo ora!</em></p>"
+
+msgid ""
+"<p><em>The site you were looking for, <strong>%s</strong>, does not exist.</"
+"em></p>"
+msgstr ""
+"<p><em>Il sito che si sta cercando, <strong>%s</strong> non esiste.</em></p>"
+
+msgid ""
+"<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</"
+"strong>"
+msgid_plural ""
+"<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</"
+"strong>"
+msgstr[0] ""
+"<strong class=\"count\">%1$s spam</strong> bloccato da <strong>Akismet</"
+"strong>"
+msgstr[1] ""
+"<strong class=\"count\">%1$s spam</strong> bloccati da <strong>Akismet</"
+"strong>"
+
+msgid "<strong>Author:</strong> %s"
+msgstr "<strong>Autore:</strong> %s"
+
+msgid ""
+"<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</"
+"strong> The value of SUBDOMAIN_INSTALL will be assumed to be your subdomain "
+"configuration setting."
+msgstr ""
+"<strong>Conflitto fra i valori per le costanti VHOST e SUBDOMAIN_INSTALL.</"
+"strong> Verrà preso il valore di SUBDOMAIN_INSTALL come parametro di "
+"configurazione dei sottodomini."
+
+msgid ""
+"<strong>Could not find site <code>%1$s</code>.</strong> Searched for table "
+"<code>%2$s</code> in database <code>%3$s</code>. Is that right?"
+msgstr ""
+"<strong>Impossibile trovare il sito <code>%1$s</code>.</strong> Si è cercata "
+"la tabella <code>%2$s</code> nel database <code>%3$s</code>. &Egrave; "
+"corretto?"
+
+msgid ""
+"<strong>Database tables are missing.</strong> This means that MySQL is not "
+"running, WordPress was not installed properly, or someone deleted <code>%s</"
+"code>. You really should look at your database now."
+msgstr ""
+"<strong>Tabelle del database mancanti.</strong> Ciò significa che MySQL non "
+"è in esecuzione, WordPress non è stato installato correttamente oppure "
+"qualcuno ha cancellato <code>%s</code>. Occorre assolutamente controllare il "
+"database."
+
+msgid ""
+"<strong>ERROR</strong>: <code>$table_prefix</code> in <code>wp-config.php</"
+"code> can only contain numbers, letters, and underscores."
+msgstr ""
+"<strong>ERRORE</strong>: il <code>$table_prefix</code> in <code>wp-config."
+"php</code> può contenere solo numeri, lettere e carattere di sottolineatura."
+
+msgid ""
+"<strong>ERROR</strong>: Cookies are blocked or not supported by your "
+"browser. You must <a href='http://www.google.com/cookies.html'>enable "
+"cookies</a> to use WordPress."
+msgstr ""
+"<strong>ERRORE</strong>: Sembra che il vostro browser non supporti o blocchi "
+"i cookie. Occorre <a href='http://www.google.com/cookies.html'>abilitare i "
+"cookie</a> per utilizzare WordPress."
+
+msgid ""
+"<strong>ERROR</strong>: Couldn&#8217;t register you... please contact the <a "
+"href=\"mailto:%s\">webmaster</a> !"
+msgstr ""
+"<strong>ERRORE/strong>: impossibile effettuare la registrazione... "
+"contattare il <a href=\"mailto:%s\">webmaster</a> !"
+
+msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
+msgstr ""
+"<strong>ERRORE</strong>: Inserisci un nome utente o un indirizzo e-mail."
+
+msgid "<strong>ERROR</strong>: Invalid username or e-mail."
+msgstr "<strong>ERRORE</strong>: nome utente o e-mail non validi."
+
+msgid "<strong>ERROR</strong>: Invalid username or incorrect password."
+msgstr "<strong>ERRORE</strong>: nome utente non valido o password errata."
+
+msgid ""
+"<strong>ERROR</strong>: Invalid username. <a href=\"%s\" title=\"Password "
+"Lost and Found\">Lost your password</a>?"
+msgstr ""
+"<strong>ERRORE</strong>: nome utente non valido. <a href=\"%s\" title="
+"\"Ufficio oggetti smarriti - Password \">È stata persa la password</a>? "
+
+msgid "<strong>ERROR</strong>: Please enter a username."
+msgstr "<strong>ERRORE</strong>: inserire un nome utente."
+
+msgid "<strong>ERROR</strong>: Please type your e-mail address."
+msgstr "<strong>ERRORE</strong>: Digitare il proprio indirizzo e-mail."
+
+msgid "<strong>ERROR</strong>: Site URL already taken."
+msgstr "<strong>ERRORE</strong>: URL sito già preso."
+
+msgid "<strong>ERROR</strong>: The email address isn&#8217;t correct."
+msgstr "<strong>ERRORE</strong>: l'indirizzo e-mail non è corretto."
+
+msgid "<strong>ERROR</strong>: The password field is empty."
+msgstr "<strong>ERRORE</strong>: il campo password è vuoto."
+
+msgid ""
+"<strong>ERROR</strong>: The password you entered for the username <strong>"
+"%1$s</strong> is incorrect. <a href=\"%2$s\" title=\"Password Lost and Found"
+"\">Lost your password</a>?"
+msgstr ""
+"<strong>ERRORE</strong>: La password inserita per l'utente <strong>%1$s</"
+"strong> non è corretta. <a href=\"%2$s\" title=\"Ufficio oggetti smarriti - "
+"Password \">È stata persa la password</a>? "
+
+msgid "<strong>ERROR</strong>: The username field is empty."
+msgstr "<strong>ERRORE</strong>: il campo nome utente è vuoto."
+
+msgid ""
+"<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr ""
+"<strong>ERRORE</strong>: Non vi sono utenti registrati con questo indirizzo "
+"email."
+
+msgid ""
+"<strong>ERROR</strong>: This email is already registered, please choose "
+"another one."
+msgstr ""
+"<strong>ERRORE</strong>: questa email è già registrata, scegliere un diverso "
+"indirizzo e-mail."
+
+msgid ""
+"<strong>ERROR</strong>: This username is already registered. Please choose "
+"another one."
+msgstr ""
+"<strong>ERRORE</strong>: Questo nome utente è già registrato. Utilizzane "
+"un'altro."
+
+msgid ""
+"<strong>ERROR</strong>: This username is invalid because it uses illegal "
+"characters. Please enter a valid username."
+msgstr ""
+"<strong>ERRORE</strong>: questo nome utente non è valido perché utilizza dei "
+"caratteri non permessi. Inserire un nome utente valido."
+
+msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
+msgstr ""
+"<strong>ERRORE</strong>: WordPress %1$s richiede MySQL %2$s o superiore"
+
+msgid "<strong>ERROR</strong>: Your account has been marked as a spammer."
+msgstr ""
+"<strong>ERRORE</strong>: l'account è stato contrassegnato come un account "
+"spammer."
+
+msgid "<strong>ERROR</strong>: please enter a valid email address."
+msgstr ""
+"<strong>ERRORE</strong>: per favore inserisci un indirizzo email valido."
+
+msgid "<strong>ERROR</strong>: please fill the required fields (name, email)."
+msgstr ""
+"<strong>ERRORE</strong>: per favore inserisci i campi obbligatori (nome, "
+"email)."
+
+msgid "<strong>ERROR</strong>: please type a comment."
+msgstr "<strong>ERRORE</strong>: per favore inserisci un commento."
+
+msgid "<strong>ERROR</strong>: problem creating site entry."
+msgstr "<strong>ERRORE</strong>: problema nella creazione voce del sito."
+
+msgid "<strong>Posted title:</strong> %s"
+msgstr "<strong>Titolo di pubblicazione:</strong> %s"
+
+msgid "<strong>RSS Error</strong>: %s"
+msgstr "<strong>Errore RSS</strong>: %s"
+
+msgid ""
+"<strong>Sign up success!</strong> Please check your email for your Akismet "
+"API Key and enter it below."
+msgstr ""
+"<strong>Sottoscrizione avvenuta!</strong> Verifica la tua email per la "
+"chiave API di Akismet e inseriscila qui sotto."
+
+msgid "<strong>XHTML:</strong> You can use these tags: <code>%s</code>"
+msgstr ""
+"<strong>XHTML:</strong> &Egrave; possibile utilizzare questi marcatori: "
+"<code>%s</code>"
+
+msgid ""
+"<strong>You have successfully updated WordPress!</strong> Please log back in "
+"to experience the awesomeness."
+msgstr ""
+"<strong>WordPress è stato aggiornato!</strong> Effettuare nuovamente il "
+"login per sperimentare la meraviglia."
+
+msgid ""
+"A DNS problem or firewall is preventing all access from your web server to "
+"Akismet.com.  <strong>Akismet cannot work correctly until this is fixed.</"
+"strong>  Please contact your web host or firewall administrator and give "
+"them <a href=\"%s\" target=\"_blank\">this information about Akismet and "
+"firewalls</a>."
+msgstr ""
+"Un problema di DNS o di firewall impedisce qualsiasi accesso ad Akismet.com "
+"da parte del vostro web server.  <strong>Akismet non può funzionare "
+"correttamente sino a che il problema non verrà risolto.</strong>  Contattare "
+"il proprio web host o l'amministratore del firewall e fornire <a href=\"%s\" "
+"target=\"_blank\">queste informazioni riguardanti Akismet ed i firewall</a>."
+
+msgid "A calendar of your site&#8217;s posts"
+msgstr "Un archivio mensile degli articoli di questo sito"
+
+msgid "A list or dropdown of categories"
+msgstr "Una lista o casella a discesa delle categorie"
+
+msgid "A monthly archive of your site&#8217;s posts"
+msgstr "Un archivio mensile degli articoli di questo sito"
+
+msgid "A name is required for this term"
+msgstr "&Egrave; richiesto un nome per questo termine"
+
+msgid ""
+"A network problem or firewall is blocking all connections from your web "
+"server to Akismet.com.  <strong>Akismet cannot work correctly until this is "
+"fixed.</strong>  Please contact your web host or firewall administrator and "
+"give them <a href=\"%s\" target=\"_blank\">this information about Akismet "
+"and firewalls</a>."
+msgstr ""
+"Un problema di rete o di firewall blocca tutte le connessioni fra il vostro "
+"web server verso Akismet.com.  <strong>Akismet non può operare correttamente "
+"sino a quando questo problema non verrà risolto.</strong> Contattare il "
+"proprio web host o l'amministratore del firewall e fornire <a href=\"%s\" "
+"target=\"_blank\">queste informazioni riguardanti Akismet ed i firewall</a>."
+
+msgid ""
+"A network problem or firewall is blocking some connections from your web "
+"server to Akismet.com.  Akismet is working but this may cause problems "
+"during times of network congestion.  Please contact your web host or "
+"firewall administrator and give them <a href=\"%s\" target=\"_blank\">this "
+"information about Akismet and firewalls</a>."
+msgstr ""
+"Un problema di rete o di firewall blocca alcune connessioni fra il vostro "
+"web server verso Akismet.com.  <strong>Akismet sta funzionando ma ciò può "
+"causare problemi durante i periodi di congestione della rete.</strong> "
+"Contattare il proprio web host o l'amministratore del firewall e fornire <a "
+"href=\"%s\" target=\"_blank\">queste informazioni riguardanti Akismet ed i "
+"firewall</a>."
+
+msgid "A new comment on the post \"%s\" is waiting for your approval"
+msgstr "Un nuovo commento all'articolo \"%s\" è in attesa di approvazione"
+
+msgid "A new pingback on the post \"%s\" is waiting for your approval"
+msgstr ""
+"Un nuovo pingback all&#8217;articolo \"%s\" è in attesa di approvazione"
+
+msgid "A new trackback on the post \"%s\" is waiting for your approval"
+msgstr ""
+"Un nuovo trackback all&#8217;articolo\"%s\" è in attesa di approvazione"
+
+msgid "A password will be e-mailed to you."
+msgstr "Verrà spedita una password via e-mail."
+
+msgid "A search form for your site"
+msgstr "Un modulo di ricerca per questo sito"
+
+msgid "A static page"
+msgstr "Una pagina statica"
+
+msgid "A term with the name provided already exists with this parent."
+msgstr "Un termine con il nome indicato esiste già per questo genitore."
+
+msgid "A term with the name provided already exists."
+msgstr "Esiste già un termine con questo nome."
+
+msgid "A valid URL was not provided."
+msgstr "URL indicata non valida."
+
+msgid "A valid email address is required"
+msgstr "&Egrave richiesto un indirizzo email valido"
+
+msgid "AIM"
+msgstr "AIM"
+
+msgid "AM"
+msgstr "AM"
+
+msgid "Abbreviation"
+msgstr "Abbreviazione"
+
+msgid "About"
+msgstr "Info"
+
+msgid "About TinyMCE"
+msgstr "Info su TinyMCE"
+
+msgid "About WordPress"
+msgstr "Informazioni su WordPress"
+
+msgid "About the software"
+msgstr "Informazioni sul programma"
+
+msgid "Accessibility Help"
+msgstr "Aiuto sull'accessibilità"
+
+msgid "Accessible"
+msgstr "Accessibile"
+
+msgid "Acronym"
+msgstr "Acronimo"
+
+msgid "Action"
+msgstr "Azione"
+
+msgid "Actions"
+msgstr "Azioni"
+
+msgid "Activate"
+msgstr "Attiva"
+
+msgid "Activation Key Required"
+msgstr "&Egrave; richiesta una chiave di attivazione"
+
+msgid "Activation Key:"
+msgstr "Chiave di attivazione:"
+
+msgid "Add"
+msgstr "Aggiungi"
+
+msgid "Add Audio"
+msgstr "Aggiungi audio"
+
+msgid "Add Link"
+msgstr "Aggiungi link"
+
+msgid "Add Media"
+msgstr "Aggiungi media"
+
+msgid "Add New Category"
+msgstr "Aggiungi una nuova categoria"
+
+msgid "Add New Link Category"
+msgstr "Aggiungere una nuova categoria di link"
+
+msgid "Add New Page"
+msgstr "Aggiungi nuova pagina"
+
+msgid "Add New Post"
+msgstr "Aggiungi nuovo articolo"
+
+msgid "Add New Tag"
+msgstr "Aggiungi nuovo tag"
+
+msgid "Add Video"
+msgstr "Aggiungi video"
+
+msgid "Add an Image"
+msgstr "Aggiungi immagine"
+
+msgid "Add or remove tags"
+msgstr "Aggiungi o rimuovi tag"
+
+msgid "Add to Gallery"
+msgstr "Aggiungi alla galleria"
+
+msgid "Add to gallery"
+msgstr "Aggiungi alla galleria"
+
+msgid "Address"
+msgstr "Indirizzo"
+
+msgid "Advanced"
+msgstr "Avanzate"
+
+msgid "Advanced Image Settings"
+msgstr "Impostazioni avanzate immagini"
+
+msgid "Advanced Link Settings"
+msgstr "Impostazioni avanzate link"
+
+msgid "Advanced Rich Editing"
+msgstr "Editor avanzato"
+
+msgid "Advanced Settings"
+msgstr "Impostazioni avanzate"
+
+msgid "Advanced use of the Rich Editor"
+msgstr "Utilizzo evoluto dell'editor avanzato"
+
+msgid "Akismet"
+msgstr "Akismet"
+
+msgid "Akismet %s requires WordPress 3.0 or higher."
+msgstr "Akismet %s richiede WordPress 3.0 o superiore."
+
+msgid "Akismet API Key"
+msgstr "Chiave API Akismet"
+
+msgid "Akismet Configuration"
+msgstr "Configurazione Akismet"
+
+msgid "Akismet Spam"
+msgstr "Spam Akismet"
+
+msgid "Akismet Spam (%s)"
+msgstr "Spam Akismet (%s)"
+
+msgid "Akismet Stats"
+msgstr "Statistiche Akismet"
+
+msgid "Akismet Widget"
+msgstr "Widget Akismet"
+
+msgid "Akismet caught this comment as spam"
+msgstr "Akismet ha identificato questo commento come spam"
+
+msgid "Akismet caught this comment as spam during an automatic retry."
+msgstr ""
+"Akismet ha identificato questi commenti come spam durante un ricontrollo "
+"automatico."
+
+msgid "Akismet cleared this comment"
+msgstr "Akismet ha ripulito questo commento"
+
+msgid "Akismet cleared this comment during an automatic retry."
+msgstr ""
+"Akismet ha ripulito questo commento durante un nuovo tentativo automatico."
+
+msgid ""
+"Akismet has caught <strong>%1$s spam</strong> for you since you first "
+"installed it."
+msgstr ""
+"Akismet ha bloccato <strong>%1$s</strong> messaggi di spam da quando è stato "
+"installato."
+
+msgid "Akismet has detected a problem."
+msgstr "Akismet ha identificato un problema."
+
+msgid "Akismet is almost ready."
+msgstr "Akismet è quasi pronto."
+
+msgid "Akismet is working correctly.  All servers are accessible."
+msgstr ""
+"Akismet sta funzionando correttamente.  Tutti i server sono accessibili."
+
+msgid "Akismet re-checked and caught this comment as spam"
+msgstr "Akismet ha ricontrollato e ha catturato questo commento come spam"
+
+msgid "Akismet re-checked and cleared this comment"
+msgstr "Akismet ha riverificato e pulito questo commento"
+
+msgid "Akismet server"
+msgstr "Server Akismet"
+
+msgid ""
+"Akismet was unable to check this comment (response: %s), will automatically "
+"retry again later."
+msgstr ""
+"Akismet non ha potuto verificare questo commento (risposta: %s), verrà "
+"nuovamente verificato in automatico in seguito."
+
+msgid "Akismet was unable to re-check this comment (response: %s)"
+msgstr "Akismet non ha potuto riverificare questo commento (risposta: %s)"
+
+msgid "Align"
+msgstr "Allinea"
+
+msgid "Align Center"
+msgstr "Allinea al centro"
+
+msgid "Align Center (Alt + Shift + C)"
+msgstr "Allinea al centro (Alt + Shift + C)"
+
+msgid "Align Full (Alt + Shift + J)"
+msgstr "Giustificato (Alt + Maiusc + J)"
+
+msgid "Align Left"
+msgstr "Allinea a sinistra"
+
+msgid "Align Left (Alt + Shift + L)"
+msgstr "Allinea a sinistra (Alt + Shift + L)"
+
+msgid "Align Right"
+msgstr "Allinea a destra"
+
+msgid "Align Right (Alt + Shift + R)"
+msgstr "Allinea a destra (Alt + Shift + R)"
+
+msgid "Alignment"
+msgstr "Allineamento"
+
+msgid "All"
+msgstr "Tutti"
+
+msgid "All Akismet servers are available."
+msgstr "Tutti i server Akismet sono disponibili."
+
+msgid "All Categories"
+msgstr "Tutte le categorie"
+
+msgid "All Link Categories"
+msgstr "Tutte le categorie link"
+
+msgid "All Pages"
+msgstr "Tutte le pagine"
+
+msgid "All Posts"
+msgstr "Tutti gli articoli"
+
+msgid "All Tags"
+msgstr "Tutti i tag"
+
+msgid "All media items"
+msgstr "Tutti gli elementi media"
+
+msgid "All spam deleted."
+msgstr "Tutto lo spam è stato cancellato."
+
+msgid "Allow link notifications from other blogs (pingbacks and trackbacks)"
+msgstr "Consenti notifica link da altri blog (pingback e trackback)."
+
+msgid "Allow new users to sign up"
+msgstr "Permettere ai nuovi utenti di iscriversi"
+
+msgid "Allow people to post comments on new articles"
+msgstr "Consenti la scrittura di commenti per i nuovi articoli"
+
+msgid "Allow search engines to index this site."
+msgstr "Permetti ai motori di ricerca di indicizzare questo sito."
+
+msgid "Allowed Files"
+msgstr "File permessi"
+
+msgid "Already Installed"
+msgstr "Già installato"
+
+msgid "Alt Text"
+msgstr "Testo Alt"
+
+msgid "Alternative Text"
+msgstr "Testo alternativo"
+
+msgid "Alternative source 1"
+msgstr "Sorgente alternativa 1"
+
+msgid "Alternative source 2"
+msgstr "Sorgente alternativa 2"
+
+msgid "Amber"
+msgstr "Ambra"
+
+msgid ""
+"Ambiguous term name used in a hierarchical taxonomy. Please use term ID "
+"instead."
+msgstr ""
+"Termine ambiguo utilizzato in una tassonomia gerarchica. Per favore utilizza "
+"la ID dei termine."
+
+msgid ""
+"An error has occurred, which probably means the feed is down. Try again "
+"later."
+msgstr ""
+"Si è verificato un errore; probabilmente il feed non è attivo. Riprovare più "
+"tardi.</li>"
+
+msgid ""
+"An error occurred adding you to this site. Back to the <a href=\"%s"
+"\">homepage</a>."
+msgstr ""
+"Si è verificato un errore nell'aggiunta del proprio sito. Tornare alla <a "
+"href=\"%s\">homepage</a>."
+
+msgid "An error occurred during the activation"
+msgstr "Si è verificato un errore durante l'attivazione."
+
+msgid "An error occurred in the upload. Please try again later."
+msgstr "Si è verificato un errore durante il caricamento. Riprovare più tardi."
+
+msgid "An unidentified error has occurred."
+msgstr "Si è verificato un errore non identificato."
+
+msgid "Anchor name"
+msgstr "Nome ancora"
+
+msgid "Anonymous"
+msgstr "Anonimo"
+
+msgid ""
+"Any HTML entered directly into the rich editor will show up as text when the "
+"post is viewed. What you see is what you get. When you want to include HTML "
+"elements that cannot be generated with the toolbar buttons, you must enter "
+"it by hand in the Text editor. Examples are tables and &lt;code&gt;. To do "
+"this, click the Text tab and edit the code, then switch back to Visual mode. "
+"If the code is valid and understood by the editor, you should see it "
+"rendered immediately."
+msgstr ""
+"Qualsiasi codice HTML inserito direttamente in un editor avanzato, apparirà "
+"come testo quando il post verrà visualizzato. Cosa vedi è quello che prendi. "
+"Quando vuoi includere elementi del codice HTML che non possono essere "
+"generati con la barra degli strumenti, si deve inserirlo nel testo "
+"manualmente. Esempi sono le tabelle e i tag &lt;code&gt;. Per poter far "
+"questo, cliccare sulla scheda testo e modificare il codice, poi, ritornare "
+"alla modalità Visualizza/Anteprima. Se il codice è valido e riconosciuto "
+"dall'editor, dovresti vederlo immediatamente."
+
+msgid "Apply"
+msgstr "Applica"
+
+msgid "Approve and Reply"
+msgstr "Approvare e rispondere"
+
+msgid "Approve it: %s"
+msgstr "Approvalo: %s"
+
+msgid "Apr_April_abbreviation"
+msgstr "apr"
+
+msgid "April"
+msgstr "aprile"
+
+msgid "Aqua"
+msgstr "Aqua"
+
+msgid "Arbitrary text or HTML"
+msgstr "Testo o HTML libero"
+
+msgid "Archives"
+msgstr "Archivi"
+
+msgid "Are you lost?"
+msgstr "Ti sei perso?"
+
+msgid "Are you sure you want to clear all contents?"
+msgstr "Si è davvero sicuri di voler cancellare tutti i contenuti?"
+
+msgid "Are you sure you want to do this?"
+msgstr "Si è davvero sicuri di voler far questo?"
+
+msgid "Are you sure you want to install this plugin?"
+msgstr "Si è davvero sicuri di voler installare questo plugin?"
+
+msgid "Attachment Details"
+msgstr "Dettagli allegato"
+
+msgid "Attachment Display Settings"
+msgstr "Impostazioni visualizzazione allegati"
+
+msgid "Attachment Page"
+msgstr "Allegato pagina"
+
+msgid "Audio"
+msgstr "Audio"
+
+msgid "Audio <span class=\"count\">(%s)</span>"
+msgid_plural "Audio <span class=\"count\">(%s)</span>"
+msgstr[0] "Audio <span class=\"count\">(%s)</span>"
+msgstr[1] "Audio <span class=\"count\">(%s)</span>"
+
+msgid "Aug_August_abbreviation"
+msgstr "ago"
+
+msgid "August"
+msgstr "agosto"
+
+msgid "Authentication failed"
+msgstr "Autenticazione non riuscita"
+
+msgid "Author"
+msgstr "Autore"
+
+msgid "Author : %1$s (IP: %2$s , %3$s)"
+msgstr "Autore: %1$s (IP: %2$s , %3$s)"
+
+msgid "Author is %s"
+msgstr "L'autore è %s"
+
+msgid "Auto goto URL"
+msgstr "URL di indirizzo automatica"
+
+msgid "Auto play"
+msgstr "Auto play"
+
+msgid "Auto start"
+msgstr "Avvio automatico"
+
+msgid "Auto-delete spam submitted on posts more than a month old."
+msgstr ""
+"Elimina automaticamente i commenti di spam che sono più vecchi di un mese."
+
+msgid "AutoHREF"
+msgstr "AutoHREF"
+
+msgid "Automatically add paragraphs"
+msgstr "Aggiungi automaticamente paragrafi"
+
+msgid "Awaiting spam check"
+msgstr "In attesa della verifica spam"
+
+msgid "Background"
+msgstr "Sfondo"
+
+msgid "Background Attachment"
+msgstr "Fisso o scorrevole"
+
+msgid "Background Color"
+msgstr "Colore dello sfondo"
+
+msgid "Background Image"
+msgstr "Immagine di sfondo"
+
+msgid "Background Position"
+msgstr "Posizione dello sfondo"
+
+msgid "Background Repeat"
+msgstr "Ripetizione dello sfondo"
+
+msgid "Balance"
+msgstr "Bilanciamento"
+
+msgid "Base"
+msgstr "Base"
+
+msgid "Base URL"
+msgstr "URL base"
+
+msgid "Baseline"
+msgstr "Linea base"
+
+msgid "Basics"
+msgstr "Informazioni di base"
+
+msgid "Basics of Rich Editing"
+msgstr "Elementi base dell'editor avanzato"
+
+msgid "Black"
+msgstr "Nero"
+
+msgid "Blockquote"
+msgstr "Citazione"
+
+msgid "Blockquote (Alt + Shift + Q)"
+msgstr "Citazione (Alt + Shift + Q)"
+
+msgid "Blue"
+msgstr "Blu"
+
+msgid "Bold"
+msgstr "Grassetto"
+
+msgid "Bold (Ctrl + B)"
+msgstr "Grassetto (Ctrl + B)"
+
+msgid "Bookmarks"
+msgstr "Link"
+
+msgid "Border"
+msgstr "Bordo"
+
+msgid "Bottom"
+msgstr "Basso"
+
+msgid "Bottom left"
+msgstr "In basso a sinistra"
+
+msgid "Bottom right"
+msgstr "In basso a destra"
+
+msgid "Briefly unavailable for scheduled maintenance. Check back in a minute."
+msgstr ""
+"Momentaneamente non disponibile per manutenzione. Riprovare fra un minuto."
+
+msgid "Brown"
+msgstr "Marrone"
+
+msgid "Browse"
+msgstr "Scorri"
+
+msgid "Buffer"
+msgstr "Buffer"
+
+msgid "Burnt orange"
+msgstr "Arancione scuro"
+
+msgid ""
+"But, before you can start using your new username, <strong>you must activate "
+"it</strong>."
+msgstr ""
+"Ma prima di poter inziare ad utilizzare il proprio nome utente "
+"<strong>bisogna attivarlo</strong>."
+
+msgid ""
+"But, before you can start using your site, <strong>you must activate it</"
+"strong>."
+msgstr ""
+"Ma, prima di poter iniziare ad utilizzare queso sito <strong>occorre "
+"attivarlo</strong>."
+
+msgid "By: %s"
+msgstr "Di: %s"
+
+msgid "CSS Class"
+msgstr "Classe CSS"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "Calendar"
+msgstr "Calendario"
+
+msgid "Cancel"
+msgstr "Annulla"
+
+msgid "Cancel all changes"
+msgstr "Annulla tutte le modifiche"
+
+msgid "Cancel reply"
+msgstr "Annulla risposta"
+
+msgid "Cannot create a revision of a revision"
+msgstr "Impossibile creare una revisione di una revisione"
+
+msgid "Cannot create a user with an empty login name."
+msgstr "Impossibile creare un utente senza un nome di login."
+
+msgid "Caption"
+msgstr "Didascalia"
+
+msgid "Caption this image&hellip;"
+msgstr "Didascalia per questa immagine&hellip;"
+
+msgid "Captioning id"
+msgstr "ID Sottotitoli"
+
+msgid "Categories"
+msgstr "Categorie"
+
+msgid "Caught Spam"
+msgstr "Spam bloccato"
+
+msgid "Cell"
+msgstr "Cella"
+
+msgid "Center"
+msgstr "Centro"
+
+msgid "Cheatin&#8217; uh?"
+msgstr "Si tenta di fare i furbi, eh?"
+
+msgid "Check Spelling"
+msgstr "Verifica ortografia"
+
+msgid "Check for Spam"
+msgstr "Controlla lo spam"
+
+msgid "Check network status &raquo;"
+msgstr "Verifica stato della rete &raquo;"
+
+msgid ""
+"Check the junk or spam folder of your email client. Sometime emails wind up "
+"there by mistake."
+msgstr ""
+"Controllare la cartella Cestino o Spam del proprio programma email. A volte "
+"le email finiscono lì per errore."
+
+msgid "Check your e-mail for the confirmation link."
+msgstr "Controlla la tua email per il link di conferma."
+
+msgid "Check your e-mail for your new password."
+msgstr "Controlla la tua email per la nuova password."
+
+msgid "Check your inbox at <strong>%s</strong> and click the link given."
+msgstr ""
+"Controlla la tua email su <strong>%s</strong> e fai clic sul link fornito.  "
+
+msgid "Choke speed"
+msgstr "Limita velocità "
+
+msgid "Choose from the most used tags"
+msgstr "Scegli un tag fra quelli più utilizzati"
+
+msgid "Circle"
+msgstr "Cerchio"
+
+msgid "Citation"
+msgstr "Citazione"
+
+msgid "Class"
+msgstr "Classe"
+
+msgid "Cleanup messy code"
+msgstr "Pulisci codice"
+
+msgid "Clear"
+msgstr "Pulisci"
+
+msgid "Cleared by Akismet"
+msgstr "Pulito da Akismet"
+
+msgid "Click here to cancel reply."
+msgstr "Fare clic qui per annullare la risposta."
+
+msgid "Close"
+msgstr "Chiudi"
+
+msgid "Close all open tags"
+msgstr "Chiudi tutti i tag aperti"
+
+msgid "Close this window."
+msgstr "Chiudi questa finestra."
+
+msgid "Code"
+msgstr "Codice"
+
+msgid "Code sample"
+msgstr "Esempio di codice"
+
+msgid "Color picker"
+msgstr "Selezione colori"
+
+msgid "Color:"
+msgstr "Colore:"
+
+msgid "Colors"
+msgstr "Colori"
+
+msgid "Column"
+msgstr "Colonna"
+
+msgid "Columns"
+msgstr "Colonne"
+
+msgid "Command failed "
+msgstr "Comando non riuscito "
+
+msgid "Comment History"
+msgstr "Cronologia commento"
+
+msgid "Comment author name and email are required"
+msgstr "Sono richiesti il nome e l'email dell'autore del commento"
+
+msgid "Comment on %1$s by %2$s"
+msgstr "Commenti su %1$s di %2$s"
+
+msgid "Comment on %s"
+msgstr "Commenti a %s"
+
+msgid "Comment status was changed to %s"
+msgstr "Lo stato del commento è stato cambiato in %s"
+
+msgid "Comment was caught by wp_blacklist_check"
+msgstr "Il commento è stato catturato da wp_blacklist_check"
+
+msgid "Comment: "
+msgstr "Commento:"
+
+msgid "Comments"
+msgstr "Commenti"
+
+msgid "Comments (RSS)"
+msgstr "Commenti (RSS)"
+
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> dei commenti"
+
+msgid "Comments Feed"
+msgstr "Feed dei commenti"
+
+msgid "Comments Off"
+msgstr "Commenti disabilitati"
+
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+msgid "Comments for %1$s searching on %2$s"
+msgstr "Commenti per %1$s ricercati in %2$s"
+
+msgid "Comments for %s"
+msgstr "Commenti per %s"
+
+msgid "Comments on %s"
+msgstr "Commenti a %s"
+
+msgid "Comments on: %s"
+msgstr "Commenti a: %s"
+
+msgid ""
+"Comments you de-spam will be submitted to Akismet as mistakes so it can "
+"learn and get better."
+msgstr ""
+"I commenti marcati come no-spam verranno inviati ad Akismet e segnalati come "
+"errori in modo che possa imparare e migliorare in futuro."
+
+msgid "Compare Revisions"
+msgstr "Compara le revisioni"
+
+msgid ""
+"Conditional query tags do not work before the query is run. Before then, "
+"they always return false."
+msgstr ""
+"I tag condizionali di una query non funzionano prima che la query sia stata "
+"eseguita. Prima dell'esecuzione restituiscono sempre il valore False."
+
+msgid "Confirm new password"
+msgstr "Confermare la nuova password"
+
+msgid "Congratulations! Your new site, %s, is almost ready."
+msgstr "Congratulazioni! Il tuo nuovo blog, %s, è quasi pronto."
+
+msgid "Console"
+msgstr "Console"
+
+msgid "Constrain proportions"
+msgstr "Mantieni le proporzioni"
+
+msgid "Content"
+msgstr "Contenuto"
+
+msgid "Content, title, and excerpt are empty."
+msgstr "Contenuto, titolo e riassunto sono vuoti."
+
+msgid "Controller"
+msgstr "Controllore"
+
+msgid "Controls"
+msgstr "Controlli"
+
+msgid "Copy"
+msgstr "Copia"
+
+msgid "Copy table row"
+msgstr "Proprietà cella tabella"
+
+msgid "Copy/Cut/Paste is not available in Mozilla and Firefox."
+msgstr "Copia/Taglia/Incolla non sono disponibili in Mozilla e Firefox."
+
+msgid ""
+"Copyright &copy; 2003-2011, <a href=\"http://www.moxiecode.com\" target="
+"\"_blank\">Moxiecode Systems AB</a>, All rights reserved."
+msgstr ""
+"Copyright &copy; 2003-2011, <a href=\"http://www.moxiecode.com\" target="
+"\"_blank\"> Moxiecode Systems AB </a>, tutti i diritti riservati."
+
+msgid "Could not calculate resized image dimensions"
+msgstr "Impossibile calcolare la dimensioni dell'immagine ridimensionata"
+
+msgid "Could not create site."
+msgstr "Impossibile creare il sito."
+
+msgid "Could not create user"
+msgstr "Impossibile creare l'utente"
+
+msgid "Could not insert post into the database"
+msgstr "Impossibile inserire l'articolo nel database"
+
+msgid "Could not insert term into the database"
+msgstr "Impossibile inserire il termine nel database"
+
+msgid "Could not insert term relationship into the database"
+msgstr "Impossibile inserire termini di relazione nel database"
+
+msgid "Could not load the preview image. Please reload the page and try again."
+msgstr ""
+"Impossibile caricare l'immagine di anteprima. Per favore ricarica la pagina "
+"e riprova."
+
+msgid "Could not open handle for fopen() to %s"
+msgstr "Impossibile aprire un handle per fopen() verso %s"
+
+msgid "Could not read image size"
+msgstr "Impossibile leggere la dimensione dell'immagine"
+
+msgid "Could not read image size."
+msgstr "Impossibile leggere le dimensioni dell'immagine."
+
+msgid "Could not set that as the thumbnail image. Try a different attachment."
+msgstr ""
+"Impossibile impostare questo elemento come miniatura della pagina. Provare "
+"con un differente allegato."
+
+msgid "Could not update comment status"
+msgstr "Impossibile aggiornare lo stato del commento"
+
+msgid "Could not update post in the database"
+msgstr "Impossibile aggiornare l'articolo nel database"
+
+msgid "Could not write file %1$s (%2$s)"
+msgstr "Impossibile scrivere il file %1$s (%2$s)"
+
+msgid "Could not write file %s"
+msgstr "Impossibile scrivere il file %s"
+
+msgid "Create Gallery"
+msgstr "Crea galleria"
+
+msgid "Create Site"
+msgstr "Creazione sito"
+
+msgid "Create a Configuration File"
+msgstr "Crea un file di configurazione"
+
+msgid "Create a new gallery"
+msgstr "Crea una nuova galleria"
+
+msgid "Crop thumbnail to exact dimensions"
+msgstr "Ritaglia la miniatura alle dimensioni esatte"
+
+msgid "Crunching&hellip;"
+msgstr "Elaborazione&hellip;"
+
+msgid "Current Color"
+msgstr "Colore attuale"
+
+msgid "Current Link"
+msgstr "Link corrente"
+
+msgid "Current marker"
+msgstr "Marcatore corrente"
+
+msgid "Current position"
+msgstr "Posizione corrente"
+
+msgid ""
+"Currently %s comment is waiting for approval. Please visit the moderation "
+"panel:"
+msgid_plural ""
+"Currently %s comments are waiting for approval. Please visit the moderation "
+"panel:"
+msgstr[0] ""
+"Attualmente è presente %s commento in attesa di approvazione. Visitare il "
+"pannello di moderazione:"
+msgstr[1] ""
+"Attualmente sono presenti %s commenti in attesa di approvazione. Visitare il "
+"pannello di moderazione:"
+
+msgid ""
+"Currently not supported by your browser, use keyboard shortcuts instead."
+msgstr ""
+"Attualmente non supportato dal vostro browser, utilizzare al suo posto le "
+"scorciatoie da tastiera"
+
+msgid "Custom"
+msgstr "Personalizzato"
+
+msgid "Custom Menu"
+msgstr "Menu personalizzato"
+
+msgid "Custom URL"
+msgstr "URL personalizzata"
+
+msgid "Customize"
+msgstr "Personalizza"
+
+msgid "Cut"
+msgstr "Taglia"
+
+msgid "Cut table row"
+msgstr "Taglia riga tabella"
+
+msgid "Dark azure"
+msgstr "Azzurro scuro"
+
+msgid "Dark green"
+msgstr "Verde scuro"
+
+msgid "Dark olive"
+msgstr "Verde oliva scuro"
+
+msgid "Dashboard"
+msgstr "Bacheca"
+
+msgid "Database Error"
+msgstr "Errore del database"
+
+msgid "Database tables are missing."
+msgstr "Tabelle del database mancanti."
+
+msgid "Date Format"
+msgstr "Formato data:"
+
+msgid "De-spam marked comments &raquo;"
+msgstr "Marca i commenti come no-spam &raquo;"
+
+msgid ""
+"Dear User,\n"
+"\n"
+"Your new SITE_NAME site has been successfully set up at:\n"
+"BLOG_URL\n"
+"\n"
+"You can log in to the administrator account with the following information:\n"
+"Username: USERNAME\n"
+"Password: PASSWORD\n"
+"Log in here: BLOG_URLwp-login.php\n"
+"\n"
+"We hope you enjoy your new site. Thanks!\n"
+"\n"
+"--The Team @ SITE_NAME"
+msgstr ""
+"Gentile utente,\n"
+"\n"
+"Il nuovo sito SITE_NAME è stato correttamente creato in:\n"
+"BLOG_URL\n"
+"\n"
+"Puoi effettuare il login all'account di amministrazione con le seguenti "
+"informazioni:\n"
+"Nome utente: USERNAME\n"
+"Password: PASSWORD\n"
+"Effettua il login qui: BLOG_URLwp-login.php\n"
+"\n"
+"Speriamo il nuovo sito sia di tuo gradimento. Grazie!\n"
+"\n"
+"--Il Team @ SITE_NAME"
+
+msgid ""
+"Dear User,\n"
+"\n"
+"Your new account is set up.\n"
+"\n"
+"You can log in with the following information:\n"
+"Username: USERNAME\n"
+"Password: PASSWORD\n"
+"LOGINLINK\n"
+"\n"
+"Thanks!\n"
+"\n"
+"--The Team @ SITE_NAME"
+msgstr ""
+"Gentile utente,\n"
+"\n"
+"Il nuovo account è stato attivato.\n"
+"\n"
+"E' possibile effettuare il login con i seguenti dati:\n"
+"Nome utente: USERNAME\n"
+"Password: PASSWORD\n"
+"LOGINLINK\n"
+"\n"
+"Grazie!\n"
+"\n"
+"--Il Team di SITE_NAME"
+
+msgid "Dec_December_abbreviation"
+msgstr "dic"
+
+msgid "December"
+msgstr "dicembre"
+
+msgid "Default"
+msgstr "Predefinito"
+
+msgid "Default frame"
+msgstr "Frame predefinito"
+
+msgid "Default volume"
+msgstr "Volume predefinito"
+
+msgid "Default width"
+msgstr "Larghezza predefinita"
+
+msgid "Definition description"
+msgstr "Descrizione definizione"
+
+msgid "Definition term "
+msgstr "Elemento definizione"
+
+msgid "Delete Gallery"
+msgstr "Cancella galleria"
+
+msgid "Delete Image"
+msgstr "Cancella immagine"
+
+msgid "Delete Permanently"
+msgstr "Cancella definitivamente"
+
+msgid "Delete all"
+msgstr "Cancella tutto"
+
+msgid "Delete it: %s"
+msgstr "Eliminare: %s"
+
+msgid "Delete row"
+msgstr "Cancella riga"
+
+msgid "Delete table"
+msgstr "Cancella tabella"
+
+msgid "Deletion"
+msgstr "Cancellazione"
+
+msgid "Describe this audio file&hellip;"
+msgstr "Descrivi questo file audio&hellip;"
+
+msgid "Describe this media file&hellip;"
+msgstr "Descrivi questo file multimediale&hellip;"
+
+msgid "Describe this video&hellip;"
+msgstr "Descrivi questo video&hellip;"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Deselect"
+msgstr "Deseleziona"
+
+msgid ""
+"Destination directory for file streaming does not exist or is not writable."
+msgstr ""
+"La directory di destinazione per il file di streaming non esiste o non è "
+"scrivibile."
+
+msgid "Dictionary lookup"
+msgstr "Ricerca nel dizionario"
+
+msgid "Dimensions"
+msgstr "Dimensioni"
+
+msgid "Direction left to right"
+msgstr "Direzione da sinistra a destra"
+
+msgid "Direction right to left"
+msgstr "Direzione da destra a sinistra"
+
+msgid "Disc"
+msgstr "Disco"
+
+msgid "Dismiss"
+msgstr "Rimuovi"
+
+msgid "Dismiss Errors"
+msgstr "Nascondi l'errore"
+
+msgid "Display Header Text"
+msgstr "Visualizza il testo della testata"
+
+msgid "Display as dropdown"
+msgstr "Visualizza come menu a discesa"
+
+msgid "Display item author if available?"
+msgstr "Visualizza autore delle voci se disponibile?"
+
+msgid "Display item content?"
+msgstr "Visualizza il contenuto delle voci?"
+
+msgid "Display item date?"
+msgstr "Visualizza data delle voci?"
+
+msgctxt "Display name based on first name and last name"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+msgid "Display post date?"
+msgstr "Mostrare la data dell'articolo?"
+
+msgid "Display the number of spam comments Akismet has caught"
+msgstr "Visualizza il numero di commenti di spam identificati da Akismet"
+
+msgid "Distraction Free Writing mode"
+msgstr "Modalità di scrittura senza distrazioni"
+
+msgid "Distraction Free Writing mode (Alt + Shift + W)"
+msgstr "Modalità di scrittura senza distrazioni (Alt + Shift + W)"
+
+msgid "Div"
+msgstr "Div"
+
+msgid "Do you really want to <a href='%s'>log out</a>?"
+msgstr "Si desidera <a href='%s'>scollegarsi</a>?"
+
+msgid "Do you want to use the WYSIWYG mode for this textarea?"
+msgstr "Si desidera utilizzare la modalità WYSIWYG per questa textarea?"
+
+msgid "Document properties"
+msgstr "Proprietà documento"
+
+msgid "Documentation"
+msgstr "Documentazione"
+
+msgid "Done"
+msgstr "Finito"
+
+msgid "Draft"
+msgstr "Bozza"
+
+msgid "Draft <span class=\"count\">(%s)</span>"
+msgid_plural "Drafts <span class=\"count\">(%s)</span>"
+msgstr[0] "Bozza <span class=\"count\">(%s)</span>"
+msgstr[1] "Bozze <span class=\"count\">(%s)</span>"
+
+msgid "Drag and drop to reorder images."
+msgstr "Trascina e rilascia per riordinare le immagini."
+
+msgid "Drop a file here or <a href=\"#\" class=\"upload\">select a file</a>."
+msgstr ""
+"Trascina e rilascia un file qui oppure <a href=\"#\" class=\"upload"
+"\">seleziona un file</a>."
+
+msgid "Drop files anywhere to upload"
+msgstr "Rilasciare i file qui dentro per caricarli"
+
+msgid "Drop files to upload"
+msgstr "Trascina file per caricare"
+
+msgid ""
+"Duplicate comment detected; it looks as though you&#8217;ve already said "
+"that!"
+msgstr ""
+"Identificato un commento duplicato; sembra che tu abbia già scritto questo "
+"commento!"
+
+msgid "E-mail"
+msgstr "E-mail"
+
+msgid "E-mail : %s"
+msgstr "E-mail: %s"
+
+msgid "E-mail: %s"
+msgstr "E-mail: %s"
+
+msgid "ERROR: %s is not a valid feed template."
+msgstr "ERRORE: %s non è un modello di feed valido"
+
+msgid "ERROR: Invalid values entered, these are marked in red."
+msgstr "ERRORE: valori inseriti non validi, sono stati marcati in rosso."
+
+msgid ""
+"ERROR: The themes directory is either empty or doesn&#8217;t exist. Please "
+"check your installation."
+msgstr ""
+"ERRORE: La directory de temi è vuota o non esiste. Verifica la tua "
+"installazione."
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Edit CSS Style"
+msgstr "Modifica stile CSS"
+
+msgid "Edit Category"
+msgstr "Modifica categoria"
+
+msgid "Edit Gallery"
+msgstr "Modifica galleria"
+
+msgid "Edit HTML Source"
+msgstr "Modifica sorgente HTML"
+
+msgid "Edit Image"
+msgstr "Modifica immagine"
+
+msgid "Edit Link"
+msgstr "Modifica link"
+
+msgid "Edit Link Category"
+msgstr "Modifica categoria link"
+
+msgid "Edit Media"
+msgstr "Modifica media"
+
+msgid "Edit My Profile"
+msgstr "Modificare il profilo"
+
+msgid "Edit Page"
+msgstr "Modifica pagina"
+
+msgid "Edit Post"
+msgstr "Modifica articolo"
+
+msgid "Edit Site"
+msgstr "Modifica sito"
+
+msgid "Edit Tag"
+msgstr "Modifica tag"
+
+msgid "Edit This"
+msgstr "Modifica"
+
+msgid "Edit comment"
+msgstr "Modifica commento"
+
+msgid "Edit embedded media"
+msgstr "Modifica media incorporati"
+
+msgid "Editor width in Distraction Free Writing mode:"
+msgstr "Larghezza dell'editor nella modalità di scrittura senza distrazioni:"
+
+msgid "Either there are no posts, or something went wrong."
+msgstr "O non vi sono articoli o qualcosa è andato storto."
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Email&nbsp;Address:"
+msgstr "Indirizzo&nbsp;Email:"
+
+msgid "Emotions"
+msgstr "Emozioni"
+
+msgid "Empty Term"
+msgstr "Termine vuoto"
+
+msgid "Empty command string"
+msgstr "Stringa di comando vuota"
+
+msgid "Empty filename"
+msgstr "Nome file vuoto"
+
+msgid "Enable JavaScript"
+msgstr "Abilita JavaScript"
+
+msgid "Enabled"
+msgstr "Abilitato"
+
+msgid "End time"
+msgstr "Tempo finale"
+
+msgid ""
+"English=en,Danish=da,Dutch=nl,Finnish=fi,French=fr,German=de,Italian=it,"
+"Polish=pl,Portuguese=pt,Spanish=es,Swedish=sv"
+msgstr ""
+"Inglese=en,Danese=da,Olandese=nl,Fillandese=fi,Francese=fr,Tedesco=de,"
+"Italiano=it,Polacco=pl,Portoghese=pt,Spagnolo=es,Svedese=sv"
+
+msgid "Enter a description of the image"
+msgstr "Inserisci una descrizione per l'immagine"
+
+msgid "Enter a link URL or click above for presets."
+msgstr ""
+"Inserire una URL di collegamento o selezionare una di quelle predefinite."
+
+msgid "Enter a word to look up:"
+msgstr "Inserisci una parola da cercare:"
+
+msgid "Enter the RSS feed URL here:"
+msgstr "Inserire l'URL del feed RSS:"
+
+msgid "Enter the URL"
+msgstr "Inserisci l'URL"
+
+msgid "Enter the URL of the image"
+msgstr "Inserisci l'URL dell'immagine"
+
+msgid "Enter the destination URL"
+msgstr "Insersci la URL di destinazione"
+
+msgid "Enter title here"
+msgstr "Inserisci qui il titolo"
+
+msgid "Enter your new password below."
+msgstr "Digitare nuovamente la password."
+
+msgid "Enter your password to view comments."
+msgstr "Inserisci la tua password per visualizzare i commenti."
+
+msgid "Entries (RSS)"
+msgstr "Articoli (RSS)"
+
+msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "Voce <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+msgid "Entries from any RSS or Atom feed"
+msgstr "Voci da qualsiasi feed RSS o Atom"
+
+msgid "Error"
+msgstr "Errore"
+
+msgid "Error "
+msgstr "Errore "
+
+msgid "Error establishing a database connection"
+msgstr "Errore nello stabilire una connessione al database"
+
+msgid "Error while saving the changes."
+msgstr "Errore nel salvataggio delle modifiche."
+
+msgid "Excerpt"
+msgstr "Riassunto"
+
+msgid "Excerpt: "
+msgstr "Estratto:"
+
+msgid "Exclude:"
+msgstr "Escludi:"
+
+msgid "Exit fullscreen"
+msgstr "Esci da modalità schermo intero"
+
+msgid "F, Y"
+msgstr "F Y"
+
+msgid "F_Friday_initial"
+msgstr "V"
+
+msgid "Failed to delete the page."
+msgstr "Impossibile cancellare la pagina."
+
+msgid "Feb_February_abbreviation"
+msgstr "feb"
+
+msgid "February"
+msgstr "febbraio"
+
+msgid "Feed for all posts filed under %s"
+msgstr "Feed per tutti gli articoli archiviati in %s"
+
+msgid "Feedback"
+msgstr "Riscontro"
+
+msgid "File &#8220;%s&#8221; doesn&#8217;t exist?"
+msgstr "Il file &#8220;%s&#8221; non esiste?"
+
+msgid "File &#8220;%s&#8221; is not an image."
+msgstr "Il file &#8220;%s&#8221; non è una immagine."
+
+msgid "File canceled."
+msgstr "File cancellato."
+
+msgid "File doesn&#8217;t exist?"
+msgstr "Il file non esiste?"
+
+msgid "File is not an image."
+msgstr "Il file non è una immagine"
+
+msgid "File/URL"
+msgstr "File/URL"
+
+msgid "Find"
+msgstr "Trova"
+
+msgid "Find/Replace"
+msgstr "Trova/Sostituisci"
+
+msgid "First Post"
+msgstr "Primo articolo"
+
+msgid "Fixed"
+msgstr "Fisso"
+
+msgid "Flagged as spam by %s"
+msgstr "Contrassegnato come spam da %s "
+
+msgid "Flagged as spam by Akismet"
+msgstr "Contrassegnato come spam da Akismet."
+
+msgid "Flash options"
+msgstr "Impostazioni Flash"
+
+msgid "Flash video options"
+msgstr "Impostazioni video Flash"
+
+msgid "Flashvars"
+msgstr "Variabili flash"
+
+msgid "Font family"
+msgstr "Tipo di carattere"
+
+msgid "Font size"
+msgstr "Dimensione carattere"
+
+msgid ""
+"For many people, <a href=\"%1$s\">Akismet</a> will greatly reduce or even "
+"completely eliminate the comment and trackback spam you get on your site. If "
+"one does happen to get through, simply mark it as \"spam\" on the moderation "
+"screen and Akismet will learn from the mistakes. If you don't have an API "
+"key yet, you can get one at <a href=\"%2$s\">Akismet.com</a>."
+msgstr ""
+"Per molte persone, <a href=\"%1$s\">Akismet</a> riduce di molto o elimina "
+"completamente lo spam inviato tramite commenti e trackback. Se qualcuno di "
+"essi non viene bloccato, è possibile semplicemente contrassegnarlo come "
+"\"spam\"  nella pagina di moderazione e Akismet imparerà dai propri errori. "
+"Se non si dispone ancora di una chiave API AKismet è possibile ottenerne una "
+"su <a href=\"%2$s\">Akismet.com</a>."
+
+msgid ""
+"For more information about this software visit the <a href=\"http://tinymce."
+"com\" target=\"_blank\">TinyMCE website</a>."
+msgstr ""
+"Per ulteriori informazioni riguardo il software, visita il <a href=\"http://"
+"tinymce.com\" target=\"_blank\">sito di TinyMCE</a>"
+
+msgid ""
+"For some strange yet very annoying reason, this post could not be deleted."
+msgstr "Per qualche strano motivo, non è possibile cancellare questo articolo."
+
+msgid ""
+"For some strange yet very annoying reason, this post could not be edited."
+msgstr "Per qualche strano motivo, non è possibile modificare questo articolo."
+
+msgid "Format"
+msgstr "Formato"
+
+msgid "Fri"
+msgstr "ven"
+
+msgid "Friday"
+msgstr "venerdì"
+
+msgid "Front page"
+msgstr "Pagina iniziale"
+
+msgid "Front page displays"
+msgstr "La pagina iniziale mostra:"
+
+msgid "Full"
+msgstr "Completo"
+
+msgid "Full Size"
+msgstr "Dimensione reale"
+
+msgid "Fullscreen"
+msgstr "Schermo intero"
+
+msgid "GNU Library General Public License"
+msgstr "GNU Library General Public License"
+
+msgid "Gallery Settings"
+msgstr "Impostazioni galleria"
+
+msgid "General"
+msgstr "Generale"
+
+msgid "General Usage"
+msgstr "Utilizzo generale"
+
+msgid "Get <em>another</em> %s site in seconds"
+msgstr "Ottieni <em>un altro</em> %s sito in pochi secondi"
+
+msgid "Get New Password"
+msgstr "Ottieni una nuova password"
+
+msgid "Get your own %s account in seconds"
+msgstr "Ottieni il tuo account %s in pochi secondi"
+
+msgid "Gimme a site!"
+msgstr "Dammi un nuovo sito!"
+
+msgid "Give the feed a title (optional):"
+msgstr "Dare un titolo al feed RSS (opzionale):"
+
+msgid "Global Dashboard: %s"
+msgstr "Bacheca globale: %s"
+
+msgid "Gold"
+msgstr "Oro"
+
+msgid "Got Moxie?"
+msgstr "Got Moxie?"
+
+msgid "Gray"
+msgstr "Grigio"
+
+msgid "Grayish blue"
+msgstr "Grigio blu"
+
+msgid "Green"
+msgstr "Verde"
+
+msgid ""
+"Greetings Site Administrator! You are currently allowing &#8220;%s&#8221; "
+"registrations. To change or disable registration go to your <a href=\"%s"
+"\">Options page</a>."
+msgstr ""
+"Salve amministratore del sito! Attualmente stai permettendo &#8220;%s&#8221; "
+"registrazioni. Per cambiare o disabilitare le registrazioni vai alla tua <a "
+"href=\"%s\">Pagina delle opzioni</a>."
+
+msgid "H-Space"
+msgstr "Spazio Orizzontale"
+
+msgid "HTML Source Editor"
+msgstr "Edito codice HTML"
+
+msgid "HTML in the Rich Editor"
+msgstr "HTML nell'editor avanzato"
+
+msgid "HTML5 Video Options"
+msgstr "Impostazioni Video HTML5"
+
+msgid "HTTP error."
+msgstr "Errore HTTP."
+
+msgid ""
+"Have you entered your email correctly?  You have entered %s, if it&#8217;s "
+"incorrect, you will not receive your email."
+msgstr ""
+"Hai inserito un indirizzo email corretto? Hai inserito %s ma se non è "
+"corretto, non riceverai la tua email."
+
+msgid "Header"
+msgstr "Testata"
+
+msgid "Header Image"
+msgstr "Immagine della testata"
+
+msgid "Header Text Color"
+msgstr "Colore testo della testata"
+
+msgid "Heading 1"
+msgstr "Titolo 1"
+
+msgid "Heading 2"
+msgstr "Titolo 2"
+
+msgid "Heading 3"
+msgstr "Titolo 3"
+
+msgid "Heading 4"
+msgstr "Titolo 4"
+
+msgid "Heading 5"
+msgstr "Titolo 5"
+
+msgid "Heading 6"
+msgstr "Titolo 6"
+
+msgid "Height"
+msgstr "Altezza"
+
+msgid "Help"
+msgstr "Aiuto"
+
+msgid "Help (Alt + Shift + H)"
+msgstr "Aiuto (Alt + Shift + H)"
+
+msgid "Hex Value"
+msgstr "Valore esadecimale"
+
+msgid "Hidden"
+msgstr "Nascosto"
+
+msgid "Hidden GUI"
+msgstr "Nascondi GUI"
+
+msgid ""
+"Hint: The password should be at least seven characters long. To make it "
+"stronger, use upper and lower case letters, numbers and symbols like ! \" ? "
+"$ % ^ &amp; )."
+msgstr ""
+"Suggerimento: la tua password dovrebbe essere lunga almeno sette caratteri. "
+"Per renderla più robusta, utilizza lettere maiuscole e minuscole, numeri e "
+"simboli tipo ! \" ? $ % ^ &amp; )."
+
+msgid "History"
+msgstr "Cronologia"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Home URL"
+msgstr "URL della Home"
+
+msgid "Horizontal rule"
+msgstr "Righello orizzontale"
+
+msgid "Horizontal space"
+msgstr "Spaziatura orizzontale"
+
+msgid "Hotkeys"
+msgstr "Scorciatoie"
+
+msgid "How many items would you like to display?"
+msgstr "Quanti articoli visualizzare?"
+
+msgid "Howdy, %1$s"
+msgstr "Salve %1$s"
+
+msgid "IO error."
+msgstr "Errore di IO."
+
+msgid "IP:"
+msgstr "IP:"
+
+msgid "Id"
+msgstr "Id"
+
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+"Se si è trattato di un errore, ignorare questa email e non accadrà nulla."
+
+msgid ""
+"If you are the owner of this network please check that MySQL is running "
+"properly and all tables are error free."
+msgstr ""
+"Se sei il proprietario di questo network verifica che MySQL sia in "
+"esecuzione e che non ci siano errori nelle tabelle del database."
+
+msgid ""
+"If you do not activate your site within two days, you will have to sign up "
+"again."
+msgstr ""
+"Se non si attiva il proprio sito entro due giorni si dovrà ripetere la "
+"sottoscrizione."
+
+msgid ""
+"If you do not activate your username within two days, you will have to sign "
+"up again."
+msgstr ""
+"Se non si attiva il proprio nome utente entro due giorni, occorrerà "
+"registrarsi nuovamente."
+
+msgid ""
+"If you do not like the way the rich editor works, you may turn it off from "
+"Your Profile submenu, under Users in the admin menu."
+msgstr ""
+"Se non piace il modo in cui lavora  l'editor avanzato, è possibile "
+"disabilitarlo sotto \"il tuo profilo\" posizionato nel menu di "
+"amministrazione Utenti."
+
+msgid ""
+"If you haven&#8217;t received your email yet, there are a number of things "
+"you can do:"
+msgstr ""
+"Se non si è ancora ricevuta l'email, vi sono una serie di cose che è "
+"possibile fare:"
+
+msgid ""
+"If you need to upload an image or another media file from your computer, you "
+"can use the Media Library button above the editor. The media library will "
+"attempt to create a thumbnail-sized copy from each uploaded image. To insert "
+"your image into the post, first click on the thumbnail to reveal a menu of "
+"options. When you have selected the options you like, click \"Insert into "
+"Post\" and your image or file will appear in the post you are editing."
+msgstr ""
+"Se devi caricare un file immagine o altri file multimediali dal tuo "
+"computer, puoi utilizzare il tasto \"Libreria Multimediale\" sopra l'editor. "
+"La libreria multimediale creerà automaticamente un file in miniatura da ogni "
+"file immagine caricata. Per inserire la tua immagine nel post, prima clicca "
+"sul file miniaturizzato per far apparire un menu di opzioni. Appena hai "
+"selezionato l'opzione che meglio ti aggrada, clicca \"Inserisci nel Post\" e "
+"la tua immagine apparirà nel post che stai modificando."
+
+msgid ""
+"If you&#8217;re not going to use a great site domain, leave it for a new "
+"user. Now have at it!"
+msgstr ""
+"Se non si ha  intenzione di utilizzare un grande dominio per il sito, "
+"lasciarlo per un nuovo utente. Ora precedete!"
+
+msgid ""
+"If you&#8217;re still stuck with this message, then check that your database "
+"contains the following tables:"
+msgstr ""
+"Se si continua a visualizzare questo messaggio, verificare che il database "
+"contenga le seguenti tabelle:"
+
+msgid ""
+"If your site does not display, please contact the owner of this network."
+msgstr ""
+"Se il proprio sito non si visualizza contattare il proprietario di questo "
+"network."
+
+msgid "Ignore all"
+msgstr "Ignora tutto"
+
+msgid "Ignore word"
+msgstr "Ignora parola"
+
+msgid "Image"
+msgstr "Immagine"
+
+msgid "Image <span class=\"count\">(%s)</span>"
+msgid_plural "Images <span class=\"count\">(%s)</span>"
+msgstr[0] "Immagine <span class=\"count\">(%s)</span>"
+msgstr[1] "Immagini <span class=\"count\">(%s)</span>"
+
+msgid "Image Editor Save Failed"
+msgstr "Salvataggio immagine fallito"
+
+msgid "Image URL"
+msgstr "URL immagine"
+
+msgid "Image crop failed."
+msgstr "Ritaglio immagine fallito."
+
+msgid "Image default align"
+msgstr "Allineamento predefinito immagine"
+
+msgid "Image default link type"
+msgstr "Tipo di link predefinito per le immagini"
+
+msgid "Image default size"
+msgstr "Dimensioni predefinite immagine"
+
+msgid "Image description"
+msgstr "Descrizione immagine"
+
+msgid "Image flip failed."
+msgstr "Ribaltamento immagine fallito."
+
+msgid "Image list"
+msgstr "Lista immagini"
+
+msgid "Image properties"
+msgstr "Proprietà immagine"
+
+msgid "Image resize failed."
+msgstr "Ridimensionamento immagine fallito."
+
+msgid "Image rotate failed."
+msgstr "Rotazione immagine fallita."
+
+msgid "Image status"
+msgstr "Stato immagine"
+
+msgid "Images"
+msgstr "Immagini"
+
+msgid "Images and Attachments"
+msgstr "Immagini e allegati"
+
+msgid "Incorrect username or password."
+msgstr "Username o password non corrette."
+
+msgid "Indent"
+msgstr "Quota/indenta"
+
+msgid "Indigo"
+msgstr "Indaco"
+
+msgid "Insert"
+msgstr "Inserisci"
+
+msgid "Insert / edit embedded media"
+msgstr "Inserisci/modifica media incorporati"
+
+msgid "Insert Image"
+msgstr "Inserisci immagine"
+
+msgid "Insert Media"
+msgstr "Inserisci il file multimediale"
+
+msgid "Insert More Tag"
+msgstr "Inserisci il tag More"
+
+msgid "Insert More Tag (Alt + Shift + T)"
+msgstr "Inserisci il tag More (Alt + Shift + T)"
+
+msgid "Insert Page Break"
+msgstr "Inserisci interruzione di pagina"
+
+msgid "Insert Page Break tag"
+msgstr "Inserisci tag di Interruzione pagina"
+
+msgid "Insert Page break (Alt + Shift + P)"
+msgstr "Inserisci interruzione di pagina (Alt + Shift + P)"
+
+msgid "Insert column after"
+msgstr "Inserisci una colonna dopo"
+
+msgid "Insert column before"
+msgstr "Inserisci una colonna prima"
+
+msgid "Insert custom character"
+msgstr "Inserisci carattere personalizzato"
+
+msgid "Insert date"
+msgstr "Inserisci data"
+
+msgid "Insert from URL"
+msgstr "Inserisci da URL"
+
+msgid "Insert gallery"
+msgstr "Inserisci galleria"
+
+msgid "Insert horizontal ruler"
+msgstr "Inserisci righello orizzontale"
+
+msgid "Insert into page"
+msgstr "Inserisci nella pagina"
+
+msgid "Insert into post"
+msgstr "Inserisci nell'articolo"
+
+msgid "Insert link"
+msgstr "Inserisci link"
+
+msgid "Insert new layer"
+msgstr "Inserisci nuovo livello"
+
+msgid "Insert non-breaking space character"
+msgstr "Inserire un carattere di spazio non divisibile"
+
+msgid "Insert predefined template content"
+msgstr "Inserisci contenuto da template predefinito"
+
+msgid "Insert row after"
+msgstr "Inserisci una riga dopo"
+
+msgid "Insert row before"
+msgstr "Inserisci una riga prima"
+
+msgid "Insert time"
+msgstr "Inserisci ora"
+
+msgid "Insert/Edit Attributes"
+msgstr "Inserisci/Modifica attributi"
+
+msgid "Insert/edit anchor"
+msgstr "Inserisci/modifica ancora"
+
+msgid "Insert/edit image"
+msgstr "Inserisci/Modifica immagine"
+
+msgid "Insert/edit image (Alt + Shift + M)"
+msgstr "Inserisci/modifica immagine (Alt + Shift + M)"
+
+msgid "Insert/edit link"
+msgstr "Inserisci/Modifica link"
+
+msgid "Insert/edit link (Alt + Shift + A)"
+msgstr "Inserisci/modifica link (Alt + Shift + A)"
+
+msgid "Insertion"
+msgstr "Inserimento"
+
+msgid "Inserts a new table"
+msgstr "Inserisci nuova tabella"
+
+msgid "Insufficient arguments passed to this XML-RPC method."
+msgstr "Gli argomenti passati a questo metodo XML-RPC sono insufficienti"
+
+msgid "Invalid activation key."
+msgstr "Chiave di attivazione non valida."
+
+msgid "Invalid attachment ID."
+msgstr "ID allegato non valido."
+
+msgid "Invalid author ID."
+msgstr "ID autore non valido"
+
+msgid "Invalid comment ID."
+msgstr "ID commento non valido."
+
+msgid "Invalid comment status."
+msgstr "Stato del commento non valido."
+
+msgid "Invalid file type"
+msgstr "Tipo di file non valido"
+
+msgid "Invalid key"
+msgstr "Chiave non valida"
+
+msgid "Invalid object ID"
+msgstr "ID oggetto non valido."
+
+msgid "Invalid post"
+msgstr "Articolo non valido"
+
+msgid "Invalid post ID"
+msgstr "ID articolo non valido"
+
+msgid "Invalid post ID."
+msgstr "ID articolo non valido"
+
+msgid "Invalid post format"
+msgstr "Formato articolo non valido"
+
+msgid "Invalid post type"
+msgstr "Tipo di articolo non valido"
+
+msgid "Invalid taxonomy"
+msgstr "Tassonomia non valida"
+
+msgid "Invalid term ID"
+msgstr "ID termine non valido."
+
+msgid "Invalid user ID"
+msgstr "ID utente non valido"
+
+msgid "Invoke URLs"
+msgstr "Richiama URL"
+
+msgid "Is there no link to us?"
+msgstr "Non ci sono link a noi?"
+
+msgid "Italic"
+msgstr "Corsivo"
+
+msgid "Italic (Ctrl + I)"
+msgstr "Corsivo (Ctrl + I)"
+
+msgid "JS Callback"
+msgstr "Richiamo JS"
+
+msgid "Jabber / Google Talk"
+msgstr "Jabber / Google Talk"
+
+msgid "Jan_January_abbreviation"
+msgstr "gen"
+
+msgid "January"
+msgstr "gennaio"
+
+msgid "Jul_July_abbreviation"
+msgstr "lug"
+
+msgid "July"
+msgstr "luglio"
+
+msgid ""
+"Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - "
+"Alt-X"
+msgstr ""
+"Vai ai pulsanti degli strumenti - Alt+Q, Vai all'editor - Alt-Z Vai "
+"all'elemento path - Alt-X"
+
+msgid "Jun_June_abbreviation"
+msgstr "giu"
+
+msgid "June"
+msgstr "giugno"
+
+msgid "Just a username, please."
+msgstr "Solo un nome utente, grazie."
+
+msgid "Just write."
+msgstr "Basta scrivere."
+
+msgid "Justify Text"
+msgstr "Testo giustificato"
+
+msgid "Keep linebreaks"
+msgstr "Mantieni interruzioni di riga"
+
+msgid "Kiosk mode"
+msgstr "Modalità chiosco"
+
+msgid "Languages"
+msgstr "Lingue"
+
+msgid "Large"
+msgstr "Grande"
+
+msgid "Large size image height"
+msgstr "Altezza dell'immagine di dimensione grande"
+
+msgid "Large size image width"
+msgstr "Larghezza dell'immagine di dimensione grande"
+
+msgid "Last Post"
+msgstr "Ultimo articolo"
+
+msgid "Last checked %s ago."
+msgstr "Ultimo controllo %s fa."
+
+msgid "Last updated"
+msgstr "Ultimo aggiornamento"
+
+msgid "Last updated: %s"
+msgstr "Ultimo aggiornamento: %s"
+
+msgid "Learn word"
+msgstr "Impara la parola"
+
+msgid "Leave a Comment"
+msgstr "Lascia un commento"
+
+msgid "Leave a Reply"
+msgstr "Lascia un Commento"
+
+msgid "Leave a Reply to %s"
+msgstr "Rispondi a %s"
+
+msgid "Leave a comment"
+msgstr "Lascia un commento"
+
+msgid "Left"
+msgstr "Sinistra"
+
+msgid "Letter"
+msgstr "Lettera"
+
+msgid "License"
+msgstr "Licenza"
+
+msgid "Light sky blue"
+msgstr "Blu cielo chiaro"
+
+msgid "Light yellow"
+msgstr "Giallo chiaro"
+
+msgid "Lime"
+msgstr "Giallo lime"
+
+msgid ""
+"Line and paragraph breaks automatic, e-mail address never displayed, "
+"<acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>"
+"%s</code>"
+msgstr ""
+"Linee e paragrafi tornano a capo automaticamente, gli indirizzi e-mail non "
+"vengono mai visualizzati, codice <acronym title=\"Hypertext Markup Language"
+"\">HTML</acronym> consentito: <code>%s</code>"
+
+msgid "Link Categories"
+msgstr "Categorie dei link"
+
+msgid "Link Category"
+msgstr "Categoria link"
+
+msgid "Link ID"
+msgstr "ID link"
+
+msgid "Link Rel"
+msgstr "Link Rel"
+
+msgid "Link To"
+msgstr "Link a"
+
+msgid "Link URL"
+msgstr "URL link"
+
+msgid "Link list"
+msgstr "Lista link"
+
+msgid "Link rating"
+msgstr "Punteggio link"
+
+msgid "Link title"
+msgstr "Titolo del link"
+
+msgid "Link to Image"
+msgstr "Link all'immagine"
+
+msgid "Links"
+msgstr "Link"
+
+msgid "Links for %s"
+msgstr "Link per %s"
+
+msgctxt "Links widget"
+msgid "Random"
+msgstr "Casuale"
+
+msgid "List"
+msgstr "Elenco"
+
+msgid "Loaded plugins"
+msgstr "Plugin caricati"
+
+msgid "Log In"
+msgstr "Collegati"
+
+msgid "Log Out"
+msgstr "Logout"
+
+msgid "Log in"
+msgstr "Collegati"
+
+msgid "Log in to Reply"
+msgstr "Fare il login per rispondere"
+
+msgid "Log in to leave a Comment"
+msgstr "Effettuare il login per lasciare un commento"
+
+msgid "Log in/out, admin, feed and WordPress links"
+msgstr "Link per il log in/out, l'amministrazione, i feed e WordPress"
+
+msgid "Log out"
+msgstr "Esci da questo account"
+
+msgid "Log out &raquo;"
+msgstr "Esci da questo account &raquo;"
+
+msgid "Log out of this account"
+msgstr "Esci da questo account"
+
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>."
+msgstr "Autenticato come <a href=\"%1$s\">%2$s</a>."
+
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out &raquo;</a>"
+msgstr ""
+"Autenticato come <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+"\"Scollegarsi da questo account\">Logout &raquo;</a>"
+
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Autenticato come <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title="
+"\"Scollegarsi da questo account\">Logout?</a>"
+
+msgid "Loop"
+msgstr "Ciclo"
+
+msgid "Lost Password"
+msgstr "Password persa"
+
+msgid "Lost your password?"
+msgstr "È stata persa la password?"
+
+msgid "Lower alpha"
+msgstr "Lettere maiuscole"
+
+msgid "Lower greek"
+msgstr "Lettere greche minuscole"
+
+msgid "Lower roman"
+msgstr "Numeri romani minuscoli"
+
+msgid "M_Monday_initial"
+msgstr "L"
+
+msgid "Magenta"
+msgstr "Magenta"
+
+msgid "Mail (will not be published)"
+msgstr "Mail (che non verrà pubblicata)"
+
+msgid "Maintain aspect"
+msgstr "Mantieni aspetto"
+
+msgid "Maintenance"
+msgstr "In manutenzione."
+
+msgid "Malformed URL: %s"
+msgstr "URL malformata: %s"
+
+msgid "Manage Audio"
+msgstr "Gestione audio"
+
+msgid "Manage Comments"
+msgstr "Gestione commenti"
+
+msgid "Manage Images"
+msgstr "Gestione immagini"
+
+msgid "Manage Video"
+msgstr "Gestione video"
+
+msgid "Manual Offsets"
+msgstr "Offset manuale"
+
+msgid "Mar_March_abbreviation"
+msgstr "mar"
+
+msgid "March"
+msgstr "marzo"
+
+msgid "Maroon"
+msgstr "Marrone"
+
+msgid "Maximum upload file size: %d%s."
+msgstr "Dimensione massima di caricamento dei file: %d%s."
+
+msgid "May"
+msgstr "maggio"
+
+msgid "May_May_abbreviation"
+msgstr "mag"
+
+msgid "Media File"
+msgstr "File media"
+
+msgid "Media Library"
+msgstr "Libreria media"
+
+msgid "Medium"
+msgstr "Media"
+
+msgid "Medium gray"
+msgstr "Grigio medio"
+
+msgid "Medium size image height"
+msgstr "Altezza dell'immagine di dimensione media"
+
+msgid "Medium size image width"
+msgstr "Larghezza dell'immagine di dimensione media"
+
+msgid "Memory exceeded. Please try another smaller file."
+msgstr "Memoria esaurita. Prova con un file più piccolo."
+
+msgid "Menus"
+msgstr "Menu"
+
+msgid "Merge table cells"
+msgstr "Unisci celle tabella"
+
+msgid "Meta"
+msgstr "Meta"
+
+msgid "Middle"
+msgstr "Mediano"
+
+msgid "Mismatch"
+msgstr "Non combacia"
+
+msgid "Missing Attachment"
+msgstr "Allegato mancante"
+
+msgid "Mission complete. Message <strong>%s</strong> deleted."
+msgstr ""
+"Missione completata. Il messaggio <strong>%s</strong> è stato eliminato."
+
+msgid "Mon"
+msgstr "lun"
+
+msgid "Monday"
+msgstr "lunedì"
+
+msgid "More colors"
+msgstr "Altri colori"
+
+msgid "More..."
+msgstr "Continua..."
+
+msgid "Move backward"
+msgstr "Muovi dietro"
+
+msgid "Move forward"
+msgstr "Sposta in avanti"
+
+msgctxt "Multisite active signup type"
+msgid "all"
+msgstr "tutti"
+
+msgctxt "Multisite active signup type"
+msgid "blog"
+msgstr "blog"
+
+msgctxt "Multisite active signup type"
+msgid "none"
+msgstr "nessuno"
+
+msgctxt "Multisite active signup type"
+msgid "user"
+msgstr "utente"
+
+msgid "Multisite only works without the port number in the URL."
+msgstr ""
+"La modalità multisito funziano solo senza il numero di porta nella URL."
+
+msgid ""
+"Must be at least 4 characters, letters and numbers only. It cannot be "
+"changed, so choose carefully!"
+msgstr ""
+"Deve essere di almeno 4 caratteri, solo lettere e numeri. Non può venir "
+"cambiato quindi sceglilo con attenzione!"
+
+msgid "Mute"
+msgstr "Muto"
+
+msgid "My Account"
+msgstr "Il mio account"
+
+msgid "My Sites"
+msgstr "I miei siti"
+
+msgid "Name"
+msgstr "Nome"
+
+msgctxt "Name for the Text editor tab (formerly HTML)"
+msgid "Text"
+msgstr "Testo"
+
+msgid "Named"
+msgstr "Nomi"
+
+msgid "Named colors"
+msgstr "Nome colori"
+
+msgid "Narrower"
+msgstr "Più stretto"
+
+msgid "Navigation"
+msgstr "Navigazione"
+
+msgid "Navigation Menu"
+msgstr "Menu di navigazione"
+
+msgid "Navigation Menu Item"
+msgstr "Elemento del menu di navigazione"
+
+msgid "Navigation Menu Items"
+msgstr "Elementi del menu di navigazione"
+
+msgid "Navigation Menus"
+msgstr "Menu di navigazione"
+
+msgid "Navy Blue"
+msgstr "Blu navy"
+
+msgid ""
+"Need more help? <a href='http://codex.wordpress.org/Editing_wp-config."
+"php'>We got it</a>."
+msgstr ""
+"Serve altro aiuto? <a href='http://codex.wordpress.org/Editing_wp-config."
+"php'>Eccolo</a>."
+
+msgid "Network Admin"
+msgstr "Amministra rete"
+
+msgid "Network Admin: %s"
+msgstr "Amministratore della rete: %s"
+
+msgid "Network Status"
+msgstr "Stato del network"
+
+msgid "Network functions are disabled."
+msgstr "Le funzionalità di rete sono disabilitate"
+
+msgid "New %1$s Site: %2$s"
+msgstr "Nuovo %1$s sito: %2$s"
+
+msgid "New %1$s User: %2$s"
+msgstr "Nuovo %1$s Utente: %2$s"
+
+msgid "New Category Name"
+msgstr "Nuovo nome di categoria"
+
+msgid "New Link Category Name"
+msgstr "Nuovo nome di categoria link"
+
+msgid "New Page"
+msgstr "Nuova pagina"
+
+msgid "New Post"
+msgstr "Nuovo articolo"
+
+msgid "New Site Registration: %s"
+msgstr "Registrazione nuovo sito: %s"
+
+msgid ""
+"New Site: %1$s\n"
+"URL: %2$s\n"
+"Remote IP: %3$s\n"
+"\n"
+"Disable these notifications: %4$s"
+msgstr ""
+"Nuovo sito: %1$s\n"
+"URL: %2$s\n"
+"Indirizzo IP: %3$s\n"
+"\n"
+"Disabilita queste notifiche: %4$s"
+
+msgid "New Tag Name"
+msgstr "Nuovo nome tag"
+
+msgid "New User Registration: %s"
+msgstr "Registrazione nuovo utente: %s"
+
+msgid ""
+"New User: %1$s\n"
+"Remote IP: %2$s\n"
+"\n"
+"Disable these notifications: %3$s"
+msgstr ""
+"Nuovo utente: %1$s\n"
+"Indirizzo IP: %2$s\n"
+"\n"
+"Disabilita queste notifiche: %3$s"
+
+msgid "New comment on your post \"%s\""
+msgstr "Nuovo commento all'articolo \"%s\""
+
+msgid "New document"
+msgstr "Nuovo documento"
+
+msgid "New layer..."
+msgstr "Nuovo livello..."
+
+msgid "New password"
+msgstr "Nuova password"
+
+msgid "New pingback on your post \"%s\""
+msgstr "Nuovo pingback all&#8217;articolo \"%s\""
+
+msgid "New trackback on your post \"%s\""
+msgstr "Nuovo trackback all&#8217;articolo \"%s\""
+
+msgid "New user registration on your site %s:"
+msgstr "Nuovo utente registrato sul sito %s:"
+
+msgid "Newer Comments &raquo;"
+msgstr "Commenti seguenti &raquo;"
+
+msgid "Next"
+msgstr "Successivo"
+
+msgid "Next &gt;"
+msgstr "Succ. &raquo;"
+
+msgid "Next &raquo;"
+msgstr "Successivo &raquo;"
+
+msgid "Next Page &raquo;"
+msgstr "Pagina successiva &raquo;"
+
+msgid "Next Post"
+msgstr "Articolo successivo"
+
+msgid "Next page"
+msgstr "Pagina successiva"
+
+msgid "Next page..."
+msgstr "Pagina successiva..."
+
+msgid "No"
+msgstr "No"
+
+msgid "No Comments"
+msgstr "Nessun commento"
+
+msgid "No Image"
+msgstr "Nessuna immagine"
+
+msgid "No Repeat"
+msgstr "Nessuna ripetizione"
+
+msgid "No categories"
+msgstr "Nessuna categoria"
+
+msgid "No comments yet."
+msgstr "Non c'è ancora nessun commento."
+
+msgid "No connection to server"
+msgstr "Nessuna connessione al server"
+
+msgid "No correction"
+msgstr "Nessuna correzione"
+
+msgid "No editor could be selected."
+msgstr "Impossibile selezionare un editor"
+
+msgid "No items found."
+msgstr "Nessun elemento trovato"
+
+msgid "No java"
+msgstr "Disabilita java"
+
+msgid "No login ID submitted"
+msgstr "Non è stato fornito alcun ID di login"
+
+msgid "No matches found."
+msgstr "Nessuna coorrispondenza trovata"
+
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr "Non è stato creato ancora alcun menu. <a href=\"%s\">Crearne uno</a>"
+
+msgid "No misspellings found."
+msgstr "Nessun errore trovato."
+
+msgid "No more comments found."
+msgstr "Nessun altro commento trovato."
+
+msgid "No msg number submitted"
+msgstr "Non è stato fornito un numero di messaggio"
+
+msgid "No pages found in Trash."
+msgstr "Nessuna pagina presente nel cestino."
+
+msgid "No pages found."
+msgstr "Nessun pagina trovata."
+
+msgid "No password submitted"
+msgstr "Non è stata fornita alcuna password"
+
+msgid "No posts found in Trash."
+msgstr "Nessun articolo trovato nel cestino."
+
+msgid "No posts found."
+msgstr "Nessun articolo trovato."
+
+msgid "No results found."
+msgstr "Nessun risultato trovato."
+
+msgid "No search term specified. Showing recent items."
+msgstr ""
+"Nessun termine di ricerca specificato. Vengono mostrati gli ultimi elementi "
+"inseriti."
+
+msgid "No server banner"
+msgstr "No server banner"
+
+msgid "No server specified"
+msgstr "Non è stato specificato alcun server"
+
+msgid "No site by that name on this system."
+msgstr "Nessun sito con questo nome su questo sistema."
+
+msgid ""
+"No site defined on this host. If you are the owner of this site, please "
+"check <a href=\"http://codex.wordpress.org/Debugging_a_WordPress_Network"
+"\">Debugging a WordPress Network</a> for help."
+msgstr ""
+"Nessun sito definito per questo host. Se si è i proprietari di questo sito, "
+"per ottenere aiuto, verificare <a href=\"http://codex.wordpress.org/"
+"Debugging_a_WordPress_Network\">Debugging di un network WordPress</a> (in "
+"inglese)"
+
+msgid "No suggestions"
+msgstr "Nessun suggerimento"
+
+msgid "None"
+msgstr "Nessuna"
+
+msgid "Not Spam"
+msgstr "Non è spam"
+
+msgid "Nov_November_abbreviation"
+msgstr "nov"
+
+msgid "November"
+msgstr "novembre"
+
+msgid "Num loops"
+msgstr "Numero di cicli"
+
+msgid "Number of comments to show:"
+msgstr "Numero di commenti da visualizzare:"
+
+msgid "Number of links to show:"
+msgstr "Numero di link da visualizzare:"
+
+msgid "Number of posts to show:"
+msgstr "Numero di articoli da visualizzare:"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Oct_October_abbreviation"
+msgstr "ott"
+
+msgid "October"
+msgstr "ottobre"
+
+msgid "Olive"
+msgstr "Verde oliva"
+
+msgid "Once Daily"
+msgstr "Ogni giorno"
+
+msgid "Once Hourly"
+msgstr "Ogni ora"
+
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] "Una risposta a %2$s"
+msgstr[1] "%1$s risposte a %2$s"
+
+msgid ""
+"One or more database tables are unavailable. The database may need to be <a "
+"href=\"%s\">repaired</a>."
+msgstr ""
+"Una o più tabelle del database non sono disponibili. Il database potrebbe "
+"avere bisogno di essere <a href=\"%s\">riparato</a>."
+
+msgid ""
+"Only a static class method or function can be used in an uninstall hook."
+msgstr ""
+"Per disinstallare un hook occorre usare solo un metodo di classe statico o "
+"una funzione."
+
+msgid "Only lowercase letters (a-z) and numbers are allowed."
+msgstr "Sono permessi solo lettere minuscole da a a z e numeri"
+
+msgid "Oops: %s"
+msgstr "Oops: %s"
+
+msgid "Open link in a new window"
+msgstr "Apri il link in una nuova finestra"
+
+msgid "Open link in a new window/tab"
+msgstr "Apri il link in una nuova finestra/scheda"
+
+msgid "Open link in the same window"
+msgstr "Apri il link nella stessa finestra"
+
+msgid "Options saved."
+msgstr "Impostazioni salvate."
+
+msgid "Or link to existing content"
+msgstr "Oppure insersci un link a un contenuto esistente."
+
+msgid "Orange"
+msgstr "Arancione"
+
+msgid "Ordered list (Alt + Shift + O)"
+msgstr "Elenco ordinato (Alt + Shift + O)"
+
+msgid "Original Size"
+msgstr "Dimensione originale"
+
+msgid "Outdent"
+msgstr "No quota/no indenta"
+
+msgid "PM"
+msgstr "PM"
+
+msgid "Page ID"
+msgstr "ID pagina"
+
+msgid "Page IDs, separated by commas."
+msgstr "ID pagina, separati da virgole."
+
+msgid "Page not found"
+msgstr "Pagina non trovata."
+
+msgid "Page order"
+msgstr "Ordine della pagina"
+
+msgid "Page title"
+msgstr "Titolo della pagina"
+
+msgid "Pages"
+msgstr "Pagine"
+
+msgid "Pages:"
+msgstr "Pagine:"
+
+msgid "Pale cyan"
+msgstr "Ciano pallido"
+
+msgid "Pale green"
+msgstr "Verde chiaro"
+
+msgid "Palette"
+msgstr "Tavolozza"
+
+msgid "Palette colors"
+msgstr "Tavolozza colori"
+
+msgid "Paragraph"
+msgstr "Paragrafo"
+
+msgid "Parent Category"
+msgstr "Categoria madre"
+
+msgid "Parent Category:"
+msgstr "Categoria madre:"
+
+msgid "Parent Page:"
+msgstr "Pagina madre:"
+
+msgid "Parent term does not exist."
+msgstr "Il termine genitore non esiste."
+
+msgid ""
+"Passing an integer number of posts is deprecated. Pass an array of arguments "
+"instead."
+msgstr ""
+"Passare un numero intero di articoli è deprecato. Passare invece un array di "
+"argomenti."
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Password Lost and Changed for user: %s"
+msgstr "È stata reimpostata la password per l'utente: %s"
+
+msgid "Password Lost and Found"
+msgstr "Ufficio oggetti smarriti - Password"
+
+msgid "Password Protected"
+msgstr "Protetto da password"
+
+msgid "Password Reset"
+msgstr "Azzeramento password"
+
+msgid "Password reset is not allowed for this user"
+msgstr "L'azzeramento della password non è consentito per questo utente."
+
+msgid "Password:"
+msgstr "Password:"
+
+msgid "Password: %s"
+msgstr "Password: %s"
+
+msgid "Paste"
+msgstr "Incolla"
+
+msgid "Paste as Plain Text"
+msgstr "Incolla come Testo Puro"
+
+msgid "Paste from Word"
+msgstr "Incolla da Word"
+
+msgid ""
+"Paste is now in plain text mode. Click again to toggle back to regular paste "
+"mode."
+msgstr ""
+"La funzione Incolla è ora in modalità testo. Fare di nuovo clic per passare "
+"alla modalità incolla normale."
+
+msgid ""
+"Paste is now in plain text mode. Click again to toggle back to regular paste "
+"mode. After you paste something you will be returned to regular paste mode."
+msgstr ""
+"Incolla è ora in modalità testo. Fare di nuovo clic per passare alla "
+"modalità incolla normale. Dopo aver incollato qualcosa si tornerà alla "
+"modalità incolla normale."
+
+msgid "Paste table row after"
+msgstr "Incolla riga tabella dopo"
+
+msgid "Paste table row before"
+msgstr "Incolla riga tabella prima"
+
+msgid ""
+"Pasting content from another application, like Word or Excel, is best done "
+"with the Paste from Word button on the second row, or in Text mode."
+msgstr ""
+"Per incollare contenuti derivanti da un'altra applicazione, tipo Word o "
+"Excel, si consiglia di usare la modalità \"Incolla\" in Word nella seconda "
+"riga, o in modalità Testo."
+
+msgid "Pasting in the Rich Editor"
+msgstr "Incolla nell'editor avanzato"
+
+msgid "Path"
+msgstr "Percorso"
+
+msgid "Peach"
+msgstr "Pesca"
+
+msgid "Pending <span class=\"count\">(%s)</span>"
+msgid_plural "Pending <span class=\"count\">(%s)</span>"
+msgstr[0] "In sospeso <span class=\"count\">(%s)</span>"
+msgstr[1] "In sospeso <span class=\"count\">(%s)</span>"
+
+msgid "Pending Review"
+msgstr "In attesa di revisione"
+
+msgid "Permalink: %s"
+msgstr "Permalink: %s"
+
+msgid "Picker"
+msgstr "Selettore"
+
+msgid "Pingback"
+msgstr "Pingback"
+
+msgid "Pingback excerpt: "
+msgstr "Riassunto pingback:"
+
+msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
+msgstr "Pingback da %1$s a %2$s registrato. Facciamo parlare il web! :-)"
+
+msgid "Pink"
+msgstr "Rosa"
+
+msgid "Play count"
+msgstr "Conteggio esecuzione"
+
+msgid "Play every frame"
+msgstr "Esegui ogni frame"
+
+msgid ""
+"Please <a href=\"%s\">upgrade WordPress</a> to a current version, or <a href="
+"\"%s\">downgrade to version 2.4 of the Akismet plugin</a>."
+msgstr ""
+"<a href=\"%s\">Aggiornare WordPress</a> all'ultima versione oppure <a href="
+"\"%s\">tornare alla versione 2.4 del plugin Akismet</a>."
+
+msgid "Please enter a site name."
+msgstr "Per favore inserisci il nome del sito."
+
+msgid "Please enter a site title."
+msgstr "Per favore inserisci il titolo del sito."
+
+msgid "Please enter a username."
+msgstr "Per favore inserisci il nome utente."
+
+msgid "Please enter a valid email address."
+msgstr "Immettere un indirizzo email valido."
+
+msgid ""
+"Please enter an API key. (<a href=\"%s\" style=\"color:#fff\">Get your key.</"
+"a>)"
+msgstr ""
+"Inserisci una API key. (<a href=\"%s\" style=\"color:#fff\">Ottieni una API "
+"key.</a>)"
+
+msgid ""
+"Please enter your username or email address. You will receive a link to "
+"create a new password via email."
+msgstr ""
+"Inserire il proprio nome utente o il proprio indirizzo e-mail. Si riceverà "
+"una nuova password tramite e-mail."
+
+msgid "Please include a %1$s template in your theme."
+msgstr "Includere un template %1$s nel proprio tema."
+
+msgid "Please log in again."
+msgstr "Effettuare nuovamente il login."
+
+msgid ""
+"Please see <a href=\"http://codex.wordpress.org/Debugging_in_WordPress"
+"\">Debugging in WordPress</a> for more information."
+msgstr ""
+"Per favore consulta <a href=\"http://codex.wordpress.org/"
+"Debugging_in_WordPress\">Il debug in WordPress</a> (in inglese) per "
+"ulteriori informazioni."
+
+msgid "Please try again."
+msgstr "Riprovare"
+
+msgid "Please try uploading this file with the %1$sbrowser uploader%2$s."
+msgstr "Prova a caricare il file con %1$s l'uploader del browser%2$s."
+
+msgid "Please wait..."
+msgstr "Attendi..."
+
+msgid "Plugin"
+msgstr "Plugin"
+
+msgid "Plugin Information:"
+msgstr "Informazioni sul plugin:"
+
+msgid "Plugins"
+msgstr "Plugin"
+
+msgid "Plum"
+msgstr "Prugna"
+
+msgid "Popular Tags"
+msgstr "Tag più popolari"
+
+msgid "Possible reason: your host may have disabled the mail() function..."
+msgstr ""
+"Possibile motivo: il tuo host potrebbe avere disabilitato la funzione mail"
+"()..."
+
+msgid "Post Comment"
+msgstr "Commento all'articolo"
+
+msgid "Post Thumbnail"
+msgstr "Miniatura articolo"
+
+msgctxt "Post format"
+msgid "Aside"
+msgstr "Digressioni"
+
+msgctxt "Post format"
+msgid "Audio"
+msgstr "Audio"
+
+msgctxt "Post format"
+msgid "Chat"
+msgstr "Chat"
+
+msgctxt "Post format"
+msgid "Gallery"
+msgstr "Galleria"
+
+msgctxt "Post format"
+msgid "Image"
+msgstr "Immagine"
+
+msgctxt "Post format"
+msgid "Link"
+msgstr "Link"
+
+msgctxt "Post format"
+msgid "Quote"
+msgstr "Citazione"
+
+msgctxt "Post format"
+msgid "Standard"
+msgstr "Standard"
+
+msgctxt "Post format"
+msgid "Status"
+msgstr "Stato"
+
+msgctxt "Post format"
+msgid "Video"
+msgstr "Video"
+
+msgid "Post types cannot exceed 20 characters in length"
+msgstr "I tipi di articolo non possono superare i 20 caratteri di lunghezza"
+
+msgid "Poster"
+msgstr "Poster"
+
+msgid "Posts by %s"
+msgstr "Articoli scritti da: %s"
+
+msgid "Posts page"
+msgstr "Pagina articoli"
+
+msgid ""
+"Powered by <a href=\"%s\" title=\"Powered by WordPress, state-of-the-art "
+"semantic personal publishing platform\"><strong>WordPress</strong></a>"
+msgstr ""
+"Utilizza <a href=\"%s\" title=\"Utilizza WordPress, piattaforma semantica "
+"avanzata di editoria personale\"><strong>Wordpress</strong></a>"
+
+msgid "Powered by WordPress"
+msgstr "Utilizza WordPress"
+
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr "Funziona con Wordpress."
+
+msgid "Prefetch"
+msgstr "Precaricamento"
+
+msgid "Preformatted"
+msgstr "Preformattato"
+
+msgid "Preload"
+msgstr "Precaricamento"
+
+msgid "Premature end of list"
+msgstr "Termine lista anticipato"
+
+msgid "Press ALT F10 for toolbar. Press ALT 0 for help."
+msgstr ""
+"Premere ALT+F10 per la barra degli strumenti. Premere ALT+0 per ottenere "
+"aiuto."
+
+msgid "Preview"
+msgstr "Anteprima"
+
+msgid "Previous Post"
+msgstr "Articolo precedente"
+
+msgid "Previous page"
+msgstr "Pagina precedente"
+
+msgid "Print"
+msgstr "Stampa"
+
+msgid "Privacy:"
+msgstr "Privacy:"
+
+msgid "Private"
+msgstr "Privato"
+
+msgid "Private <span class=\"count\">(%s)</span>"
+msgid_plural "Private <span class=\"count\">(%s)</span>"
+msgstr[0] "Privato <span class=\"count\">(%s)</span>"
+msgstr[1] "Privati <span class=\"count\">(%s)</span>"
+
+msgid "Private: %s"
+msgstr "Privato: %s"
+
+msgid "Privately Published"
+msgstr "Pubblicato privatamente"
+
+msgid "Progress"
+msgstr "Progresso"
+
+msgid "Protected Comments: Please enter your password to view comments."
+msgstr ""
+"Commenti protetti: inserisci la tua password per visualizzare i commenti."
+
+msgid "Protected: %s"
+msgstr "Protetto: %s"
+
+msgid "Public"
+msgstr "Pubblico"
+
+msgid "Public, Sticky"
+msgstr "Pubblico, evidenziato"
+
+msgid "Publish"
+msgstr "Pubblica"
+
+msgid "Publish on:"
+msgstr "Pubblica il:"
+
+msgid "Published"
+msgstr "Pubblicato"
+
+msgid "Published <span class=\"count\">(%s)</span>"
+msgid_plural "Published <span class=\"count\">(%s)</span>"
+msgstr[0] "Pubblicato <span class=\"count\">(%s)</span>"
+msgstr[1] "Pubblicati <span class=\"count\">(%s)</span>"
+
+msgid "Published on:"
+msgstr "Pubblicato il:"
+
+msgid "Purple"
+msgstr "Viola"
+
+msgid "QT Src"
+msgstr "QT Src"
+
+msgid "Quality"
+msgstr "Qualità"
+
+msgid "QuickTime options"
+msgstr "Impostazioni QuickTime"
+
+msgid "Quote"
+msgstr "Citazione"
+
+msgid "RSS"
+msgstr "RSS"
+
+msgid "RSS Error: %s"
+msgstr "Errore RSS %s"
+
+msgid "Random Default Image"
+msgstr "Una immagine predefinita casuale"
+
+msgid "Random Order"
+msgstr "Ordine casuale"
+
+msgid "Random Uploaded Image"
+msgstr "Una immagine caricata casuale"
+
+msgid "Rate"
+msgstr "Tasso"
+
+msgid ""
+"Rather than reaching for your mouse to click on the toolbar, use these "
+"access keys. Windows and Linux use Ctrl + letter. Macintosh uses Command + "
+"letter."
+msgstr ""
+"Anziché utilizzare il mouse per fare clic sui pulsanti della barra degli "
+"strumenti, utilizzare le scorciatoie da tastiera. Windows e Linux utilizzano "
+"Ctrl + lettera. Macintosh utilizza Command + lettera."
+
+msgid "Re-trying"
+msgstr "Nuovo tentativo"
+
+msgid ""
+"Read the <a target=\"_blank\" href=\"http://codex.wordpress.org/"
+"Debugging_a_WordPress_Network\">bug report</a> page. Some of the guidelines "
+"there may help you figure out what went wrong."
+msgstr ""
+"Si veda la pagina <a target=\"_blank\" href=\"http://codex.wordpress.org/"
+"Debugging_a_WordPress_Network\">bug report</a>. Alcune delle linee guida lì "
+"presenti potrebbero aiutare a capire cosa è andato storto."
+
+msgid "Real media player options"
+msgstr "Impostazioni Real media player"
+
+msgid "Recent Comments"
+msgstr "Commenti recenti"
+
+msgid "Recent Posts"
+msgstr "Articoli recenti"
+
+msgid "Recheck Queue for Spam"
+msgstr "Ricontrolla la coda di spam"
+
+msgid "Red"
+msgstr "Rosso"
+
+msgid "Redo"
+msgstr "Ripeti"
+
+msgid "Redo (Ctrl + Y)"
+msgstr "Ripeti (Ctrl + Y)"
+
+msgid "Refresh"
+msgstr "Aggiorna"
+
+msgid "Register"
+msgstr "Registrati"
+
+msgid "Register For This Site"
+msgstr "Registrazione per questo sito"
+
+msgid "Registration Form"
+msgstr "Modulo di registrazione"
+
+msgid "Registration complete. Please check your e-mail."
+msgstr "Registrazione completata. Controlla la tua email."
+
+msgid "Registration has been disabled."
+msgstr "La registrazione è stata disabilitata."
+
+msgid "Remember Me"
+msgstr "Ricordami"
+
+msgid "Remove"
+msgstr "Rimuovi"
+
+msgid "Remove From Bulk Edit"
+msgstr "Rimuovi dalla modifica di massa"
+
+msgid "Remove Image"
+msgstr "Rimuovi immagine"
+
+msgid "Remove column"
+msgstr "Rimuovi colonna"
+
+msgid "Remove formatting"
+msgstr "Rimuovi formattazione"
+
+msgid "Remove link"
+msgstr "Rimuovi link"
+
+msgid "Reply"
+msgstr "Rispondi"
+
+msgid "Required fields are marked %s"
+msgstr "I campi obbligatori sono contrassegnati %s"
+
+msgid "Reset Password"
+msgstr "Azzera password"
+
+msgid "Restore"
+msgstr "Ripristina"
+
+msgid "Reverse order"
+msgstr "Ordine inverso"
+
+msgid "Revision"
+msgstr "Revisione"
+
+msgid "Revisions"
+msgstr "Revisioni"
+
+msgid "Rich Editing Basics"
+msgstr "Elementi base dell'editor avanzato"
+
+msgid "Rich Editor Help"
+msgstr "Aiuto per l'editor avanzato"
+
+msgid "Rich Text Area"
+msgstr "Rich Text Area"
+
+msgid "Right"
+msgstr "Destra"
+
+msgid "Row"
+msgstr "Riga"
+
+msgid "Royal blue"
+msgstr "Royal blu"
+
+msgid "Run spell checking"
+msgstr "Esegui controllo ortografico"
+
+msgid "SAlign"
+msgstr "Allineamento S"
+
+msgid "SWLiveConnect"
+msgstr "SWLiveConnect"
+
+msgid "S_Saturday_initial"
+msgstr "S"
+
+msgid "S_Sunday_initial"
+msgstr "D"
+
+msgid "Sat"
+msgstr "sab"
+
+msgid "Saturday"
+msgstr "sabato"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Save &amp; Activate"
+msgstr "Salva &amp; attiva"
+
+msgid "Save &amp; Publish"
+msgstr "Salva &amp; pubblica"
+
+msgid "Save Draft"
+msgstr "Salva bozza"
+
+msgid "Save as Pending"
+msgstr "Salva come in sospeso"
+
+msgid "Saved"
+msgstr "Salvato"
+
+msgid "Saved."
+msgstr "Salvato."
+
+msgid "Saving Draft&#8230;"
+msgstr "Salvataggio bozza&#8230;"
+
+msgid "Saving..."
+msgstr "Salvataggio in corso..."
+
+msgid "Say It!"
+msgstr "Dillo!"
+
+msgid "Scale"
+msgstr "Scala"
+
+msgid "Scale mode"
+msgstr "Modalità di scala"
+
+msgid "Schedule"
+msgstr "Programmato"
+
+msgid "Schedule for:"
+msgstr "Programmato per:"
+
+msgid "Scheduled <span class=\"count\">(%s)</span>"
+msgid_plural "Scheduled <span class=\"count\">(%s)</span>"
+msgstr[0] "Programmato <span class=\"count\">(%s)</span>"
+msgstr[1] "Programmati <span class=\"count\">(%s)</span>"
+
+msgid "Script callbacks"
+msgstr "Richiami dello script"
+
+msgid ""
+"Scripts and styles should not be registered or enqueued until the %1$s, "
+"%2$s, or %3$s hooks."
+msgstr ""
+"Gli script e gli stili non dovrebbero essere registrati o accodati prima "
+"degli hooks %1$s,%2$s, o %3$s."
+
+msgid "Scroll"
+msgstr "Scorrevole"
+
+msgid "Sea green"
+msgstr "Verde mare"
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "Search Categories"
+msgstr "Cerca categorie"
+
+msgid "Search Link Categories"
+msgstr "Ricerca categorie link"
+
+msgid "Search Pages"
+msgstr "Cerca pagine"
+
+msgid "Search Posts"
+msgstr "Cerca articoli"
+
+msgid "Search Results %1$s %2$s"
+msgstr "Risultati della ricerca %1$s %2$s"
+
+msgid "Search Spam &raquo;"
+msgstr "Ricerca spam &raquo;"
+
+msgid "Search Tags"
+msgstr "Cerca tag"
+
+msgid "Search for:"
+msgstr "Cerca:"
+
+msgid "Security error."
+msgstr "Errore di sicurezza."
+
+msgid "Select"
+msgstr "Seleziona"
+
+msgid "Select All"
+msgstr "Seleziona tutto"
+
+msgid "Select Category"
+msgstr "Seleziona una categoria"
+
+msgid "Select Color"
+msgstr "Seleziona colore"
+
+msgid "Select File"
+msgstr "Seleziona file"
+
+msgid "Select Files"
+msgstr "Selezionare i file"
+
+msgid "Select Link Category:"
+msgstr "Seleziona Categoria Link:"
+
+msgid "Select Menu:"
+msgstr "Selezionare il menu:"
+
+msgid "Select Month"
+msgstr "Seleziona mese"
+
+msgid "Select a city"
+msgstr "Seleziona una città"
+
+msgid "Select a color"
+msgstr "Seleziona un colore"
+
+msgid "Select all"
+msgstr "Seleziona tutto"
+
+msgid "Select background color"
+msgstr "Seleziona il colore di sfondo"
+
+msgid "Select custom character"
+msgstr "Seleziona carattere personalizzato"
+
+msgid "Select text color"
+msgstr "Seleziona il colore del testo"
+
+msgid "Sep_September_abbreviation"
+msgstr "set"
+
+msgid "Separate multiple categories with commas."
+msgstr "Separare più categorie con virgole."
+
+msgid "Separate tags with commas"
+msgstr "Separa i tag con delle virgole"
+
+msgid "September"
+msgstr "settembre"
+
+msgid "Server Connectivity"
+msgstr "Connettività server"
+
+msgid "Set Featured Image"
+msgstr "Imposta immagine predefinita"
+
+msgid "Set featured image"
+msgstr "Imposta l'immagine in evidenza"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Shockwave options"
+msgstr "Impostazioni Shockwave"
+
+msgid "Shortlink"
+msgstr "Shortlink"
+
+msgid "Show Link Description"
+msgstr "Mostra descrizione link"
+
+msgid "Show Link Image"
+msgstr "Mostra immagine link"
+
+msgid "Show Link Name"
+msgstr "Mostra nome link"
+
+msgid "Show Link Rating"
+msgstr "Mostra valutazione link"
+
+msgid "Show hierarchy"
+msgstr "Visualizza la gerarchia"
+
+msgid "Show menu"
+msgstr "Mostra menu"
+
+msgid "Show more comments"
+msgstr "Mostra altri commenti"
+
+msgid "Show post counts"
+msgstr "Mostra conteggio articoli"
+
+msgid "Show scale modes"
+msgstr "Visualizza modalità di scala"
+
+msgid "Show the number of comments you've approved beside each comment author."
+msgstr ""
+"Mostra il numero di commenti che hai approvato accanto a ciascun autore di "
+"commenti"
+
+msgid "Show/Hide Kitchen Sink (Alt + Shift + Z)"
+msgstr "Mostra/Nascondi Seconda riga pulsanti (Alt + Shift + Z)"
+
+msgid "Shuffle"
+msgstr "Mischia"
+
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+msgid "Sidebar %d"
+msgstr "Barra laterale %d"
+
+msgid "Signup"
+msgstr "Registrazione"
+
+msgid "Silver"
+msgstr "Argento"
+
+msgid "Site Admin"
+msgstr "Amministra sito"
+
+msgid "Site Domain:"
+msgstr "Dominio sito:"
+
+msgid "Site Name:"
+msgstr "Nome sito:"
+
+msgid "Site Suspended."
+msgstr "Sito sospeso."
+
+msgid "Site Tagline"
+msgstr "Motto del sito"
+
+msgid "Site Title"
+msgstr "Titolo sito"
+
+msgid "Site Title & Tagline"
+msgstr "Titolo del sito e motto"
+
+msgid "Site Title:"
+msgstr "Titolo sito:"
+
+msgid "Site URL"
+msgstr "URL sito"
+
+msgid "Site name must be at least 4 characters."
+msgstr "Il nome del sito deve essere di almeno 4 caratteri."
+
+msgid "Site registration has been disabled."
+msgstr "La registrazione dei blog è stata disabilitata."
+
+msgid "Sites"
+msgstr "Siti"
+
+msgid "Sites you are already a member of:"
+msgstr "Blog di cui si è già membri:"
+
+msgid "Size"
+msgstr "Dimensione"
+
+msgid "Skip to toolbar"
+msgstr "Salta alla barra strumento"
+
+msgid "Sky blue"
+msgstr "Blu cielo"
+
+msgid "Slow down cowboy, no need to check for new mails so often!"
+msgstr "Rallenta cowboy, non serve controllare così spesso le nuove email!"
+
+msgid "Smooth video"
+msgstr "Addolcisci video "
+
+msgid "Software Name"
+msgstr "Nome software"
+
+msgid "Software Version"
+msgstr "Versione software"
+
+msgid ""
+"Some comments have not yet been checked for spam by Akismet. They have been "
+"temporarily held for moderation. Please check your <a href=\"%s\">Akismet "
+"configuration</a> and contact your web host if problems persist."
+msgstr ""
+"Alcuni commenti non sono stati ancora stati verificati da Akismet per lo "
+"spam. Sono stati momentaneamente posti in moderazione. Verificare la <a href="
+"\"%s\">configurazione di Akismet</a> e contattare il proprio fornitore di "
+"hosting se il problema persiste."
+
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+"Qualcuno ha richiesto l'azzeramento delle password per il seguente account "
+"utente."
+
+msgid ""
+"Sorry, but we have noticed that your popup-blocker has disabled a window "
+"that provides application functionality. You will need to disable popup "
+"blocking on this site in order to fully utilize this tool."
+msgstr ""
+"Sembra che il blocco dei popup ha disabilitato una finestra che fornisce "
+"funzionalità a questa applicazione. Occorre disabilitare il blocco dei popup "
+"per questo sito per poter utilizzare questo strumento in maniera completa."
+
+msgid "Sorry, comments are closed for this item."
+msgstr "I commenti sono chiusi per questo articolo."
+
+msgid "Sorry, deleting the term failed."
+msgstr "Cancellazione del termine fallita."
+
+msgid "Sorry, editing the term failed."
+msgstr "Modifica del termine fallita."
+
+msgid "Sorry, new registrations are not allowed at this time."
+msgstr "Al momento non si accettano nuove registrazioni."
+
+msgid "Sorry, no posts matched your criteria."
+msgstr "Nessun articolo risponde ai criteri di ricerca impostati."
+
+msgid "Sorry, no such page."
+msgstr "Questa pagina non esiste."
+
+msgid "Sorry, no such post."
+msgstr "Questo articolo non esiste."
+
+msgid "Sorry, one of the given taxonomies is not supported by the post type."
+msgstr "Una delle tassonomie non è supportata da questo tipo di articolo."
+
+msgid "Sorry, revisions are disabled."
+msgstr "Spiacente, le revisioni sono disabilitate."
+
+msgid "Sorry, site names may not contain the character &#8220;_&#8221;!"
+msgstr "I nomi dei siti non possono contenre il carattere &#8220;_&#8221;!"
+
+msgid "Sorry, site names must have letters too!"
+msgstr "I nomi dei siti devono avere anche delle lettere!"
+
+msgid "Sorry, that email address is already used!"
+msgstr "Questo indirizzo email è già utilizato!"
+
+msgid "Sorry, that email address is not allowed!"
+msgstr "Questo indirizzo email non è consentito!"
+
+msgid "Sorry, that file cannot be edited."
+msgstr "Questo file non può essere modificato."
+
+msgid "Sorry, that key does not appear to be valid."
+msgstr "Questa chiave non appare valida."
+
+msgid "Sorry, that site already exists!"
+msgstr "Questo sito esiste già!"
+
+msgid "Sorry, that site is reserved!"
+msgstr "Questo sito è riservato!"
+
+msgid "Sorry, that username already exists!"
+msgstr "Questo nome utente esiste già!"
+
+msgid "Sorry, the comment could not be edited. Something wrong happened."
+msgstr ""
+"Il commento non può venir modificato. &Egrave; accaduto qualche cosa di "
+"grave."
+
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Al momento l'inserimento di commenti non è consentito."
+
+msgid "Sorry, the new category failed."
+msgstr "L'inserimento di una nuova categoria non è riuscito."
+
+msgid "Sorry, the user cannot be updated."
+msgstr "Spiacente, l'utente non può essere aggiornato."
+
+msgid "Sorry, usernames may not contain the character &#8220;_&#8221;!"
+msgstr "Il nome utente non può contenere il carattere &#8220;_&#8221;!"
+
+msgid "Sorry, usernames must have letters too!"
+msgstr "Il nome utente deve avere anche delle lettere!"
+
+msgid ""
+"Sorry, you are not allowed to add a term to one of the given taxonomies."
+msgstr ""
+"Non disponi dei permessi per aggiungere un termine a una delle tassonomie."
+
+msgid ""
+"Sorry, you are not allowed to assign a term to one of the given taxonomies."
+msgstr ""
+"Non disponi dei permessi sufficienti per assegnare un termine a una delle "
+"tassanomie."
+
+msgid ""
+"Sorry, you are not allowed to create password protected posts in this post "
+"type"
+msgstr ""
+"Non disponi dei permessi per creare articoli protetti da password per questo "
+"tipo di articoli"
+
+msgid "Sorry, you are not allowed to create private posts in this post type"
+msgstr ""
+"Non disponi dei permessi per creare un articolo privato per questo tipo di "
+"articoli"
+
+msgid "Sorry, you are not allowed to delete this post."
+msgstr "Non disponi del permesso per eliminare questo articolo."
+
+msgid "Sorry, you are not allowed to edit posts in this post type"
+msgstr "Non disponi dei permessi per modificare gli articoli di questo tipo"
+
+msgid "Sorry, you are not allowed to edit posts."
+msgstr "Spiacente, non si dispone del permesso per modificare gli articoli."
+
+msgid "Sorry, you are not allowed to edit this post type."
+msgstr "Non disponi dei permessi per modificare questo tipo di articoli."
+
+msgid "Sorry, you are not allowed to edit this post."
+msgstr "Non disponi dei permessi sufficienti per modificare questo articolo."
+
+msgid "Sorry, you are not allowed to post on this site."
+msgstr "Non si dispone del permesso per pubblicare articoli su questo sito."
+
+msgid "Sorry, you are not allowed to publish pages on this site."
+msgstr "Non si dispone del permesso per pubblicare pagine su questo sito."
+
+msgid "Sorry, you are not allowed to publish posts in this post type"
+msgstr ""
+"Non si dispone dei permessi per pubblicare articoli con questa tipologia di "
+"articolo"
+
+msgid "Sorry, you are not allowed to publish posts on this site."
+msgstr "non si dispone del permesso per pubblicare articoli su questo sito."
+
+msgid "Sorry, you are not allowed to stick this post."
+msgstr "Non disponi dei permessi per rendere questo articolo evidenziato."
+
+msgid "Sorry, you can not edit this post."
+msgstr "Spiacente, non è possibile modificare questo articolo."
+
+msgid "Sorry, you cannot edit comments."
+msgstr "Non è possibile modificare i commenti."
+
+msgid "Sorry, you cannot edit pages."
+msgstr "Non è possibile modificare le pagine."
+
+msgid "Sorry, you cannot edit posts on this site."
+msgstr "Non è possibile modificare gli articoli di questo sito."
+
+msgid "Sorry, you cannot edit this page."
+msgstr "Non è possibile modificare questa pagina."
+
+msgid "Sorry, you cannot edit this post."
+msgstr "Non è possibile modificare questo articolo."
+
+msgid "Sorry, you cannot edit users."
+msgstr "Spiacente, non puoi modificare gli utenti."
+
+msgid "Sorry, you cannot edit your profile."
+msgstr "Spiacente, non puoi modificare il tuo profilo."
+
+msgid "Sorry, you cannot list users."
+msgstr "Spiacente, non puoi elencare gli utenti."
+
+msgid "Sorry, you cannot publish this post."
+msgstr "Non è possibile pubblicare questo articolo."
+
+msgid "Sorry, you cannot stick a private post."
+msgstr "Impossibile mettere in evidenza un articolo privato."
+
+msgid "Sorry, you do not have access to user data on this site."
+msgstr ""
+"Non si dispone del permesso per accedere ai dati utente di questo sito."
+
+msgid "Sorry, you do not have the right to add a category."
+msgstr "Non si dispone dei permessi per aggiungere una categoria."
+
+msgid "Sorry, you do not have the right to delete a category."
+msgstr "Non si dispone dei permessi per cancellare una categoria."
+
+msgid "Sorry, you do not have the right to delete this page."
+msgstr "Non non si dispone dei permessi per cancellare questa pagina."
+
+msgid "Sorry, you do not have the right to delete this post."
+msgstr "Non si dispone dei permessi per cancellare questo articolo."
+
+msgid "Sorry, you do not have the right to edit this page."
+msgstr "Non si dispone del permesso per modificare questa pagina."
+
+msgid "Sorry, you do not have the right to edit this post."
+msgstr "Non si ha il permesso di modificare questo articolo."
+
+msgid "Sorry, you do not have the right to publish this page."
+msgstr "Non si dispone dei permessi per pubblicare questa pagina."
+
+msgid "Sorry, you do not have the right to publish this post."
+msgstr "Spiacente, non si dispone dei permessi per pubblicare questo articolo."
+
+msgid "Sorry, you may not use that site name."
+msgstr "Non è possibile usare questo nome per il sito."
+
+msgid ""
+"Sorry, you must be able to edit posts on this site in order to view "
+"categories."
+msgstr ""
+"Occorre avere la possibilità di modificare gli articoli di questo sito per "
+"poter visualizzare le categorie."
+
+msgid ""
+"Sorry, you must be able to edit posts on this site in order to view tags."
+msgstr ""
+"Occorre avere la possibilità di modificare gli articoli di questo sito per "
+"poter visualizzare i tag."
+
+msgid ""
+"Sorry, you must be able to edit posts to this site in order to view "
+"categories."
+msgstr ""
+"Occorre disporre della possibilità di modificare gli articoli di questo sito "
+"per poter visualizzare le categorie."
+
+msgid "Sorry, you must be logged in to post a comment."
+msgstr "Per inviare un commento occorre aver effettuato il login."
+
+msgid "Sorry, your entry could not be edited. Something wrong happened."
+msgstr "Questa voce non può essere modificata. Si è verificato un errore."
+
+msgid "Sorry, your entry could not be posted. Something wrong happened."
+msgstr ""
+"Non è possibile pubblicare questo intervento. &Eacute; successo qualcosa di "
+"strano ."
+
+msgid "Sorry, your term could not be created. Something wrong happened."
+msgstr ""
+"Il termine indicato non può essere creato. Si è verificato un problema."
+
+msgid "Sort by:"
+msgstr "Ordinato per:"
+
+msgid "Sound"
+msgstr "Suono"
+
+msgid "Source"
+msgstr "Sorgente"
+
+msgid "Spam Blocked"
+msgstr "Spam bloccato"
+
+msgid "Spam it: %s"
+msgstr "Marca come spam: %s"
+
+msgid "Spellchecker settings"
+msgstr "Impostazioni correttore ortografico"
+
+msgid "Split merged table cells"
+msgstr "Separa le celle unite nella tabella"
+
+msgid "Square"
+msgstr "Quadrato"
+
+msgid "Start image"
+msgstr "Immagine di partenza"
+
+msgid "Start time"
+msgstr "Tempo iniziale"
+
+msgid "Static Front Page"
+msgstr "Pagina iniziale statica"
+
+msgid "Still waiting for your email?"
+msgstr "Si sta ancora aspettando l'email?"
+
+msgid ""
+"Streamed rtsp resources should be added to the QT Src field under the "
+"advanced tab."
+msgstr ""
+"Risorse in streaming RTSP dovrebbero essere aggiunte al campo QT Src nella "
+"scheda avanzate."
+
+msgid "Strength indicator"
+msgstr "Indicatore di forza (della password)"
+
+msgid "Stretch H-Align"
+msgstr "Stira Allineamento-Orizzontale"
+
+msgid "Stretch V-Align"
+msgstr "Stira Allineamento-Verticale"
+
+msgid "Stretch style"
+msgstr "Stile stiramento"
+
+msgid "Stretch to fit"
+msgstr "Stira per adattare"
+
+msgid "Strikethrough"
+msgstr "Barrato"
+
+msgid "Strikethrough (Alt + Shift + D)"
+msgstr "Barrato (Alt + Maiusc + D)"
+
+msgid "Strong"
+msgstr "Forte"
+
+msgid "Styles"
+msgstr "Stili"
+
+msgid "Stylesheet"
+msgstr "Foglio di stile"
+
+msgid "Stylesheet is missing."
+msgstr "Foglio di stile mancante."
+
+msgid "Stylesheet is not readable."
+msgstr "Il foglio di stile non è leggibile."
+
+msgid "Submit"
+msgstr "Invia"
+
+msgid "Submit Comment"
+msgstr "Invia commento"
+
+msgid "Submitted on:"
+msgstr "Inviato il:"
+
+msgid "Subscript"
+msgstr "Pedice"
+
+msgid "Suggestions"
+msgstr "Suggerimenti"
+
+msgid "Sun"
+msgstr "dom"
+
+msgid "Sunday"
+msgstr "domenica"
+
+msgid "Superscript"
+msgstr "Apice"
+
+msgid "Support Forums"
+msgstr "Forum di supporto"
+
+msgid "Syndicate this content"
+msgstr "Abbonati a questo contenuto"
+
+msgid "Syndicate this site using RSS 2.0"
+msgstr "Abbonati a questo sito usando RSS 2.0"
+
+msgid "T_Thursday_initial"
+msgstr "G"
+
+msgid "T_Tuesday_initial"
+msgstr "M"
+
+msgid "Table cell properties"
+msgstr "Proprietà cella tabella"
+
+msgid "Table properties"
+msgstr "Proprietà tabella"
+
+msgid "Table row properties"
+msgstr "Proprietà riga tabella"
+
+msgid "Tag Cloud"
+msgstr "Tag Cloud"
+
+msgid "Tagline"
+msgstr "Motto"
+
+msgid "Tags"
+msgstr "Tag"
+
+msgid "Tags: "
+msgstr "Tag:"
+
+msgid "Target"
+msgstr "Destinazione"
+
+msgid "Target cache"
+msgstr "Cache destinazione"
+
+msgid "Taxonomies cannot exceed 32 characters in length"
+msgstr "Le tassonomie non posso eccedere i 32 caratteri di lunghezza"
+
+msgid "Taxonomy:"
+msgstr "Tassonomia:"
+
+msgid "Teal"
+msgstr "Anatra"
+
+msgid "Template"
+msgstr "Modello"
+
+msgid "Template is missing."
+msgstr "Template mancante."
+
+msgid "Text"
+msgstr "Testo"
+
+msgid "Text bottom"
+msgstr "Testo basso"
+
+msgid "Text top"
+msgstr "Testo alto"
+
+msgid ""
+"That email address has already been used. Please check your inbox for an "
+"activation email. It will become available in a couple of days if you do "
+"nothing."
+msgstr ""
+"Questo indirizzo email è stato già utilizzato. Per favore verifica se nella "
+"tua posta è arrivata una email di attivazione. Se non fai nulla, l'indirizzo "
+"diverrà nuovamente disponibile in un paio di giorni."
+
+msgid "That name is not allowed."
+msgstr "Questo nome non è permesso."
+
+msgid "That site does not exist. Please try <a href=\"%s\">%s</a>."
+msgstr "Questo sito  non esiste. Provare <a href=\"%s\">%s</a>."
+
+msgid "That site is currently reserved but may be available in a couple days."
+msgstr ""
+"Questo sito è attualmente riservato ma potrebbe essere disponibile in un "
+"paio di giorni."
+
+msgid "That user does not exist."
+msgstr "Questo utente non esiste."
+
+msgid "That username is already activated."
+msgstr "Il nome utente è già stato attivato."
+
+msgid ""
+"That username is currently reserved but may be available in a couple of days."
+msgstr ""
+"Il nome utente è attualmente riservato ma potrebbe rendersi disponibile in "
+"un paio di giorni."
+
+msgid "That username is not allowed."
+msgstr "Questo nome utente non è permesso."
+
+msgid "The \"%s\" theme is not a valid parent theme."
+msgstr "Il tema \"%s\" non è un tema genitore valido."
+
+msgid ""
+"The <abbr title=\"Universal Resource Locator\">URL</abbr> to TrackBack this "
+"entry is: <em>%s</em>"
+msgstr ""
+"La <abbr title=\"Universal Resource Locator\">URL</abbr> per fare il "
+"TrackBack di questo articolo è: <em>%s</em>"
+
+msgid ""
+"The <code>%s</code> option is deprecated for the family of <code>bloginfo()</"
+"code> functions."
+msgstr ""
+"L'opzione <code>%s</code> è deprecata per la famiglia delle funzioni di "
+"<code>bloginfo()</code>."
+
+msgid "The GD image library is not installed."
+msgstr "La GD image library non è installata."
+
+msgid ""
+"The Site address you entered did not appear to be a valid URL. Please enter "
+"a valid URL."
+msgstr ""
+"L'indirizzo del sito immesso non sembra essere una URL valida. Per favore "
+"inserisci una URL valida."
+
+msgid ""
+"The URL you entered seems to be an email address, do you want to add the "
+"required mailto: prefix?"
+msgstr ""
+"L'URL inserita appare un indirizzo email, si desidera aggiungere il "
+"necessario prefisso mailto:?"
+
+msgid ""
+"The URL you entered seems to external link, do you want to add the required "
+"http:// prefix?"
+msgstr ""
+"L'URL inserita appare un link esterno, si desidera aggiungere il necessario "
+"prefisso http://?"
+
+msgid ""
+"The WordPress address you entered did not appear to be a valid URL. Please "
+"enter a valid URL."
+msgstr ""
+"L'indirizzo di WordPress inserito non sembra essere una URL valida. Per "
+"favore inserisci una URL valida."
+
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr ""
+"Se si abbandona questa pagina i cambiamenti effettuati verranno persi ."
+
+msgid ""
+"The constant <code>VHOST</code> <strong>is deprecated</strong>. Use the "
+"boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to enable a "
+"subdomain configuration. Use is_subdomain_install() to check whether a "
+"subdomain configuration is enabled."
+msgstr ""
+"La costante <code>VHOST</code> <strong>è deprecata</strong>. Utilizzare la "
+"costante booleana <code>SUBDOMAIN_INSTALL</code> in wp-config.php per "
+"abilitare la configurazione con sottodomini. Utilizzare is_subdomain_install"
+"() per verificare se la configurazione a sottodomini è abilitata o meno."
+
+msgid "The e-mail could not be sent."
+msgstr "Impossibile inviare la mail."
+
+msgid ""
+"The email address entered did not appear to be a valid email address. Please "
+"enter a valid email address."
+msgstr ""
+"L'indirizzo email inserito non sembra essere un indirizzo email valido. Per "
+"favore inserisci un indirizzo email valido."
+
+msgid ""
+"The following shortcuts use different access keys: Alt + Shift + letter."
+msgstr ""
+"Le seguenti scorciatoie usano tasti di accesso differenti. Alt + Shift + "
+"lettera."
+
+msgid "The given object ID is not that of a menu item."
+msgstr "L'ID dell'oggetto indicato non è quello di un elemento del menu."
+
+msgid ""
+"The key below was previously validated but a connection to akismet.com can "
+"not be established at this time. Please check your server configuration."
+msgstr ""
+"La chiave sottostante è stata precedentemente validata ma al momento non è "
+"possibile stabilire una connessione con akismet.com. Per favore verifica la "
+"configurazione del tuo server."
+
+msgid ""
+"The key you entered could not be verified because a connection to akismet."
+"com could not be established. Please check your server configuration."
+msgstr ""
+"La chiave che hai inserito non può essere verificata perché non è possibile "
+"stabilire una connessione con akismet.com. Per favore verifica la "
+"configurazione del tuo server."
+
+msgid "The key you entered is invalid. Please double-check it."
+msgstr "La chiave che hai inserito non è valida. Per favore verificala."
+
+msgid "The latest comments to all posts in RSS"
+msgstr "Gli ultimi commenti di tutti gli articoli in formato RSS"
+
+msgid "The menu ID should not be empty."
+msgstr "L'ID del menu non dovrebbe essere vuoto."
+
+msgid ""
+"The menu name <strong>%s</strong> conflicts with another menu name. Please "
+"try another."
+msgstr ""
+"Un menu di nome <strong>%s</strong> è in conflitto con un altro nome dimenu. "
+"Provare un nome differente."
+
+msgid "The most recent comments"
+msgstr "I commenti più recenti"
+
+msgid "The most recent posts on your site"
+msgstr "Gli articoli più recenti di questo sito"
+
+msgid "The page template is invalid."
+msgstr "Il template di pagina non è valido."
+
+msgid "The parent theme is missing. Please install the \"%s\" parent theme."
+msgstr "Il tema padre è mancante. Installare il tema padre \"%s\"."
+
+msgid "The passwords do not match."
+msgstr "Le password non corrispondono."
+
+msgid "The pingback has already been registered."
+msgstr "The pingback has already been registered."
+
+msgid "The post cannot be deleted."
+msgstr "L'articolo non può essere eliminato."
+
+msgid "The post type may not be changed."
+msgstr "Il tipo di articolo non può essere modificato."
+
+msgid "The post type specified is not valid"
+msgstr "Il tipo di articolo specificato non è valido"
+
+msgid "The requested user does not exist."
+msgstr "L'utente richiesto non esiste."
+
+msgid "The role specified is not valid"
+msgstr "Il ruolo specificato non è valido"
+
+msgid "The site %s is yours."
+msgstr "The sito %s è di vostra proprietà."
+
+msgid "The site is already active."
+msgstr "Il sito è già attivo."
+
+msgid ""
+"The site you have requested is not installed properly. Please contact the "
+"system administrator."
+msgstr ""
+"Il sito richiesto non è installato correttamente. Contattare "
+"l'amministratore di sistema."
+
+msgid "The slug &#8220;%s&#8221; is already in use by another term"
+msgstr ""
+"L'abbreviazione &#8220;%s&#8221; è già in uso da parte di un altro termine"
+
+msgid ""
+"The source URL and the target URL cannot both point to the same resource."
+msgstr ""
+"L'URL di partenza e l'URL d'arrivo non possono puntare alla stessa risorsa."
+
+msgid ""
+"The source URL does not contain a link to the target URL, and so cannot be "
+"used as a source."
+msgstr ""
+"L'URL d'origine non contiene un link all'URL di destinazione e quindi non "
+"può essere utilizzato come origine."
+
+msgid "The source URL does not exist."
+msgstr "L'URL sorgente non esiste."
+
+msgid ""
+"The specified target URL cannot be used as a target. It either doesn&#8217;t "
+"exist, or it is not a pingback-enabled resource."
+msgstr ""
+"L'URL indicata non può essere usata come destinazione. O non esiste o non è "
+"una risorsa abilitata al pingback."
+
+msgid "The specified target URL does not exist."
+msgstr "L''URL di destinazione specifica non esiste"
+
+msgid "The term name cannot be empty."
+msgstr "Il termine non può essere vuoto."
+
+msgid "The theme directory does not exist."
+msgstr "La directory del tema non esiste"
+
+msgid ""
+"The timezone you have entered is not valid. Please select a valid timezone."
+msgstr ""
+"Il fuso orario inserito non è valido. Per favore seleziona un fuso orario "
+"valido."
+
+msgid "The user is already active."
+msgstr "Questo utente è già attivo."
+
+msgid ""
+"The web browser on your device cannot be used to upload files. You may be "
+"able to use the <a href=\"http://wordpress.org/extend/mobile/\">native app "
+"for your device</a> instead."
+msgstr ""
+"Il browser web del dispositivo utilizzato non consente il caricamento di "
+"file. Si dovrebbe essere in grado di farlo usando <a href=\"http://wordpress."
+"org/extend/mobile/\">la app nativa per il proprio dispositivo</a>."
+
+msgid "Theme without %1$s"
+msgstr "Tema senza %1$s"
+
+msgid "Themes"
+msgstr "Temi"
+
+msgid "There are currently %1$s comments identified as spam."
+msgstr "Attualmente ci sono %1$s commenti identificati come spam."
+
+msgid ""
+"There are no HTTP transports available which can complete the requested "
+"request."
+msgstr ""
+"Non vi sono transport HTTP disponibili che permettono di completare la "
+"richiesta effettuata."
+
+msgid "There are no options for this widget."
+msgstr "Non vi sono opzioni per questo widget."
+
+msgid "There doesn&#8217;t seem to be any new mail."
+msgstr "Pare non vi sia alcuna nuova mail."
+
+msgid ""
+"There doesn't seem to be a <code>wp-config.php</code> file. I need this "
+"before we can get started."
+msgstr ""
+"Sembra non vi sia un file <code>wp-config.php</code>. Occorre averlo per "
+"poter iniziare."
+
+msgid ""
+"There is a button in the editor toolbar for inserting images that are "
+"already hosted somewhere on the internet. If you have a URL for an image, "
+"click this button and enter the URL in the box which appears."
+msgstr ""
+"Nella barra dell'editor è presente un pulsante per inserire immagini che "
+"sono già ospitate da qualche parte su Internet. Se si dispone dell'URL di "
+"un'immagine, fare clic sul pulsante e inserire l'URL nella finestra che "
+"apparirà."
+
+msgid "There is a revision of this post that is more recent."
+msgstr "C'è una revisione di questo articolo che è più recente."
+
+msgid "There is no excerpt because this is a protected post."
+msgstr ""
+"Non è disponibile alcun riassunto in quanto si tratta di un articolo "
+"protetto."
+
+msgid ""
+"There was a configuration error. Please contact the server administrator."
+msgstr ""
+"Si è verificato un errore di configurazione. Contattate l'amministratore del "
+"server."
+
+msgid ""
+"There was a problem connecting to the Akismet server. Please check your "
+"server configuration."
+msgstr ""
+"Si è verificato un problema nella connessione con il server Akismet. Per "
+"favore verifica la configurazione del tuo server."
+
+msgid "There was a problem, please correct the form below and try again."
+msgstr ""
+"Si era verificato un problema, correggere il modulo sottostante e "
+"riprovavare."
+
+msgid "There's <a href=\"%2$s\">%1$s comment</a> in your spam queue right now."
+msgid_plural ""
+"There are <a href=\"%2$s\">%1$s comments</a> in your spam queue right now."
+msgstr[0] ""
+"C'è <a href=\"%2$s\">%1$s commento </a> nella tua coda di spam in questo "
+"momento."
+msgstr[1] ""
+"Ci sono <a href=\"%2$s\">%1$s commenti </a> nella tua coda di spam in questo "
+"momento."
+
+msgid "There's nothing in your <a href='%1$s'>spam queue</a> at the moment."
+msgstr "Al momento la <a href='%1$s'>coda di spam</a> è vuota."
+
+msgid ""
+"These are the latest comments identified as spam by Akismet. If you see any "
+"mistakes, simply mark the comment as \"not spam\" and Akismet will learn "
+"from the submission. If you wish to recover a comment from spam, simply "
+"select the comment, and click Not Spam. After 15 days we clean out the junk "
+"for you."
+msgstr ""
+"<p>Questi sono gli ultimi commenti identificati da Akismet come spam. Se si "
+"nota qualche errore, è possibile semplicemente contrassegnare il commento "
+"come \"non spam\" ed Akismet imparerà da questa segnalazione. Se si desidera "
+"recuperare un commento dallo spam, fare semplicemente clic su Non Spam. Dopo "
+"15 giorni provvederemo noi alla pulizia dei dati spazzatura.</p>"
+
+msgid "This action has been disabled by the administrator."
+msgstr "Questa azione è stata disabilitata dall'amministratore"
+
+msgid ""
+"This argument has changed to an array to match the behavior of the other "
+"cron functions."
+msgstr ""
+"Questo argomento è stato trasformato in un array per adattarsi al "
+"funzionamento di altre funzioni cron."
+
+msgid ""
+"This can mean one of two things, either you copied the key wrong or that the "
+"plugin is unable to reach the Akismet servers, which is most often caused by "
+"an issue with your web host around firewalls or similar."
+msgstr ""
+"Questo può significare che la chiave è stata copiata in maniera errata "
+"oppure il plugin non riesce a contattare i server Akismet. L'errore è spesso "
+"causato da un problema con il fornitore di hosting (firewall o protezioni "
+"simili)."
+
+msgid ""
+"This feature requires inline frames. You have iframes disabled or your "
+"browser does not support them."
+msgstr ""
+"Questa funzionalità richiede frame in linea. Si hanno i frame disabilitati o "
+"il browser non li supporta."
+
+msgid "This file is empty. Please try another."
+msgstr "Questo file è vuoto. Provare con un altro file."
+
+msgid "This file is not an image. Please try another."
+msgstr "Questo file non è un'immagine. Prova con un file diverso."
+
+msgid "This file is too big. Files must be less than %d KB in size."
+msgstr ""
+"Il file è troppo grande. I file devono avere una dimensione inferiore a %d "
+"KB."
+
+msgid "This file no longer needs to be included."
+msgstr "Il file non ha più la necessità di venire incluso"
+
+msgid "This file type is not allowed. Please try another."
+msgstr "Questo tipo di file non è permesso. Provare con un altro file."
+
+msgid "This is larger than the maximum size. Please try another."
+msgstr ""
+"Questo file è più grande della dimensione massima consentita. Prova con un "
+"file diverso."
+
+msgid "This is the short link."
+msgstr "Questo è il link breve."
+
+msgid "This key is invalid."
+msgstr "Questa chiave non è valida"
+
+msgid "This key is valid."
+msgstr "La chiave è valida."
+
+msgid "This page validates as XHTML 1.0 Transitional"
+msgstr "Il codice di questa pagina è XHTML 1.0 Transitional valido"
+
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Questo articolo è protetto da password. Inserire la password per "
+"visualizzare i commenti."
+
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr ""
+"Questo post è protetto da password. Per leggerlo inserire la password qui "
+"sotto:"
+
+msgid "This site has been archived or suspended."
+msgstr "Questo blog è stato archiviato o sospeso."
+
+msgid ""
+"This site has not been activated yet. If you are having problems activating "
+"your site, please contact <a href=\"mailto:%1$s\">%1$s</a>."
+msgstr ""
+"Il sito non è stato ancora attivato. Se si hanno dei problemi nell&#8217;"
+"attivazione del sito contattare <a href=\"mailto:%1$s\">%1$s</a>."
+
+msgid "This taxonomy is not hierarchical so you can't set a parent."
+msgstr ""
+"Questa tassonomia non è gerarchiaca quindi non è possibile impostare un "
+"genitore."
+
+msgid "This taxonomy is not hierarchical."
+msgstr "Questa tassonomia non è gerarchica."
+
+msgid ""
+"This user has elected to delete their account and the content is no longer "
+"available."
+msgstr ""
+"Questo utente ha scelto di cancellare il proprio account ed il contenuto non "
+"è più disponibile."
+
+msgid "Thu"
+msgstr "gio"
+
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+msgid "Thumbnail Height"
+msgstr "Altezza miniatura"
+
+msgid "Thumbnail Width"
+msgstr "Larghezza miniatura"
+
+msgid "Thursday"
+msgstr "giovedì"
+
+msgid "Tile"
+msgstr "Affianca"
+
+msgid "Tile Horizontally"
+msgstr "Affianca orizzontalmente"
+
+msgid "Tile Vertically"
+msgstr "Affianca verticalmente"
+
+msgid "Time Format"
+msgstr "Formato ora"
+
+msgid "Time Zone"
+msgstr "Fuso orario"
+
+msgid ""
+"TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor "
+"released as Open Source under %sLGPL</a>\tby Moxiecode Systems AB. It has "
+"the ability to convert HTML TEXTAREA fields or other HTML elements to editor "
+"instances."
+msgstr ""
+"TinyMCE è un editor Javascript HTML WYSIWYG indipendente dalla piattaforma "
+"utilizzata e basato sul web rilasciato come Open Source sotto%sLGPL </a>→ da "
+"Moxiecode Systems AB. Ha la capacità di convertire in un editor un campo "
+"HTML di tipo TEXTAREA  o altri elementi HTML."
+
+msgid "Title"
+msgstr "Titolo"
+
+msgid "Title:"
+msgstr "Titolo:"
+
+msgid ""
+"To activate your blog, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login.\n"
+"\n"
+"After you activate, you can visit your site here:\n"
+"\n"
+"%s"
+msgstr ""
+"Per attivare il proprio blog, fare click sul seguente link:\n"
+"\n"
+"%s\n"
+"\n"
+"Dopo  l&#8217;attivazione, si riceverà *un&#8217;altra email* con i dati di "
+"login.\n"
+"\n"
+"Dopo  l&#8217;attivazione, sarà possibile visitare il proprio sito qui:\n"
+"\n"
+"%s"
+
+msgid ""
+"To activate your user, please click the following link:\n"
+"\n"
+"%s\n"
+"\n"
+"After you activate, you will receive *another email* with your login."
+msgstr ""
+"Per attivare il tuo utente, fai click sul link seguente:\n"
+"\n"
+"%s\n"
+"\n"
+"Dopo l'attivazione, riceverai un altra email con i dettagli per il login."
+
+msgid "To reset your password, visit the following address:"
+msgstr "Per reimpostare la tua password visita il seguente indirizzo:"
+
+msgid "Toggle Editor Text Direction"
+msgstr "Inverti direzione del testo dell'editor"
+
+msgid "Toggle absolute positioning"
+msgstr "Attiva/Disattiva posizionamento assoluto"
+
+msgid "Toggle fullscreen mode"
+msgstr "Attiva/disattiva schermo intero"
+
+msgid "Toggle fullscreen mode (Alt + Shift + G)"
+msgstr "Attiva/Disattiva la modalità a schermo intero (Alt + Shift + G)"
+
+msgid "Toggle guidelines/invisible elements"
+msgstr "Attiva/disattiva linee guida/elementi invisibili"
+
+msgid "Toggle spellchecker (Alt + Shift + N)"
+msgstr "Attiva/Disattiva il correttore ortografico (Alt + Maiusc + N)"
+
+msgid "Too many redirects."
+msgstr "Troppi redirect."
+
+msgid "Toolbar"
+msgstr "Barra strumenti"
+
+msgid "Top"
+msgstr "Alto"
+
+msgid "Top left"
+msgstr "Allinea a sinistra"
+
+msgid "Top navigation toolbar."
+msgstr "Barra degli strumenti di navigazione superiore."
+
+msgid "Top right"
+msgstr "Allinea a destra"
+
+msgid "Trackback"
+msgstr "Trackback"
+
+msgid "Trackback excerpt: "
+msgstr "Estratto del trackback:"
+
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "Cestinato <span class=\"count\">(%s)</span>"
+msgstr[1] "Cestinati <span class=\"count\">(%s)</span>"
+
+msgid "Trash it: %s"
+msgstr "Cestinare: %s"
+
+msgid "Tue"
+msgstr "mar"
+
+msgid "Tuesday"
+msgstr "martedì"
+
+msgid "Turquoise"
+msgstr "Turchese"
+
+msgid "Twice Daily"
+msgstr "Due volte al giorno"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Types"
+msgstr "Tipi"
+
+msgid "UI Mode"
+msgstr "Modalità UI"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "URL    : %s"
+msgstr "URL    : %s"
+
+msgid "UTC"
+msgstr "UTC"
+
+msgid "Un-spammed by %s"
+msgstr "Rimosso dallo spam da %s"
+
+msgid ""
+"Unable to create directory %s. Is its parent directory writable by the "
+"server?"
+msgstr ""
+"Impossibile creare la directory %s. Verifica che la directory madre sia "
+"scrivibile dal server!"
+
+msgid "Unable to find Akismet servers."
+msgstr "Impossibile trovare i server Akismet."
+
+msgid "Unable to reach any Akismet servers."
+msgstr "Impossibile raggiungere i server Akismet."
+
+msgid "Unable to reach some Akismet servers."
+msgstr "Impossibile raggiungere alcuni dei server Akismet."
+
+msgid "Unapproved"
+msgstr "Non approvato"
+
+msgid "Uncategorized"
+msgstr "Senza categoria"
+
+msgid "Underline"
+msgstr "Sottolineato"
+
+msgid "Undo"
+msgstr "Annulla"
+
+msgid "Undo (Ctrl + Z)"
+msgstr "Annulla (Ctrl + Z)"
+
+msgid "Unknown Feed"
+msgstr "Feed sconosciuto"
+
+msgid "Unlink (Alt + Shift + S)"
+msgstr "Rimuovi link (Alt + Shift + S)"
+
+msgid "Unordered list (Alt + Shift + U)"
+msgstr "Elenco non ordinato (Alt + Shift + U)"
+
+msgid "Untitled"
+msgstr "Senza titolo"
+
+msgid "Update"
+msgstr "Aggiorna"
+
+msgid "Update Category"
+msgstr "Aggiorna categoria"
+
+msgid "Update Link Category"
+msgstr "Aggiorna categoria link"
+
+msgid "Update Tag"
+msgstr "Aggiorna tag"
+
+msgid "Update gallery"
+msgstr "Aggiorna galleria"
+
+msgid "Update options &raquo;"
+msgstr "Aggiorna impostazioni &raquo;"
+
+msgid "Updated."
+msgstr "Aggiornato."
+
+msgid "Upload"
+msgstr "Caricare"
+
+msgid "Upload Files"
+msgstr "Caricamento file"
+
+msgid "Upload Images"
+msgstr "Caricamento immagini"
+
+msgid "Upload Limit Exceeded"
+msgstr "Limite di caricamento superato"
+
+msgid "Upload New"
+msgstr "Carica nuovo"
+
+msgid "Upload failed."
+msgstr "Aggiornamento non riuscito."
+
+msgid "Upload stopped."
+msgstr "Caricamento interrotto."
+
+msgid "Uploaded"
+msgstr "Caricato"
+
+msgid "Uploaded to this page"
+msgstr "Caricato in questa pagina"
+
+msgid "Uploaded to this post"
+msgstr "Caricato in questo articolo"
+
+msgid "Uploading"
+msgstr "Caricamento"
+
+msgid "Upper alpha"
+msgstr "Lettere maiuscole"
+
+msgid "Upper roman"
+msgstr "Numeri romani maiuscoli"
+
+msgid ""
+"Usage of user levels by plugins and themes is deprecated. Use roles and "
+"capabilities instead."
+msgstr ""
+"L'utilizzo dei livelli utenti da temi e plugin è deprecato. Utilizza ruoli e "
+"capacità."
+
+msgid "Use <code>WP_User->ID</code> instead."
+msgstr "In alternativa utilizzare <code>WP_User->ID</code>."
+
+msgid ""
+"Use <code>get_the_author()</code> instead if you do not want the value "
+"echoed."
+msgstr ""
+"Utilizzare <code>get_the_author()</code> se invece non si desidera avere il "
+"valore visualizzato."
+
+msgid ""
+"Use <code>get_trackback_url()</code> instead if you do not want the value "
+"echoed."
+msgstr ""
+"Utilizzare <code>get_trackback_url()</code> se invece non si desidera avere "
+"il valore visualizzato."
+
+msgid "Use CTRL+V on your keyboard to paste the text into the window."
+msgstr "Utilizza CTRL+V da tastiera per incollare il testo nella finestra."
+
+msgid "Use as featured image"
+msgstr "Utilizza come immagine in evidenza"
+
+msgid "Use commas instead of %s to separate excluded categories."
+msgstr ""
+"Utilizza le virgole invece di %s per separare le categorie da escludere."
+
+msgid "Use left and right arrows to navigate."
+msgstr "Utilizza le frecce destra e sinistra per navigare."
+
+msgid "Use the <code>%s</code> option instead."
+msgstr "Utilizzare la suo posto l'opzione <code>%s</code>."
+
+msgid "Use this widget to add one of your custom menus as a widget."
+msgstr ""
+"Utilizzare questo widget per aggiungere uno dei menu personalizzati come se "
+"fosse un widget."
+
+msgid "User has blocked requests through HTTP."
+msgstr "L'utente ha bloccato le richieste via HTTP."
+
+msgid "User registration has been disabled."
+msgstr "La registrazione utenti è disabilitata."
+
+msgid "User registration is currently not allowed."
+msgstr "La registrazione degli utenti non è al momento permessa."
+
+msgid "Username"
+msgstr "Nome utente"
+
+msgid "Username must be at least 4 characters."
+msgstr "Il nome utente deve essere di almeno 4 caratteri"
+
+msgid "Username or E-mail:"
+msgstr "Nome utente o E-mail:"
+
+msgid "Username:"
+msgstr "Nome utente:"
+
+msgid "Username: %s"
+msgstr "Nome utente: %s"
+
+msgid "Users"
+msgstr "Utenti"
+
+msgid "V-Space"
+msgstr "Spazio verticale"
+
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr ""
+"<abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr> valido"
+
+msgid "Version"
+msgstr "Versione"
+
+msgid "Version:"
+msgstr "Versione:"
+
+msgid "Vertical space"
+msgstr "Spaziatura verticale"
+
+msgid "Very dark gray"
+msgstr "Grigio scuro"
+
+msgid "Very weak"
+msgstr "Molto debole"
+
+msgid "Video"
+msgstr "Video"
+
+msgid "Video <span class=\"count\">(%s)</span>"
+msgid_plural "Video <span class=\"count\">(%s)</span>"
+msgstr[0] "Video <span class=\"count\">(%s)</span>"
+msgstr[1] "Video <span class=\"count\">(%s)</span>"
+
+msgid "View Attachment Page"
+msgstr "Vedi allegato pagina"
+
+msgid "View Category"
+msgstr "Visualizza categoria"
+
+msgid "View Page"
+msgstr "Visualizza pagina"
+
+msgid "View Post"
+msgstr "Visualizza articolo"
+
+msgid "View Tag"
+msgstr "Visualizza tag"
+
+msgid "View all posts filed under %s"
+msgstr "Visualizza tutti gli articoli archiviati in %s"
+
+msgid "View all posts in %s"
+msgstr "Visualizza tutti gli articoli in %s"
+
+msgid "View comment history"
+msgstr "Visualizzare la storia del commento"
+
+msgid "View posts for %1$s %2$s"
+msgstr "Visualizza articoli di %1$s %2$s"
+
+msgid "Visit %s&#8217;s website"
+msgstr "Visitare il sito web di %s"
+
+msgid "Visit Network"
+msgstr "Visita il Network"
+
+msgid "Visit Site"
+msgstr "Visualizza sito"
+
+msgid "Visit author homepage"
+msgstr "Visita la homepage dell'autore"
+
+msgid "Visual"
+msgstr "Visuale"
+
+msgid "Visual control characters on/off."
+msgstr "Caratteri di controllo visuali on/off."
+
+msgid "Volume"
+msgstr "Volume"
+
+msgid "WMode"
+msgstr "WMode"
+
+msgid "W_Wednesday_initial"
+msgstr "M"
+
+msgid ""
+"Wait a little longer. Sometimes delivery of email can be delayed by "
+"processes outside of our control."
+msgstr ""
+"Attendere un po'. Alcune volte la consegna delle email può venir ritardata "
+"da processi al di fuori del nostro controllo."
+
+msgid "We cannot find a title on that page."
+msgstr "Non possiamo trovare un titolo in quella pagina."
+
+msgid ""
+"We send your registration email to this address. (Double-check your email "
+"address before continuing.)"
+msgstr ""
+"Invieremo l'email di registrazione a questo indirizzo. (Controllare "
+"attentamente l'indirizzo email prima di proseguire.)"
+
+msgid "Weak"
+msgstr "Debole"
+
+msgid "Website"
+msgstr "Sito web"
+
+msgid "Website : %1$s (IP: %2$s , %3$s)"
+msgstr "Sito web: %1$s (IP: %2$s , %3$s)"
+
+msgid "Website: %1$s (IP: %2$s , %3$s)"
+msgstr "Sito web: %1$s (IP: %2$s , %3$s)"
+
+msgid "Wed"
+msgstr "mer"
+
+msgid "Wednesday"
+msgstr "mercoledì"
+
+msgid ""
+"Welcome back, %s. By filling out the form below, you can <strong>add another "
+"site to your account</strong>. There is no limit to the number of sites you "
+"can have, so create to your heart&#8217;s content, but write responsibly!"
+msgstr ""
+"Bentornato %s. Compilando il seguente modulo è possibile <strong>aggiungere "
+"un nuovo sito al proprio account</strong>. Non vi è limite al numero di blog "
+"che è possibile avere, quindi create i contenuti secondo il vostro cuore ma "
+"scrivete con responsabilità."
+
+msgid "What do I do now?"
+msgstr "Cosa fare adesso?"
+
+msgid ""
+"When pasting content from another web page the results can be inconsistent "
+"and depend on your browser and on the web page you are pasting from. The "
+"editor tries to correct any invalid HTML code that was pasted, but for best "
+"results try using the Text tab or one of the paste buttons that are on the "
+"second row. Alternatively try pasting paragraph by paragraph. In most "
+"browsers to select one paragraph at a time, triple-click on it."
+msgstr ""
+"Quando s'incolla contenuto da un'altra pagina web i risultati possono essere "
+"inconsistenti e ciò è causato dal tuo browser e dalla pagina web visitata. "
+"L'editor cerca di correggere più errori nel codice HTML possibile, ma per un "
+"risultato migliore provate ad utilizzate la scheda di Testo o uno dei "
+"bottoni \"incolla\" che si trovano nella seconda riga. Altrimenti, prova a "
+"incollare paragrafo per paragrafo. Nella maggior parte dei browser per "
+"selezionare un paragrafo, cliccarci col mouse sopra per tre volte."
+
+msgid ""
+"While using the editor, most basic keyboard shortcuts work like in any other "
+"text editor. For example: Shift+Enter inserts line break, Ctrl+C = copy, Ctrl"
+"+X = cut, Ctrl+Z = undo, Ctrl+Y = redo, Ctrl+A = select all, etc. (on Mac "
+"use the Command key instead of Ctrl). See the Hotkeys tab for all available "
+"keyboard shortcuts."
+msgstr ""
+"Mentre si utilizza l'editor sono disponibili molte scorciatoie da tastiera "
+"come in qualsiasi altro editor di testo. Ad esempio Shift+Enter inserisce "
+"una interruzione di riga, Ctrl+C = copia, Ctrl+X = taglia, Ctrl+Z = annulla, "
+"Ctrl+Y = ripete, Ctrl+A = seleziona tutto, ecc. (su un Mac usa il tasto "
+"Command anziché Ctrl). Si veda la scheda Scorciatoie per tutte le "
+"scorciatoie da tastiera disponibili."
+
+msgid "White"
+msgstr "Bianco"
+
+msgid "Whois  : http://whois.arin.net/rest/ip/%s"
+msgstr "Whois  : http://whois.arin.net/rest/ip/%s"
+
+msgid "Whoops, the provided date is invalid."
+msgstr "Ops, la data inserita non è valida."
+
+msgid "Why might my key be invalid?"
+msgstr "Perché  la mia chiave potrebbe essere non valida?"
+
+msgid "Wider"
+msgstr "Più largo"
+
+msgid "Widgets"
+msgstr "Widget"
+
+msgid "Width"
+msgstr "Larghezza"
+
+msgid "Windowless video"
+msgstr "Video senza finestra"
+
+msgid "Windows media player options"
+msgstr "Impostazioni Windows media player"
+
+msgid "Word count: %s"
+msgstr "Conteggio parole: %s"
+
+msgid "Word wrap"
+msgstr "Ritorno a capo automatico"
+
+msgid "WordPress &rsaquo; Error"
+msgstr "WordPress &rsaquo; Errore"
+
+msgid "WordPress &rsaquo; Success"
+msgstr "WordPress &rsaquo; Successo"
+
+msgid "WordPress Failure Notice"
+msgstr "Avviso di errore WordPress"
+
+msgid "WordPress database error %1$s for query %2$s"
+msgstr "WordPress errore database %1$s per la query %2$s"
+
+msgid "WordPress database error %1$s for query %2$s made by %3$s"
+msgstr "WordPress errore sul database %1$s per la query %2$s fatta da %3$s"
+
+msgid ""
+"WordPress includes a rich HTML editor that works well in all major web "
+"browsers used today. However editing HTML is not the same as typing text. "
+"Each web page has two major components: the structure, which is the actual "
+"HTML code and is produced by the editor as you type, and the display, that "
+"is applied to it by the currently selected WordPress theme and is defined in "
+"style.css. WordPress is producing valid XHTML 1.0 which means that inserting "
+"multiple line breaks (BR tags) after a paragraph would not produce white "
+"space on the web page. The BR tags will be removed as invalid by the "
+"internal HTML correcting functions."
+msgstr ""
+"WordPress include un editor HTML avanzato che funziona con la maggior parte "
+"browser utilizzati al giorno d'oggi. Tuttavia editare codice HTML non è la "
+"stessa cosa che digitare del testo. Ogni pagina web ha due componenti "
+"principali: la struttura, che è il codice HTML e che viene prodotta "
+"dall'editor mentre si scrive, e la visualizzazione, che viene applicata ad "
+"essa dal tema WordPress in uso e dal relativo foglio di stile style.css. "
+"WordPress produce codice XHTML 1.0 valido il che significa che inserendo "
+"interruzioni di riga multiple (marcatori BR) dopo un paragrafo non produce "
+"spazio bianco sulla pagina web. I marcatori BR verranno rimossi come non "
+"validi dal sistema interno di correzione HTML."
+
+msgid "WordPress.org"
+msgstr "WordPress.org"
+
+msgid "Words:"
+msgstr "Parole:"
+
+msgid "Writing at Full Speed"
+msgstr "Scrivere rapidamente"
+
+msgid "XFN"
+msgstr "XFN"
+
+msgid "XHTML Friends Network"
+msgstr "XHTML Friends Network"
+
+msgid "XML error: %s at line %d"
+msgstr "XML error: %s at line %d"
+
+msgid "XML-RPC services are disabled on this site."
+msgstr "Il servizio XML-RPC è disattivato su questo sito."
+
+msgid "Y/m/d"
+msgstr "d/m/Y"
+
+msgid "Yahoo IM"
+msgstr "Yahoo IM"
+
+msgid "Yellow"
+msgstr "Giallo"
+
+msgid "Yellow green"
+msgstr "Giallo verde"
+
+msgid "Yes"
+msgstr "Si"
+
+msgid ""
+"You appear to have already installed WordPress. To reinstall please clear "
+"your old database tables first."
+msgstr ""
+"Sembra che WordPress sia già installato. Per reinstallarlo bisogna prima "
+"cancellare le tabelle dal database."
+
+msgid ""
+"You are about to permanently delete the selected items.\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Si stanno per eliminare definitivamente gli elementi selezionati.\n"
+" 'Annulla' per interrompere, 'OK' per eliminare."
+
+msgid ""
+"You are about to permanently delete this item.\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Stai per cancellare definitivamente questo elemento.\n"
+"  'Annulla' per interrompere, 'OK' per cancellare."
+
+msgid ""
+"You are about to permanently delete this menu. \n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Si sta per eliminare definitivamente questo menu.\n"
+" 'Annulla' per interrompere, 'OK' per eliminare."
+
+msgid "You are attempting to log out of %s"
+msgstr "Si sta tentando di scollegarsi da %s"
+
+msgid ""
+"You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives for "
+"%3$s."
+msgstr ""
+"SI stanno visualizzando gli archivi del blog <a href=\"%1$s/\">%2$s</a> di "
+"%3$s."
+
+msgid ""
+"You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives for "
+"the day %3$s."
+msgstr ""
+"Si stanno visualizzando gli archivi del blog <a href=\"%1$s/\">%2$s</a> per "
+"il girono %3$s."
+
+msgid ""
+"You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives for "
+"the year %3$s."
+msgstr ""
+"Si stanno visualizzando gli archivi del blog <a href=\"%1$s/\">%2$s</a> per "
+"l&#8217;anno %3$s."
+
+msgid ""
+"You are currently browsing the <a href=\"%1$s/\">%2$s</a> blog archives."
+msgstr ""
+"SI stanno viasualizzando gli archivi del blog <a href=\"%1$s/\">%2$s</a>."
+
+msgid "You are currently browsing the archives for the %s category."
+msgstr "Stai visualizzando gli archivi per la categoria %s."
+
+msgid "You are logged in already. No need to register again!"
+msgstr "Si è già fatto il login. Non serve registrarsi nuovamente!"
+
+msgid "You are not allowed access to details about comments."
+msgstr ""
+"Non si dispone del permesso per accedere ai dettagli riguardanti i commenti."
+
+msgid "You are not allowed access to details about this site."
+msgstr ""
+"Non si dispone del permesso per accedere ai dettagli riguardanti questo sito."
+
+msgid "You are not allowed to assign terms in this taxonomy."
+msgstr "Non disponi del permesso per assegnare un termine a questa tassonomia."
+
+msgid "You are not allowed to change the page author as this user."
+msgstr ""
+"Non si dispone del permesso per cambiare l'autore della pagina con questo "
+"nome utente."
+
+msgid "You are not allowed to change the post author as this user."
+msgstr ""
+"Non si dispone del permesso permesso per cambiare l'autore dell'articolo con "
+"questo nome utente."
+
+msgid "You are not allowed to create pages as this user."
+msgstr "Non hai il permesso di creare pagina con questo utente."
+
+msgid "You are not allowed to create posts as this user."
+msgstr "Non disponi dei permessi per creare articoli con questo utente."
+
+msgid "You are not allowed to create terms in this taxonomy."
+msgstr "Non disponi del permesso per creare termini in questa tassonomia."
+
+msgid "You are not allowed to delete terms in this taxonomy."
+msgstr "Non disponi del permesso per cancellare termini da questa tassonomia"
+
+msgid "You are not allowed to edit terms in this taxonomy."
+msgstr ""
+"Non disponi del permesso per modificare i termini di questa tassonomia."
+
+msgid "You are not allowed to moderate comments on this site."
+msgstr ""
+"Non si dispone dei permessi sufficienti per moderare i commenti di questo "
+"sito."
+
+msgid "You are not allowed to update options."
+msgstr "Non si dispone del permesso per aggiornare le Impostazioni."
+
+msgid "You are now logged out."
+msgstr "Si è effettuato il log out."
+
+msgid "You are posting comments too quickly. Slow down."
+msgstr "Stai scrivendo commenti troppo in fretta. Rallenta."
+
+msgid ""
+"You can create a <code>wp-config.php</code> file through a web interface, "
+"but this doesn't work for all server setups. The safest way is to manually "
+"create the file."
+msgstr ""
+"Puoi creare un file <code>wp-config.php</code> tramite una interfaccia web "
+"ma non funziona con tutte le configurazioni di server. Il metodo più sicuro "
+"e creare il file manualmente."
+
+msgid ""
+"You can delete all of the spam from your database with a single click. This "
+"operation cannot be undone, so you may wish to check to ensure that no "
+"legitimate comments got through first. Spam is automatically deleted after "
+"15 days, so don&#8217;t sweat it."
+msgstr ""
+"<p>&Egrave; possibile cancellare tutto lo spam dal proprio database con un "
+"singolo clic. Questa operazione non potrà venire annullata, quindi "
+"assicurarsi che non via siano commenti legittimi che potrebbero andare persi "
+"definitivamente. Lo spam viene automaticamente cancellato dopo 15 giorni, "
+"quindi non preoccuparsi di questo.</p>"
+
+msgid ""
+"You can edit your menu content on the Menus screen in the Appearance section."
+msgstr ""
+"&Egrave; possibile modificare il contenuto del menu nella schermata Menu, "
+"nella sezione Aspetto."
+
+msgid "You can see all comments on this post here: "
+msgstr "È possibile vedere tutti i commenti a questo articolo qui:"
+
+msgid "You can see all pingbacks on this post here: "
+msgstr ""
+"&Egrave; possibile visualizzare tutti i pingback a questo articolo qui: "
+
+msgid "You can see all trackbacks on this post here: "
+msgstr ""
+"&Egrave; possibile visualizzare tutti i trackback a questo articolo qui: "
+
+msgid ""
+"You cannot use that email address to signup. We are having problems with "
+"them blocking some of our email. Please use another email provider."
+msgstr ""
+"Non è possibile utilizzare questo indirizzo email per registrarsi. Stiamo "
+"avendo problemi con alcune nostre email che vengono bloccate. Per favore "
+"utilizzare un altro fornitore di email."
+
+msgid "You do not have permission to do that."
+msgstr "Non si dispone del permesso per fare questo."
+
+msgid "You do not have permission to preview drafts."
+msgstr "Non si dispone del permesso di visualizzare le bozze."
+
+msgid "You do not have permission to upload files."
+msgstr "Non si dispone del permesso di caricare file."
+
+msgid "You do not have sufficient permission to moderate comments."
+msgstr "Non si dispone di permessi sufficienti per moderare i commenti."
+
+msgid "You have attempted to queue too many files."
+msgstr "Si è tentato di accodare troppi file."
+
+msgid ""
+"You have been added to this site. Please visit the <a href=\"%s\">homepage</"
+"a> or <a href=\"%s\">log in</a> using your username and password."
+msgstr ""
+"Sei stato aggiunto a questo sito. Per favore visita <a href=\"%s"
+"\">l'homepage </a> o <a href=\"%s\"> effettua il login </a> utilizzando il "
+"tuo nome utente e la tua password."
+
+msgid "You have logged in successfully."
+msgstr "Ci si è autenticati correttamente."
+
+msgid "You have no spam currently in the queue. Must be your lucky day. :)"
+msgstr ""
+"Non c'è spam in coda di moderazione. Deve essere il tuo giorno fortunato. :)"
+
+msgid ""
+"You have searched the <a href=\"%1$s/\">%2$s</a> blog archives for "
+"<strong>&#8216;%3$s&#8217;</strong>. If you are unable to find anything in "
+"these search results, you can try one of these links."
+msgstr ""
+"Si è cercato negli archivi del blog <a href=\"%1$s/\">%2$s</a> per "
+"<strong>&#8216;%3$s&#8217;</strong>. Se non si è trovato nulla in questi "
+"risultati è possibile provare uno di questi link."
+
+msgid "You may only upload 1 file."
+msgstr "&Egrave; possibile caricare un solo file."
+
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+"&Egrave; possibile utilizzare questi tag ed attributi <abbr title="
+"\"eXtensible HyperText Markup Language\">XHTML</abbr>: %s"
+
+msgid ""
+"You must <a href=\"%1$s\">enter your Akismet API key</a> for it to work."
+msgstr ""
+"Perchè funzioni occorre inserire <a href=\"%1$s\">la tua chiave API Akismet</"
+"a>."
+
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Occorre aver fatto il <a href=\"%s\">login</a> per inviare un commento"
+
+msgid "You must be registered to comment"
+msgstr "Occorre essere registrati per poter inviare commenti"
+
+msgid ""
+"You must first <a href=\"%s\">log in</a>, and then you can create a new site."
+msgstr ""
+"Occorre aver eseguito prima il <a href=\"%s\">login</a> e dopo sarà "
+"possibile creare un nuovo blog."
+
+msgid ""
+"You should specify a nonce action to be verified by using the first "
+"parameter."
+msgstr ""
+"È necessario specificare una azione nonce da verificare utilizzando il primo "
+"parametro."
+
+msgid "Your Comment"
+msgstr "Il tuo commento"
+
+msgid ""
+"Your PHP installation appears to be missing the MySQL extension which is "
+"required by WordPress."
+msgstr ""
+"L'installazione PHP  non ha l'estensione MySQL che è necessaria per "
+"utilizzare WordPress."
+
+msgid ""
+"Your WordPress home URL %s is invalid.  Please fix the <a href=\"%s\">home "
+"option</a>."
+msgstr ""
+"L'URL %s della home di WordPress non è valida. Per favore correggi <a href="
+"\"%s\">l'opzione home</a>."
+
+msgid ""
+"Your account has been activated. You may now <a href=\"%1$s\">log in</a> to "
+"the site using your chosen username of &#8220;%2$s&#8221;. Please check your "
+"email inbox at %3$s for your password and login instructions. If you do not "
+"receive an email, please check your junk or spam folder. If you still do not "
+"receive an email within an hour, you can <a href=\"%4$s\">reset your "
+"password</a>."
+msgstr ""
+"Il tuo account è stato attivato. Ora puoi effettuare il <a href=\"%1$s"
+"\">login</a> al sito utilizzando il nome utente scelto &#8220;%2$s&#8221;. "
+"Controlla la tua email %3$s per la password e le istruzioni di login. Se non "
+"ricevi l'email controlla la cartella di spam o junk. Se entro un'ora non hai "
+"ancora ricevuto l'email, puoi <a href=\"%4$s\">reimpostare la password</a>."
+
+msgid ""
+"Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the "
+"<a href=\"%2$s\">homepage</a>."
+msgstr ""
+"Il tuo account è stato attivato. <a href=\"%1$s\">Fai il login</a> o torna "
+"alla <a href=\"%2$s\">homepage</a>."
+
+msgid ""
+"Your account is now activated. <a href=\"%1$s\">View your site</a> or <a "
+"href=\"%2$s\">Log in</a>"
+msgstr ""
+"Il tuo account è stato attivato. <a href=\"%1$s\">Vedi il sito</a> o <a href="
+"\"%2$s\">Fai il login</a>"
+
+msgid "Your account is now active!"
+msgstr "Il tuo account è ora attivo!"
+
+msgid "Your address will be %s."
+msgstr "Il tuo indirizzo sarà %s."
+
+msgid "Your blogroll"
+msgstr "Il blogroll"
+
+msgid ""
+"Your browser has some limitations uploading large files with the multi-file "
+"uploader. Please use the <a href=\"%1$s\" target=\"%2$s\">browser uploader</"
+"a> for files over 100MB."
+msgstr ""
+"Il tuo browser hai delle limitazioni, con l'uploader multiplo, nel "
+"caricamento di file di grandi dimensioni. Utilizza <a href=\"%1$s\" target="
+"\"%2$s\">l'uploader del browser</a> per i file sopra i 100MB."
+
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento è in attesa di moderazione"
+
+msgid "Your email address will not be published."
+msgstr "L'indirizzo email non verrà pubblicato."
+
+msgid "Your key has been cleared."
+msgstr "La chiave è stata reimpostata."
+
+msgid "Your key has been verified. Happy blogging!"
+msgstr "La chiave è stata verificata. Buon lavoro!"
+
+msgid "Your latest posts"
+msgstr "Gli ultimi articoli"
+
+msgid "Your most used tags in cloud format"
+msgstr "I tag maggiormente utilizzati in formato nuvola"
+
+msgid "Your password has been reset."
+msgstr "La password è stata azzerata."
+
+msgid ""
+"Your server is running PHP version %1$s but WordPress %2$s requires at least "
+"%3$s."
+msgstr ""
+"Il server sta utilizzando PHP versione %1$s ma WordPress %2$s richiede "
+"almeno la versione %3$s."
+
+msgid "Your session has expired. Please log-in again."
+msgstr "La sessione è scaduta. Effettuare nuovamente il login."
+
+msgid ""
+"Your site at <a href=\"%1$s\">%2$s</a> is active. You may now log in to your "
+"site using your chosen username of &#8220;%3$s&#8221;. Please check your "
+"email inbox at %4$s for your password and login instructions. If you do not "
+"receive an email, please check your junk or spam folder. If you still do not "
+"receive an email within an hour, you can <a href=\"%5$s\">reset your "
+"password</a>."
+msgstr ""
+"Il sito <a href=\"%1$s\">%2$s</a> è attivo. Ora puoi effettuare il login al "
+"sito utilizzando il nome utente scelto &#8220;%3$s&#8221;. Verifica la tua "
+"email su %4$s per la password e le istruzioni di login. Se non ricevi alcuna "
+"email verifica la cartella di spam o junk. Se ancora non ricevi alcuna email "
+"entro un'ora, potrai <a href=\"%5$s\">reimpostare la password</a>."
+
+msgid "Your site&#8217;s WordPress Pages"
+msgstr "Le pagine di questo sito WordPress"
+
+msgid "Your theme supports %s menu. Select which menu you would like to use."
+msgid_plural ""
+"Your theme supports %s menus. Select which menu appears in each location."
+msgstr[0] ""
+"Il tuo tema supporta %s menu. Seleziona il menu che desideri utilizzare."
+msgstr[1] ""
+"Il tuo tema supporta %s menu. Seleziona quale menu vuoi far apparire in "
+"ciascuna posizione."
+
+msgid "Your theme supports a static front page."
+msgstr "Il tuo tema supporta una pagina iniziale statica."
+
+msgid ""
+"Your web host or server administrator has disabled PHP's <code>fsockopen</"
+"code> or <code>gethostbynamel</code> functions.  <strong>Akismet cannot work "
+"correctly until this is fixed.</strong>  Please contact your web host or "
+"firewall administrator and give them <a href=\"%s\" target=\"_blank\">this "
+"information about Akismet's system requirements</a>."
+msgstr ""
+"Il vostro web host o il vostro server administrator ha disabilitato la "
+"funzione PHP <code>fsockopen</code>.  <strong>Akismet non può operare "
+"correttamente sino a quando questo problema non sarà stato risolto.</"
+"strong>  Contattare il proprio web host o l'amministratore del firewall e "
+"fornire <a href=\"%s\" target=\"_blank\">queste informazioni riguardanti le "
+"caratteristiche dei server necessarie ad Akismet</a>."
+
+msgid "[%1$s] Activate %2$s"
+msgstr "[%1$s] Attivato %2$s"
+
+msgid "[%1$s] Comment: \"%2$s\""
+msgstr "[%1$s] Commento: \"%2$s\""
+
+msgid "[%1$s] Pingback: \"%2$s\""
+msgstr "[%1$s] Pingback: \"%2$s\""
+
+msgid "[%1$s] Please moderate: \"%2$s\""
+msgstr "[%1$s] Applica la moderazione: \"%2$s\""
+
+msgid "[%1$s] Trackback: \"%2$s\""
+msgstr "[%1$s] Trackback: \"%2$s\""
+
+msgid "[%s] New User Registration"
+msgstr "[%s] Registrazione di un nuovo utente"
+
+msgid "[%s] Password Lost/Changed"
+msgstr "[%s] Password persa/reimpostata"
+
+msgid "[%s] Password Reset"
+msgstr "[%s] Password azzerata"
+
+msgid "[%s] Your username and password"
+msgstr "[%s] Il proprio nome utente e password"
+
+msgid "abort"
+msgstr "interrompi"
+
+msgctxt "add new from admin bar"
+msgid "Link"
+msgstr "Nuovo link"
+
+msgctxt "add new from admin bar"
+msgid "Media"
+msgstr "Nuovo media"
+
+msgctxt "add new from admin bar"
+msgid "User"
+msgstr "Nuovo utente"
+
+msgctxt "add new media"
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+msgctxt "add new on admin bar"
+msgid "Page"
+msgstr "Pagina"
+
+msgctxt "add new on admin bar"
+msgid "Post"
+msgstr "Articolo"
+
+msgctxt "adjective"
+msgid "Approved"
+msgstr "Approvato"
+
+msgctxt "adjective"
+msgid "Spam"
+msgstr "Spam"
+
+msgctxt "admin bar menu group label"
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+msgctxt "admin bar menu group label"
+msgid "New"
+msgstr "Nuovo"
+
+msgctxt "admin color scheme"
+msgid "Blue"
+msgstr "Blu"
+
+msgctxt "admin color scheme"
+msgid "Gray"
+msgstr "Grigio"
+
+msgid "am"
+msgstr "am"
+
+msgid "apop authentication failed"
+msgstr "autenticazione apop non riuscita"
+
+msgctxt "apostrophe"
+msgid "&#8217;"
+msgstr "&#8217;"
+
+msgid "by %1$s &#8212; %2$s @ <a href=\"#comment-%3$s\">%4$s</a>"
+msgstr "di %1$s &#8212; %2$s il <a href=\"#comment-%3$s\">%4$s</a>"
+
+msgctxt "calendar caption"
+msgid "%1$s %2$s"
+msgstr "%1$s: %2$s"
+
+msgid "close tags"
+msgstr "chiudi tag"
+
+msgctxt "closing curly double quote"
+msgid "&#8221;"
+msgstr "&#8221;"
+
+msgctxt "closing curly single quote"
+msgid "&#8217;"
+msgstr "&#8217;"
+
+msgctxt "comments"
+msgid "Spam"
+msgstr "Spam"
+
+msgid "connection does not exist"
+msgstr "la connessione non esiste"
+
+msgid "connection not established"
+msgstr "connessione non stabilita"
+
+msgid "domain"
+msgstr "dominio"
+
+msgctxt "double prime"
+msgid "&#8243;"
+msgstr "&#8243;"
+
+msgctxt "em dash"
+msgid "&#8212;"
+msgstr "&#8212;"
+
+msgctxt "en dash"
+msgid "&#8211;"
+msgstr "&#8211;"
+
+msgctxt "feed link"
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "fullscreen"
+msgstr "schermo intero"
+
+msgid "href"
+msgstr "href"
+
+msgctxt "html attribute"
+msgid "Name"
+msgstr "Nome"
+
+msgctxt "html attribute"
+msgid "Name:"
+msgstr "Nome:"
+
+msgid "http://codex.wordpress.org/"
+msgstr "http://codex.wordpress.org/"
+
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+msgid "http://wordpress.org/support/"
+msgstr "http://wordpress.org/support/"
+
+msgid "http://wordpress.org/support/forum/requests-and-feedback"
+msgstr "http://wordpress.org/support/forum/requests-and-feedback"
+
+msgid "ieSpell not detected. Do you want to install it now?"
+msgstr "ieSpell non presente. Si desidera installarlo ora?"
+
+msgid "l, F jS, Y"
+msgstr "l, j F Y"
+
+msgctxt "links widget"
+msgid "All Links"
+msgstr "Tutti i link"
+
+msgid "lookup"
+msgstr "ricerca"
+
+msgid "moved to the trash."
+msgstr "spostato nel cestino."
+
+msgid "new WordPress Loop"
+msgstr "nuovo WordPress Loop"
+
+msgid "no login ID submitted"
+msgstr "non è stato fornito alcun ID di login"
+
+msgid "not configured"
+msgstr "Non configurato"
+
+msgctxt "noun"
+msgid "Comment"
+msgstr "Commento"
+
+msgid "number_format_decimal_point"
+msgstr ","
+
+msgid "number_format_thousands_sep"
+msgstr "."
+
+msgid "of"
+msgstr "di"
+
+msgctxt "opening curly double quote"
+msgid "&#8220;"
+msgstr "&#8220;"
+
+msgctxt "opening curly single quote"
+msgid "&#8216;"
+msgstr "&#8216;"
+
+msgctxt "page"
+msgid "Add New"
+msgstr "Aggiungi nuova"
+
+msgctxt "password strength"
+msgid "Medium"
+msgstr "Media"
+
+msgid "pm"
+msgstr "pm"
+
+msgctxt "post"
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+msgctxt "post"
+msgid "Draft"
+msgstr "Bozza"
+
+msgctxt "post"
+msgid "Pending"
+msgstr "In sospeso"
+
+msgctxt "post"
+msgid "Private"
+msgstr "Privato"
+
+msgctxt "post"
+msgid "Published"
+msgstr "Pubblicato"
+
+msgctxt "post"
+msgid "Scheduled"
+msgstr "Programmato"
+
+msgctxt "post"
+msgid "Trash"
+msgstr "Cestina"
+
+msgctxt "post format"
+msgid "Format"
+msgstr "Formato"
+
+msgctxt "post revision"
+msgid "%1$s by %2$s"
+msgstr "%1$s di %2$s"
+
+msgctxt "post type general name"
+msgid "Media"
+msgstr "Media"
+
+msgctxt "post type general name"
+msgid "Pages"
+msgstr "Pagine"
+
+msgctxt "post type general name"
+msgid "Posts"
+msgstr "Articoli"
+
+msgctxt "post type singular name"
+msgid "Page"
+msgstr "Pagina"
+
+msgctxt "post type singular name"
+msgid "Post"
+msgstr "Articolo"
+
+msgctxt "prime"
+msgid "&#8242;"
+msgstr "&#8242;"
+
+msgctxt "revision date format"
+msgid "j F, Y @ G:i"
+msgstr "j F Y @ H:i"
+
+msgctxt "revisions column name"
+msgid "Date Created"
+msgstr "Data creazione"
+
+msgctxt "revisions column name"
+msgid "New"
+msgstr "Nuovo"
+
+msgctxt "revisions column name"
+msgid "Old"
+msgstr "Vecchio"
+
+msgctxt "search results"
+msgid "No results found."
+msgstr "Nessun risultato trovato."
+
+msgid "sitename"
+msgstr "nome sito"
+
+msgctxt "tag delimiter"
+msgid ","
+msgstr ","
+
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr "Categorie"
+
+msgctxt "taxonomy general name"
+msgid "Tags"
+msgstr "Tag"
+
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr "Categoria"
+
+msgctxt "taxonomy singular name"
+msgid "Tag"
+msgstr "Tag"
+
+msgid "text direction"
+msgstr "direzione del testo"
+
+msgctxt "text direction"
+msgid "ltr"
+msgstr "ltr"
+
+msgid "username and email used"
+msgstr "nome utente e email utilizzati"
+
+msgctxt "widgets"
+msgid "%1$s on %2$s"
+msgstr "%1$s su %2$s"
+
+msgctxt "word count: words or characters?"
+msgid "words"
+msgstr "words"
+
+msgid "{#field} must be a number"
+msgstr "{#field} deve essere un numero"
+
+msgid "{#field} must be a number greater than {#min}"
+msgstr "{#campo} deve essere un numero maggiore di {#min}"
+
+msgid "{#field} must be a number or percentage"
+msgstr "{#field} deve essere un numero o una percentuale"
+
+msgid "I was the attendant or page of Queequeg, while busy at."
+msgstr "funziona!"
+
+msgid "Collections"
+msgstr "Collezioni"
+
+msgid "Icons"
+msgstr "Icone"
+
+msgid "Videos"
+msgstr "Video"
+
+msgid "discover"
+msgstr "scopri"
+
+msgid "Sign up for email updates on latest collections, events and exclusive contents"
+msgstr "Iscriviti alla newsletter per essere sempre aggiornato sulle collezioni ed per avere accesso a contenuti esclusivi"
+
+msgid "I accept the"
+msgstr "Accetto i"
+
+msgid "Privacy Policy"
+msgstr "termini e le condizioni della Privacy Policy"
+
+msgid "Find the nearest point of sale for Paula Cademartori's collections"
+msgstr "Trova il punto vendita più vicino"
+
+msgid "Latest news and publications. Enter and discover WW editorial coverage"
+msgstr "Entra e scopri le ultime uscite e gli editorials"
+
+msgid "Contact Us"
+msgstr "Contattaci"
+
+msgid "Enter"
+msgstr "Entra"
+
+msgid "Email us for general info or press inquiries"
+msgstr "Scrivici per qualsiasi informazione sulle collezioni o per richieste stampa"
+
+msgid "Shop online at WW luxury boutiques. Choose your favourite online retailer to find Paula Cademartori latest collections."
+msgstr "Scegli la boutique online e acquista le collezioni Paula Cademartori."
+

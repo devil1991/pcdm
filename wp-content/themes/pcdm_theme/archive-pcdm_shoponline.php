@@ -45,7 +45,7 @@ $right = true;
       </nav>
     </header>
     <p class="description">
-      <?php echo _e('I was the attendant or page of Queequeg, while busy at.') ?>
+      <?php echo _e('Shop online at WW luxury boutiques. Choose your favourite online retailer to find Paula Cademartori latest collections.') ?>
     </p>
     <?php if (count($shops)): ?>
       <nav class="shop-nav">

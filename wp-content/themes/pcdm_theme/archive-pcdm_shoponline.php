@@ -83,7 +83,7 @@ $right = true;
                     </p>
                   <?php endif; ?>
                   <?php if (isset($shoponline[PcdmShoponline::TYPE_PREFIX . 'link'])): ?>
-                    <a href="<?php echo $shoponline[PcdmShoponline::TYPE_PREFIX . 'link']?>" title="" class="link"><span><?php echo _e('shop now') ?></span></a>
+                    <a href="<?php echo $shoponline[PcdmShoponline::TYPE_PREFIX . 'link']?>" target="_blank" title="" class="link"><span><?php echo _e('shop now') ?></span></a>
                   <?php endif; ?>
                 </article>
                 <?php if (isset($shoponline[PcdmShoponline::TYPE_PREFIX . 'wall_image_id'])): ?>

@@ -15,7 +15,6 @@ get_header();
 
 $shops = pcdm_get_shoponline_archive();
 $firstl = true;
-$right = true;
 ?>
 
 <section class="wrap-shop">
@@ -70,6 +69,7 @@ $right = true;
         <div class="shop-list" id="<?php echo $letter ?>">
           <span class="letter"><?php echo strtoupper($letter) ?></span>
           <ul>
+            <?php $right = true;?>
             <?php foreach ($shop as $shoponline): ?>
               <li class="shop <?php if ($right): ?>right<?php else: ?>left<?php endif; ?>">
                 <article>

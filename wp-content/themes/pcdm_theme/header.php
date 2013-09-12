@@ -71,7 +71,7 @@ if (isset($polylang)){
                     <?php _e('Videos')?>
                 </a>
               </li>
-              <li><a href="" title=""><?php _e('Diary')?></a></li>
+              <li><a href="http://www.paulacademartori.tumblr.com/" target="_blank" title=""><?php _e('Diary')?></a></li>
               <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
               <li><a href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php _e('shop online')?></a></li>
             </ul>
@@ -156,7 +156,7 @@ if (isset($polylang)){
                                             <?php echo _e('Videos')?>
                                         </a>
                                     </li>
-                                    <li><a href="" title=""><?php echo _e('Diary')?></a></li>
+                                    <li><a href="http://www.paulacademartori.tumblr.com/" target="_blank" title=""><?php echo _e('Diary')?></a></li>
                                     <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php echo _e('News')?></a></li>
                                     <li><a href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php echo _e('shop online')?></a></li>
                                 </ul>

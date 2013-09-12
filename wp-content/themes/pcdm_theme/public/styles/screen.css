@@ -1168,7 +1168,7 @@ a:hover {
 .footer .aux-footer .footer-navigation > ul > li .title {
   text-transform: uppercase;
   color: #2c2c2c;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   font-size: 0.875em;
 }
 .footer .aux-footer .footer-navigation > ul > li .description {
@@ -3818,7 +3818,10 @@ body #wrapper.detail-on .header-small {
 .ie-phone .press .press-list .item {
   margin-bottom: 2em;
 }
-.press .press-list .item > img {
+.press .press-list .item > a {
+  display: block;
+}
+.press .press-list .item > a > img {
   float: left;
   width: 96%;
   margin: 2%;

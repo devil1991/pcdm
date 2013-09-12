@@ -164,6 +164,25 @@ class PcdmPress {
             ),
         ),
     );
+    
+     $meta_boxes[] = array(
+        'id' => self::TYPE_PREFIX . 'fieldset_2',
+        'title' => 'Images',
+        'pages' => array(self::TYPE_IDENTIFIER),
+        'context' => 'normal',
+        'priority' => 'low',
+        'show_names' => true,
+        'fields' => array(
+            array(
+                'name' => 'Attachment',
+                'desc' => 'Upload a PDF file',
+                'id' => self::TYPE_PREFIX . 'pdf_file',
+                'type' => 'file',
+                'save_id' => FALSE, // save ID using true
+                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+            ),
+        ),
+    );
 
     return $meta_boxes;
   }

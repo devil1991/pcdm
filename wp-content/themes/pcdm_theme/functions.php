@@ -449,7 +449,8 @@ function pack_press($_element, $meta) {
   );
   $post_meta_attributes = array(
       PcdmPress::TYPE_PREFIX . 'wall_image',
-      PcdmPress::TYPE_PREFIX . 'wall_image_id'
+      PcdmPress::TYPE_PREFIX . 'wall_image_id',
+      PcdmPress::TYPE_PREFIX . 'pdf_file'
   );
 
   foreach ($post_attributes as $attr) {

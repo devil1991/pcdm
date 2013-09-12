@@ -46,7 +46,13 @@ get_header();
     <?php foreach (pcdm_get_press_archive() as $press_block): ?>
     <?php $img = wp_get_attachment_image_src($press_block[PcdmPress::TYPE_PREFIX . 'wall_image_id'],PcdmPress::TYPE_PREFIX .'wall_image' );?>
     <li class="item" data-id="<?php echo $press_block['ID']?>">
+      <?php if(isset($press_block[PcdmPress::TYPE_PREFIX . 'pdf_file'])):?>
+      <a href="<?php echo $press_block[PcdmPress::TYPE_PREFIX . 'pdf_file'] ?>" target="_blank">
+      <?php endif;?>
       <img src="<?php echo $img[0] ?>" alt="">
+      <?php if(isset($press_block[PcdmPress::TYPE_PREFIX . 'pdf_file'])):?>
+      </a>
+      <?php endif;?>
     </li>
     <?php endforeach;?>
   </ul>

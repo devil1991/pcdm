@@ -39,7 +39,7 @@ if (isset($polylang)){
           <a href="<?php echo get_bloginfo('url')?>" class="logo">Paula Cademartori</a>
           <nav class="navbar">
             <ul class="first-level">
-              <li><a href="" title=""><?php echo _e('Icons')?></a></li>
+              <!--<li><a href="" title=""><?php echo _e('Icons')?></a></li>-->
               <li class="dropdown">
                 <a class="" href="#" title=""><?php echo _e('Collections')?></a>
                 <div class="wrap-dropdown-menu">
@@ -124,7 +124,7 @@ if (isset($polylang)){
                         <div class="wrap-navbar">
                             <nav class="navbar">
                                 <ul class="first-level">
-                                    <li><a href="" title=""><?php echo _e('Icons')?></a></li>
+                                    <!--<li><a href="" title=""><?php echo _e('Icons')?></a></li>-->
                                     <li class="dropdown">
                                         <a class="" href="#" title=""><?php echo _e('Collections')?></a>
                                         <div class="wrap-dropdown-menu">

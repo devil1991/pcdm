@@ -167,11 +167,11 @@ class PcdmPress {
     
      $meta_boxes[] = array(
         'id' => self::TYPE_PREFIX . 'fieldset_2',
-        'title' => 'Images',
+        'title' => 'Attachment',
         'pages' => array(self::TYPE_IDENTIFIER),
         'context' => 'normal',
         'priority' => 'low',
-        'show_names' => true,
+        'show_names' => false,
         'fields' => array(
             array(
                 'name' => 'Attachment',

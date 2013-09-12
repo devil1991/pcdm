@@ -3818,10 +3818,10 @@ body #wrapper.detail-on .header-small {
 .ie-phone .press .press-list .item {
   margin-bottom: 2em;
 }
-.press .press-list .item > a {
+.press .press-list .item a {
   display: block;
 }
-.press .press-list .item > a > img {
+.press .press-list .item img {
   float: left;
   width: 96%;
   margin: 2%;

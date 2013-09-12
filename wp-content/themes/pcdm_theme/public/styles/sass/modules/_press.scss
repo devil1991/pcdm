@@ -64,13 +64,13 @@
       @include at-breakpoint($phone) {
         margin-bottom:2em;
       }
-      >a{
+      a{
         display:block;
-        > img{
-          float:left;
-          width:96%;
-          margin:2%;
-        }
+      }
+      img{
+        float:left;
+        width:96%;
+        margin:2%;
       }
     }
   }

@@ -1,16 +1,5 @@
 <?php
-/**
- * The template for displaying Archive pages.
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
+if (is_user_logged_in() || ! MAINTENANCE)://LOGGED USERS
 get_header();
 ?>
 
@@ -60,3 +49,6 @@ get_header();
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+<?php else://NOT LOGGED USERS?>
+<?php load_template(dirname(__FILE__) . '/subtemplates/maintenance.php');?>
+<?php endif;?>

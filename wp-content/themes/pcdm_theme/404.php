@@ -1,11 +1,5 @@
 <?php
-/**
- * The template for displaying 404 pages (Not Found).
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
+if (is_user_logged_in() || ! MAINTENANCE)://LOGGED USERS
 ?>
 <!doctype html>
 <html lang="en">
@@ -41,3 +35,6 @@
 
 </body>
 </html>
+<?php else://NOT LOGGED USERS?>
+<?php load_template(dirname(__FILE__) . '/subtemplates/maintenance.php');?>
+<?php endif;?>

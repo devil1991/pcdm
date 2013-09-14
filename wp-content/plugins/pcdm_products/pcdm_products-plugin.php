@@ -234,11 +234,11 @@ add_action('wp_ajax_nopriv_registernl', 'registerNewsletter');
 add_action('wp_ajax_registernl', 'registerNewsletter');
 
 function registerNewsletter() {
-  
+
   $API_KEY = "0148f950a93a4e7e8d188c3028fde9d8-us2";
 //  $LIST_ID = "2839c53ce8";//test list
-  $LIST_ID = "0329e0ad2e";//registration list
-  
+  $LIST_ID = "0329e0ad2e"; //registration list
+
   if (!class_exists("MailChimp")) {
     require_once( 'lib/mailchimp/MailChimp.class.php' );
   }
@@ -267,19 +267,29 @@ function registerNewsletter() {
     $result = $MailChimp->call('lists/subscribe', array(
         'id' => $LIST_ID,
         'email' => array('email' => $_POST['email']),
-        'merge_vars' => array('FNAME' => $_POST['name'], 'LNAME' => $_POST['surname']),
+        'merge_vars' => array('FNAME' => $_POST['name'], 'LNAME' => $_POST['surname'], 'MMERGE3' => $_POST['privacy'] ? 'I Agree' : FALSE),
         'double_optin' => $_POST['privacy'],
         'update_existing' => true,
         'replace_interests' => false,
         'send_welcome' => true,
     ));
+
+    if ($result) {
+      if (isset($result['status']) && $result['status'] == 'error') {
+        $success = 0;
+        $res['error'][] = $result['error'];
+      }
+    } else {
+      $success = 0;
+      $res['error'][] = 'comunication error';
+    }
+  } else {
+    $success = 0;
+    $res['error'][] = 'privacy';
   }
 
-  if ($result) {
-    $res['success'] = TRUE;
-  } else {
-    $res['success'] = FALSE;
-  }
+
+  $res['success'] = $success;
 
   header("Content-type: application/json");
   die(json_encode($res));

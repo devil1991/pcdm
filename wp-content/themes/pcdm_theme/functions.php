@@ -594,5 +594,6 @@ function pcdm_get_season_terms(){
       $not_numbered_terms[]=$_term;
     }
   }
+  ksort($numbered_terms);
   return array_merge($numbered_terms,$not_numbered_terms);
 }

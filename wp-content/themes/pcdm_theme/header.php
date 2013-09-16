@@ -44,7 +44,7 @@ if (isset($polylang)){
                 <a class="" href="#" title=""><?php echo _e('Collections')?></a>
                 <div class="wrap-dropdown-menu">
                       <ul class="dropdown-menu">
-                          <?php foreach(get_terms(PcdmSeason::CATEGORY_IDENTIFIER) as $_term):?>
+                          <?php foreach(pcdm_get_season_terms() as $_term):?>
                               <?php if($_term->count):?>
                                   <li>
                                       <a class="active" href="<?php echo get_term_link($_term->slug, PcdmSeason::CATEGORY_IDENTIFIER)?>" title=""><?php echo $_term->name?>
@@ -129,7 +129,7 @@ if (isset($polylang)){
                                         <a class="" href="#" title=""><?php echo _e('Collections')?></a>
                                         <div class="wrap-dropdown-menu">
                                             <ul class="dropdown-menu">
-                                                <?php foreach(get_terms(PcdmSeason::CATEGORY_IDENTIFIER) as $_term):?>
+                                                <?php foreach(pcdm_get_season_terms() as $_term):?>
                                                     <?php if($_term->count):?>
                                                         <li>
                                                             <a href="<?php echo get_term_link($_term->slug, PcdmSeason::CATEGORY_IDENTIFIER)?>" title=""><?php echo $_term->name?>

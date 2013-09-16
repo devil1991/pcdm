@@ -582,3 +582,17 @@ function pcdm_filter_wp_title() {
   return $filtered_title;
 }
 
+function pcdm_get_season_terms(){
+  $numbered_terms = array();
+  $not_numbered_terms = array();
+  foreach(get_terms(PcdmSeason::CATEGORY_IDENTIFIER) as $_term){
+    $term_descriptions = explode(",", $_term->description);
+    $number = intval(str_replace("/", "",$term_descriptions[0]));
+    if(is_int($number)){
+      $numbered_terms[$number]=$_term;
+    }else{
+      $not_numbered_terms[]=$_term;
+    }
+  }
+  return array_merge($numbered_terms,$not_numbered_terms);
+}

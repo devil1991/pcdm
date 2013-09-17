@@ -9,9 +9,18 @@
     left: 1em;
     right: 1em;
     text-align: center; // this may not be needed.
+    @include at-breakpoint($max-screen) {
+      width:103em;
+      margin:0 auto;
+      left:1em;
+    }
     &.shifter{
       position:fixed;
       left:1em;
+      @include at-breakpoint($max-screen) {
+        width:101em;
+        margin:0 auto;
+      }
     }
     @include at-breakpoint($phablet) {
       left:0;

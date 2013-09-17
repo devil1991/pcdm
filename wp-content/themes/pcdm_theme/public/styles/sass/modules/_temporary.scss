@@ -1,0 +1,84 @@
+.wrap-temporary{
+  border-top:7px solid #000;
+  padding-top:3em;
+  .aux{
+    width:1024px;
+    margin:0 auto;
+    @include at-breakpoint ($phone){
+      width:100%;
+    }
+  }
+  .logo{
+    width:120px;
+    margin:0 auto;
+    display:block;
+    >img{
+      width:100%;
+    }
+  }
+  .wrap-content{
+    margin-top:-4em;
+    width:100%;
+    $gutter-width   : 0em;
+    $grid-padding   : 0em;
+    @include container;
+    @include pie-clearfix;
+    .col-dx{
+      float:right;
+      @include span-columns(1 omega,2);
+      position:relative;
+      @include at-breakpoint ($phone){
+        @include span-columns(1 omega,1);
+      }
+    }
+    .col-sx{
+      @include span-columns(1,2);
+      @include at-breakpoint ($phone){
+        @include span-columns(1 omega,1);
+      }
+      > img{
+        margin-left:5%;
+        width:95%;
+      }
+    }
+    .wrap-text{
+      padding:6em 0 0 3em;
+      @include at-breakpoint ($phone){
+        padding:3em 0 0 1em;
+        margin:0 auto;
+      }
+      .number{
+        line-height:1em;
+        font:{
+          family:$font-regular;
+          size:6em;
+        }
+      }
+      h2{
+        background:url(../images/box/sep-title.jpg) left bottom no-repeat;
+        padding-bottom:1em;
+        line-height:1.2em;
+        text-transform:uppercase;
+        font:{
+          family:$font-regular;
+          size:2em;
+        }
+      }
+      p{
+        width:300px;
+        padding-top:1em;
+      }
+      .mail{
+        color:#e86b5a;
+        text-transform:none;
+        text-decoration:underline;
+        display:block;
+        margin:1em 0;
+        line-height:1em 0 1.5em;
+      }
+      .back{
+        @extend %button;
+      }
+    }
+  }
+}

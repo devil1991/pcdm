@@ -7,6 +7,9 @@
     float:left;
     display:inline;
     left:25%;
+    @include at-breakpoint($max-screen) {
+      left:26%;
+    }
     padding-right:1%;
     text-align:right;
     position:fixed;

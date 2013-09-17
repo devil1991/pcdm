@@ -38,7 +38,11 @@ body{
     @include at-breakpoint($max-screen) {
     #wrapper{
       $container-width: 103em;
+      width: 103em;
       @include container;
+      &.detail-on{
+        width: 100%;
+      }
     }
   }
 }

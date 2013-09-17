@@ -90,6 +90,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @media (min-width: 103em) {
   body #wrapper {
+    width: 103em;
     padding-left: 1em;
     padding-right: 1em;
     margin-left: auto;
@@ -100,8 +101,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: table;
     clear: both;
   }
+  body #wrapper.detail-on {
+    width: 100%;
+  }
 }
 .ie-max body #wrapper {
+  width: 103em;
   *zoom: 1;
   padding-left: 1em;
   padding-right: 1em;
@@ -112,6 +117,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   content: "";
   display: table;
   clear: both;
+}
+.ie-max body #wrapper.detail-on {
+  width: 100%;
 }
 
 .container {
@@ -3187,9 +3195,31 @@ body #wrapper.detail-on .header-small {
   right: 1em;
   text-align: center;
 }
+@media (min-width: 103em) {
+  .wrap-about .rail-1 {
+    width: 103em;
+    margin: 0 auto;
+    left: 1em;
+  }
+}
+.ie-max .wrap-about .rail-1 {
+  width: 103em;
+  margin: 0 auto;
+  left: 1em;
+}
 .wrap-about .rail-1.shifter {
   position: fixed;
   left: 1em;
+}
+@media (min-width: 103em) {
+  .wrap-about .rail-1.shifter {
+    width: 101em;
+    margin: 0 auto;
+  }
+}
+.ie-max .wrap-about .rail-1.shifter {
+  width: 101em;
+  margin: 0 auto;
 }
 @media (min-width: 45em) and (max-width: 60em) {
   .wrap-about .rail-1 {
@@ -4589,6 +4619,14 @@ body #wrapper.detail-on .header-small {
   content: "";
   display: table;
   clear: both;
+}
+@media (min-width: 103em) {
+  .wrap-shop .wrap-text {
+    left: 26%;
+  }
+}
+.ie-max .wrap-shop .wrap-text {
+  left: 26%;
 }
 @media (max-width: 45em) {
   .wrap-shop .wrap-text {

@@ -3,7 +3,7 @@
 define('DS', '/');
 define('SKIN_SUBDIR', 'public');
 define('PCDM_BASE_URL', get_bloginfo('url'));
-define('MAINTENANCE',TRUE);
+define('MAINTENANCE',false);
 
 add_theme_support('post-thumbnails');
 

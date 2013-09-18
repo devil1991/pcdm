@@ -57,7 +57,7 @@ $_slide_3 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . '
     <?php endif; ?>
     <div class="text">
       <p class="date">
-        <span class="yy"><?php echo date('y', strtotime($_news_details['post_date'])) ?>.</span><span class="mm-dd"><?php echo date('m', strtotime($_news_details['post_date'])) ?>/<?php echo date('d', strtotime($_news_details['post_date'])) ?></span>
+        <span class="yy"><?php echo date('Y', strtotime($_news_details['post_date'])) ?>.</span><span class="mm-dd"><?php echo date('m', strtotime($_news_details['post_date'])) ?>/<?php echo date('d', strtotime($_news_details['post_date'])) ?></span>
       </p>
       <h1 class="title"><?php echo $_news_details['post_title'] ?></h1>
       <p class="description"><?php echo $_news_details['post_content'] ?>

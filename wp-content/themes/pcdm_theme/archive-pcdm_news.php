@@ -20,7 +20,7 @@ get_header();
                         </div>
                         <div class="text">
                             <p class="date">
-                                <span class="yy"><?php echo date('y',strtotime($news['post_date']))?>.</span><span class="mm-dd"><?php echo date('m',strtotime($news['post_date']))?>/<?php echo date('d',strtotime($news['post_date']))?></span>
+                                <span class="yy"><?php echo date('Y',strtotime($news['post_date']))?>.</span><span class="mm-dd"><?php echo date('m',strtotime($news['post_date']))?>/<?php echo date('d',strtotime($news['post_date']))?></span>
                             </p>
                             <h1 class="title"><?php echo $news['post_title'] ?></h1>
                             <p class="description">

@@ -6353,7 +6353,7 @@ msgstr "termini e le condizioni della Privacy Policy"
 msgid "Find the nearest point of sale for Paula Cademartori's collections"
 msgstr "Trova il punto vendita più vicino"
 
-msgid "Latest news and publications. Enter and discover WWW editorial coverage"
+msgid "Enter and discover the editorial coverage"
 msgstr "Entra e scopri le ultime uscite e gli editorials"
 
 msgid "Contact Us"

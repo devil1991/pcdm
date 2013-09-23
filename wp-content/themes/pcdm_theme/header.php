@@ -87,19 +87,19 @@ if (isset($polylang)){
           <nav class="nav-social">
             <ul class="js-last-child">
               <li class="facebook">
-                <a  title="facebook" href="#" target="blank">Facebook</a>
+                <a  title="facebook" href="https://www.facebook.com/paulacademartoribrand" target="blank">Facebook</a>
               </li>
               <li class="histagram">
-                <a title="histagram" href="#" target="blank">histagram</a>
+                <a title="histagram" href="http://instagram.com/pcademartori" target="blank">histagram</a>
               </li>
               <li class="twitter">
-                <a title="twitter" href="#" target="blank">twitter</a>
+                <a title="twitter" href="https://twitter.com/PCademartori" target="blank">twitter</a>
               </li>
               <li class="pinterest">
-                <a title="pinterest" href="#" target="blank">You Tube</a>
+                <a title="pinterest" href="http://www.pinterest.com/pcademartori/" target="blank">You Tube</a>
               </li>
               <li class="tumblr">
-                <a title="tumblr" href="#" target="blank">tumblr</a>
+                <a title="tumblr" href="http://paulacademartori.tumblr.com/" target="blank">tumblr</a>
               </li>
             </ul>
           </nav>
@@ -167,19 +167,19 @@ if (isset($polylang)){
                                 <span class="label">follow us</span>
                                 <ul class="js-last-child">
                                     <li class="facebook">
-                                        <a  title="facebook" href="#" target="blank">Facebook</a>
+                                        <a  title="facebook" href="https://www.facebook.com/paulacademartoribrand" target="blank">Facebook</a>
                                     </li>
                                     <li class="histagram">
-                                        <a title="histagram" href="#" target="blank">histagram</a>
+                                        <a title="histagram" href="http://instagram.com/pcademartori" target="blank">histagram</a>
                                     </li>
                                     <li class="twitter">
-                                        <a title="twitter" href="#" target="blank">twitter</a>
+                                        <a title="twitter" href="https://twitter.com/PCademartori" target="blank">twitter</a>
                                     </li>
                                     <li class="pinterest">
-                                        <a title="pinterest" href="#" target="blank">You Tube</a>
+                                        <a title="pinterest" href="http://www.pinterest.com/pcademartori/" target="blank">You Tube</a>
                                     </li>
                                     <li class="tumblr">
-                                        <a title="tumblr" href="#" target="blank">tumblr</a>
+                                        <a title="tumblr" href="http://paulacademartori.tumblr.com/" target="blank">tumblr</a>
                                     </li>
                                 </ul>
                             </nav>

@@ -199,6 +199,48 @@ class PcdmNews {
                                 'type' => 'file',
                                 'save_id' => true, // save ID using true
                                 'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 4',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_4',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 5',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_5',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 6',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_6',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 7',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_7',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 8',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_8',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
+                            ),array(
+                                'name' => 'Slideshow 9',
+                                'desc' => 'Upload an image or enter an URL.',
+                                'id' => self::TYPE_PREFIX . 'slide_image_9',
+                                'type' => 'file',
+                                'save_id' => true, // save ID using true
+                                'allow' => array('attachment') // limit to just attachments with array( 'attachment' )
                             ),
             ),
         );

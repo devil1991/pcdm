@@ -11,11 +11,17 @@ $_detail_image = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFI
 $_slide_1 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_1_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_1');
 $_slide_2 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_2_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_2');
 $_slide_3 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_3_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_3');
+$_slide_4 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_4_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_4');
+$_slide_5 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_5_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_5');
+$_slide_6 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_6_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_6');
+$_slide_7 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_7_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_7');
+$_slide_8 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_8_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_8');
+$_slide_9 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . 'slide_image_9_id'][0], PcdmNews::TYPE_PREFIX . 'slide_image_9');
 ?>
 
 <section class="news-detail news" data-columns="2">
   <article class="big" href="" title="">
-    <?php if ($_slide_1 || $_slide_2 || $_slide_3): ?>
+    <?php if ($_slide_1 || $_slide_2 || $_slide_3|| $_slide_4|| $_slide_5|| $_slide_6|| $_slide_7|| $_slide_8|| $_slide_9): ?>
       <div class="wrap-carousel js-autoplay js-swipe">
         <ul class="carousel">
           <li class="item"><a href="" title=""><img src="<?php echo $_detail_image[0] ?>" alt=""></a></li>
@@ -27,6 +33,24 @@ $_slide_3 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . '
           <?php endif; ?>
           <?php if ($_slide_3): ?>
             <li class="item"><a href="" title=""><img src="<?php echo $_slide_3[0] ?>" alt=""></a></li>
+          <?php endif; ?>
+          <?php if ($_slide_4): ?>
+            <li class="item"><a href="" title=""><img src="<?php echo $_slide_4[0] ?>" alt=""></a></li>
+          <?php endif; ?>
+          <?php if ($_slide_5): ?>
+            <li class="item"><a href="" title=""><img src="<?php echo $_slide_5[0] ?>" alt=""></a></li>
+          <?php endif; ?>
+          <?php if ($_slide_6): ?>
+            <li class="item"><a href="" title=""><img src="<?php echo $_slide_6[0] ?>" alt=""></a></li>
+          <?php endif; ?>
+          <?php if ($_slide_7): ?>
+            <li class="item"><a href="" title=""><img src="<?php echo $_slide_7[0] ?>" alt=""></a></li>
+          <?php endif; ?>
+          <?php if ($_slide_8): ?>
+            <li class="item"><a href="" title=""><img src="<?php echo $_slide_8[0] ?>" alt=""></a></li>
+          <?php endif; ?>
+          <?php if ($_slide_9): ?>
+            <li class="item"><a href="" title=""><img src="<?php echo $_slide_9[0] ?>" alt=""></a></li>
           <?php endif; ?>
         </ul>
         <ul class="counter js-counter">
@@ -46,6 +70,36 @@ $_slide_3 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . '
           <?php if ($_slide_3): ?>
             <li>
               <a href="#">4</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_4): ?>
+            <li>
+              <a href="#">5</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_5): ?>
+            <li>
+              <a href="#">6</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_6): ?>
+            <li>
+              <a href="#">7</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_7): ?>
+            <li>
+              <a href="#">8</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_8): ?>
+            <li>
+              <a href="#">9</a>
+            </li>
+          <?php endif; ?>
+          <?php if ($_slide_9): ?>
+            <li>
+              <a href="#">10</a>
             </li>
           <?php endif; ?>
         </ul>

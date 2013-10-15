@@ -6384,3 +6384,15 @@ msgctxt "taxonomy general name"
 msgid "Publication"
 msgstr "Pubblicazione"
 
+msgid "Thank you for registering"
+msgstr "Pubblicazione"
+
+msgid "submit"
+msgstr "invia"
+
+msgid "go to store list"
+msgstr "vai alla lista dei negozi"
+
+msgid "back to the collection"
+msgstr "torna alla collezione"
+

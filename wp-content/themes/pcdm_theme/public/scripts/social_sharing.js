@@ -26,7 +26,7 @@
     };
 
     SocialSharing.prototype.checkButtons = function() {
-      var email_body, email_btn, email_subject, email_url, facebook_btn, facebook_url, gplus_btn, gplus_url, pinterest_btn, pinterest_url, twitter_btn, twitter_url, weibo_btn, weibo_url;
+      var email_body, email_btn, email_subject, email_url, facebook_btn, facebook_url, gplus_btn, gplus_url, pinterest_btn, pinterest_url, tumblr_btn, tumblr_url, twitter_btn, twitter_url, weibo_btn, weibo_url;
       facebook_btn = this.ref.find('.facebook a');
       if (facebook_btn.length === 1) {
         facebook_url = encodeURI("http://www.facebook.com/sharer.php?u=" + this.loc);
@@ -46,6 +46,11 @@
       if (pinterest_btn.length === 1) {
         pinterest_url = encodeURI("http://pinterest.com/pin/create/button?url=" + this.loc + "&media=" + this.meta_image + "&description=" + this.meta_description);
         this.setButton(pinterest_btn, pinterest_url);
+      }
+      tumblr_btn = this.ref.find('.tumblr a');
+      if (tumblr_btn.length === 1) {
+        tumblr_url = encodeURI("http://www.tumblr.com/share/photo?source=" + this.meta_image + "&caption=" + this.meta_description + "&clickthru=" + this.loc);
+        this.setButton(tumblr_btn, tumblr_url);
       }
       weibo_btn = this.ref.find('.weibo a');
       if (weibo_btn.length === 1) {

@@ -47,6 +47,12 @@ class window.SocialSharing
       pinterest_url = encodeURI "http://pinterest.com/pin/create/button?url=#{@loc}&media=#{@meta_image}&description=#{@meta_description}"
       @setButton pinterest_btn, pinterest_url
 
+    # TUMBLR
+    tumblr_btn = @ref.find '.tumblr a'
+    if tumblr_btn.length is 1
+      tumblr_url = encodeURI "http://www.tumblr.com/share/photo?source=#{@meta_image}&caption=#{@meta_description}&clickthru=#{@loc}"
+      @setButton tumblr_btn, tumblr_url
+
     # WEIBO
     weibo_btn = @ref.find '.weibo a'
     if weibo_btn.length is 1

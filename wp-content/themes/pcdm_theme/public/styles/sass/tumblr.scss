@@ -41,7 +41,7 @@ $font-regular :'Conv_FuturaStd-Book';
     > a{
       display:block;
       text-indent:-50000px;
-      background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/logo.png) 0 0 no-repeat;
+      background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/logo.png) 0 0 no-repeat;
       width:141px;
       height:133px;
     }
@@ -55,7 +55,7 @@ $font-regular :'Conv_FuturaStd-Book';
       text-indent:-50000px;
       width:240px;
       height:39px;
-      background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/title.png) 0 0 no-repeat;
+      background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/title.png) 0 0 no-repeat;
     }
     p{
       color:#2c2c2c;
@@ -63,7 +63,7 @@ $font-regular :'Conv_FuturaStd-Book';
       padding-bottom:15px;
       //margin-bottom:5px;
 
-      background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/sep-header.png) left bottom repeat-x;
+      background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/sep-header.png) left bottom repeat-x;
       letter-spacing:0.1em;
       font:{
         family:$font-regular;
@@ -107,7 +107,7 @@ $font-regular :'Conv_FuturaStd-Book';
     }
   }
   input[type="submit"]{
-    background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/search.png) 0 0 no-repeat;
+    background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/search.png) 0 0 no-repeat;
     width:18px;
     border:none;
     height:16px;
@@ -166,7 +166,7 @@ $font-regular :'Conv_FuturaStd-Book';
       position:absolute;
       width:100%;
       text-align:center;
-      background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/bg-hover.png) 0 0 repeat;
+      background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/bg-hover.png) 0 0 repeat;
       top:0px;
       bottom:0;
       @include opacity(0);
@@ -212,7 +212,7 @@ $font-regular :'Conv_FuturaStd-Book';
               }
             }
           }
-          background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/sep-notice.png) center bottom no-repeat;
+          background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/sep-notice.png) center bottom no-repeat;
           padding-bottom:20px;
         }
         ul.tags{
@@ -239,7 +239,7 @@ $font-regular :'Conv_FuturaStd-Book';
               height:56px;
               line-height:56px;
             }
-            background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/bg-ico.png) center center no-repeat;
+            background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/bg-ico.png) center center no-repeat;
             > a{
               line-height:56px;
               display:inline-block!important;
@@ -252,7 +252,7 @@ $font-regular :'Conv_FuturaStd-Book';
         }
         .share-menu{
           clear:both;
-          background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/sep-text.png) center top no-repeat;
+          background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/sep-text.png) center top no-repeat;
           padding-top:20px;
           > ul{
             > li{
@@ -269,16 +269,16 @@ $font-regular :'Conv_FuturaStd-Book';
                 height:16px;
                 text-indent:-5000px;
                 &.facebook{
-                  background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/fb.png) center center no-repeat;
+                  background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/fb.png) center center no-repeat;
                 }
                 &.twitter{
-                  background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/tw.png) center center no-repeat;
+                  background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/tw.png) center center no-repeat;
                 }
                 &.pinterest{
-                  background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/pin.png) center center no-repeat;
+                  background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/pin.png) center center no-repeat;
                 }
                 &.gplus{
-                  background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/gp.png) center center no-repeat;
+                  background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/gp.png) center center no-repeat;
                 }
               }
             }
@@ -313,33 +313,33 @@ $font-regular :'Conv_FuturaStd-Book';
       }
       &.facebook{
         > a{
-          background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-facebook.png) 0 0 repeat;
+          background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-facebook.png) 0 0 repeat;
           &:hover{
-            background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-facebook-hover.png) 0 0 repeat;
+            background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-facebook-hover.png) 0 0 repeat;
           }
         }
       }
       &.twitter{
         > a{
-          background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-twitter.png) 0 0 repeat;
+          background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-twitter.png) 0 0 repeat;
           &:hover{
-            background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-twitter-hover.png) 0 0 repeat;
+            background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-twitter-hover.png) 0 0 repeat;
           }
         }
       }
       &.instagram{
         > a{
-          background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-instagram.png) 0 0 repeat;
+          background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-instagram.png) 0 0 repeat;
           &:hover{
-            background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-instagram-hover.png) 0 0 repeat;
+            background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-instagram-hover.png) 0 0 repeat;
           }
         }
       }
       &.pinterest{
         > a{
-          background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-pinterest.png) 0 0 repeat;
+          background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-pinterest.png) 0 0 repeat;
           &:hover{
-            background:url(http://tranquil-chamber-6387.herokuapp.com/tumblr/images/ico-pinterest-hover.png) 0 0 repeat;
+            background:url(http://www.paulacademartori.com/wp-content/themes/pcdm_theme/public/tumblr/images/ico-pinterest-hover.png) 0 0 repeat;
           }
         }
       }

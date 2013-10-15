@@ -130,9 +130,9 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
         <li class="facebook">
           <a  title="facebook" href="#" target="blank">Facebook</a>
         </li>
-        <li class="histagram">
+<!--        <li class="histagram">
           <a title="histagram" href="#" target="blank">histagram</a>
-        </li>
+        </li>-->
         <li class="twitter">
           <a title="twitter" href="#" target="blank">twitter</a>
         </li>

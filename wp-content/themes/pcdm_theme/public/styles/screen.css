@@ -319,6 +319,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #2c2c2c;
   font-size: 1.75em;
 }
+.wrap-overlay .overlay .description {
+  margin-top: 1em;
+  line-height: 1.2em;
+  font-size: 0.938em;
+}
 .mobile .wrap-overlay {
   position: absolute;
 }
@@ -1314,6 +1319,28 @@ a:hover {
   margin-bottom: 15px;
   font-size: 0.625em;
 }
+.nav-social > ul.js-sharing > li {
+  width: 21.05263%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+.nav-social > ul.js-sharing > li:last-child {
+  margin: 0;
+  width: 21.05263%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+.nav-social > ul.js-sharing > li.last-child {
+  margin: 0;
+  width: 21.05263%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
 .nav-social > ul > li {
   float: left;
   width: 16.66667%;
@@ -2210,6 +2237,7 @@ a:hover {
     width: 100%;
     float: left;
     margin-right: 1.69492%;
+    margin-bottom: 1em;
   }
 }
 .ie-phone .wrap-product-grid .product-grid .line .item {
@@ -2217,6 +2245,7 @@ a:hover {
   float: left;
   margin-right: 1.69492%;
   display: inline;
+  margin-bottom: 1em;
 }
 .wrap-product-grid .product-grid .line .item:last-child {
   width: 49.15254%;
@@ -2324,7 +2353,6 @@ a:hover {
     float: left;
     margin-right: 1.69492%;
     position: relative;
-    margin-bottom: 0;
   }
 }
 .ie-phone .wrap-product-grid .product-grid .line .item.small .line > a, .ie-phone .wrap-product-grid .product-grid .line .item.small .line > div {
@@ -2333,7 +2361,6 @@ a:hover {
   margin-right: 1.69492%;
   display: inline;
   position: relative;
-  margin-bottom: 0;
 }
 .wrap-product-grid .product-grid .line .item.small .line > a > img, .wrap-product-grid .product-grid .line .item.small .line > div > img {
   width: 100%;
@@ -4804,7 +4831,8 @@ body #wrapper.detail-on .header-small {
   width: 100%;
   line-height: 1em;
   position: relative;
-  font-size: 12.5em;
+  font-size: 10.5em;
+  color: #dbdbdb;
 }
 @media (max-width: 45em) {
   .wrap-shop .wrap-shop-list .shop-list .letter {
@@ -5119,7 +5147,6 @@ body #wrapper.detail-on .header-small {
 /* -------------------------------------------------------------------------*/
 /* Layout */
 body {
-  -webkit-transform-style: preserve-3d;
   line-height: 1.5em;
   font-size: 16px;
   font-family: "Conv_BauerBodoniStd-Roman", times;

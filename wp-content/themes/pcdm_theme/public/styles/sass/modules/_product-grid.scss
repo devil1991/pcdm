@@ -75,6 +75,7 @@
         @include span-columns(6, 12);
         @include at-breakpoint($phone) {
           @include span-columns(12, 12);
+          margin-bottom:1em;
         }
         &:last-child{
           @include span-columns(6 omega, 12);
@@ -125,7 +126,6 @@
               @include at-breakpoint($phone) {
                 @include span-columns(12, 12);
                 position:relative;
-                margin-bottom:0;
               }
               > img{
                 width:100%;

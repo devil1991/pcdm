@@ -43,6 +43,13 @@
         size:$f-28;
       }
     }
+    .description{
+      margin-top:1em;
+      line-height:1.2em;
+      font:{
+        size:$f-15;
+      }
+    }
     .close{
       @extend %close;
     }

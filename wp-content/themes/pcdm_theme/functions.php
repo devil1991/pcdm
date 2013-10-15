@@ -3,7 +3,7 @@
 define('DS', '/');
 define('SKIN_SUBDIR', 'public');
 define('PCDM_BASE_URL', get_bloginfo('url'));
-define('MAINTENANCE',false);
+define('MAINTENANCE', false);
 
 add_theme_support('post-thumbnails');
 
@@ -117,20 +117,20 @@ function pcdm_get_store_archive() {
   foreach (get_posts($store_query) as $p) {
     $meta = get_post_meta($p->ID);
     $locations = wp_get_post_terms($p->ID, PcdmStoreLocation::CATEGORY_IDENTIFIER);
-    foreach($locations as $location){
-      if($location->parent == 0){//continente
-        if(!isset($res[$location->name])){
-          $res[$location->name]=array();
+    foreach ($locations as $location) {
+      if ($location->parent == 0) {//continente
+        if (!isset($res[$location->name])) {
+          $res[$location->name] = array();
         }
-      }else{
-        $parent = get_term( $location->parent, PcdmStoreLocation::CATEGORY_IDENTIFIER);
-        if(!isset($res[$parent->name])){
-          $res[$parent->name]=array();
+      } else {
+        $parent = get_term($location->parent, PcdmStoreLocation::CATEGORY_IDENTIFIER);
+        if (!isset($res[$parent->name])) {
+          $res[$parent->name] = array();
         }
-        if(!isset($res[$parent->name][$location->name])){
-          $res[$parent->name][$location->name]=array();
+        if (!isset($res[$parent->name][$location->name])) {
+          $res[$parent->name][$location->name] = array();
         }
-        $res[$parent->name][$location->name][]=packStoreElement($p, $meta);
+        $res[$parent->name][$location->name][] = packStoreElement($p, $meta);
       }
     }
   }
@@ -162,15 +162,13 @@ function packStoreElement($store_element, $meta) {
   return $entity;
 }
 
-function pcdm_get_map_link($coords){
-  $coord_array=explode(",",$coords);
-  if(count($coord_array)!=2){
+function pcdm_get_map_link($coords) {
+  $coord_array = explode(",", $coords);
+  if (count($coord_array) != 2) {
     return false;
-  }
-  else{
+  } else {
     return "https://maps.google.it/maps?q={$coord_array[0]},{$coord_array[1]}&num=1&t=h&z=16";
-  } 
-    
+  }
 }
 
 function pcdm_get_home_element_class($element) {
@@ -227,11 +225,11 @@ function pcdm_get_shoponline_archive() {
             strtolower(substr(trim($element['post_title']), 0, 1));
     //imposto correttamente i valori dei link
     if (isset($element[PcdmShoponline::TYPE_PREFIX . 'link'])) {
-      if (!isset($element[PcdmShoponline::TYPE_PREFIX . 'textlink'])){
+      if (!isset($element[PcdmShoponline::TYPE_PREFIX . 'textlink'])) {
         $element[PcdmShoponline::TYPE_PREFIX . 'textlink'] = $element[PcdmShoponline::TYPE_PREFIX . 'link'];
       }
     }
-    if(!isset($res[$element[PcdmShoponline::TYPE_PREFIX . 'letter']])){
+    if (!isset($res[$element[PcdmShoponline::TYPE_PREFIX . 'letter']])) {
       $res[$element[PcdmShoponline::TYPE_PREFIX . 'letter']] = array();
     }
     //assegno l'elemento alla lettera corretta
@@ -239,7 +237,7 @@ function pcdm_get_shoponline_archive() {
   }
 
   ksort($res);
-  
+
   return $res;
 }
 
@@ -292,10 +290,10 @@ function pcdm_get_video_archive() {
     $meta = get_post_meta($p->ID);
     //impacchetto l'elemento
     $element = packVideoElement($p, $meta);
-    
-    $res[]=$element;
+
+    $res[] = $element;
   }
-  
+
   return $res;
 }
 
@@ -553,6 +551,22 @@ function pcdm_get_theme_resource($resource) {
   return get_template_directory_uri() . DS . SKIN_SUBDIR . DS . $resource;
 }
 
+function pcdm_get_og_image() {
+  global $wp_query;
+  $queried_object = get_queried_object();
+  $og_image = false;
+  if (is_single()) {
+    switch ($queried_object->post_type) {
+      case PcdmProduct::TYPE_IDENTIFIER:
+        $meta = get_post_meta($queried_object->ID);
+        $_det_img = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_id'][0],  PcdmProduct::TYPE_PREFIX .'detail_image' );
+        $og_image = $_det_img[0];
+        break;
+    }
+  }
+  return $og_image;
+}
+
 function pcdm_filter_wp_title() {
   global $wp_query;
   $queried_object = get_queried_object();
@@ -582,18 +596,18 @@ function pcdm_filter_wp_title() {
   return $filtered_title;
 }
 
-function pcdm_get_season_terms(){
+function pcdm_get_season_terms() {
   $numbered_terms = array();
   $not_numbered_terms = array();
-  foreach(get_terms(PcdmSeason::CATEGORY_IDENTIFIER) as $_term){
+  foreach (get_terms(PcdmSeason::CATEGORY_IDENTIFIER) as $_term) {
     $term_descriptions = explode(",", $_term->description);
-    $number = intval(str_replace("/", "",$term_descriptions[0]));
-    if(is_int($number)){
-      $numbered_terms[$number]=$_term;
-    }else{
-      $not_numbered_terms[]=$_term;
+    $number = intval(str_replace("/", "", $term_descriptions[0]));
+    if (is_int($number)) {
+      $numbered_terms[$number] = $_term;
+    } else {
+      $not_numbered_terms[] = $_term;
     }
   }
   ksort($numbered_terms);
-  return array_merge($numbered_terms,$not_numbered_terms);
+  return array_merge($numbered_terms, $not_numbered_terms);
 }

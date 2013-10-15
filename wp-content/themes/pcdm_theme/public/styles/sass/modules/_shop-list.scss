@@ -112,8 +112,9 @@
         line-height:1em;
         position:relative;
         font:{
-          size:12.5em;//200px
+          size:10.5em;//200px
         }
+        color:#dbdbdb;
         @include at-breakpoint($phone) {
           left:0%;
         }

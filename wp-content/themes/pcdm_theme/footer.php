@@ -75,7 +75,7 @@
         <span class="label-error"><?php echo _e('error')?></span>
       </div>
       <div class="campi btn">
-        <input type="submit" class="form-btn" name="" value="submit">
+        <input type="submit" class="form-btn" name="" value="<?php echo _e('submit')?>">
       </div>
     </form>
   </div>

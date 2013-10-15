@@ -28,6 +28,9 @@ if (isset($polylang)){
         <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
         <![endif]-->
         <?php wp_head(); ?>
+        <?php if(pcdm_get_og_image()):?>
+        <meta property="og:image" content="<?php echo pcdm_get_og_image()?>">
+        <?php endif;?>
     </head>
 
     <body <?php body_class(); ?>>
@@ -90,7 +93,7 @@ if (isset($polylang)){
                 <a  title="facebook" href="https://www.facebook.com/paulacademartoribrand" target="blank">Facebook</a>
               </li>
               <li class="histagram">
-                <a title="histagram" href="http://instagram.com/pcademartori" target="blank">histagram</a>
+                <a title="instagram" href="http://instagram.com/pcademartori" target="blank">instagram</a>
               </li>
               <li class="twitter">
                 <a title="twitter" href="https://twitter.com/PCademartori" target="blank">twitter</a>
@@ -170,7 +173,7 @@ if (isset($polylang)){
                                         <a  title="facebook" href="https://www.facebook.com/paulacademartoribrand" target="blank">Facebook</a>
                                     </li>
                                     <li class="histagram">
-                                        <a title="histagram" href="http://instagram.com/pcademartori" target="blank">histagram</a>
+                                        <a title="instagram" href="http://instagram.com/pcademartori" target="blank">instagram</a>
                                     </li>
                                     <li class="twitter">
                                         <a title="twitter" href="https://twitter.com/PCademartori" target="blank">twitter</a>

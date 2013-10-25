@@ -114,6 +114,22 @@ $_slide_9 = wp_get_attachment_image_src($_news_details[PcdmNews::TYPE_PREFIX . '
         <span class="yy"><?php echo date('Y', strtotime($_news_details['post_date'])) ?>.</span><span class="mm-dd"><?php echo date('m', strtotime($_news_details['post_date'])) ?>/<?php echo date('d', strtotime($_news_details['post_date'])) ?></span>
       </p>
       <h1 class="title"><?php echo $_news_details['post_title'] ?></h1>
+      <nav class="nav-social">
+        <ul class="js-sharing">
+          <li class="facebook">
+            <a  title="facebook" href="#" target="blank"></a>
+          </li>
+          <li class="twitter">
+            <a title="twitter" href="#" target="blank"></a>
+          </li>
+          <li class="pinterest">
+            <a title="pinterest" href="#" target="blank"> </a>
+          </li>
+          <li class="tumblr">
+            <a title="tumblr" href="#" target="blank"> </a>
+          </li>
+        </ul>
+      </nav>
       <p class="description"><?php echo $_news_details['post_content'] ?>
       </p>
     </div>

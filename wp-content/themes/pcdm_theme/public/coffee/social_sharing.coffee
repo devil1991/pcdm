@@ -50,7 +50,12 @@ class window.SocialSharing
     # TUMBLR
     tumblr_btn = @ref.find '.tumblr a'
     if tumblr_btn.length is 1
-      tumblr_url = encodeURI "http://www.tumblr.com/share/photo?source=#{@meta_image}&caption=#{@meta_description}&clickthru=#{@loc}"
+      # -> http://www.tumblr.com/examples/share/sharing-images.html
+      tumblr_source = encodeURIComponent @meta_image
+      tumblr_caption = encodeURIComponent @meta_description
+      tumblr_click_thru = encodeURIComponent @loc
+      tumblr_url = "http://www.tumblr.com/share/photo?source=#{tumblr_source}&caption=#{tumblr_caption}&click_thru=#{tumblr_click_thru}"
+      #tumblr_url = encodeURI "http://www.tumblr.com/share/photo?source=#{@meta_image}&caption=#{@meta_description}&click_thru=#{@loc}"
       @setButton tumblr_btn, tumblr_url
 
     # WEIBO

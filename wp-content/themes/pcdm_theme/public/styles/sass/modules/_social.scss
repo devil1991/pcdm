@@ -20,18 +20,41 @@
     }
   }
   > ul{
+    &.js-sharing{
+      @include pie-clearfix();
+      li{
+        @include reset-columns;
+        float:left;
+        width:20px;
+        margin:0 15px 0 0;
+        &:last-child{
+          @include reset-columns;
+          float:left;
+          width:20px;
+          margin:0 10px 0 0;
+          margin:0;
+        }
+        &.last-child{
+          @include reset-columns;
+          float:left;
+          width:20px;
+          margin:0 10px 0 0;
+          margin:0;
+        }
+      }
+    }
     > li{
       float:left;
       @include span-columns(1, 5);
       height:20px;
       //margin-left:15px;
       &:last-child{
+        @include span-columns(1 , 5);
         margin:0;
-        @include span-columns(1 omega, 5);
       }
       &.last-child{
+        @include span-columns(1 , 5);
         margin:0;
-        @include span-columns(1 omega, 5);
       }
       #mobile-sidebar &{
         @include reset-columns;
@@ -49,6 +72,7 @@
       > a{
         width:20px;
         height:20px;
+        margin:0 auto;
         display:block;
         text-indent:-5000px;
         background: $sprite-set;

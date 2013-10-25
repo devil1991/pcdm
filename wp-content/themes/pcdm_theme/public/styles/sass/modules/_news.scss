@@ -108,21 +108,33 @@
 
 //news-detail
 .news-detail{
-  @include prefix(3);
-  @include span-columns(9 omega,12);
+  @include at-breakpoint($tablet){
+    @include span-columns(12 omega,12);
+  }
   @include at-breakpoint($phone) {
     @include prefix(0);
     @include span-columns(12 omega, 12);
-
   }
   .wrap-image{
-    margin-bottom:1em;
+    @include span-columns(9 omega, 12);
+    @include at-breakpoint($tablet){
+      @include span-columns(12 omega, 12);
+    }
+    @include at-breakpoint($phone) {
+      @include span-columns(12 omega, 12);
+    }
     > img{
       width:100%;
     }
   }
   .wrap-carousel{
-    width:100%;
+    @include span-columns(9 omega, 12);
+    @include at-breakpoint($tablet){
+      @include span-columns(12 omega, 12);
+    }
+    @include at-breakpoint($phone) {
+      @include span-columns(12 omega, 12);
+    }
     overflow:hidden;
     position:relative;
     .carousel{
@@ -170,5 +182,38 @@
   }
   .text{
     background:none;
+    @include span-columns(3, 12);
+    position:absolute;
+    bottom:40px;
+    text-align:right;
+    @include at-breakpoint($tablet){
+      @include span-columns(12, 12);
+      position:relative;
+      bottom:inherit;
+      text-align:left;
+    }
+    @include at-breakpoint($phone){
+      @include span-columns(12, 12);
+      position:relative;
+      bottom:inherit;
+      text-align:left;
+    }
+    .description{
+      clear:both;
+    }
+    .nav-social{
+      padding-top:1.5em;
+      margin:1.5em 0 1em;
+      background:url(../images/box/sep-title.jpg) right top no-repeat;
+      float:right;
+      @include at-breakpoint($tablet){
+        float:left;
+        background:url(../images/box/sep-title.jpg) left top no-repeat;
+      }
+      @include at-breakpoint($phone){
+        float:left;
+        background:url(../images/box/sep-title.jpg) left top no-repeat;
+      }
+    }
   }
 }

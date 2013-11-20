@@ -77,7 +77,8 @@ if (isset($polylang)){
               <li><a href="http://www.paulacademartori.tumblr.com/" target="_blank" title=""><?php _e('Diary')?></a></li>
               <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
               <li><a href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php _e('shop online')?></a></li>
-              <li><a href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>
+              <li><a href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>        
+              <li><a href="<?php echo get_post_type_archive_link(PcdmPress::TYPE_IDENTIFIER )?>" title=""><?php echo _e('Press Area')?></a></li>
             </ul>
           </nav>
           <nav class="choose-language">

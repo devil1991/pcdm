@@ -7,6 +7,10 @@ get_header();
 <section class="wrap-store">
   <img class="canvas-img" src="<?php echo pcdm_get_theme_resource('images/store-canvas.jpg'); ?>" alt="">
   <section class="store-list">
+    <header class="header-storeList">
+      <span class="number">/5</span>
+      <h1 class="title">store list</h1>
+    </header>
     <article class="">
 
       <?php foreach (pcdm_get_store_archive() as $continent => $continent_data): ?>

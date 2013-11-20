@@ -10,7 +10,7 @@ $firstl = true;
   <!--header vertical menu-->
   <div class="wrap-text js-vertical-fixed-menu">
     <header>
-      <span class="number">/5</span>
+      <span class="number">/4</span>
       <h1 class="title"><?php echo _e('shop <br> online') ?></h1>
       <nav class="nav-social">
         <ul class="js-sharing js-last-child">

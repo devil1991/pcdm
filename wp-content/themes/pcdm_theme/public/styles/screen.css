@@ -1230,12 +1230,12 @@ a:hover {
     float: right;
     margin-right: 0;
   }
-  .footer .aux-footer .footer-navigation > ul > li:last-child {
+  .footer .aux-footer .footer-navigation > ul > li.contacts {
     width: 47.36842%;
-    float: right;
-    margin-right: 0;
+    float: left;
+    margin-right: 5.26316%;
   }
-  .footer .aux-footer .footer-navigation > ul > li.last-child {
+  .footer .aux-footer .footer-navigation > ul > li.press-area {
     width: 47.36842%;
     float: right;
     margin-right: 0;
@@ -1256,14 +1256,13 @@ a:hover {
   *margin-left: -1em;
   display: inline;
 }
-.ie-phone .footer .aux-footer .footer-navigation > ul > li:last-child {
+.ie-phone .footer .aux-footer .footer-navigation > ul > li.contacts {
   width: 47.36842%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1em;
+  float: left;
+  margin-right: 5.26316%;
   display: inline;
 }
-.ie-phone .footer .aux-footer .footer-navigation > ul > li.last-child {
+.ie-phone .footer .aux-footer .footer-navigation > ul > li.press-area {
   width: 47.36842%;
   float: right;
   margin-right: 0;

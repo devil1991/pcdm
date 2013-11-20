@@ -8,11 +8,18 @@ $video_key = 1;
 
 <section class="wrap-video">
   <?php if (count($videos)): ?>
+    <div class="wrap-number">
+      <span class="number">/3</span>
+      <h1 class="title-number">Videos</h1>
+    </div>
     <ul class="video-list">
       <?php foreach ($videos as $video): ?>
         <li class="item-video">
           <article>
             <div class="text">
+              <?php if($video_key ==1):?>
+              <span class="number">/3</span>
+              <?php endif;?>
               <h1 class="title"><?php echo $video['post_title'] ?></h1>
               <p class="description">
                 <?php echo $video[PcdmVideo::TYPE_PREFIX . 'description']; ?>

@@ -19,14 +19,14 @@
           <p class="description"><?php echo _e("Find the nearest point of sale for Paula Cademartori's collections")?></p>
           <a class="more" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('go to store list')?></a>
         </li>
-        <li>
+        <li class="press-area">
           <h3 class="title"><?php echo _e('Press Area')?></h3>
           <p class="description">
             <?php echo _e("Enter and discover the editorial coverage")?>
           </p>
           <a class="more" href="<?php echo get_post_type_archive_link(PcdmPress::TYPE_IDENTIFIER )?>" title=""><?php echo _e('discover')?></a>
         </li>
-        <li>
+        <li class="contacts">
           <h3 class="title"><?php echo _e('Contact Us')?></h3>
           <p class="description">
             <?php echo _e('Email us for general info or press inquiries')?>

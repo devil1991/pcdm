@@ -1,0 +1,126 @@
+.overlay.registration{
+  width:690px;
+  margin-left:-345px;
+  padding:0;
+  top:50%;
+  margin-top:-289px;
+  background:#e9e8e3;
+  @include at-breakpoint($phone){
+    width:96%;
+    margin-left:0;
+    left:0;
+    padding:2%;
+    top:2%;
+    margin-top:0;
+  }
+  .img-registration{
+    float:left;
+    width:266px;
+    @include at-breakpoint($phone){
+      display:none;
+    }
+  }
+  .wrap-text{
+    padding:20px 0;
+    float:left;
+    width:424px;
+    @include at-breakpoint($phone){
+      width:300px;
+      float:none;
+      margin:0 auto;
+    }
+    .title{
+      background: $sprite-set;
+      background-position: sprite-position($sprite-set, registrazione-title);
+      width:424px;
+      height:169px;
+      text-indent:-5000px;
+      @include at-breakpoint($phone){
+        background-size:100%;
+        width:300px;
+        height:119px;
+      }
+    }
+    .description, .feedback{
+      padding:0 30px;
+      line-height:1.5em;
+      margin-top:0;
+      @include at-breakpoint($phone){
+        padding:0 15px;
+      }
+      font:{
+        family:georgia;
+        style:normal;
+        size:$f-13;
+      }
+    }
+    .feedback{
+      display:none;
+    }
+    form{
+      padding:0 30px;
+      margin-top:30px;
+      @include pie-clearfix;
+      @include at-breakpoint($phone){
+        margin-top:10px;
+        padding:0 15px;
+      }
+      .campi{
+        >input[type="text"]{
+          background:#fff;
+          float:left;
+          border:none;
+          height:49px;
+          margin:0;
+          padding:0 15px;
+          color:#acacac;
+          width:260px;
+          @include at-breakpoint($phone){
+            width:180px;
+          }
+          font:{
+            size:$f-14;
+            style:italic;
+          }
+        }
+        >input.form-btn{
+          float:left;
+          margin:0;
+          padding:0;
+          background: $sprite-set;
+          background-position: sprite-position($sprite-set, registrazione-send);
+          border:none;
+          width:49px;
+          height:49px;
+        }
+        .label-error{
+          color:#db6c6c;
+          height:20px;
+          padding-top:5px;
+          line-height:20px;
+          letter-spacing:0.2em;
+          text-transform:none;
+          visibility:hidden;
+        }
+        &.privacy{
+          float:left;
+          margin-top:10px;
+          color:#acacac;
+          font:{
+            size:$f-14;
+            style:italic;
+          }
+          a{
+            letter-spacing:0;
+            text-transform:none;
+            color:$red-color;
+            font:{
+              size:$f-14;
+              style:italic;
+            }
+          }
+        }
+      }
+    }
+  }
+}

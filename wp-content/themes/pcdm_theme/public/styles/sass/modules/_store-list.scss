@@ -1,8 +1,46 @@
+.header-storeList{
+  position:relative;
+  @include at-breakpoint($phone){
+    @include span-columns(1,1);
+    margin-bottom:2em;
+  }
+  margin-top:-8%;
+  .number{
+    text-align:left;
+    display:block;
+    width:100%;
+    line-height:1em;
+    font:{
+      size:12.5em;//200px
+    }
+  }
+  .title{
+    text-transform:uppercase;
+    text-align:left;
+    line-height:1.2em;
+    background:url(../images/box/sep-title.jpg) left bottom no-repeat;
+    @include at-breakpoint($phone){
+      text-align:left;
+      background:url(../images/box/sep-title.jpg) left bottom no-repeat;
+    }
+    padding-bottom:15px;
+    margin-bottom:15px;
+    font:{
+      size:2.75em;//44px
+    }
+  }
+}
+
 .wrap-store{
+  clear:both;
+
   .store-list{
     clear:both;
     padding:2em 0;
     width:980px;
+    >article{
+      clear:both;
+    }
     @include at-breakpoint($phablet){
       width:680px;
     }

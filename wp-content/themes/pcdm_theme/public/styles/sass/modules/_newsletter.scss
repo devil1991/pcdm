@@ -1,4 +1,13 @@
 .newsletter{
+  .header-overlay{
+    .title{
+      background: $sprite-set;
+      background-position: sprite-position($sprite-set, nl-title);
+      width:234px;
+      height:107px;
+      text-indent:-5000px;
+    }
+  }
   form{
     padding:1em 0 0;
     @include pie-clearfix();
@@ -21,12 +30,23 @@
     margin-bottom:0.5em;
     @include pie-clearfix();
     > input[type=text], > textarea{
-      width:354px;
+      width:340px;
       background:#fff;
-      padding:10px 0;
       border:none;
-      display:block;
-      border-bottom:1px solid #c7c7c7;
+      height:49px;
+      margin:0;
+      padding:0 15px;
+      color:#acacac;
+      @include at-breakpoint($phone){
+        width:90%;
+        margin:0 auto;
+        height:39px;
+        margin-bottom:0.2em;
+      }
+      font:{
+        size:$f-14;
+        style:italic;
+      }
       font:{
         family:$font-italic;
         size:$f-14;

@@ -13,6 +13,9 @@
         }
         >li{
           @include span-columns(1, 4);
+          @include at-breakpoint($phone) {
+            height:190px;
+          }
           .title{
             text-transform:uppercase;
             color:$dark-color;
@@ -52,11 +55,14 @@
             border-bottom: 1px solid $dark-color;
             padding-bottom:20px;
             &:nth-child(2n) { @include omega; }
-            &:last-child{
-              @include span-columns(2 omega, 4);
+
+            &.contacts{
+              @include span-columns(2, 4);
+              height:120px;
             }
-            &.last-child{
+            &.press-area{
               @include span-columns(2 omega, 4);
+              height:120px;
             }
           }
           .accept-terms{

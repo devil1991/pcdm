@@ -41,6 +41,12 @@ $ ->
   if is_ie and $.browser.version < 9 then ie_mediaquery = new IEMediaquery()
 
   #############
+  # COOKIE MGMT
+  #############
+
+  window.cookie_manager = new CookieManager()
+
+  #############
   # HEADER MENU
   #############
 
@@ -151,21 +157,41 @@ $ ->
   # OVERLAY
   #########
 
+  window.openRegistration = =>
+
+    if registration_ref.length is 1
+      window.is_registration_open = true
+      registration_ref.show()
+      overlay_ref.show()
+
   overlay_ref = $ '.wrap-overlay'
 
   if overlay_ref.length is 1
 
-    newsletter = overlay_ref.find '.newsletter'
-    if newsletter.length is 1 then new Newsletter newsletter
+    newsletter_ref = overlay_ref.find '.newsletter'
+    if newsletter_ref.length is 1 then new Newsletter newsletter_ref
+
+    registration_ref = overlay_ref.find '.registration'
+    if registration_ref.length is 1 then new Newsletter registration_ref
 
     $('.footer a.subscribe').bind 'click', ((e) =>
       e.preventDefault()
+      if newsletter_ref.length is 1 then newsletter_ref.show()
       overlay_ref.show()
     )
+
     overlay_ref.find('.close').bind 'click', ((e) =>
       e.preventDefault()
       overlay_ref.hide()
+      if newsletter_ref.length is 1 then newsletter_ref.hide()
+      if registration_ref.length is 1 then registration_ref.hide()
+
+      if is_registration_open? and is_registration_open
+        window.is_registration_open = false
+        cookie_manager.setCookie 'Xmas13Registration', 'Seen', 6, '.paulacademartori.com'
     )
+
+    if cookie_manager.getCookie('Xmas13Registration') isnt 'Seen' then openRegistration()
 
   #####################
   # VERTICAL FIXED MENU
@@ -173,7 +199,7 @@ $ ->
 
   vfm_ref = $ '.js-vertical-fixed-menu'
   if vfm_ref.length is 1
-    vertical_fixed_menu = new VerticalFixedMenu vfm_ref 
+    vertical_fixed_menu = new VerticalFixedMenu vfm_ref
 
   #############
   # BACK TO TOP
@@ -194,6 +220,7 @@ $ ->
     for i in [0...sharing_modules.length]
       unless $(sharing_modules[i]).hasClass 'link'
         new SocialSharing $(sharing_modules[i])
+
 
   ################
   # GENERAL SCROLL

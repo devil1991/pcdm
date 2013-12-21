@@ -7,7 +7,7 @@
   }
 
   $(function() {
-    var accordion, accordion_ref, back_to_top, body_simulator_ref, btt_ref, carousel, carousel_ref, cnt, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, fourth_child, fourth_children, fourth_children_container, header_menu, header_menu_ref, i, ie_mediaquery, j, last_child, last_child_container, mobile_menu, newsletter, onWindowResize, onWindowScroll, overlay_ref, phablet_breakpoint, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, sharing_modules, smartphone_breakpoint, vertical_fixed_menu, vfm_ref, video_list_ref, video_manager, window_ref, _i, _j, _k, _l, _len, _len1, _len2, _m, _n, _o, _p, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
+    var accordion, accordion_ref, back_to_top, body_simulator_ref, btt_ref, carousel, carousel_ref, cnt, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, fourth_child, fourth_children, fourth_children_container, header_menu, header_menu_ref, i, ie_mediaquery, j, last_child, last_child_container, mobile_menu, newsletter_ref, onWindowResize, onWindowScroll, overlay_ref, phablet_breakpoint, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, registration_ref, sharing_modules, smartphone_breakpoint, vertical_fixed_menu, vfm_ref, video_list_ref, video_manager, window_ref, _i, _j, _k, _l, _len, _len1, _len2, _m, _n, _o, _p, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
       _this = this;
     window_ref = $(window);
     window.is_ie = $.browser.msie;
@@ -24,6 +24,7 @@
     if (is_ie && $.browser.version < 9) {
       ie_mediaquery = new IEMediaquery();
     }
+    window.cookie_manager = new CookieManager();
     window.small_header_height = 120;
     header_menu_ref = $('.header');
     if (header_menu_ref.length === 1) {
@@ -106,20 +107,47 @@
     if (video_list_ref.length === 1) {
       video_manager = new VideoManager(video_list_ref);
     }
+    window.openRegistration = function() {
+      if (registration_ref.length === 1) {
+        window.is_registration_open = true;
+        registration_ref.show();
+        return overlay_ref.show();
+      }
+    };
     overlay_ref = $('.wrap-overlay');
     if (overlay_ref.length === 1) {
-      newsletter = overlay_ref.find('.newsletter');
-      if (newsletter.length === 1) {
-        new Newsletter(newsletter);
+      newsletter_ref = overlay_ref.find('.newsletter');
+      if (newsletter_ref.length === 1) {
+        new Newsletter(newsletter_ref);
+      }
+      registration_ref = overlay_ref.find('.registration');
+      if (registration_ref.length === 1) {
+        new Newsletter(registration_ref);
       }
       $('.footer a.subscribe').bind('click', (function(e) {
         e.preventDefault();
+        if (newsletter_ref.length === 1) {
+          newsletter_ref.show();
+        }
         return overlay_ref.show();
       }));
       overlay_ref.find('.close').bind('click', (function(e) {
         e.preventDefault();
-        return overlay_ref.hide();
+        overlay_ref.hide();
+        if (newsletter_ref.length === 1) {
+          newsletter_ref.hide();
+        }
+        if (registration_ref.length === 1) {
+          registration_ref.hide();
+        }
+        if ((typeof is_registration_open !== "undefined" && is_registration_open !== null) && is_registration_open) {
+          window.is_registration_open = false;
+          return cookie_manager.setCookie('Xmas13Registration', 'Seen', 6, '.paulacademartori.com');
+        }
       }));
+      if (cookie_manager.getCookie('Xmas13Registration') !== 'Seen') {
+        openRegistration();
+      }
     }
     vfm_ref = $('.js-vertical-fixed-menu');
     if (vfm_ref.length === 1) {

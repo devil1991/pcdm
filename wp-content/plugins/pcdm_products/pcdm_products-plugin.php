@@ -229,7 +229,6 @@ add_filter('got_rewrite', '__return_true', 999);
 
 
 //callback registrazione newsletter
-
 add_action('wp_ajax_nopriv_registernl', 'registerNewsletter');
 add_action('wp_ajax_registernl', 'registerNewsletter');
 
@@ -237,7 +236,13 @@ function registerNewsletter() {
 
   $API_KEY = "0148f950a93a4e7e8d188c3028fde9d8-us2";
 //  $LIST_ID = "2839c53ce8";//test list
-  $LIST_ID = "0329e0ad2e"; //registration list
+  $LIST_ID_ITA = "0329e0ad2e"; //registration list
+  $LIST_ID_ENG = "1c44c3f947"; //registration list
+
+  if (isset($_POST['lang'])) {
+    $lang = $_POST['lang'];
+  }
+  $LIST_ID = $lang == 'en' ? $LIST_ID_ENG : $LIST_ID_ITA;
 
   if (!class_exists("MailChimp")) {
     require_once( 'lib/mailchimp/MailChimp.class.php' );
@@ -268,6 +273,69 @@ function registerNewsletter() {
         'id' => $LIST_ID,
         'email' => array('email' => $_POST['email']),
         'merge_vars' => array('FNAME' => $_POST['name'], 'LNAME' => $_POST['surname'], 'MMERGE3' => $_POST['privacy'] ? 'I Agree' : FALSE),
+        'double_optin' => $_POST['privacy'],
+        'update_existing' => true,
+        'replace_interests' => false,
+        'send_welcome' => true,
+    ));
+
+    if ($result) {
+      if (isset($result['status']) && $result['status'] == 'error') {
+        $success = 0;
+        $res['error'][] = $result['error'];
+      }
+    } else {
+      $success = 0;
+      $res['error'][] = 'comunication error';
+    }
+  } else {
+    $success = 0;
+    $res['error'][] = 'privacy';
+  }
+
+
+  $res['success'] = $success;
+
+  header("Content-type: application/json");
+  die(json_encode($res));
+}
+
+//callback registrazione newsletter
+
+add_action('wp_ajax_nopriv_registerxmas', 'registerNewsletterXmas');
+add_action('wp_ajax_registerxmas', 'registerNewsletterXmas');
+
+function registerNewsletterXmas() {
+
+  $API_KEY = "0148f950a93a4e7e8d188c3028fde9d8-us2";
+//  $LIST_ID = "2839c53ce8";//test list
+  $LIST_ID_ITA = "0329e0ad2e"; //registration list
+  $LIST_ID_ENG = "1c44c3f947"; //registration list
+
+  if (isset($_POST['lang'])) {
+    $lang = $_POST['lang'];
+  }
+  $LIST_ID = $lang == 'en' ? $LIST_ID_ENG : $LIST_ID_ITA;
+
+  if (!class_exists("MailChimp")) {
+    require_once( 'lib/mailchimp/MailChimp.class.php' );
+  }
+
+  $res = array();
+  $success = 1;
+  $res['error'] = array();
+
+  if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    $success = 0;
+    $res['error'][] = 'email';
+  }
+  $MailChimp = new MailChimp($API_KEY);
+
+  if (isset($_POST['privacy']) && $_POST['privacy'] == TRUE) {
+    $result = $MailChimp->call('lists/subscribe', array(
+        'id' => $LIST_ID,
+        'email' => array('email' => $_POST['email']),
+        'merge_vars' => array('MMERGE3' => $_POST['privacy'] ? 'I Agree' : FALSE),
         'double_optin' => $_POST['privacy'],
         'update_existing' => true,
         'replace_interests' => false,

@@ -3,6 +3,63 @@
   @include at-breakpoint($tablet) {
     padding-top:70px;
   }
+  .wrap-number{
+    @include span-columns(3, 12);
+    position:absolute;
+    top:350px;
+    text-align:right;
+    display:none;
+    @include at-breakpoint($tablet) {
+      top:0;
+      display:block;
+      text-align:left;
+      position:relative;
+      margin:2em 0;
+    }
+    @include at-breakpoint($phone) {
+      top:0;
+      display:block;
+      text-align:left;
+      position:relative;
+      margin:2em 0;
+    }
+    .number{
+      position:relative;
+      z-index:99;
+      display:block;
+      width:100%;
+      line-height:0.7em;
+      position:relative;
+      font:{
+        size:5em;//200px
+      }
+      @include at-breakpoint($tablet) {
+        right:0;
+        font:{
+          size:12.5em;//200px
+        }
+      }
+      @include at-breakpoint($phone) {
+        right:0;
+        font:{
+          size:12.5em;//200px
+        }
+      }
+
+    }
+    .title-number{
+      line-height: 1.2em;
+      font-size: 2.75em;
+      text-transform:uppercase;
+      display:none;
+      @include at-breakpoint($tablet) {
+        display:block;
+      }
+      @include at-breakpoint($phone) {
+        display:block;
+      }
+    }
+  }
   .video-list{
     .item-video{
       margin-bottom:1em;
@@ -27,11 +84,24 @@
             padding:0 0 1em;
             text-align:left;
           }
+          .number{
+            line-height:normal;
+            display:block;
+            font:{
+              size:7em;//200px
+            }
+            @include at-breakpoint($tablet) {
+              display:none;
+            }
+            @include at-breakpoint($phone) {
+              display:none;
+            }
+          }
           .title{
             text-transform:uppercase;
             line-height:1.2em;
             font:{
-              size:2.5em;//44px
+              size:1.5em;//44px
             }
           }
           .description{

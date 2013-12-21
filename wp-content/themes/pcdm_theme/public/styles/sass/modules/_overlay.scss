@@ -5,24 +5,26 @@
   position:absolute;
   @include at-breakpoint($phone){
     position:fixed;
+    height:100%!important;
   }
   top:0;
   left:0;
   bottom:0;
   background: url("../images/bg-overlay.png") 0 0 repeat;
   height:100%;
-  z-index:9999;
+  z-index:99999999;
+  overflow:auto;
   .overlay{
     position:fixed;
-    background:#fff;
+    background:#e9e8e3;
     padding:25px;
     top:100px;
     @include at-breakpoint($phone){
-      top:2%;
+      top:0;
+      position:relative;
     }
     left:50%;
     //display:none;
-    display:block!important;
     &.small{
       width:375px;
       margin-left:-187px;
@@ -45,13 +47,20 @@
     }
     .description{
       margin-top:1em;
-      line-height:1.2em;
+      line-height:1.5em;
       font:{
-        size:$f-15;
+        size:$f-13;
+        style:normal;
       }
     }
     .close{
-      @extend %close;
+      position:absolute;
+      top:0;
+      right:0;
+      background: $sprite-set;
+      background-position: sprite-position($sprite-set, registrazione-close);
+      width:47px;
+      height:47px;
     }
   }
   .mobile &{

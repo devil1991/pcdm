@@ -114,6 +114,8 @@ class window.Newsletter
 			checkbox = @checkboxes_array[i]
 			data[checkbox.id] = checkbox.ref.is(':checked')
 
+		data['lang'] = @form.attr 'data-lang'
+
 		@saveData data
 
 	saveData: (data) =>

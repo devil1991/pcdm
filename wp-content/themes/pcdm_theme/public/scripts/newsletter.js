@@ -21,7 +21,7 @@
       this.form = this.ref.find('form');
       this.fields = this.form.find('.campi');
       this.submit_btn = this.form.find('input:submit');
-      this.thanks = this.ref.find('>.feedback');
+      this.thanks = this.ref.find('.feedback');
       this.inputs_array = [];
       this.checkboxes_array = [];
       this.elements = [];
@@ -142,6 +142,7 @@
         checkbox = this.checkboxes_array[i];
         data[checkbox.id] = checkbox.ref.is(':checked');
       }
+      data['lang'] = this.form.attr('data-lang');
       return this.saveData(data);
     };
 
@@ -174,7 +175,8 @@
 
     Newsletter.prototype.onSuccess = function() {
       this.thanks.css({
-        visibility: 'visible'
+        visibility: 'visible',
+        display: 'block'
       });
       return this.form.css({
         visibility: 'hidden'

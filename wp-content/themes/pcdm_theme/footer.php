@@ -45,8 +45,14 @@
   </div>
 </footer><!-- #colophon -->
 
+
+</div><!-- wrap body -->
+</div><!-- aux body simulator -->
+</div><!-- body-simulator-->
+<?php wp_footer(); ?>
+
 <div class="wrap-overlay">
-  <div class="overlay small newsletter ">
+  <div class="overlay small newsletter "  style="display:none">
     <a href="#" class="close"></a>
     <header class="header-overlay">
       <h3 class="title">/Newsletter</h3>
@@ -54,7 +60,7 @@
     <div class="feedback">
       <p><?php echo _e('Thank you for registering')?></p>
     </div>
-    <form action="" method="get" accept-charset="utf-8" data-send="/wp-admin/admin-ajax.php?action=registernl">
+    <form action="" method="get" accept-charset="utf-8" data-send="/wp-admin/admin-ajax.php?action=registernl" data-lang="<?php echo pll_current_language()?>">
       <div class="campi">
         <input type="text" name="name" id="name" value="<?php echo _e('Name')?>" class="js-required">
         <span class="label-error"><?php echo _e('error')?></span>
@@ -79,12 +85,35 @@
       </div>
     </form>
   </div>
+    <div class="overlay registration" style="display:none">
+    <a href="#" class="close" id="registration-close"></a>
+    <img class="img-registration" src="<?php echo pcdm_get_theme_resource('images/bg-registrazione.jpg'); ?>" alt="">
+    <div class="wrap-text">
+      <header class="header-overlay">
+        <h3 class="title">don't miss it</h3>
+        <p class="description"><?php echo _e('Be among the first to be updated on news. latest collection and events from Paulacademartori.com. Sign up now.')?></p>
+      </header>
+      <div class="feedback">
+        <?php echo _e('Thank you for registering')?>
+      </div>
+      <form action="" method="get" accept-charset="utf-8" data-send="/wp-admin/admin-ajax.php?action=registerxmas" data-lang="<?php echo pll_current_language()?>">
+        <div class="campi">
+          <input type="text" name="email" id="email" value="email@example.com" suggest="email@example.com " class="js-required input-js">
+          <input type="submit" class="form-btn" name="" value="">
+          <span class="label-error">error</span>
+        </div>
+        <div class="campi privacy">
+          <label>
+          <input type="checkbox" name="privacy" value="" class="js-required">
+            <?php echo _e('I accept the')?> <a href="#" title=""><?php echo _e('Privacy Policy')?></a>
+          </label>
+          <span class="label-error">error</span>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 
-</div><!-- wrap body -->
-</div><!-- aux body simulator -->
-</div><!-- body-simulator-->
-<?php wp_footer(); ?>
 
 <script src="http://a.vimeocdn.com/js/froogaloop2.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/lib/jquery.js'); ?>" type="text/javascript" charset="utf-8"></script>
@@ -112,6 +141,7 @@
 <script src="<?php echo pcdm_get_theme_resource('scripts/collection.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/collection_details.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/columnist.js'); ?>" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo pcdm_get_theme_resource('scripts/cookie_manager.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/header_menu.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/filter_dropdown.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/filtered_grid.js'); ?>" type="text/javascript" charset="utf-8"></script>

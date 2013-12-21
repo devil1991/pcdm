@@ -18,12 +18,15 @@
     visibility:hidden;
     //visibility:visible;
     position:absolute;
-    top:100px;
+    top:170px;
     left:0;
     width:100%;
     >p{
       padding:30px;
       text-align:center;
+      font:{
+        size:$f-18;
+      }
     }
   }
   .campi{

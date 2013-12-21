@@ -362,13 +362,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .newsletter .feedback {
   visibility: hidden;
   position: absolute;
-  top: 100px;
+  top: 170px;
   left: 0;
   width: 100%;
 }
 .newsletter .feedback > p {
   padding: 30px;
   text-align: center;
+  font-size: 1.125em;
 }
 .newsletter .campi {
   margin-bottom: 0.5em;
@@ -563,7 +564,11 @@ input[type="text"], input[type="submit"] {
   padding: 0 15px;
 }
 .overlay.registration .wrap-text .feedback {
+  margin-top: 30px;
   display: none;
+  font-family: georgia;
+  font-style: normal;
+  font-size: 1.125em;
 }
 .overlay.registration .wrap-text form {
   padding: 0 30px;
@@ -584,6 +589,14 @@ input[type="text"], input[type="submit"] {
 .ie-phone .overlay.registration .wrap-text form {
   margin-top: 10px;
   padding: 0 15px;
+}
+.overlay.registration .wrap-text form .campi {
+  *zoom: 1;
+}
+.overlay.registration .wrap-text form .campi:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .overlay.registration .wrap-text form .campi > input[type="text"] {
   background: #fff;
@@ -614,6 +627,7 @@ input[type="text"], input[type="submit"] {
   border: none;
   width: 49px;
   height: 49px;
+  cursor: pointer;
 }
 .overlay.registration .wrap-text form .campi .label-error {
   color: #db6c6c;
@@ -623,6 +637,8 @@ input[type="text"], input[type="submit"] {
   letter-spacing: 0.2em;
   text-transform: none;
   visibility: hidden;
+  display: block;
+  clear: both;
 }
 .overlay.registration .wrap-text form .campi.privacy {
   float: left;
@@ -637,6 +653,9 @@ input[type="text"], input[type="submit"] {
   color: #e85743;
   font-size: 0.875em;
   font-style: italic;
+}
+.overlay.registration .wrap-text form .campi.error .label-error {
+  visibility: visible;
 }
 
 a {
@@ -5586,6 +5605,56 @@ body #wrapper.detail-on .header-small {
   display: block;
   margin: 1em 0;
   line-height: 1em 0 1.5em;
+}
+
+.privacy {
+  width: 75%;
+  float: right;
+  margin-right: 0;
+  *margin-left: 0em;
+  display: inline;
+}
+@media (max-width: 50em) {
+  .privacy {
+    width: 100%;
+    float: left;
+    margin-right: 0%;
+    margin-top: 60px;
+  }
+}
+.ie-phone .privacy {
+  width: 100%;
+  float: left;
+  margin-right: 0%;
+  display: inline;
+  margin-top: 60px;
+}
+.privacy .logo {
+  width: 100px;
+  margin: 0 auto 20px;
+}
+.privacy .logo > img {
+  width: 100%;
+}
+.privacy.pop_up {
+  padding: 2em;
+  width: auto;
+  margin-top: 0;
+}
+.privacy .title {
+  line-height: 1.2em;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.privacy .text {
+  line-height: 1.8em;
+  font-size: 0.813em;
+  font-family: georgia;
+  font-style: italic;
+}
+.privacy .text > a {
+  text-decoration: underline;
+  font-size: 0.75em;
 }
 
 /* -------------------------------------------------------------------------*/

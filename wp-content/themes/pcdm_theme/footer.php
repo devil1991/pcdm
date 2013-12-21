@@ -91,7 +91,7 @@
     <div class="wrap-text">
       <header class="header-overlay">
         <h3 class="title">don't miss it</h3>
-        <p class="description"><?php echo _e('Be among the first to be updated on news. latest collection and events from Paulacademartori.com. Sign up now.')?></p>
+        <p class="description"><?php echo _e('Be among the first to be updated on news, latest collection and events from Paulacademartori.com. Sign up now!')?></p>
       </header>
       <div class="feedback">
         <?php echo _e('Thank you for registering')?>
@@ -105,7 +105,7 @@
         <div class="campi privacy">
           <label>
           <input type="checkbox" name="privacy" value="" class="js-required">
-            <?php echo _e('I accept the')?> <a href="#" title=""><?php echo _e('Privacy Policy')?></a>
+            <?php echo _e('I accept the')?> <a href="#" title="" class="js-open-popup" data-url="/popup_privacy/popup_privacy<?php echo pll_current_language()=='en'?'_en':''?>.html" data-width="400" data-height="300"><?php echo _e('Privacy Policy')?></a>
           </label>
           <span class="label-error">error</span>
         </div>

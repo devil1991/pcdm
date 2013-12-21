@@ -6396,6 +6396,6 @@ msgstr "vai alla lista dei negozi"
 msgid "back to the collection"
 msgstr "torna alla collezione"
 
-msgid "Be among the first to be updated on news. latest collection and events from Paulacademartori.com. Sign up now."
+msgid "Be among the first to be updated on news, latest collection and events from Paulacademartori.com. Sign up now!"
 msgstr "Non perdere tutti gli aggiornamenti da Paulacademartori.com. Registrati e ricevi tutte le ultime news su collezioni ed eventi."
 

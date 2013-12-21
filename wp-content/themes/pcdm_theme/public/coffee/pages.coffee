@@ -193,6 +193,20 @@ $ ->
 
     if cookie_manager.getCookie('Xmas13Registration') isnt 'Seen' then openRegistration()
 
+  ############
+  # OPEN POPUP
+  ############
+
+  popup_link = $ 'a.js-open-popup'
+
+  if popup_link.length > 0
+    popup_link.bind 'click', ((e) ->
+      e.preventDefault()
+      popup_url = $(e.currentTarget).attr 'data-url'
+      popup_width = $(e.currentTarget).attr 'data-width'
+      popup_height = $(e.currentTarget).attr 'data-height'
+      window.open popup_url,"","width=#{popup_width},height=#{popup_height},menubar=no,location=no,resizable=1,status=no,scrollbars=1")
+
   #####################
   # VERTICAL FIXED MENU
   #####################

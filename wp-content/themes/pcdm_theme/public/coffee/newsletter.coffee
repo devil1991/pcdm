@@ -5,7 +5,7 @@ class window.Newsletter
 		@form = @ref.find 'form'
 		@fields = @form.find '.campi'
 		@submit_btn = @form.find 'input:submit'
-		@thanks = @ref.find '>.feedback'
+		@thanks = @ref.find '.feedback'
 
 		@inputs_array = []
 		@checkboxes_array = []
@@ -150,7 +150,7 @@ class window.Newsletter
 
 	onSuccess: ->		
 
-		@thanks.css {visibility:'visible'}
+		@thanks.css {visibility:'visible', display:'block'}
 		@form.css {visibility:'hidden'}
 	
 	onError: (error, msg) ->

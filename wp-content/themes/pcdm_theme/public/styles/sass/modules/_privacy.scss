@@ -1,0 +1,40 @@
+.privacy{
+  @include span-columns(9 omega, 12);
+  @include at-breakpoint($phone) {
+    @include span-columns(12, 12);
+    margin-top:60px;
+  }
+  .logo{
+    width:100px;
+    margin:0 auto 20px;
+    >img{
+      width:100%;
+    }
+  }
+  &.pop_up{
+    padding:2em;
+    width:auto;
+    margin-top:0;
+  }
+  .title{
+    line-height:1.2em;
+    margin-bottom:1em;
+    font:{
+      size:2em;//44px
+    }
+  }
+  .text{
+    line-height:1.8em;
+    font:{
+      size:$f-13;
+      family:georgia;
+      style:italic;
+    }
+    > a{
+      text-decoration:underline;
+      font:{
+        size:$f-12;
+      }
+    }
+  }
+}

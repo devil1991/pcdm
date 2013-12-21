@@ -55,7 +55,13 @@
       }
     }
     .feedback{
+      margin-top:30px;
       display:none;
+      font:{
+        family:georgia;
+        style:normal;
+        size:$f-18;
+      }
     }
     form{
       padding:0 30px;
@@ -66,6 +72,7 @@
         padding:0 15px;
       }
       .campi{
+        @include pie-clearfix;
         >input[type="text"]{
           background:#fff;
           float:left;
@@ -92,6 +99,7 @@
           border:none;
           width:49px;
           height:49px;
+          cursor:pointer;
         }
         .label-error{
           color:#db6c6c;
@@ -101,6 +109,8 @@
           letter-spacing:0.2em;
           text-transform:none;
           visibility:hidden;
+          display:block;
+          clear:both;
         }
         &.privacy{
           float:left;
@@ -118,6 +128,11 @@
               size:$f-14;
               style:italic;
             }
+          }
+        }
+        &.error {
+          .label-error{
+            visibility:visible;
           }
         }
       }

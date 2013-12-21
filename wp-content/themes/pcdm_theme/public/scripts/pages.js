@@ -7,7 +7,7 @@
   }
 
   $(function() {
-    var accordion, accordion_ref, back_to_top, body_simulator_ref, btt_ref, carousel, carousel_ref, cnt, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, fourth_child, fourth_children, fourth_children_container, header_menu, header_menu_ref, i, ie_mediaquery, j, last_child, last_child_container, mobile_menu, newsletter_ref, onWindowResize, onWindowScroll, overlay_ref, phablet_breakpoint, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, registration_ref, sharing_modules, smartphone_breakpoint, vertical_fixed_menu, vfm_ref, video_list_ref, video_manager, window_ref, _i, _j, _k, _l, _len, _len1, _len2, _m, _n, _o, _p, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
+    var accordion, accordion_ref, back_to_top, body_simulator_ref, btt_ref, carousel, carousel_ref, cnt, collection, columnist, columnist_ref, even_child, even_children, even_children_container, filtered_grid, filtered_grid_ref, fourth_child, fourth_children, fourth_children_container, header_menu, header_menu_ref, i, ie_mediaquery, j, last_child, last_child_container, mobile_menu, newsletter_ref, onWindowResize, onWindowScroll, overlay_ref, phablet_breakpoint, popup_link, product_details_ref, product_grid_ref, rails_shifter, rails_shifter_ref, registration_ref, sharing_modules, smartphone_breakpoint, vertical_fixed_menu, vfm_ref, video_list_ref, video_manager, window_ref, _i, _j, _k, _l, _len, _len1, _len2, _m, _n, _o, _p, _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
       _this = this;
     window_ref = $(window);
     window.is_ie = $.browser.msie;
@@ -148,6 +148,17 @@
       if (cookie_manager.getCookie('Xmas13Registration') !== 'Seen') {
         openRegistration();
       }
+    }
+    popup_link = $('a.js-open-popup');
+    if (popup_link.length > 0) {
+      popup_link.bind('click', (function(e) {
+        var popup_height, popup_url, popup_width;
+        e.preventDefault();
+        popup_url = $(e.currentTarget).attr('data-url');
+        popup_width = $(e.currentTarget).attr('data-width');
+        popup_height = $(e.currentTarget).attr('data-height');
+        return window.open(popup_url, "", "width=" + popup_width + ",height=" + popup_height + ",menubar=no,location=no,resizable=1,status=no,scrollbars=1");
+      }));
     }
     vfm_ref = $('.js-vertical-fixed-menu');
     if (vfm_ref.length === 1) {

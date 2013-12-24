@@ -611,3 +611,7 @@ function pcdm_get_season_terms() {
   ksort($numbered_terms);
   return array_merge($numbered_terms, $not_numbered_terms);
 }
+
+function pcdm_get_img_alt($attachment_id){
+  return get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+}

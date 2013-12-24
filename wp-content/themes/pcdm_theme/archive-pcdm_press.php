@@ -38,7 +38,7 @@ get_header();
       <?php if(isset($press_block[PcdmPress::TYPE_PREFIX . 'pdf_file'])):?>
       <a href="<?php echo $press_block[PcdmPress::TYPE_PREFIX . 'pdf_file'] ?>" target="_blank">
       <?php endif;?>
-      <img src="<?php echo $press_block['pcdm_press_wall_image'] ?>" alt="">
+      <img src="<?php echo $press_block['pcdm_press_wall_image'] ?>" alt="<?php echo pcdm_get_img_alt($press_block[PcdmPress::TYPE_PREFIX . 'wall_image_id']);?>">
       <?php if(isset($press_block[PcdmPress::TYPE_PREFIX . 'pdf_file'])):?>
       </a>
       <?php endif;?>

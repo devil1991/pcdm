@@ -14,7 +14,7 @@ get_header(); ?>
         <article class="box <?php echo $_class; ?><?php if($product[PcdmHomeElement::TYPE_PREFIX . 'align_left']=='on'):?> dx<?php endif;?>">
         
             <a href="<?php echo pcdm_get_home_link($product)?>" title="">
-                <img class="box-img" src="<?php echo $img[0];?>" alt="">
+                <img class="box-img" src="<?php echo $img[0];?>" alt="<?php echo pcdm_get_img_alt($product[PcdmHomeElement::TYPE_PREFIX . 'home_image_id']);?>">
             <div class="wrap-text">
                 <header>
                     <span class="number">/<?php echo $product[PcdmHomeElement::TYPE_PREFIX . 'hp_number']?></span>

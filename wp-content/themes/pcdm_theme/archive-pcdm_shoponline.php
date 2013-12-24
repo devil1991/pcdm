@@ -77,7 +77,7 @@ $firstl = true;
                 </article>
                 <?php if (isset($shoponline[PcdmShoponline::TYPE_PREFIX . 'wall_image_id'])): ?>
                   <?php $img = wp_get_attachment_image_src($shoponline[PcdmShoponline::TYPE_PREFIX . 'wall_image_id'], PcdmShoponline::TYPE_PREFIX . 'wall_image'); ?>
-                  <img class="img-deco" src="<?php echo $img[0] ?>" alt="">
+                  <img class="img-deco" src="<?php echo $img[0] ?>" alt="<?php echo pcdm_get_img_alt($shoponline[PcdmShoponline::TYPE_PREFIX . 'wall_image_id']);?>">
                 <?php endif; ?>
               </li>
               <?php $right = !$right; ?>

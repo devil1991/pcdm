@@ -37,7 +37,7 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
                         ?>
                             <div class="item big">
                                 <a href="#" title="" data-id="<?php echo $_element['ID'] ?>">
-                                    <img src="<?php echo $big_img[0] ?>" alt="">
+                                    <img src="<?php echo $big_img[0] ?>" alt="<?php echo pcdm_get_img_alt($_element[PcdmProduct::TYPE_PREFIX . 'wall_image_id']);?>">
                                     <div class="hover <?php if($_element[PcdmProduct::TYPE_PREFIX . 'text_color']=='on'):?> white<?php else:?> dark<?php endif;?>" style="background-color:<?php echo $_element[PcdmProduct::TYPE_PREFIX . 'collection_color'] ?>">
                                         <div class="text">
                                             <span class="number">/<?php echo $_element[PcdmProduct::TYPE_PREFIX . 'number'] ?></span>
@@ -71,7 +71,7 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
                                     ?>
 
                                         <a class="<?php echo $position; ?>" href="#" title="" data-id="<?php echo $_element['ID'] ?>">
-                                            <img src="<?php echo $small_img[0]?>" alt="">
+                                            <img src="<?php echo $small_img[0]?>" alt="<?php echo pcdm_get_img_alt($_element[PcdmProduct::TYPE_PREFIX . 'wall_image_id']);?>">
                                             <div class="hover <?php if($_element[PcdmProduct::TYPE_PREFIX . 'text_color']=='on'):?> white<?php else:?> dark<?php endif;?>" style="background-color:<?php echo $_element[PcdmProduct::TYPE_PREFIX . 'collection_color'] ?>">
                                                 <div class="text">
                                                     <span class="number">/<?php echo $_element[PcdmProduct::TYPE_PREFIX . 'number'] ?></span>

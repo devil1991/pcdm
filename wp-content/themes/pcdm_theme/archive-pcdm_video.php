@@ -37,7 +37,7 @@ $video_key = 1;
                 <span class="ico-video"></span>
                 <?php if (isset($video[PcdmVideo::TYPE_PREFIX . 'wall_image_id'])): ?>
                   <?php $img = wp_get_attachment_image_src($video[PcdmVideo::TYPE_PREFIX . 'wall_image_id'], PcdmVideo::TYPE_PREFIX . 'wall_image'); ?>
-                  <img class="placeholder" src="<?php echo $img[0]; ?>" alt="">
+                  <img class="placeholder" src="<?php echo $img[0]; ?>" alt="<?php echo pcdm_get_img_alt($video[PcdmVideo::TYPE_PREFIX . 'wall_image_id']);?>">
                 <?php endif; ?>
               </a>
             </div>

@@ -15,7 +15,7 @@ get_header();
                     ?>
                     <a class="<?php echo $news_class ?>" href="<?php echo get_permalink( $news['ID'] );?>" title="">
                         <div class="wrap-image">
-                            <img src="<?php echo $img[0]?>" alt="">
+                            <img src="<?php echo $img[0]?>" alt="<?php echo pcdm_get_img_alt($news[PcdmNews::TYPE_PREFIX . 'wall_image_id']);?>">
                             <div class="hover dark" style="background-color:<?php echo $news[PcdmNews::TYPE_PREFIX . 'hover_color']; ?>"><div class="more"></div></div>
                         </div>
                         <div class="text">

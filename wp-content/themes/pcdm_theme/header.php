@@ -190,8 +190,8 @@ if (isset($polylang)){
                         </div>
                     </div>
                 </div>
-              <a href="<?php echo get_bloginfo('url')?>" class="logo"><img src="<?php echo pcdm_get_theme_resource('images/header/logo.png'); ?>" alt=""></a>
-                <a href ="<?php echo get_bloginfo('url')?>" class="logo-small"><img src="<?php echo pcdm_get_theme_resource('images/header/logo-small.png'); ?>" alt=""></a>
+              <a href="<?php echo get_bloginfo('url')?>" class="logo"><img src="<?php echo pcdm_get_theme_resource('images/header/logo.png'); ?>"  alt="<?php _e('Paula Cademartori Logo: iconic buckle')?>"></a>
+                <a href ="<?php echo get_bloginfo('url')?>" class="logo-small"><img src="<?php echo pcdm_get_theme_resource('images/header/logo-small.png'); ?>"  alt="<?php _e('Paula Cademartori Logo: iconic buckle')?>"></a>
             </header>	
 
             <div class="container">

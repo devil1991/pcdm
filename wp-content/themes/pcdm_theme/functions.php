@@ -1,6 +1,7 @@
 <?php
 
 define('DS', '/');
+define('PCDM_ALT_SEPARATOR','#');
 define('SKIN_SUBDIR', 'public');
 define('PCDM_BASE_URL', get_bloginfo('url'));
 define('MAINTENANCE', false);
@@ -596,6 +597,19 @@ function pcdm_filter_wp_title() {
   return $filtered_title;
 }
 
+
+function pcdm_get_meta(){
+  global $wp_query;
+  $queried_object = get_queried_object();
+  
+}
+
+function pcdm_get_title(){
+  global $wp_query;
+  $queried_object = get_queried_object();
+  
+}
+
 function pcdm_get_season_terms() {
   $numbered_terms = array();
   $not_numbered_terms = array();
@@ -613,5 +627,19 @@ function pcdm_get_season_terms() {
 }
 
 function pcdm_get_img_alt($attachment_id){
-  return get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+  $_separator = PCDM_ALT_SEPARATOR;
+  $alt = "";
+  $_alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+  $lang = pll_current_language();
+  $alts = explode($_separator, $_alt);
+  switch ($lang) {
+    case "it":
+      if(isset($alts[1]))
+        return $alts[1];
+    case "en":
+      return $alts[0];
+      break;
+  }
+  return $alt;
+  
 }

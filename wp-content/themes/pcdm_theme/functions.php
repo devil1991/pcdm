@@ -1,7 +1,7 @@
 <?php
 
 define('DS', '/');
-define('PCDM_ALT_SEPARATOR','#');
+define('PCDM_ALT_SEPARATOR', '#');
 define('SKIN_SUBDIR', 'public');
 define('PCDM_BASE_URL', get_bloginfo('url'));
 define('MAINTENANCE', false);
@@ -560,7 +560,7 @@ function pcdm_get_og_image() {
     switch ($queried_object->post_type) {
       case PcdmProduct::TYPE_IDENTIFIER:
         $meta = get_post_meta($queried_object->ID);
-        $_det_img = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_id'][0],  PcdmProduct::TYPE_PREFIX .'detail_image' );
+        $_det_img = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_id'][0], PcdmProduct::TYPE_PREFIX . 'detail_image');
         $og_image = $_det_img[0];
         break;
     }
@@ -597,19 +597,6 @@ function pcdm_filter_wp_title() {
   return $filtered_title;
 }
 
-
-function pcdm_get_meta(){
-  global $wp_query;
-  $queried_object = get_queried_object();
-  
-}
-
-function pcdm_get_title(){
-  global $wp_query;
-  $queried_object = get_queried_object();
-  
-}
-
 function pcdm_get_season_terms() {
   $numbered_terms = array();
   $not_numbered_terms = array();
@@ -626,20 +613,91 @@ function pcdm_get_season_terms() {
   return array_merge($numbered_terms, $not_numbered_terms);
 }
 
-function pcdm_get_img_alt($attachment_id){
+function pcdm_get_img_alt($attachment_id) {
   $_separator = PCDM_ALT_SEPARATOR;
   $alt = "";
-  $_alt = get_post_meta( $attachment_id, '_wp_attachment_image_alt', true );
+  $_alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
   $lang = pll_current_language();
   $alts = explode($_separator, $_alt);
   switch ($lang) {
     case "it":
-      if(isset($alts[1]))
+      if (isset($alts[1]))
         return $alts[1];
     case "en":
       return $alts[0];
       break;
   }
   return $alt;
+}
+
+function pcdm_raw_query($sql) {
+  global $wpdb;
+  return $wpdb->get_results($sql);
+}
+
+/*
+  CREATE  TABLE `wp_paula`.`seo_keys` (
+  `code` VARCHAR(256) NOT NULL ,
+  `value` LONGTEXT NULL ,
+  PRIMARY KEY (`code`) );
+ */
+
+function pcdm_get_seo_key($key) {
+  $res = pcdm_raw_query("SELECT value FROM seo_keys sk WHERE sk.code = '{$key}'");
+  if (count($res)) {
+    $occur = array_pop($res);
+    return $occur->value;
+  }
+  return "";
+}
+
+function pcdm_get_seo_description() {
+  global $wp_query;
+  $queried_object = get_queried_object();
+
+  if(is_home()){
+    return pcdm_get_seo_key(sprintf("description_page_home_%s",  pll_current_language()));
+  }else if (is_single()) {//controlla oggetto
+    $post_meta = get_post_meta($queried_object->ID);
+    switch ($queried_object->post_type) {
+      case PcdmProduct::TYPE_IDENTIFIER:
+        return $post_meta[PcdmProduct::TYPE_PREFIX.'seo_description'][0];
+        break;
+      case PcdmNews::TYPE_IDENTIFIER:
+        return $post_meta[PcdmNews::TYPE_PREFIX.'seo_description'][0];
+        break;
+    }
+  } else if (is_post_type_archive()) {
+    return pcdm_get_seo_key(sprintf("description_archive_%s_%s", $queried_object->name, pll_current_language()));
+  } else if (is_tax(PcdmSeason::CATEGORY_IDENTIFIER)) {
+    return pcdm_get_seo_key(sprintf("description_category_%s_%s", $queried_object->slug, pll_current_language()));
+  } else {
+    return pcdm_get_seo_key(sprintf("description_page_%s_%s", $queried_object->post_name, pll_current_language()));
+  }
+}
+
+function pcdm_get_seo_title() {
+  global $wp_query;
+  $queried_object = get_queried_object();
+
   
+  if(is_home()){
+    return pcdm_get_seo_key(sprintf("title_page_home_%s",  pll_current_language()));
+  }else if (is_single()) {//controlla oggetto
+    $post_meta = get_post_meta($queried_object->ID);
+    switch ($queried_object->post_type) {
+      case PcdmProduct::TYPE_IDENTIFIER:
+        return $post_meta[PcdmProduct::TYPE_PREFIX.'seo_title'][0];
+        break;
+      case PcdmNews::TYPE_IDENTIFIER:
+        return $post_meta[PcdmNews::TYPE_PREFIX.'seo_title'][0];
+        break;
+    }
+  } else if (is_post_type_archive()) {
+    return pcdm_get_seo_key(sprintf("title_archive_%s_%s", $queried_object->name, pll_current_language()));
+  } else if (is_tax(PcdmSeason::CATEGORY_IDENTIFIER)) {
+    return pcdm_get_seo_key(sprintf("title_category_%s_%s", $queried_object->slug, pll_current_language()));
+  } else {
+    return pcdm_get_seo_key(sprintf("title_page_%s_%s", $queried_object->post_name, pll_current_language()));
+  }
 }

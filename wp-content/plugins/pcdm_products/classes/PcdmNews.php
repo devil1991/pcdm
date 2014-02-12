@@ -18,7 +18,9 @@ class PcdmNews {
 
     public function __construct() {
         $this->do_not_translate = array(
-            'abstract'
+            'abstract',
+            'seo_title',
+            'seo_description'
         );
         add_action('init', array(&$this, 'defineType'));
         add_filter('cmb_meta_boxes', array(&$this, 'defineFields'));
@@ -103,6 +105,29 @@ class PcdmNews {
                 )
             )
         );
+        
+            $meta_boxes[] = array(
+        'id' => self::TYPE_PREFIX . 'fieldset_6',
+        'title' => 'Seo Title & Description',
+        'pages' => array(self::TYPE_IDENTIFIER),
+        'context' => 'normal',
+        'priority' => 'low',
+        'show_names' => true,
+        'fields' => array(
+            array(
+                'name' => 'Seo Title',
+                'desc' => 'Insert a seo title for this product',
+                'id' => self::TYPE_PREFIX . 'seo_title',
+                'type' => 'text'
+            ),
+            array(
+                'name' => 'Seo Description',
+                'desc' => 'Insert a seo description for this product',
+                'id' => self::TYPE_PREFIX . 'seo_description',
+                'type' => 'textarea_small'
+            ),
+        ),
+    );
         
         $meta_boxes[] = array(
             'id' => self::TYPE_PREFIX . 'fieldset_2',

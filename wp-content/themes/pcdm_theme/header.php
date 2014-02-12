@@ -20,6 +20,8 @@ if (isset($polylang)){
         <meta charset="<?php bloginfo('charset'); ?>" />
         <title><?php echo pcdm_filter_wp_title(); ?></title>   
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="title" content="<?php echo pcdm_get_seo_title(); ?>">
+        <meta name="description" content="<?php echo pcdm_get_seo_description(); ?>">
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
         <link href="<?php echo pcdm_get_theme_resource('styles/screen.min.css'); ?>" rel="stylesheet" type="text/css" media="all"/>

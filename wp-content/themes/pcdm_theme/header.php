@@ -46,7 +46,7 @@ if (isset($polylang)){
             <ul class="first-level">
               <!--<li><a href="" title=""><?php echo _e('Icons')?></a></li>-->
               <li class="dropdown">
-                <a class="" href="#" title=""><?php echo _e('Collections')?></a>
+                <a class="<?php echo pcdm_is_active('categories') ? 'active' : ''?>" href="#" title=""><?php echo _e('Collections')?></a>
                 <div class="wrap-dropdown-menu">
                       <ul class="dropdown-menu">
                           <?php foreach(pcdm_get_season_terms() as $_term):?>
@@ -67,20 +67,20 @@ if (isset($polylang)){
                   $_about_page = get_page_by_title("About" );
                   $_about_page_tr = get_page( pll_get_post($_about_page->ID, pll_current_language()) );
                   ?>
-                  <a href="<?php echo get_page_link($_about_page_tr->ID);?>" title="<?php echo $_about_page_tr->post_title;?>">
+                  <a class="<?php echo pcdm_is_active('About') ? 'active' : ''?>" href="<?php echo get_page_link($_about_page_tr->ID);?>" title="<?php echo $_about_page_tr->post_title;?>">
                       <?php echo $_about_page_tr->post_title;?>
                   </a>
               </li>
               <li>
-                <a href="<?php echo get_post_type_archive_link( PcdmVideo::TYPE_IDENTIFIER )?>" title="">
+                <a class="<?php echo pcdm_is_active(PcdmVideo::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link( PcdmVideo::TYPE_IDENTIFIER )?>" title="">
                     <?php _e('Videos')?>
                 </a>
               </li>
               <li><a href="http://www.paulacademartori.tumblr.com/" target="_blank" title=""><?php _e('Diary')?></a></li>
-              <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
-              <li><a href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php _e('shop online')?></a></li>
-              <li><a href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>        
-              <li><a href="<?php echo get_post_type_archive_link(PcdmPress::TYPE_IDENTIFIER )?>" title=""><?php echo _e('Press Area')?></a></li>
+              <li><a class="<?php echo pcdm_is_active(PcdmNews::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
+              <li><a class="<?php echo pcdm_is_active(PcdmShoponline::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php _e('shop online')?></a></li>
+              <li><a class="<?php echo pcdm_is_active(PcdmStore::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>        
+              <li><a class="<?php echo pcdm_is_active(PcdmPress::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmPress::TYPE_IDENTIFIER )?>" title=""><?php echo _e('Press Area')?></a></li>
             </ul>
           </nav>
           <nav class="choose-language">
@@ -133,7 +133,7 @@ if (isset($polylang)){
                                 <ul class="first-level">
                                     <!--<li><a href="" title=""><?php echo _e('Icons')?></a></li>-->
                                     <li class="dropdown">
-                                        <a class="" href="#" title=""><?php echo _e('Collections')?></a>
+                                        <a class="<?php echo pcdm_is_active('categories') ? 'active' : ''?>" href="#" title=""><?php echo _e('Collections')?></a>
                                         <div class="wrap-dropdown-menu">
                                             <ul class="dropdown-menu">
                                                 <?php foreach(pcdm_get_season_terms() as $_term):?>
@@ -154,19 +154,19 @@ if (isset($polylang)){
                                         $_about_page = get_page_by_title("About" );
                                         $_about_page_tr = get_page( pll_get_post($_about_page->ID, pll_current_language()) );
                                         ?>
-                                        <a href="<?php echo get_page_link($_about_page_tr->ID);?>" title="<?php echo $_about_page_tr->post_title;?>">
+                                        <a class="<?php echo pcdm_is_active('About') ? 'active' : ''?>" href="<?php echo get_page_link($_about_page_tr->ID);?>" title="<?php echo $_about_page_tr->post_title;?>">
                                             <?php echo $_about_page_tr->post_title;?>
                                         </a>
                                     </li>
                                     <li>
-                                      <a href="<?php echo get_post_type_archive_link(PcdmVideo::TYPE_IDENTIFIER )?>" title="">
+                                      <a class="<?php echo pcdm_is_active(PcdmVideo::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmVideo::TYPE_IDENTIFIER )?>" title="">
                                             <?php echo _e('Videos')?>
                                         </a>
                                     </li>
                                     <li><a href="http://www.paulacademartori.tumblr.com/" target="_blank" title=""><?php echo _e('Diary')?></a></li>
-                                    <li><a href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php echo _e('News')?></a></li>
-                                    <li><a href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php echo _e('shop online')?></a></li>
-                                    <li><a href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>
+                                    <li><a class="<?php echo pcdm_is_active(PcdmNews::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php echo _e('News')?></a></li>
+                                    <li><a class="<?php echo pcdm_is_active(PcdmShoponline::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php echo _e('shop online')?></a></li>
+                                    <li><a class="<?php echo pcdm_is_active(PcdmStore::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>
                                 </ul>
                             </nav>
                             <nav class="nav-social">

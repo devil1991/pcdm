@@ -676,6 +676,20 @@ function pcdm_get_seo_description() {
   }
 }
 
+function pcdm_is_active($section){
+  global $wp_query;
+  $queried_object = get_queried_object();
+  if (is_post_type_archive()) {
+    return $queried_object->name == $section;
+  } else if (is_tax(PcdmSeason::CATEGORY_IDENTIFIER)) {
+    return $section == 'categories';
+  } else {
+    return $queried_object->post_title == $section;
+  }
+  return false;
+}
+
+
 function pcdm_get_seo_title() {
   global $wp_query;
   $queried_object = get_queried_object();

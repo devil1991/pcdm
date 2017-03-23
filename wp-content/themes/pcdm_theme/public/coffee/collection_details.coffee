@@ -9,6 +9,7 @@ class window.CollectionDetails
 		@collection_txt = @ref.find '.wrap-text .collection'
 		@title_txt = @ref.find '.wrap-text .title'
 		@description_txt = @ref.find '.wrap-text .description'
+		@shoppable_btn = @ref.find '.wrap-text .shoppable_btn'
 
 		@prev_btn = @ref.find 'a.previous'
 		@next_btn = @ref.find 'a.next'
@@ -117,7 +118,7 @@ class window.CollectionDetails
 	onDataLoaded: (json) =>
 
 		@data = json.details
-		src = if is_smartphone then @data.img_mobile else @data.img
+		src = @data.img
 		@loadImage src
 
 	onDataError: =>
@@ -143,6 +144,11 @@ class window.CollectionDetails
 		@collection_txt.html @data.collection
 		@title_txt.html @data.title
 		@description_txt.html @data.description
+		if @shoppable_btn.length
+			if @data.shoppable_link?
+				@shoppable_btn.attr 'href', @data.shoppable_link
+			else
+				@shoppable_btn.hide()
 
 		event_emitter.emitEvent 'UPDATE_SHARING_DATA', [@sharing_id, @data.sharing]
 
@@ -200,4 +206,3 @@ class window.CollectionDetails
 		# 		@img.width img_w
 		# 		@img.height img_h
 		# 		@img.css {'margin-left':"#{-.5 * (img_w - ref_w)}px", 'margin-top':"#{-.6 * (img_h - ref_h)}px"}
-

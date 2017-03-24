@@ -9,7 +9,7 @@
       this.onScroll = __bind(this.onScroll, this);
       this.onBtnClick = __bind(this.onBtnClick, this);
       this.w = $(window);
-      this.bottom_offset = 20;
+      this.bottom_offset = 50;
       this.is_off = true;
       this.btn.bind('click', this.onBtnClick);
     }

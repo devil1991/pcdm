@@ -20,7 +20,7 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
         </div>
     </header>
 
-    <div class="product-grid"> 
+    <div class="product-grid">
         <?php
         $c = 2;
         foreach ($_buckets as $bucket):
@@ -33,10 +33,15 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
                     $_bigitem = get_post($bucket[PcdmProductBucket::TYPE_PREFIX.'prod_a']);
                     if ($_bigitem->ID):
                         $_element = pack_product($_bigitem, get_post_meta($_bigitem->ID));
+                        $_notLink = get_field('not_a_link',$_element['ID']);
                         $big_img = wp_get_attachment_image_src($_element[PcdmProduct::TYPE_PREFIX . 'wall_image_id'],  PcdmProduct::TYPE_PREFIX .'wall_image_big' );
                         ?>
                             <div class="item big">
-                                <a href="#" title="" data-id="<?php echo $_element['ID'] ?>">
+                                <?php if($_notLink):?>
+                                    <a style="pointer-events:none" href="#" title="" data-id="<?php echo $_element['ID'] ?>">
+                                <?php else:?>
+                                    <a href="#" title="" data-id="<?php echo $_element['ID'] ?>">
+                                <?php endif;?>
                                     <img src="<?php echo $big_img[0] ?>" alt="<?php echo pcdm_get_img_alt($_element[PcdmProduct::TYPE_PREFIX . 'wall_image_id']);?>">
                                     <div class="hover <?php if($_element[PcdmProduct::TYPE_PREFIX . 'text_color']=='on'):?> white<?php else:?> dark<?php endif;?>" style="background-color:<?php echo $_element[PcdmProduct::TYPE_PREFIX . 'collection_color'] ?>">
                                         <div class="text">
@@ -47,7 +52,11 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
                                             </div>
                                         </div>
                                     </div>
-                                </a>
+                                <?php if($_notLink):?>
+                                    </a>
+                                <?php else:?>
+                                   </a>
+                                <?php endif;?>
                             </div>
                             <?php
                         endif;
@@ -63,14 +72,18 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
                                 if ($cc % 2 == 0):
                                     ?><div class="line js-last-child"><?php
                                 endif;
-                                
+
                                 if (!is_null($bucket[PcdmProductBucket::TYPE_PREFIX.'prod_' . $ll]) && $bucket[PcdmProductBucket::TYPE_PREFIX.'prod_' . $ll]!=PcdmProductBucket::VOID_PRODUCT):
                                     $_bigitem = get_post($bucket[PcdmProductBucket::TYPE_PREFIX.'prod_' . $ll]);
                                     $_element = pack_product($_bigitem, get_post_meta($_bigitem->ID));
+                                    $_notLink = get_field('not_a_link',$_element['ID']);
                                     $small_img = wp_get_attachment_image_src($_element[PcdmProduct::TYPE_PREFIX . 'wall_image_id'],  PcdmProduct::TYPE_PREFIX .'wall_image_small' );
                                     ?>
-
-                                        <a class="<?php echo $position; ?>" href="#" title="" data-id="<?php echo $_element['ID'] ?>">
+                                        <?php if($_notLink):?>
+                                            <a style="pointer-events:none"  class="<?php echo $position; ?>" href="#" title="" data-id="<?php echo $_element['ID'] ?>">
+                                        <?php else:?>
+                                            <a class="<?php echo $position; ?>" href="#" title="" data-id="<?php echo $_element['ID'] ?>">
+                                        <?php endif;?>
                                             <img src="<?php echo $small_img[0]?>" alt="<?php echo pcdm_get_img_alt($_element[PcdmProduct::TYPE_PREFIX . 'wall_image_id']);?>">
                                             <div class="hover <?php if($_element[PcdmProduct::TYPE_PREFIX . 'text_color']=='on'):?> white<?php else:?> dark<?php endif;?>" style="background-color:<?php echo $_element[PcdmProduct::TYPE_PREFIX . 'collection_color'] ?>">
                                                 <div class="text">
@@ -81,7 +94,11 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
+                                        <?php if($_notLink):?>
+                                            </a>
+                                        <?php else:?>
+                                           </a>
+                                        <?php endif;?>
                                     <?php else:
                                         ?>
                                         <div class="empty <?php echo $position ?>" href="" title="">
@@ -101,50 +118,57 @@ $letters = array('first' => 'a', 'second' => 'b', 'third' => 'c', 'fourth' => 'd
                 endswitch;
                 ?>
 
-                <?php if ($c % 2 != 0): ?></div><?php endif; ?>    
+                <?php if ($c % 2 != 0): ?></div><?php endif; ?>
             <?php
             $c++;
         endforeach;
          if ($c % 2 != 0): ?></div><?php endif; ?>
     </div>
-</section>   
+</section>
 
 <div class="loader"></div>
 <article class="product-detail" data-callback="wp-admin/admin-ajax.php" style="display:none">
   <div class="wrap-text">
     <a href="#" class="back back-mobile"><?php echo _e('back to the collection')?></a>
-    <ul class="paginator">
-      <li><a class="previous" href="#" title=""><?php echo _e('previous')?></a></li>
-      <li><a class="next" href="#" title=""><?php echo _e('next')?></a></li>
-    </ul>
-    <header>
-      <span class="number">
-      </span>
-      <span class="collection"></span>
-      <h1 class="title"></h1>
-    </header>
-    <p class="description"></p>
-    <nav class="nav-social">
-      <h4 class="title-share">share</h4>
-      <ul id="collection-details-sharing" class="js-sharing js-last-child">
-        <li class="facebook">
-          <a  title="facebook" href="#" target="blank">Facebook</a>
-        </li>
-<!--        <li class="histagram">
-          <a title="histagram" href="#" target="blank">histagram</a>
-        </li>-->
-        <li class="twitter">
-          <a title="twitter" href="#" target="blank">twitter</a>
-        </li>
-        <li class="pinterest">
-          <a title="pinterest" href="#" target="blank">You Tube</a>
-        </li>
-        <li class="tumblr">
-          <a title="tumblr" href="#" target="blank">tumblr</a>
-        </li>
-      </ul>
-    </nav>
-    <a href="#" class="back back-collection"><?php echo _e('back to the collection')?></a>
+    <div class="product-detail__upper">
+        <ul class="paginator">
+          <li><a class="previous" href="#" title=""><?php echo _e('previous')?></a></li>
+          <li><a class="next" href="#" title=""><?php echo _e('next')?></a></li>
+        </ul>
+        <header>
+          <span class="number">
+          </span>
+          <span class="collection"></span>
+          <h1 class="title"></h1>
+        </header>
+        <p class="description"></p>
+        <div class="shoppable_btnWrap">
+          <a target='_blank' href="" class="shoppable_btn"><?php echo _e('Shop Now', 'paula'); ?></a>
+        </div>
+    </div>
+    <div class="product-detail__lower">
+        <nav class="nav-social">
+          <h4 class="title-share">share</h4>
+          <ul id="collection-details-sharing" class="js-sharing js-last-child">
+            <li class="facebook">
+              <a  title="facebook" href="#" target="blank">Facebook</a>
+            </li>
+        <!--        <li class="histagram">
+              <a title="histagram" href="#" target="blank">histagram</a>
+            </li>-->
+            <li class="twitter">
+              <a title="twitter" href="#" target="blank">twitter</a>
+            </li>
+            <li class="pinterest">
+              <a title="pinterest" href="#" target="blank">You Tube</a>
+            </li>
+            <li class="tumblr">
+              <a title="tumblr" href="#" target="blank">tumblr</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="back back-collection"><?php echo _e('back to the collection')?></a>
+    </div>
   </div>
   <img class="img-detail" src="" alt="">
 </article>

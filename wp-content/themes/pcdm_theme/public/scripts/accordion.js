@@ -92,30 +92,35 @@
       this.closeItem(this.ref.find('.item-accordion.open'));
       item.addClass('open');
       content = item.find('.content-accordion');
-      m = this.measures_array[item.index()];
-      return TweenLite.to(content, this.duration, {
-        css: {
-          'height': m.h,
-          'padding-top': m.pt,
-          'padding-bottom': m.pb
-        },
-        delay: .2,
-        ease: Power4.easeInOut
-      });
+      try {
+        m = this.measures_array[item.index()];
+        return TweenLite.to(content, this.duration, {
+          css: {
+            'height': m.h,
+            'padding-top': m.pt,
+            'padding-bottom': m.pb
+          },
+          delay: .2,
+          ease: Power4.easeInOut
+        });
+      }
+      catch(err) {
+      }
     };
 
     Accordion.prototype.closeItem = function(item) {
       var content;
+      content = $('.item-accordion.open .content-accordion');
       item.removeClass('open');
-      content = item.find('.content-accordion');
-      return TweenLite.to(content, this.duration, {
-        css: {
-          'height': '0',
-          'padding-top': '0',
-          'padding-bottom': '0'
-        },
-        ease: Power4.easeInOut
-      });
+      if(content.length)
+        return TweenLite.to(content, this.duration, {
+          css: {
+            'height': '0',
+            'padding-top': '0',
+            'padding-bottom': '0'
+          },
+          ease: Power4.easeInOut
+        });
     };
 
     return Accordion;

@@ -5,7 +5,7 @@ get_header();
 
 
 <section class="wrap-store">
-  <img class="canvas-img" src="<?php echo pcdm_get_theme_resource('images/store-canvas.jpg'); ?>" alt="">
+  <img class="canvas-img" src="<?php echo pcdm_get_theme_resource('images/storelist-banner.jpg'); ?>" alt="">
   <section class="store-list">
     <header class="header-storeList">
       <span class="number">/5</span>

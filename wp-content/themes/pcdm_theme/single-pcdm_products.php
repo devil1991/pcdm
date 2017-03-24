@@ -5,17 +5,27 @@ get_header();
 ?>
 
 <?php
-
+$is_single = 1;
 $product = get_post();
 $_product_id = $product->ID;
-$season_tax_obj = array_pop(get_the_terms($_product_id,  PcdmSeason::CATEGORY_IDENTIFIER));
+$terms = get_the_terms($_product_id,  PcdmSeason::CATEGORY_IDENTIFIER);
+$season_tax = $season_tax_obj = array();
+if (count($terms) && $terms !== false) {
+  $season_tax = $season_tax_obj = array_pop($terms);
+}
 $_data_category = pll_current_language() . rtrim(str_replace(get_bloginfo('url'), "", get_term_link($season_tax_obj->slug, $season_tax_obj->taxonomy)), "/");
 $term_descriptions = explode(",",$season_tax_obj->description);
 //effettuo la query
 $_buckets = pcdm_get_product_buckets(PcdmSeason::CATEGORY_IDENTIFIER, array($season_tax_obj->slug));
 //echo "pippo!!1 {$_product_id}";
 //carico il template della collezione
-load_template(dirname(__FILE__) . '/subtemplates/season-details.php');
+if(get_field('fixed_scroll_layout',$season_tax)){
+  load_template(dirname(__FILE__) . '/subtemplates/content-clutches.php');
+}
+else{
+  load_template(dirname(__FILE__) . '/subtemplates/season-details.php');
+}
+
 
 ?>
 

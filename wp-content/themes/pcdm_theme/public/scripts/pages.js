@@ -42,13 +42,13 @@
     window.cookie_manager = new CookieManager();
     window.small_header_height = 120;
     header_menu_ref = $('.header');
-    if (header_menu_ref.length === 1) {
-      header_menu = new HeaderMenu(header_menu_ref);
-    }
+    // if (header_menu_ref.length === 1) {
+    //   window['header_menu'] = new HeaderMenu(header_menu_ref);
+    // }
     body_simulator_ref = $('#body-simulator');
-    if (body_simulator_ref.length === 1) {
-      mobile_menu = new MobileMenu(body_simulator_ref);
-    }
+    // if (body_simulator_ref.length === 1) {
+    //   mobile_menu = new MobileMenu(body_simulator_ref);
+    // }
     product_grid_ref = $('.wrap-product-grid');
     product_details_ref = $('.product-detail');
     if (product_details_ref.length === 1 && product_details_ref.length === 1) {
@@ -131,49 +131,50 @@
         }
       };
     })(this);
-    overlay_ref = $('.wrap-overlay');
-    if (overlay_ref.length === 1) {
-      newsletter_ref = overlay_ref.find('.newsletter');
-      if (newsletter_ref.length === 1) {
-        new Newsletter(newsletter_ref);
-      }
-      registration_ref = overlay_ref.find('.registration');
-      if (registration_ref.length === 1) {
-        new Newsletter(registration_ref);
-      }
-      $('.footer a.subscribe').bind('click', ((function(_this) {
-        return function(e) {
-          e.preventDefault();
-          if (newsletter_ref.length === 1) {
-            newsletter_ref.show();
-          }
-          return overlay_ref.show();
-        };
-      })(this)));
-      overlay_ref.find('.close').bind('click', ((function(_this) {
-        return function(e) {
-          e.preventDefault();
-          overlay_ref.hide();
-          if (newsletter_ref.length === 1) {
-            newsletter_ref.hide();
-          }
-          if (registration_ref.length === 1) {
-            registration_ref.hide();
-          }
-          if ((typeof is_registration_open !== "undefined" && is_registration_open !== null) && is_registration_open) {
-            window.is_registration_open = false;
-            return cookie_manager.setCookie('Xmas13Registration', 'Seen', 6, '.paulacademartori.com');
-          }
-        };
-      })(this)));
-      if (cookie_manager.getCookie('Xmas13Registration') !== 'Seen') {
-        if (url_params['source'] === 'nl') {
-          cookie_manager.setCookie('Xmas13Registration', 'Seen', 6, '.paulacademartori.com');
-        } else {
-          openRegistration();
-        }
-      }
-    }
+    // overlay_ref = $('.wrap-overlay');
+    // if (overlay_ref.length === 1) {
+    //   newsletter_ref = overlay_ref.find('.newsletter');
+    //   if (newsletter_ref.length === 1) {
+    //     new Newsletter(newsletter_ref);
+    //   }
+    //   registration_ref = overlay_ref.find('.registration');
+    //   if (registration_ref.length === 1) {
+    //     new Newsletter(registration_ref);
+    //   }
+    //   $('.footer a.subscribe').bind('click', ((function(_this) {
+    //     return function(e) {
+    //       e.preventDefault();
+    //       // if (newsletter_ref.length === 1) {
+    //       //   newsletter_ref.show();
+    //       // }
+    //       openRegistration();
+    //       return overlay_ref.show();
+    //     };
+    //   })(this)));
+    //   overlay_ref.find('.close').bind('click', ((function(_this) {
+    //     return function(e) {
+    //       e.preventDefault();
+    //       overlay_ref.hide();
+    //       if (newsletter_ref.length === 1) {
+    //         newsletter_ref.hide();
+    //       }
+    //       if (registration_ref.length === 1) {
+    //         registration_ref.hide();
+    //       }
+    //       if ((typeof is_registration_open !== "undefined" && is_registration_open !== null) && is_registration_open) {
+    //         window.is_registration_open = false;
+    //         return cookie_manager.setCookie('Xmas13Registration', 'Seen', 6, '.paulacademartori.com');
+    //       }
+    //     };
+    //   })(this)));
+    //   if (cookie_manager.getCookie('Xmas13Registration') !== 'Seen') {
+    //     if (url_params['source'] === 'nl') {
+    //       cookie_manager.setCookie('Xmas13Registration', 'Seen', 6, '.paulacademartori.com');
+    //     } else {
+    //       openRegistration();
+    //     }
+    //   }
+    // }
     popup_link = $('a.js-open-popup');
     if (popup_link.length > 0) {
       popup_link.bind('click', (function(e) {

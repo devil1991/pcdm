@@ -1,7 +1,7 @@
 <?php
 global $polylang;
 if (isset($polylang)){
-  $languages = $polylang->get_languages_list();
+  $languages = $polylang->model->get_languages_list();
 }else{
   $languages = array();
 }
@@ -18,12 +18,14 @@ if (isset($polylang)){
     <!--<![endif]-->
     <head>
         <meta charset="<?php bloginfo('charset'); ?>" />
-        <title><?php echo pcdm_filter_wp_title(); ?></title>   
+        <title><?php echo the_title(); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="title" content="<?php echo pcdm_get_seo_title(); ?>">
-        <meta name="description" content="<?php echo pcdm_get_seo_description(); ?>">
+        <meta name="title" content="<?php echo pcdm_get_seo_title(); ?>"/>
+        <meta name="description" content="<?php echo pcdm_get_seo_description(); ?>"/>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="<?php echo pcdm_get_theme_resource('scripts/lib/modernizr.custom.77341.js'); ?>" type="text/javascript" charset="utf-8"></script>
         <link href="<?php echo pcdm_get_theme_resource('styles/screen.min.css'); ?>" rel="stylesheet" type="text/css" media="all"/>
         <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
         <!--[if lt IE 9]>
@@ -33,22 +35,55 @@ if (isset($polylang)){
         <?php if(pcdm_get_og_image()):?>
         <meta property="og:image" content="<?php echo pcdm_get_og_image()?>">
         <?php endif;?>
+<style>
+.contact-info .specific-info span {
+	display: block;
+}
+</style>
     </head>
 
-    <body <?php body_class(); ?>>
+    <body <?php body_class(); ?> >
       <div id="body-simulator">
+      <?php include(locate_template('modules/mainmenu/menu.php')); ?>
       <div class="aux-body-simulator">
         <div class="close-menu"></div>
-      <div id="mobile-sidebar">
-        <div class="aux-mobile-sidebar">
-          <a href="<?php echo get_bloginfo('url')?>" class="logo">Paula Cademartori</a>
-          <nav class="navbar">
+      <!-- <div id="mobile-sidebar"> -->
+        <!-- <div class="aux-mobile-sidebar"> -->
+          <!-- <a href="<?php echo get_bloginfo('url')?>" class="logo">Paula Cademartori</a> -->
+          <!-- <nav class="navbar">
             <ul class="first-level">
-              <!--<li><a href="" title=""><?php echo _e('Icons')?></a></li>-->
               <li class="dropdown">
                 <a class="<?php echo pcdm_is_active('categories') ? 'active' : ''?>" href="#" title=""><?php echo _e('Collections')?></a>
                 <div class="wrap-dropdown-menu">
                       <ul class="dropdown-menu">
+                          <?php
+                            $name = 'The New DUNDUN Couture';
+                            $name2 = 'The Lotus Sandal';
+                            $pid = 5694;
+                            $pid2 = 7290;
+                            $cur_lang = pll_current_language();
+                            if($cur_lang == 'it'){
+                              $name = 'La Nuova DUNDUN Couture';
+                              $name2 = 'Lotus';
+                              $pid = 5832;
+                              $pid2 = 7306;
+                            }
+
+                          ?>
+
+                          <li>
+                              <a class="" href="<?php echo get_page_link($pid2); ?>" title=""><?php echo $name2;?>
+                                  <span class="arrow-left"></span>
+                                  <span class="arrow-right"></span>
+                              </a>
+                          </li>
+
+                          <li>
+                              <a class="" href="<?php echo get_page_link($pid); ?>" title=""><?php echo $name;?>
+                                  <span class="arrow-left"></span>
+                                  <span class="arrow-right"></span>
+                              </a>
+                          </li>
                           <?php foreach(pcdm_get_season_terms() as $_term):?>
                               <?php if($_term->count):?>
                                   <li>
@@ -63,7 +98,7 @@ if (isset($polylang)){
                     </div>
               </li>
               <li>
-                <?php 
+                <?php
                   $_about_page = get_page_by_title("About" );
                   $_about_page_tr = get_page( pll_get_post($_about_page->ID, pll_current_language()) );
                   ?>
@@ -77,13 +112,14 @@ if (isset($polylang)){
                 </a>
               </li>
               <li><a href="http://www.paulacademartori.tumblr.com/" target="_blank" title=""><?php _e('Diary')?></a></li>
+              <li><a class="<?php echo pcdm_is_active(PcdmIcons::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link( PcdmIcons::TYPE_IDENTIFIER )?>" title="">Icons</a></li>
               <li><a class="<?php echo pcdm_is_active(PcdmNews::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php _e('News')?></a></li>
               <li><a class="<?php echo pcdm_is_active(PcdmShoponline::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php _e('shop online')?></a></li>
-              <li><a class="<?php echo pcdm_is_active(PcdmStore::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>        
+              <li><a class="<?php echo pcdm_is_active(PcdmStore::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>
               <li><a class="<?php echo pcdm_is_active(PcdmPress::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmPress::TYPE_IDENTIFIER )?>" title=""><?php echo _e('Press Area')?></a></li>
             </ul>
-          </nav>
-          <nav class="choose-language">
+          </nav> -->
+          <!-- <nav class="choose-language">
             <ul>
               <?php foreach($languages as $lang):?>
               <li><a <?php if(pll_current_language() == $lang->slug):?>class="active"<?php endif;?> href="/<?php echo $lang->slug?>" title=""><?php echo $lang->name; ?></a></li>
@@ -91,6 +127,7 @@ if (isset($polylang)){
             </ul>
           </nav>
           <nav class="nav-social">
+            <span class="label"><?php _e('follow us')?></span>
             <ul class="js-last-child">
               <li class="facebook">
                 <a  title="facebook" href="https://www.facebook.com/paulacademartoribrand" target="blank">Facebook</a>
@@ -108,10 +145,10 @@ if (isset($polylang)){
                 <a title="tumblr" href="http://paulacademartori.tumblr.com/" target="blank">tumblr</a>
               </li>
             </ul>
-          </nav>
-        </div>
-      </div>
-      
+          </nav> -->
+        <!-- </div> -->
+      <!-- </div> -->
+
       <div id="wrap-body">
         <div id="wrapper">
             <header class="header">
@@ -119,7 +156,7 @@ if (isset($polylang)){
                   <div class="top-header"></div>
                   <a href="#" class="open-nav"></a>
                 </div>
-                <div class="right-navigation">
+                <!-- <div class="right-navigation">
                     <div class="aux-right-navigation">
                         <nav class="choose-language">
                             <ul>
@@ -131,11 +168,22 @@ if (isset($polylang)){
                         <div class="wrap-navbar">
                             <nav class="navbar">
                                 <ul class="first-level">
-                                    <!--<li><a href="" title=""><?php echo _e('Icons')?></a></li>-->
                                     <li class="dropdown">
                                         <a class="<?php echo pcdm_is_active('categories') ? 'active' : ''?>" href="#" title=""><?php echo _e('Collections')?></a>
                                         <div class="wrap-dropdown-menu">
                                             <ul class="dropdown-menu">
+                                            <li>
+                                                  <a class="" href="<?php echo get_page_link($pid2); ?>" title=""><?php echo $name2;?>
+                                                      <span class="arrow-left"></span>
+                                                      <span class="arrow-right"></span>
+                                                  </a>
+                                              </li>
+                                                <li>
+                                                  <a class="" href="<?php echo get_page_link($pid); ?>" title=""><?php echo $name;?>
+                                                      <span class="arrow-left"></span>
+                                                      <span class="arrow-right"></span>
+                                                  </a>
+                                              </li>
                                                 <?php foreach(pcdm_get_season_terms() as $_term):?>
                                                     <?php if($_term->count):?>
                                                         <li>
@@ -150,7 +198,7 @@ if (isset($polylang)){
                                         </div>
                                     </li>
                                     <li>
-                                        <?php 
+                                        <?php
                                         $_about_page = get_page_by_title("About" );
                                         $_about_page_tr = get_page( pll_get_post($_about_page->ID, pll_current_language()) );
                                         ?>
@@ -164,6 +212,7 @@ if (isset($polylang)){
                                         </a>
                                     </li>
                                     <li><a href="http://www.paulacademartori.tumblr.com/" target="_blank" title=""><?php echo _e('Diary')?></a></li>
+                                    <li><a class="<?php echo pcdm_is_active(PcdmIcons::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link( PcdmIcons::TYPE_IDENTIFIER )?>" title="">Icons</a></li>
                                     <li><a class="<?php echo pcdm_is_active(PcdmNews::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link( PcdmNews::TYPE_IDENTIFIER )?>" title=""><?php echo _e('News')?></a></li>
                                     <li><a class="<?php echo pcdm_is_active(PcdmShoponline::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmShoponline::TYPE_IDENTIFIER )?>" title=""><?php echo _e('shop online')?></a></li>
                                     <li><a class="<?php echo pcdm_is_active(PcdmStore::TYPE_IDENTIFIER) ? 'active' : ''?>" href="<?php echo get_post_type_archive_link(PcdmStore::TYPE_IDENTIFIER )?>" title=""><?php echo _e('store list')?></a></li>
@@ -191,9 +240,9 @@ if (isset($polylang)){
                             </nav>
                         </div>
                     </div>
-                </div>
+                </div> -->
               <a href="<?php echo get_bloginfo('url')?>" class="logo"><img src="<?php echo pcdm_get_theme_resource('images/header/logo.png'); ?>"  alt="<?php _e('Paula Cademartori Logo: iconic buckle')?>"></a>
-                <a href ="<?php echo get_bloginfo('url')?>" class="logo-small"><img src="<?php echo pcdm_get_theme_resource('images/header/logo-small.png'); ?>"  alt="<?php _e('Paula Cademartori Logo: iconic buckle')?>"></a>
-            </header>	
+              <a href ="<?php echo get_bloginfo('url')?>" class="logo-small"><img src="<?php echo pcdm_get_theme_resource('images/header/logo-small.png'); ?>"  alt="<?php _e('Paula Cademartori Logo: iconic buckle')?>"></a>
+            </header>
 
             <div class="container">

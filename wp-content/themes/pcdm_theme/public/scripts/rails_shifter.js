@@ -46,7 +46,7 @@
     };
 
     RailsShifter.prototype.resetBreakpoints = function() {
-      this.breakpoint_1 = this.rail_2_el.offset().top + .6 * (this.w.width() / 1024) * this.rail_2_el.height();
+      this.breakpoint_1 = this.rail_2_el.offset().top + 0.3*$(window).height();
       this.breakpoint_2 = this.rail_1_el.offset().top - window.small_header_height;
       this.acc = this.breakpoint_2 / (this.breakpoint_2 - this.breakpoint_1);
       return this.scroll_amp = this.doc.height() - this.w.height();
@@ -54,6 +54,7 @@
 
     RailsShifter.prototype.onScroll = function(val) {
       var current_top;
+      console.log(this.breakpoint_1);
       if (this.is_enabled) {
         if (val > this.breakpoint_1) {
           if (!this.rail_1.hasClass('more-affracchievole')) {

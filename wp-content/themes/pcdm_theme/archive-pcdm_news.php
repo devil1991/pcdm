@@ -3,13 +3,13 @@ if (is_user_logged_in() || ! MAINTENANCE)://LOGGED USERS
 get_header();
 ?>
 
-<section class="hp-news news js-columnist" data-columns="2">
-    <div class="news-list">
+<section class="hp-news news">
+    <div class="news-list" id="news-grid">
         <?php foreach (pcdm_get_news_archive() as $news_block): ?>
             <div class="block">
               <?php if(count($news_block['news'])):?>
                 <?php foreach ($news_block['news'] as $news): ?>
-                    <?php 
+                    <?php
                       $news_class = pcdm_get_news_class($news);
                       $img = wp_get_attachment_image_src($news[PcdmNews::TYPE_PREFIX . 'wall_image_id'],PcdmNews::TYPE_PREFIX .'wall_image_'.$news_class );
                     ?>

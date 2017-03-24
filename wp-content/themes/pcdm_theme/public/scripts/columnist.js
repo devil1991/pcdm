@@ -78,8 +78,13 @@
         if (i % 2 === 0) {
           item.show();
           _results.push(item_copy.hide());
+          // FIXED
+          item_copy.remove();
         } else {
           item.hide();
+          // FIXED
+          item.remove();
+
           _results.push(item_copy.show());
         }
       }

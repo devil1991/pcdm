@@ -69,7 +69,7 @@ class PcdmProduct {
 
   /**
    * Per evitare la sincronizzazione di alcuni campi
-   * 
+   *
    * @param type $metas
    * @return type
    */
@@ -84,7 +84,7 @@ class PcdmProduct {
   }
 
   /**
-   * Definisce il tipo di dato Prodotto da console di amministrazione         
+   * Definisce il tipo di dato Prodotto da console di amministrazione
    */
   public function defineType() {
 
@@ -131,8 +131,8 @@ class PcdmProduct {
 
   /**
    * Restituisce un array di prodotti da visualizzarsi nel selettore dei
-   * prodotti 
-   * 
+   * prodotti
+   *
    * @param string $orderBy
    * @param string $orderIn
    * @return array
@@ -158,7 +158,7 @@ class PcdmProduct {
         $season_tax_obj = array_pop(get_the_terms($product->ID, PcdmSeason::CATEGORY_IDENTIFIER));
         $tax_slug = $season_tax_obj->slug;
       }
-      $lang = $polylang->get_post_language($product->ID)->slug;
+      $lang = $polylang->model->get_post_language($product->ID)->slug;
 
       $products[] = array(
           'name' => sprintf("%s %s %s [%s][%s]", "/" . $meta[self::TYPE_PREFIX . 'number'][0], $product->post_title, $tax_slug, $product->ID, $lang),
@@ -172,7 +172,7 @@ class PcdmProduct {
 
   /**
    * Definisce i campi per questo TDD da mostrarsi a console di admin
-   * 
+   *
    * @param type $meta_boxes
    * @return boolean
    */
@@ -285,7 +285,7 @@ class PcdmProduct {
 
   /**
    * Definisce la grid di questo TDD
-   * 
+   *
    * @param type $cols
    * @return type
    */
@@ -300,7 +300,7 @@ class PcdmProduct {
 
   /**
    * Definisce come riempire la grid di questo TDD
-   * 
+   *
    * @param type $column
    * @param type $post_id
    */
@@ -324,7 +324,7 @@ class PcdmProduct {
 
   /**
    * Hook/observer per la cancellazione di un oggetto
-   * 
+   *
    * @global type $post_type
    * @param type $postid
    * @return type
@@ -348,7 +348,7 @@ class PcdmProduct {
   /**
    * Gestisce la callback ajax per la richiesta delle informazioni relative ad
    * un prodotto a catalogo
-   * 
+   *
    */
   public function productDetailsJsonAction() {
     $details = array(
@@ -361,7 +361,7 @@ class PcdmProduct {
         if ($product->post_type == self::TYPE_IDENTIFIER) {
           $meta = get_post_meta($_pid);
 
-          $_det_img = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_id'][0], PcdmProduct::TYPE_PREFIX . 'detail_image');
+          $_det_img = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_id'][0],'full');
           $details['details']['img'] = $_det_img[0];
 
           $_det_img_mobile = wp_get_attachment_image_src($meta[PcdmProduct::TYPE_PREFIX . 'detail_image_mobile_id'][0], PcdmProduct::TYPE_PREFIX . 'detail_mobile_image');
@@ -375,6 +375,12 @@ class PcdmProduct {
             $details['details']['collection'] = $season->name;
           }
 
+          if( function_exists('get_field') ) {
+            $shoppableLink = get_field('shoppable_link', $_pid);
+            if (!empty($shoppableLink)) $details['details']['shoppable_link'] = $shoppableLink;
+          }
+
+
           $details['details']['title'] = $product->post_title;
           $details['details']['description'] = $meta[self::TYPE_PREFIX . 'description'][0];
           $details['details']['sharing'] = array();
@@ -382,6 +388,7 @@ class PcdmProduct {
           $details['details']['sharing']['image'] = $_det_img_mobile[0];
           $details['details']['sharing']['description'] = $meta[PcdmProduct::TYPE_PREFIX . 'description'][0];
           $details['details']['sharing']['url'] = get_permalink($product->ID);
+          $details['details']['type'] = get_field('template_type',$product);
           ;
         }
       }

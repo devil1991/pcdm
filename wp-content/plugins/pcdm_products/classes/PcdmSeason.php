@@ -31,9 +31,10 @@ class PcdmSeason {
 
         $types = array(
             PcdmProduct::TYPE_IDENTIFIER,
+            'product_type_2',
             PcdmProductBucket::TYPE_IDENTIFIER
         );
-        
+
         $args = array(
         "hierarchical" => TRUE,
             "labels" => $labels,

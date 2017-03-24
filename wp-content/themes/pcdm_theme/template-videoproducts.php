@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: TunTun Type Page
+Template Name: Video Product Catalog
 */
 if (is_user_logged_in() || ! MAINTENANCE)://LOGGED USERS
 get_header();
 ?>
 
-<?php get_template_part('subtemplates/content-dundun'); ?>
+<?php get_template_part('subtemplates/content-videoproducts'); ?>
 
 
 <?php get_sidebar(); ?>

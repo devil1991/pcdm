@@ -1,0 +1,17 @@
+@import "susy"
+
+#videoproducts
+  +susy-media(810px)
+    margin-top: -120px
+  +susy-media(1119px)
+    margin-top: -100px
+
+.videoproducts__videoWrap
+  +container
+
+.videoproducts__video
+  height: 50px
+  background: red
+  +susy-media(810px)
+    +span(9 of 12)
+    +push(3 of 12)

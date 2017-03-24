@@ -361,6 +361,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/public\/css\/v2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/css\/v2-min.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/public\/images\/_loader.gif": {
 		"ft": 4194304,
 		"iS": 26756,
@@ -1684,6 +1694,15 @@
 		"oAP": "\/public\/images\/video-top_2.webmhd.webm",
 		"oF": 0
 		},
+	"\/public\/js\/v2.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/scripts\/v2.js",
+		"oF": 3,
+		"sC": 0,
+		"tS": 1
+		},
 	"\/public\/json\/press.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -2585,6 +2604,21 @@
 		"oAP": "\/public\/scripts\/type2.php",
 		"oF": 0
 		},
+	"\/public\/scripts\/v2.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/public\/scripts\/v2-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/public\/scripts\/v2.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/scripts\/v2.js.map",
+		"oF": 0
+		},
 	"\/public\/scripts\/vertical_fixed_menu.js": {
 		"ft": 64,
 		"mi": 1,
@@ -2646,6 +2680,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/public\/styles\/css\/app2-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/styles\/css\/v2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/styles\/css\/v2-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -3332,6 +3376,29 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/public\/styles\/v2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/styles\/v2-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/public\/styles\/v2.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/public\/css\/v2.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/screen.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -3409,6 +3476,12 @@
 		"oAP": "\/subtemplates\/content-lotus.php",
 		"oF": 0
 		},
+	"\/subtemplates\/content-videoproducts.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/subtemplates\/content-videoproducts.php",
+		"oF": 0
+		},
 	"\/subtemplates\/maintenance.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -3443,6 +3516,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-lotus.php",
+		"oF": 0
+		},
+	"\/template-videoproducts.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-videoproducts.php",
 		"oF": 0
 		}
 	},
@@ -3700,7 +3779,7 @@
 			"active": 0
 			}
 		},
-	"babelPresetType": 193,
+	"babelPresetType": 195,
 	"babelRetainLines": 0,
 	"bowerAbbreviatedPath": "bower_components",
 	"bowerAutoCreateInfoFile": 1,

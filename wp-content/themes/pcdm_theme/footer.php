@@ -214,7 +214,7 @@
 
 <script src="<?php echo pcdm_get_theme_resource('scripts/lib/cookie-monster.min.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo pcdm_get_theme_resource('scripts/pagenews.js'); ?>" type="text/javascript" charset="utf-8"></script>
-
+<script src="<?php echo pcdm_get_theme_resource('scripts/v2.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script>
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

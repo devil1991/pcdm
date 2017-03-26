@@ -129,6 +129,12 @@
 		"oAP": "\/modules\/mainmenu\/type2.php",
 		"oF": 0
 		},
+	"\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/node_modules",
+		"oF": 0
+		},
 	"\/OTB_LOGOsansFond.png": {
 		"ft": 32768,
 		"iS": 13435,
@@ -138,6 +144,14 @@
 		"oF": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/page.php": {
 		"ft": 8192,
@@ -3522,6 +3536,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-videoproducts.php",
+		"oF": 0
+		},
+	"\/yarn.lock": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/yarn.lock",
 		"oF": 0
 		}
 	},

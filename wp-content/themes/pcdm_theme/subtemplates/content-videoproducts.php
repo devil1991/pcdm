@@ -1,7 +1,7 @@
 <section id="videoproducts">
   <div class="videoproducts__videoWrap">
     <div class="videoproducts__video">
-
+      <div data-type="youtube" data-video-id="JGwWNGJdvx8"></div>
     </div>
   </div>
 

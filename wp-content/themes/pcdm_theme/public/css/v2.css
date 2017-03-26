@@ -16,8 +16,7 @@
     clear: both; }
 
 .videoproducts__video {
-  height: 50px;
-  background: red; }
+  position: relative; }
   @media (min-width: 810px) {
     .videoproducts__video {
       width: 74.5762711864%;

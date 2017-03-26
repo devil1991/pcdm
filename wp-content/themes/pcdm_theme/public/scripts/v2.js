@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(document).ready(function(){var e=$(".videoproducts__video"),o=plyr.setup(e.get(0));console.log(o)});

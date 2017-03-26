@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "plyr": "^2.0.12"
+  }
+}

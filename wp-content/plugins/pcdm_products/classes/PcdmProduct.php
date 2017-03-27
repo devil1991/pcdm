@@ -158,7 +158,11 @@ class PcdmProduct {
         $season_tax_obj = array_pop(get_the_terms($product->ID, PcdmSeason::CATEGORY_IDENTIFIER));
         $tax_slug = $season_tax_obj->slug;
       }
-      $lang = $polylang->model->get_post_language($product->ID)->slug;
+      if ($polylang) {
+        $lang = $polylang->model->get_post_language($product->ID)->slug;
+      } else {
+        $lang = 'en';
+      }
 
       $products[] = array(
           'name' => sprintf("%s %s %s [%s][%s]", "/" . $meta[self::TYPE_PREFIX . 'number'][0], $product->post_title, $tax_slug, $product->ID, $lang),

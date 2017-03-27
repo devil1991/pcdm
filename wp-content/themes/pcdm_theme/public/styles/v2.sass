@@ -14,3 +14,27 @@
   +susy-media(810px)
     +span(9 of 12)
     +push(3 of 12)
+
+.videoproducts__shop
+  text-align: right
+  padding: 15px 0
+  span
+    padding: 0px 15px
+  +susy-media(810px)
+    padding: 30px 0
+
+
+.videoproducts__grid
+  .product-grid .line .item.big .hover .text .number
+    font-size: 2em
+  .product-grid .line .item.small .hover .text .number
+    font-size: 1.8em
+  .item.small
+    .line.js-last-child
+      > a:first-child
+        +susy-media(0 810px)
+          margin-bottom: 1em !important
+
+      > a:last-child
+        +susy-media(0 810px)
+          margin-bottom: 0em !important

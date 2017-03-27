@@ -14,10 +14,11 @@ $(document).ready(() => {
 
   const sr = ScrollReveal();
   player.on('ready', function(event) {
-    imagesLoaded(wrapper.get(0), () => {
-      TweenLite.to(wrapper.get(0), 0.6, { css: {opacity: 1} })
-      sr.reveal('.videoproducts__grid .item');
-    })
+  })
+
+  imagesLoaded(wrapper.get(0), () => {
+    TweenLite.to(wrapper.get(0), 0.6, { css: {opacity: 1} })
+    sr.reveal('.videoproducts__grid .item');
   })
 
 })

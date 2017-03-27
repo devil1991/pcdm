@@ -2209,4 +2209,25 @@ acf_add_local_field_group(array (
 ));
 
 endif;
-wp_enqueue_style( 'v2style', get_template_directory_uri() . '/public/css/v2.css');
+
+function mycustomstyles () {
+  wp_enqueue_style( 'v2style', get_template_directory_uri() . '/public/css/v2.css');
+}
+add_action('wp_enqueue_scripts', 'mycustomstyles');
+
+
+function product_seasons__rel_query( $args, $field, $post_id ) {
+
+    // only show children of the current post being edited
+    $args['tax_query'] = array(
+			'taxonomy' => 'pcdm_season'
+		);
+
+	// return
+    return $args;
+
+}
+
+
+// filter for a specific field based on it's key
+add_filter('acf/fields/relationship/query/key=group_58d8c29cd997b', 'product_seasons__rel_query', 10, 3);

@@ -30,6 +30,9 @@
   .product-grid .line .item.small .hover .text .number
     font-size: 1.8em
   .item.small
+    .second, .forth
+      +susy-media(810px)
+        margin-right: 0 !important
     .line.js-last-child
       > a:first-child
         +susy-media(0 810px)

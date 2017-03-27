@@ -1,4 +1,4 @@
-<section id="videoproducts">
+<section id="videoproducts" style="opacity: 0">
   <div class="videoproducts__videoWrap">
     <div class="videoproducts__video">
       <div data-type="youtube" data-video-id="<?php the_field('youtube_id'); ?>"></div>
@@ -174,3 +174,4 @@
 <?php endif;?>
 
 </section>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

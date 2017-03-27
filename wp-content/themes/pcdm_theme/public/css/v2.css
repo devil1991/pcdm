@@ -39,6 +39,10 @@
 .videoproducts__grid .product-grid .line .item.small .hover .text .number {
   font-size: 1.8em; }
 
+@media (min-width: 810px) {
+  .videoproducts__grid .item.small .second, .videoproducts__grid .item.small .forth {
+    margin-right: 0 !important; } }
+
 @media (min-width: 0) and (max-width: 810px) {
   .videoproducts__grid .item.small .line.js-last-child > a:first-child {
     margin-bottom: 1em !important; } }

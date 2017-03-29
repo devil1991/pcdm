@@ -216,8 +216,6 @@
 <script src="<?php echo pcdm_get_theme_resource('scripts/pagenews.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/node_modules/babel-polyfill/dist/polyfill.min.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/node_modules/plyr/dist/plyr.css">
-<script src="<?php echo get_template_directory_uri(); ?>/node_modules/plyr/dist/plyr.js" type="text/javascript" charset="utf-8"></script>
 
 
 <script src="<?php echo pcdm_get_theme_resource('scripts/v2.js'); ?>" type="text/javascript" charset="utf-8"></script>

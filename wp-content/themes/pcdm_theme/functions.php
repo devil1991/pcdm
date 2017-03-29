@@ -2231,3 +2231,4 @@ function product_seasons__rel_query( $args, $field, $post_id ) {
 
 // filter for a specific field based on it's key
 add_filter('acf/fields/relationship/query/key=group_58d8c29cd997b', 'product_seasons__rel_query', 10, 3);
+error_reporting(0);

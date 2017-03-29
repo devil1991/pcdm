@@ -35,12 +35,12 @@ class window.Collection
 	#########
 
 	setHistory: ->
-	
+
 		if !History.enabled then return false
 		#console.log "-------- inizialiting history ---------"
 
 		@has_history = true
-		
+
 		History.Adapter.bind window, 'statechange', @onHistoryStateChange
 		History.replaceState {state:'home'}, '', "/#{@category}"
 
@@ -49,7 +49,7 @@ class window.Collection
 		# usare data-init-id per capire se è inizializzato a id
 
 		if @current_id isnt '' then event_emitter.emitEvent 'SWITCH_TO_DETAILS'
-			
+
 	onHistoryStateChange: =>
 
 		#console.log "-------- state changing --------"
@@ -103,7 +103,7 @@ class window.Collection
 	setGrid: ->
 
 		for i in [0...@boxes.length]
-			
+
 			box = $ @boxes[i]
 			offset = box.offset().top
 
@@ -125,7 +125,7 @@ class window.Collection
 		e.preventDefault()
 
 		unless is_switching
-			
+
 			window.is_switching = true
 
 			item = $ e.currentTarget
@@ -142,7 +142,7 @@ class window.Collection
 			delay = Math.min(Math.max(.25 * (current_index - i), 0), 1.75)
 			#delay = .25 * (@items_tot - 1 - i)
 			TweenLite.to item, 1, {css:{'opacity':'0'}, delay:delay, ease:Power4.easeInOut}
-		
+
 		TweenLite.to @header, 2, {css:{'opacity':'0'}, ease:Power4.easeInOut}
 
 		scroll_val = Math.max(@w.scrollTop() - @scroll_offset, 0)
@@ -160,7 +160,7 @@ class window.Collection
 			TweenLite.to item, 1, {css:{'opacity':'1'}, delay:delay, ease:Power4.easeInOut}
 
 		TweenLite.to @header, 2, {css:{'opacity':'1'}, ease:Power4.easeInOut}
-		
+
 		scroll_val = @getScrollById()
 		@w.scrollTop Math.max(scroll_val - @scroll_offset, 0)
 		TweenLite.to window, 2, {scrollTo:{y:scroll_val}, ease:Power4.easeInOut, onComplete:(-> window.is_switching = false)}
@@ -175,7 +175,7 @@ class window.Collection
 			if item.id is @current_id
 				offset = item.offset
 				break
-		
+
 		return offset
 
 	getCurrentIndex: ->
@@ -231,8 +231,3 @@ class window.Collection
 	onResize: (window_w, window_h) =>
 
 		if @details then @details.onResize window_w, window_h
-
-
-
-
-

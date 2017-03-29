@@ -1,7 +1,16 @@
 <section id="videoproducts" style="opacity: 0">
   <div class="videoproducts__videoWrap">
     <div class="videoproducts__video">
-      <div data-type="youtube" data-video-id="<?php the_field('youtube_id'); ?>"></div>
+      <iframe id='player' src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>?enablejsapi=1&rel=0&playsinline=0"> </iframe>
+      <div class="videoproducts__videoCover" style='background-image:url(https://i.ytimg.com/vi/<?php the_field('youtube_id'); ?>/maxresdefault.jpg)'>
+        <div class="playIcon">
+          <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                  <path d="M15.5615866,8.10002147 L3.87056367,0.225209313 C3.05219207,-0.33727727 2,0.225209313 2,1.12518784 L2,16.8748122 C2,17.7747907 3.05219207,18.3372773 3.87056367,17.7747907 L15.5615866,9.89997853 C16.1461378,9.44998927 16.1461378,8.55001073 15.5615866,8.10002147 L15.5615866,8.10002147 Z"></path>
+              </g>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 

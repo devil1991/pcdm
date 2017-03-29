@@ -10,7 +10,7 @@ get_header(); ?>
     <div class="line js-even-children js-last-child">
          <?php foreach ($hp_element['products'] as $product):?>
          <?php $_class = pcdm_get_home_element_class($product);?>
-         <?php $img = wp_get_attachment_image_src($product[PcdmHomeElement::TYPE_PREFIX . 'home_image_id'],PcdmHomeElement::TYPE_PREFIX .'home_image_'.$_class );?>
+         <?php $img = wp_get_attachment_image_src($product[PcdmHomeElement::TYPE_PREFIX . 'home_image_id'], 'full' );?>
         <article class="box <?php echo $_class; ?><?php if($product[PcdmHomeElement::TYPE_PREFIX . 'align_left']=='on'):?> dx<?php endif;?>">
 
             <a href="<?php echo pcdm_get_home_link($product)?>" title="">
